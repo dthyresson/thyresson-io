@@ -1,0 +1,79 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import '@fontsource/zilla-slab';
+import "../styles/global.css";
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+    <main class="md:max-w-2xl lg:max-w-3xl mx-auto">
+
+		<Header />
+    <main class="md:max-w-2xl lg:max-w-3xl mx-auto px-4 md:px-6">
+    <article id="main" class="max-w-3xl mx-auto">
+        <div class="prose dark:prose-invert text-lg ">
+        <p>
+          I&#x27;m a Managing Director and General Partner at
+          <a href="https://www.pwv.com/" target="_blank"
+            >PWV</a
+          >
+          where I invest in early stage technology startups alongside
+          <a href="https://tom.preston-werner.com" target="_blank"
+            >Tom Preston-Werner</a
+          >
+          and
+          <a href="https://thedavidprice.com" target="_blank"
+            >David Price</a
+          >.
+        </p>
+        <p>
+          Previously, I was part of the 🌲
+          <a href="https://www.redwoodjs.com/" target="_blank"
+            >RedwoodJS</a
+          >
+          <a href="https://redwoodjs.com/docs/introduction#core-team" target="_blank"
+            >Core Team</a
+          >
+          and consulted at ⚡️<a href="https://www.supabase.com/" target="_blank"
+            >Supabase</a
+          >.
+        </p>
+        <p>
+          Before then I was part of a few 🏟 sports, 🔋
+          energy-related and 🤔 consulting startups that saw a few exits.
+        </p>
+        <p>
+          I enjoy ☕️ and collecting 🖍 street art, 🧷 punk/new wave/rock poster
+          art and ephemera (mainly
+          <a href="https://www.mdmarchive.co.uk/archive" target="_blank"
+            >Madchester</a>,
+          <a href="https://en.wikipedia.org/wiki/The_Haçienda" target="_blank"
+            >The Haçienda</a>,
+          and
+          <a href="https://factoryrecords.org/index.php" target="_blank"
+            >Factory Records</a>),
+          vintage 🥁 🤖 drum machines &amp; 🎹 synths.
+        </p>
+        <h2 class="text-xl font-bold">Musings</h2>
+        <ul>
+          <li>
+            <a href="https://play.thyresson.io" target="_blank"
+              >Play me a song in Spotify</a> -
+            made with <a href="https://www.val.town/u/dthyresson" target="_blank"
+              >Val Town</a>
+          </li>
+        </ul>
+      </div>
+    </article>
+    </main>
+    <Footer />
+	</body>
+</html>
