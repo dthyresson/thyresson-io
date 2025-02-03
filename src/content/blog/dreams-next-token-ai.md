@@ -1,5 +1,5 @@
 ---
-title: "Are Dreams Just Next-Token Prediction? "
+title: "Are Dreams Just Next-Token Prediction?"
 description: "Rethinking Inspiration and Creativity in the Age of Generative AI"
 pubDate: "Jul 08 2025"
 updatedDate: "Feb 03 2025"

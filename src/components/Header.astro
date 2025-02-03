@@ -3,9 +3,12 @@ import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
-<header class="max-w-3xl mx-auto mb-4 py-8">
+<header class="max-w-3xl mx-auto mb-4 py-4">
 	<nav class="flex justify-between items-center border-b border-gray-200 pb-4">
-		<a href="/" class="text-2xl font-bold">David Thyresson</a>
+		<a href="/" class="text-2xl font-bold flex items-center">
+			<img src="/favicon.png" alt="DT" class="w-8 h-8 inline-block rounded-md mr-2" />
+			David Thyresson
+		</a>
 		<div class="flex gap-4">
 			<HeaderLink href="/">🏠 Home</HeaderLink>
 			<HeaderLink href="/blog">📝 Writings</HeaderLink>
