@@ -23,21 +23,23 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<Header />
 		<main class="container max-w-3xl mx-auto">
 			<article>
-				<div class="py-4">
-					{heroImage && <Image width={960} height={480} src={heroImage} alt="" />}
-				</div>
-				<div class="prose">
-					<div>
-						<h1>{title}</h1>
-						<hr />
+        {heroImage && (
+          <div class="py-4">
+            <Image width={960} height={480} src={heroImage} alt="" />
+          </div>
+        )}
+				<div>
+					<div class="py-4">
+						<h1 class="text-2xl font-bold">{title}</h1>
+            <FormattedDate date={pubDate} />
 					</div>
           <div class="prose dark:prose-invert text-lg ">
           <slot />
           </div>
 				</div>
 
-        <div class="border-t border-gray-200 pt-4">
-          {pubDate}
+        <div class="border-t border-gray-200 mt-4 pt-4 flex justify-between">
+          <FormattedDate date={pubDate} />
           {
             updatedDate && (
               <div class="last-updated-on">
