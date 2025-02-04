@@ -5,47 +5,59 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
-import "../styles/global.css";
+import '../styles/global.css';
 import '@fontsource/zilla-slab';
-
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, tags } =
+  Astro.props;
 ---
 
 <html lang="en">
-	<head>
-		<BaseHead title={title} description={description} />
-	</head>
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
 
-	<body>
-		<main class="container max-w-3xl mx-auto px-4 md:px-6">
+  <body>
+    <main class="container max-w-3xl mx-auto px-4 md:px-6">
       <Header />
-			<article>
-        {heroImage && (
-          <div class="">
-            <Image width={1024} height={576} src={heroImage} alt="" class="rounded-lg shadow-lg"/>
-          </div>
-        )}
-				<div class="py-4">
+      <article>
+        {
+          heroImage && (
+            <div class="">
+              <Image
+                width={1024}
+                height={576}
+                src={heroImage}
+                alt=""
+                class="rounded-lg shadow-lg"
+              />
+            </div>
+          )
+        }
+        <div class="py-4">
           <h1 class="text-2xl font-bold">{title}</h1>
           <div class="flex flex-wrap gap-2 justify-between align-middle pt-4">
-          <p class="text-sm">
-            {tags.map((tag) => (
-              <span class="inline-block bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-sm mr-2 mb-2">{tag}</span>
-            ))}
-          </p>
+            <p class="text-sm">
+              {
+                tags.map((tag) => (
+                  <span class="inline-block bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-sm mr-2 mb-2">
+                    {tag}
+                  </span>
+                ))
+              }
+            </p>
 
-          <p class="text-sm">
-            <FormattedDate date={pubDate} />
-          </p>
-        </div>
+            <p class="text-sm">
+              <FormattedDate date={pubDate} />
+            </p>
+          </div>
 
-          <div class="prose dark:prose-invert text-lg ">
+          <div class="prose dark:prose-invert text-lg">
             <slot />
           </div>
-				</div>
+        </div>
 
         <div class="border-t border-gray-200 mt-4 pt-4 flex justify-between">
           <FormattedDate date={pubDate} />
@@ -57,8 +69,8 @@ const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.prop
             )
           }
         </div>
-			</article>
-		</main>
-		<Footer />
-	</body>
+      </article>
+    </main>
+    <Footer />
+  </body>
 </html>

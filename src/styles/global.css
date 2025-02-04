@@ -1,12 +1,12 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
 @theme {
-  --default-font-family: "Zilla Slab", "serif";
-  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font-family: 'Zilla Slab', 'serif';
+  --font-sans: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
-  --font-serif: "Zilla Slab", "serif";
+  --font-serif: 'Zilla Slab', 'serif';
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+    'Liberation Mono', 'Courier New', monospace;
 }

@@ -10,14 +10,13 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
 ---
 
 <a
-	href={href}
-	class:list={[
-		className,
-		'hover:text-gray-700 text-gray-500',
-		{ 'text-gray-700': isActive }
-	]}
-	{...props}
+  href={href}
+  class:list={[
+    className,
+    'hover:text-gray-700 text-gray-500',
+    { 'text-gray-700': isActive },
+  ]}
+  {...props}
 >
-	<slot />
+  <slot />
 </a>
-

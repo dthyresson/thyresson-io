@@ -1,16 +1,16 @@
 // @ts-check
-import { defineConfig } from "astro/config";
-import netlify from "@astrojs/netlify";
-import mdx from "@astrojs/mdx";
-import sitemap from "@astrojs/sitemap";
-import tailwindcss from "@tailwindcss/vite";
+import { defineConfig } from 'astro/config';
+import netlify from '@astrojs/netlify';
+import mdx from '@astrojs/mdx';
+import sitemap from '@astrojs/sitemap';
+import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
   prefetch: true,
-  output: "static",
+  output: 'static',
   adapter: netlify(),
-  site: "https://example.com",
+  site: 'https://example.com',
   integrations: [mdx(), sitemap()],
   vite: {
     plugins: [tailwindcss()],

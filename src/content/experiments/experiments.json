@@ -4,13 +4,20 @@
     "url": "https://dthyresson-bedtimestorymaker.web.val.run/bedtime_stories",
     "title": "Bedtime Storymaker",
     "description": "A simple app that generates bedtime stories like you're a kid again.",
-    "tags": ["Val Town"]
+    "tags": ["Val Town", "fal"]
   },
   {
     "id": "moviemashup",
     "url": "https://dthyresson-moviemashup.web.val.run",
     "title": "Movie Mashup",
     "description": "A simple app that generates a mashup of two movies. It's a fun way to see how different movies can be combined.",
-    "tags": ["Val Town"]
+    "tags": ["Val Town", "fal"]
+  },
+  {
+    "id": "play-spotify",
+    "url": "https://dthyresson-playmeasong.web.val.run",
+    "title": "Play Me A Song",
+    "description": "Search and if we find it, it'll open the song in Spotify!.",
+    "tags": ["Val Town", "Spotify"]
   }
 ]
