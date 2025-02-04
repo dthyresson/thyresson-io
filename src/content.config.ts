@@ -1,5 +1,13 @@
-import { glob } from "astro/loaders";
+import { file, glob } from "astro/loaders";
 import { defineCollection, z } from "astro:content";
+
+const airports = defineCollection({
+  loader: file("src/content/airports/airports.json"),
+  schema: z.object({
+    url: z.string(),
+    id: z.string(),
+  }),
+});
 
 const blog = defineCollection({
   // Load Markdown and MDX files in the `src/content/blog/` directory.
@@ -15,4 +23,15 @@ const blog = defineCollection({
   }),
 });
 
-export const collections = { blog };
+const experiments = defineCollection({
+  loader: file("src/content/experiments/experiments.json"),
+  schema: z.object({
+    id: z.string(),
+    title: z.string(),
+    description: z.string(),
+    url: z.string(),
+    tags: z.array(z.string()),
+  }),
+});
+
+export const collections = { airports, blog, experiments };

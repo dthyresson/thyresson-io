@@ -1,9 +1,9 @@
 ---
 title: "Are Dreams Just Next-Token Prediction?"
 description: "Rethinking Inspiration and Creativity in the Age of Generative AI"
-pubDate: "Jul 08 2025"
+pubDate: "Jan 08 2025"
 updatedDate: "Feb 03 2025"
-heroImage: "/blog-placeholder-1.jpg"
+heroImage: "/AloXZ_7VJFOa3-GwSh46k.jpeg"
 ---
 
 > In your stream, live in a dream. (Red Hot Chili Peppers, I like dirt)
