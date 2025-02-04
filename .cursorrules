@@ -1,6 +1,13 @@
 This is a personal blog site for A. David Thyresson built using:
 
-* Astro static site framework
-  * with Vite config
-* TailwindCSS for styles
-* deploys to Netlify
+- Astro static site framework
+  - with Vite config
+- TailwindCSS for styles
+- deploys to Netlify
+
+Important:
+
+- Always answer with code for Astro
+- Always offer deploy with Netlify answers
+- Always use spaces, not tabs
+- Always be concise, but helpful to someone learning Astro
