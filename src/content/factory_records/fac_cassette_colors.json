@@ -1,0 +1,215 @@
+[
+  {
+    "id": "a-certain-ratio",
+    "name": "A Certain Ratio",
+    "slug": "a-certain-ratio",
+    "color": "blue",
+    "hexColor": "#5b7aae",
+    "cassettes": [
+      {
+        "id": "fact-16c",
+        "release": "FACT 16c",
+        "slug": "fact-16c",
+        "title": "The Graveyard and the Ballroom"
+      },
+      {
+        "id": "fact-135c",
+        "release": "FACT 135c",
+        "slug": "fact-135c",
+        "title": "The Old and The New"
+      },
+      {
+        "id": "fact-166c",
+        "release": "FACT 166c",
+        "slug": "fact-166c",
+        "title": "Force"
+      }
+    ]
+  },
+  {
+    "id": "the-durutti-column",
+    "name": "The Durutti Column",
+    "slug": "the-durutti-column",
+    "color": "red",
+    "hexColor": "#752d3f",
+    "cassettes": [
+      {
+        "id": "fact-14c",
+        "release": "FACT 14c",
+        "slug": "fact-14c",
+        "title": "The Return of the Durutti Column"
+      },
+      {
+        "id": "fact-44c",
+        "release": "FACT 44c",
+        "slug": "fact-44c",
+        "title": "LC"
+      },
+      {
+        "id": "fact-74c",
+        "release": "FACT 74c",
+        "slug": "fact-74c",
+        "title": "Another Setting"
+      },
+      {
+        "id": "fact-84c",
+        "release": "FACT 84c",
+        "slug": "fact-84c",
+        "title": "Without Mercy"
+      },
+      {
+        "id": "fact-164c",
+        "release": "FACT 164c",
+        "slug": "fact-164c",
+        "title": "Valuable Passages"
+      }
+    ]
+  },
+  {
+    "id": "happy-mondays",
+    "slug": "happy-mondays",
+    "name": "Happy Mondays",
+    "color": "orange",
+    "hexColor": "#db812e",
+    "cassettes": [
+      {
+        "id": "fact-170c",
+        "release": "FACT 170c",
+        "slug": "fact-170c",
+        "title": "Squirrel and G-Man 24 Hour Party People Plastic Face Can't Smile (White Out)"
+      }
+    ]
+  },
+  {
+    "id": "joy-division",
+    "slug": "joy-division",
+    "name": "Joy Division",
+    "color": "purple",
+    "hexColor": "#534196",
+    "cassettes": [
+      {
+        "id": "fact-10c",
+        "release": "FACT 10c",
+        "slug": "fact-10c",
+        "title": "Unknown Pleasures"
+      },
+      {
+        "id": "fact-25c",
+        "release": "FACT 25c",
+        "slug": "fact-25c",
+        "title": "Closer"
+      },
+      {
+        "id": "fact-40c",
+        "release": "FACT 40c",
+        "slug": "fact-40c",
+        "title": "Still"
+      }
+    ]
+  },
+  {
+    "id": "wim-mertens",
+    "slug": "wim-mertens",
+    "name": "Wim Mertens",
+    "color": "yellow",
+    "hexColor": "#f2ca30",
+    "cassettes": [
+      {
+        "id": "fact-190c",
+        "release": "FACT 190c",
+        "slug": "fact-190c",
+        "title": "Educes Me"
+      }
+    ]
+  },
+  {
+    "id": "new-order",
+    "slug": "new-order",
+    "name": "New Order",
+    "color": "white",
+    "hexColor": "#f5f5f5",
+    "cassettes": [
+      {
+        "id": "fact-50c",
+        "release": "FACT 50c",
+        "slug": "fact-50c",
+        "title": "Movement"
+      },
+      {
+        "id": "fact-75c",
+        "release": "FACT 75c",
+        "slug": "fact-75c",
+        "title": "Power, Corruption and Lies"
+      },
+      {
+        "id": "fact-100c",
+        "release": "FACT 100c",
+        "slug": "fact-100c",
+        "title": "Low-life"
+      },
+      {
+        "id": "fact-150c",
+        "release": "FACT 150c",
+        "slug": "fact-150c",
+        "title": "Brotherhood"
+      },
+      {
+        "id": "fact-200c",
+        "release": "FACT 200c",
+        "slug": "fact-200c",
+        "title": "Substance"
+      }
+    ]
+  },
+  {
+    "id": "quando-quango",
+    "slug": "quando-quango",
+    "name": "Quando Quango",
+    "color": "turquoise",
+    "hexColor": "#72bbc6",
+    "cassettes": [
+      {
+        "id": "fact-110c",
+        "release": "FACT 110c",
+        "slug": "fact-110c",
+        "title": "Pigs and Battleships"
+      }
+    ]
+  },
+  {
+    "id": "the-railway-children",
+    "slug": "the-railway-children",
+    "name": "The Railway Children",
+    "color": "grey",
+    "hexColor": "#a09991",
+    "cassettes": [
+      {
+        "id": "fact-185c",
+        "release": "FACT 185c",
+        "slug": "fact-185c",
+        "title": "Reunion Wilderness"
+      }
+    ]
+  },
+  {
+    "id": "section-25",
+    "slug": "section-25",
+    "name": "Section 25",
+    "color": "dark-green",
+    "hexColor": "#327c56",
+    "cassettes": [
+      {
+        "id": "fact-45c",
+        "release": "FACT 45c",
+        "slug": "fact-45c",
+        "title": "Always Now"
+      },
+      {
+        "id": "fact-90c",
+        "release": "FACT 90c",
+        "slug": "fact-90c",
+        "title": "From The Hip"
+      }
+    ]
+  }
+]

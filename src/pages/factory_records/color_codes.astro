@@ -1,0 +1,88 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+
+const cassetteColors = await getCollection('factory_records_cassette_colors');
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title="Factory Records Cassette Colors"
+      description="Color codes used for Factory Records cassette releases"
+    />
+  </head>
+  <body>
+    <main class="md:max-w-2xl lg:max-w-3xl mx-auto px-4 md:px-6">
+      <Header />
+      <article>
+        <div class="prose text-lg text-black">
+          <h1 class="text-3xl font-bold mb-6">
+            Factory Records Cassette Colors
+          </h1>
+          <Image
+            src="/fac_cassettes.jpeg"
+            alt="Factory Records Cassette Colors"
+            width={640}
+            height={227}
+            class="mb-6 rounded-md shadow-md"
+          />
+          <article>
+            <p>
+              Factory Records introduced distinctive boxed cassettes for select
+              artists in their catalog. These oversized packages featured
+              textured hessian covers in signature colors, each containing
+              miniature reproductions of the original album artwork.
+            </p>
+            <p>
+              Each box features a hessian/linen cloth exterior and includes
+              miniature versions of the original album artwork. Typography in
+              Bembo font by Phill Pennington.
+            </p>
+          </article>
+          <div class="space-y-8">
+            {
+              cassetteColors.map((artist) => (
+                <div
+                  class="border-l-8 pl-4"
+                  style={`border-color: ${artist.data.hexColor}`}
+                >
+                  <h2 class="text-xl font-bold flex items-center gap-2">
+                    {artist.data.name}
+                    <span
+                      class="w-6 h-6 rounded-full inline-block"
+                      style={`background-color: ${artist.data.hexColor}`}
+                      title={artist.data.color}
+                    />
+                  </h2>
+
+                  <div class="mt-2">
+                    <p class="text-gray-600">
+                      {artist.data.color} - {artist.data.hexColor}
+                    </p>
+                  </div>
+
+                  <ul class="mt-4 space-y-2">
+                    {artist.data.cassettes.map((cassette) => (
+                      <li class="flex gap-2">
+                        <span class="font-mono text-gray-500">
+                          {cassette.release}
+                        </span>
+                        <span>{cassette.title}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </article>
+      <Footer />
+    </main>
+  </body>
+</html>

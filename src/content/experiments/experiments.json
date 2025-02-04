@@ -19,5 +19,12 @@
     "title": "Play Me A Song",
     "description": "Search and if we find it, it'll open the song in Spotify!.",
     "tags": ["Val Town", "Spotify"]
+  },
+  {
+    "id": "factory-records-cassette-colors",
+    "url": "/factory_records/color_codes",
+    "title": "Factory Records Cassette Colors",
+    "description": "A list of the colors of the cassette releases from Factory Records.",
+    "tags": ["Factory Records"]
   }
 ]
