@@ -11,7 +11,7 @@ import '@fontsource/zilla-slab';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.props;
 ---
 
 <html lang="en">
@@ -28,13 +28,22 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
             <Image width={1024} height={576} src={heroImage} alt="" class="rounded-lg shadow-lg"/>
           </div>
         )}
-				<div>
-					<div class="py-4">
-						<h1 class="text-2xl font-bold">{title}</h1>
+				<div class="py-4">
+          <h1 class="text-2xl font-bold">{title}</h1>
+          <div class="flex flex-wrap gap-2 justify-between align-middle pt-4">
+          <p class="text-sm">
+            {tags.map((tag) => (
+              <span class="inline-block bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-sm mr-2 mb-2">{tag}</span>
+            ))}
+          </p>
+
+          <p class="text-sm">
             <FormattedDate date={pubDate} />
-					</div>
+          </p>
+        </div>
+
           <div class="prose dark:prose-invert text-lg ">
-          <slot />
+            <slot />
           </div>
 				</div>
 

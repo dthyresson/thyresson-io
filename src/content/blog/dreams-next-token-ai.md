@@ -4,6 +4,7 @@ description: "Rethinking Inspiration and Creativity in the Age of Generative AI"
 pubDate: "Jan 08 2025"
 updatedDate: "Feb 03 2025"
 heroImage: "/AloXZ_7VJFOa3-GwSh46k.jpeg"
+tags: ["AI", "Dreams", "Creativity"]
 ---
 
 > In your stream, live in a dream. (Red Hot Chili Peppers, I like dirt)

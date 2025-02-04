@@ -3,14 +3,14 @@
     "id": "bedtimestorymaker",
     "url": "https://dthyresson-bedtimestorymaker.web.val.run/bedtime_stories",
     "title": "Bedtime Storymaker",
-    "description": "A simple app that generates bedtime stories based on user input.",
+    "description": "A simple app that generates bedtime stories like you're a kid again.",
     "tags": ["Val Town"]
   },
   {
     "id": "moviemashup",
     "url": "https://dthyresson-moviemashup.web.val.run",
     "title": "Movie Mashup",
-    "description": "A simple app that generates a mashup of two movies based on user input.",
+    "description": "A simple app that generates a mashup of two movies. It's a fun way to see how different movies can be combined.",
     "tags": ["Val Town"]
   }
 ]

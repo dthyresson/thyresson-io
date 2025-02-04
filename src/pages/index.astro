@@ -73,6 +73,11 @@ const experiments = await getCollection('experiments');
               {experiment.data.description && (
                 <span> - {experiment.data.description}</span>
               )}
+              {experiment.data.tags && (
+                <span>{experiment.data.tags.map((tag) => (
+                  <span class="inline-block bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-sm mr-2 mb-2">{tag}</span>
+                ))}</span>
+              )}
             </li>
           ))}
         </ul>
