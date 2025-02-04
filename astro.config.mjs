@@ -10,7 +10,7 @@ export default defineConfig({
   prefetch: true,
   output: 'static',
   adapter: netlify(),
-  // site: 'https://example.com',
+  site: process.env.DEPLOY_URL || process.env.URL || 'http://localhost:4321',
   integrations: [mdx(), sitemap()],
   vite: {
     plugins: [tailwindcss()],
