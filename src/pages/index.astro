@@ -85,57 +85,59 @@ const experiments = await getCollection('experiments');
             }
           </ul>
           <h2 class="text-xl font-bold">About me</h2>
+          <div class="space-y-4">
+            <p>
+              <code>Thyresson</code> is a 🇸🇪-ish surname pronounced &quot;tear-eh-son&quot;
+              or simply: 😢 ☀️. It comes from
+              <a href="https://en.wikipedia.org/wiki/Norse_mythology"
+                >Norse Mythology</a
+              >: ᛏ &quot;son of
+              <a href="https://en.wikipedia.org/wiki/T%C3%BDr">Týr</a>&quot;.
+            </p>
 
+            <p>
+              I've been to lots of 🛫 airports:
+              {
+                airports.map((airport) => (
+                  <a class="pr-1" href={airport.data.url} target="_blank">
+                    {airport.data.id}
+                  </a>
+                ))
+              }
+            </p>
+          </div>
           <p>
-            <code>Thyresson</code> is a 🇸🇪-ish surname pronounced &quot;tear-eh-son&quot;
-            or simply: 😢 ☀️. It comes from
-            <a href="https://en.wikipedia.org/wiki/Norse_mythology"
-              >Norse Mythology</a
-            >: ᛏ &quot;son of
-            <a href="https://en.wikipedia.org/wiki/T%C3%BDr">Týr</a>&quot;.
+            I graduated from
+            <a href="https://www.andover.edu">Phillips Andover</a> and
+            <a href="https://www.middlebury.edu">Middlebury</a>.
           </p>
-
           <p>
-            I've been to lots of 🛫 airports:
-            {
-              airports.map((airport) => (
-                <a class="pr-1" href={airport.data.url} target="_blank">
-                  {airport.data.id}
-                </a>
-              ))
-            }
+            I've seen the 🏒
+            <a href="https://www.nhl.com/bruins/">Boston Bruins</a> play in three
+            <del>lose two</del> Stanley Cup Finals.
+          </p>
+          <p>
+            My first computers were the
+            <a href="https://en.wikipedia.org/wiki/Timex_Sinclair"
+              >Timex Sinclair</a
+            >, <a href="https://en.wikipedia.org/wiki/Apple_IIc">Apple IIc</a>,
+            <a href="https://en.wikipedia.org/wiki/Apple_IIGS">Apple IIGS</a>,
+            <a href="https://en.wikipedia.org/wiki/Amiga_2000">Amiga 2000</a>,
+            and
+            <a href="https://en.wikipedia.org/wiki/Macintosh_SE/30">Mac SE/30</a
+            >.
+          </p>
+          <p>
+            I also have <a href="https://github.com/dthyresson">GitHub</a>,
+            <a href="https://www.val.town/u/dthyresson">Val town</a>,
+            <a href="https://x.com/dthyresson">X</a>
+            <a href="https://bsky.app/profile/thyresson.co">Bluesky</a> and
+            <a href="https://www.linkedin.com/in/dthyresson/">LinkedIn</a>
+            pages.
           </p>
         </div>
-        <p>
-          I graduated from
-          <a href="https://www.andover.edu">Phillips Andover</a> and
-          <a href="https://www.middlebury.edu">Middlebury</a>.
-        </p>
-        <p>
-          I've seen the 🏒
-          <a href="https://www.nhl.com/bruins/">Boston Bruins</a> play in three <del
-            >lose two</del
-          > Stanley Cup Finals.
-        </p>
-        <p>
-          My first computers were the
-          <a href="https://en.wikipedia.org/wiki/Timex_Sinclair"
-            >Timex Sinclair</a
-          >, <a href="https://en.wikipedia.org/wiki/Apple_IIc">Apple IIc</a>,
-          <a href="https://en.wikipedia.org/wiki/Apple_IIGS">Apple IIGS</a>,
-          <a href="https://en.wikipedia.org/wiki/Amiga_2000">Amiga 2000</a>, and
-          <a href="https://en.wikipedia.org/wiki/Macintosh_SE/30">Mac SE/30</a>.
-        </p>
-        <p>
-          I also have <a href="https://github.com/dthyresson">GitHub</a>,
-          <a href="https://www.val.town/u/dthyresson">Val town</a>,
-          <a href="https://x.com/dthyresson">X</a>
-          <a href="https://bsky.app/profile/thyresson.co">Bluesky</a> and
-          <a href="https://www.linkedin.com/in/dthyresson/">LinkedIn</a>
-          pages.
-        </p>
       </article>
+      <Footer />
     </main>
-    <Footer />
   </body>
 </html>
