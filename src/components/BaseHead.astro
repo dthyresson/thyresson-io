@@ -10,21 +10,25 @@ interface Props {
   image?: string;
 }
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-
 const { title, description, image } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const faviconURL = new URL('/favicon.png', Astro.site);
+const sitemapURL = new URL('/sitemap-index.xml', Astro.site);
+const rssURL = new URL('rss.xml', Astro.site);
+const siteImageURL = image ? new URL(image, Astro.site) : undefined;
 ---
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" type="image/png" href="/favicon.png" />
-<link rel="sitemap" href="/sitemap-index.xml" />
+<link rel="icon" type="image/png" href={faviconURL} />
+<link rel="sitemap" href={sitemapURL} />
 <link
   rel="alternate"
   type="application/rss+xml"
   title={SITE_TITLE}
-  href={new URL('rss.xml', Astro.site)}
+  href={rssURL}
 />
 <meta name="generator" content={Astro.generator} />
 
@@ -43,15 +47,11 @@ const { title, description, image } = Astro.props;
 <meta property="og:url" content={canonicalURL} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-{image && <meta property="og:image" content={new URL(image, Astro.site)} />}
+{siteImageURL && <meta property="og:image" content={siteImageURL} />}
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={canonicalURL} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-{
-  image && (
-    <meta property="twitter:image" content={new URL(image, Astro.site)} />
-  )
-}
+{siteImageURL && <meta property="twitter:image" content={siteImageURL} />}
