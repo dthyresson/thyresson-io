@@ -4,8 +4,9 @@ This is a personal blog site for A. David Thyresson built using:
   - with Vite config
 - TailwindCSS for styles
 - deploys to Netlify
+- Uses libSQL and Turso for database
 
-Important:
+  Important:
 
 - Always answer with code for Astro
 - Always offer deploy with Netlify answers

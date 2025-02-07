@@ -15,3 +15,24 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `pnpm run format`          | Format your code with Prettier                   |
 | `pnpm run astro -- --help` | Get help using the Astro CLI                     |
+
+## Turso
+
+Show the database URL
+
+```bash
+turso db show <database-name> --url
+```
+
+Generate a new token
+
+```bash
+turso db tokens create <database-name>
+```
+
+### Set envars
+
+```bash
+export TURSO_DATABASE_URL=<database-url>
+export TURSO_AUTH_TOKEN=<token>
+```

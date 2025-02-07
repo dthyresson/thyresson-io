@@ -1,0 +1,44 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import { turso } from '../../turso';
+
+const { rows } = await turso.execute({
+  sql: 'SELECT * FROM music_collection order by release_year asc',
+  args: [],
+});
+
+console.log(rows);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title={`Music Collection | ${SITE_TITLE}`}
+      description={SITE_DESCRIPTION}
+    />
+  </head>
+  <body>
+    <main class="md:max-w-2xl lg:max-w-3xl mx-auto px-4 md:px-6">
+      <Header />
+      <article>
+        <div class="prose text-lg text-black">
+          <h1 class="text-3xl font-bold mb-6">Music Collection</h1>
+          <ul class="space-y-2">
+            {
+              rows.map((row) => (
+                <li class="text-lg">
+                  {row.artist} - {row.title} ({row.release_year})
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </article>
+      <Footer />
+    </main>
+  </body>
+</html>
