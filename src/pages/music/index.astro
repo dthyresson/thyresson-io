@@ -3,16 +3,15 @@ import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
-import { turso } from '../../turso';
 
-const { rows } = await turso.execute({
-  sql: 'SELECT * FROM music_collection ORDER BY artist, release_year',
-  args: [],
-});
+import { db, Music, asc, desc } from 'astro:db';
+
+const music = await db
+  .select()
+  .from(Music)
+  .orderBy(asc(Music.artist), desc(Music.release_year));
 
 export const prerender = false;
-
-console.log(rows);
 ---
 
 <!doctype html>
@@ -31,9 +30,9 @@ console.log(rows);
           <h1 class="text-3xl font-bold mb-6">Music Collection</h1>
           <ul class="space-y-2">
             {
-              rows.map((row) => (
+              music.map((release) => (
                 <li class="text-lg">
-                  {row.artist} - {row.title} ({row.release_year})
+                  {release.artist} - {release.title} ({release.release_year})
                 </li>
               ))
             }

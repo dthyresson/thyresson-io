@@ -1,14 +1,21 @@
 This is a personal blog site for A. David Thyresson built using:
 
-- Astro static site framework
-  - with Vite config
+- Astro framework
+  - has static site generator
+    - most pages will be static and prerendered
+  - has database adapter
+    - uses Astro DB adapter
+    - uses Turso as remote production database
+    - these pages will be dynamic and not prerendered
+  - has Netlify adapter for SSR
 - TailwindCSS for styles
 - deploys to Netlify
-- Uses libSQL and Turso for database
+  - for static pages
+  - for dynamic pages (SSR)
+
 
   Important:
 
-- Always answer with code for Astro
-- Always offer deploy with Netlify answers
+- Only answer with code for Astro framework
 - Always use spaces, not tabs
-- Always be concise, but helpful to someone learning Astro
+- Always be concise, but helpful

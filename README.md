@@ -16,7 +16,7 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm run format`          | Format your code with Prettier                   |
 | `pnpm run astro -- --help` | Get help using the Astro CLI                     |
 
-## Turso
+## Astro DB / Turso
 
 Show the database URL
 
@@ -32,7 +32,19 @@ turso db tokens create <database-name>
 
 ### Set envars
 
+```
+ASTRO_DB_REMOTE_URL=
+ASTRO_DB_APP_TOKEN=
+```
+
+You can push your local schema changes to your remote database via the CLI using the `astro db push --remote` command:
+
 ```bash
-export TURSO_DATABASE_URL=<database-url>
-export TURSO_AUTH_TOKEN=<token>
+pnpm astro db push --remote
+```
+
+Seed the *remote* database (Caution!)
+
+```bash
+pnpm astro db execute db/seed.ts --remote
 ```

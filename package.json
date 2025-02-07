@@ -4,22 +4,23 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build --remote",
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@astrojs/db": "^0.14.6",
     "@astrojs/mdx": "^4.0.8",
     "@astrojs/netlify": "^6.1.0",
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.2.1",
     "@fontsource/zilla-slab": "^5.1.1",
     "@libsql/client": "^0.14.0",
-    "@tailwindcss/vite": "^4.0.3",
-    "astro": "^5.2.3",
+    "@tailwindcss/vite": "^4.0.4",
+    "astro": "^5.2.5",
     "dotenv": "^16.4.7",
-    "tailwindcss": "^4.0.3"
+    "tailwindcss": "^4.0.4"
   },
   "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c",
   "devDependencies": {
