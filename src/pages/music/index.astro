@@ -6,9 +6,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { turso } from '../../turso';
 
 const { rows } = await turso.execute({
-  sql: 'SELECT * FROM music_collection order by release_year asc',
+  sql: 'SELECT * FROM music_collection ORDER BY artist, release_year',
   args: [],
 });
+
+export const prerender = false;
 
 console.log(rows);
 ---
