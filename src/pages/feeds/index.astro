@@ -1,0 +1,159 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { AtpAgent } from '@atproto/api';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import { formatDistanceToNow } from 'date-fns';
+
+// Initialize the BlueSky agent``
+const agent = new AtpAgent({ service: 'https://bsky.social' });
+
+// Login using environment variables
+try {
+  await agent.login({
+    identifier: import.meta.env.BSKY_USERNAME,
+    password: import.meta.env.BSKY_APP_PASSWORD,
+  });
+} catch (error) {
+  console.error('Failed to login to BlueSky:', error);
+}
+
+// The DID for your account:
+const myDid = agent.session?.did;
+
+console.log(myDid);
+const PWV_PORTFOLIO_FEED_ID = '3lbkbx6khxa22';
+const listUri = `at://${myDid}/app.bsky.graph.list/${PWV_PORTFOLIO_FEED_ID}`;
+
+let postsArray = [];
+let nextPage = '';
+const limit = 24; // 20 posts per page
+
+// Get cursor from URL params
+const cursor = Astro.url.searchParams.get('cursor') || '';
+
+try {
+  const { data } = (await agent.api.app.bsky.feed.getListFeed({
+    list: listUri,
+    cursor,
+    limit, // optional
+  })) as {
+    data: {
+      feed: any[];
+      cursor: string;
+    };
+  };
+
+  // Build link with the handle:
+  postsArray = data.feed.map((item) => ({
+    ...item,
+    handle: item.post.author.handle,
+    rkey: item.post.uri.split('/')[4],
+    postLink: `https://bsky.app/profile/${item.post.author.handle}/post/${item.post.uri.split('/')[4]}`,
+    formattedDate: formatDistanceToNow(item.post.record.createdAt, {
+      addSuffix: true,
+    }),
+  }));
+
+  nextPage = data.cursor ?? '';
+} catch (error) {
+  console.error('Failed to fetch feed:', error);
+}
+export const prerender = false;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title={`PWV Portfolio Feed | ${SITE_TITLE}`}
+      description={SITE_DESCRIPTION}
+    />
+  </head>
+  <body>
+    <main class="md:max-w-2xl lg:max-w-3xl mx-auto px-4 md:px-6">
+      <Header />
+      <h1 class="text-4xl font-bold mb-4">PWV Portfolio Feed</h1>
+      <h2 class="text-xl font-bold mb-4 text-gray-500 font-sans">
+        What our portfolio companies are saying on BlueSky...
+      </h2>
+      <div class="space-y-6 font-sans">
+        {
+          postsArray.map((item) => (
+            <article class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+              <a href={item.postLink} target="_blank" class="block">
+                <div class="flex items-start gap-4">
+                  <img
+                    src={item.post.author.avatar}
+                    alt={item.post.author.displayName}
+                    class="w-12 h-12 rounded-full"
+                  />
+                  <div class="w-full">
+                    <div class="flex items-center gap-2">
+                      <h2 class="font-semibold">
+                        {item.post.author.displayName != '' && (
+                          <span>{item.post.author.displayName}</span>
+                        )}
+                        <span class="text-gray-600">
+                          @{item.post.author.handle}
+                        </span>
+                        <span class="text-gray-500 font-normal text-sm">
+                          {item.formattedDate}
+                        </span>
+                      </h2>
+                    </div>
+                    <div class="w-full">
+                      <p class="mt-2 w-full">{item.post.record.text}</p>
+                      {item.post.embed?.images?.[0]?.thumb && (
+                        <img
+                          src={item.post.embed.images[0].thumb}
+                          alt={
+                            item.post.embed.images[0].alt || 'Post thumbnail'
+                          }
+                          class="mt-2 rounded-lg max-w-full w-1/2 object-cover"
+                        />
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+          ))
+        }
+      </div>
+
+      <!-- Add pagination links -->
+      <div class="my-8 flex justify-between items-center font-sans">
+        {
+          cursor && (
+            <div class="flex gap-4">
+              <a
+                href="/feeds"
+                class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+              >
+                Previous
+              </a>
+              <a
+                href="/feeds?cursor="
+                class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600"
+              >
+                Top
+              </a>
+            </div>
+          )
+        }
+        {
+          nextPage && (
+            <a
+              href={`/feeds?cursor=${nextPage}`}
+              class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 ml-auto"
+            >
+              Next
+            </a>
+          )
+        }
+      </div>
+    </main>
+  </body>
+</html>

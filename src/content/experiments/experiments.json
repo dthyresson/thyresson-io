@@ -1,5 +1,19 @@
 [
   {
+    "id": "pwv-portfolio-feed",
+    "url": "/feeds",
+    "title": "PWV Portfolio Feed",
+    "description": "A feed of BlueSky posts from the PWV Portfolio companies.",
+    "tags": ["PWV", "Portfolio", "BlueSky"]
+  },
+  {
+    "id": "turso-database-experiment",
+    "url": "/music",
+    "title": "Turso Database Experiment",
+    "description": "An experiment to fetch music releases from a table in a Turso database.",
+    "tags": ["Turso", "Database"]
+  },
+  {
     "id": "bedtimestorymaker",
     "url": "https://dthyresson-bedtimestorymaker.web.val.run/bedtime_stories",
     "title": "Bedtime Storymaker",

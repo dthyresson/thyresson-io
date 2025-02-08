@@ -5,6 +5,8 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 
+import db from '@astrojs/db';
+
 // https://astro.build/config
 export default defineConfig({
   prefetch: true,
@@ -15,7 +17,7 @@ export default defineConfig({
     process.env.DEPLOY_URL ||
     process.env.URL ||
     'http://localhost:4321',
-  integrations: [mdx(), sitemap()],
+  integrations: [mdx(), sitemap(), db()],
   vite: {
     plugins: [tailwindcss()],
   },
