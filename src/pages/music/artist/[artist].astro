@@ -1,0 +1,90 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../../consts';
+import { db, Tracks, asc, eq } from 'astro:db';
+
+function formatDuration(seconds: number) {
+  const mins = Math.floor(seconds / 60_000);
+  const secs = seconds % 60;
+  return `${mins}:${secs.toString().padStart(2, '0')}`;
+}
+
+const { artist } = Astro.params;
+
+if (!artist) {
+  return Astro.redirect('/music');
+}
+
+const tracks = await db
+  .select()
+  .from(Tracks)
+  .where(eq(Tracks.artist, artist))
+  .orderBy(asc(Tracks.year), asc(Tracks.album), asc(Tracks.name));
+
+export const prerender = false;
+
+// The browser should always check freshness
+Astro.response.headers.set(
+  'cache-control',
+  'public, max-age=0, must-revalidate'
+);
+
+// The CDN should cache for a week, but revalidate if the cache tag changes
+Astro.response.headers.set('netlify-cdn-cache-control', 's-maxage=604800');
+
+// Tag the page with the content type
+// cache tag is used to invalidate the cache when the page is updated
+// tag is made up of the first post's rkey
+const cacheTag = `pwv-music-collection-${artist}`;
+Astro.response.headers.set('netlify-cache-tag', cacheTag);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title={`${artist} | Music Collection | ${SITE_TITLE}`}
+      description={SITE_DESCRIPTION}
+    />
+  </head>
+  <body>
+    <main class="md:max-w-2xl lg:max-w-3xl mx-auto px-4 md:px-6">
+      <Header />
+      <article>
+        <div class="prose text-lg text-black">
+          <h1 class="text-3xl font-bold mb-6">
+            🎤 {decodeURIComponent(artist)}
+          </h1>
+
+          <div class="space-y-4">
+            {
+              tracks.map((track) => (
+                <div class="bg-white rounded-lg shadow-md p-4">
+                  <h2 class="font-semibold text-xl">🎵 {track.name}</h2>
+                  <p class="text-gray-600">💿 {track.album}</p>
+                  <p class="text-gray-600">
+                    🕒 {formatDuration(track.duration ?? 0)}
+                  </p>
+                  <p class="text-gray-600">🎶 {track.genre}</p>
+                  <p class="text-gray-600">🗓️ {track.year}</p>
+                </div>
+              ))
+            }
+          </div>
+
+          <div class="mt-8">
+            <a
+              href="/music"
+              class="text-blue-600 hover:text-blue-800 font-medium"
+            >
+              ← Back to Music Collection
+            </a>
+          </div>
+        </div>
+      </article>
+      <Footer />
+    </main>
+  </body>
+</html>
