@@ -124,7 +124,7 @@ export const prerender = false;
       </div>
 
       <!-- Add pagination links -->
-      <div class="mt-8 flex justify-between items-center">
+      <div class="my-8 flex justify-between items-center font-sans">
         {
           cursor && (
             <div class="flex gap-4">
@@ -132,13 +132,13 @@ export const prerender = false;
                 href="/feeds"
                 class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
               >
-                Previous Page
+                Previous
               </a>
               <a
                 href="/feeds?cursor="
                 class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600"
               >
-                Go to Top
+                Top
               </a>
             </div>
           )
@@ -149,7 +149,7 @@ export const prerender = false;
               href={`/feeds?cursor=${nextPage}`}
               class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 ml-auto"
             >
-              Next Page
+              Next
             </a>
           )
         }
