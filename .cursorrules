@@ -12,7 +12,7 @@ This is a personal blog site for A. David Thyresson built using:
 - deploys to Netlify
   - for static pages
   - for dynamic pages (SSR)
-
+- Use pnpm as package manager (not yarn or npm)
 
   Important:
 

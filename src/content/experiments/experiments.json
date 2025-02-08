@@ -1,5 +1,13 @@
 [
   {
+    "id": "PWV Portfolio Feed",
+    "url": "/feeds",
+    "title": "PWV Portfolio Feed",
+    "description": "A feed of BlueSky posts from the PWV Portfolio companies.",
+    "tags": ["PWV", "Portfolio", "BlueSky"]
+  },
+
+  {
     "id": "bedtimestorymaker",
     "url": "https://dthyresson-bedtimestorymaker.web.val.run/bedtime_stories",
     "title": "Bedtime Storymaker",
