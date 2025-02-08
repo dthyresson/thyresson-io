@@ -74,10 +74,7 @@ Astro.response.headers.set('netlify-cdn-cache-control', 's-maxage=3600');
 // cache tag is used to invalidate the cache when the page is updated
 // tag is made up of the first post's rkey
 const cacheTag = postsArray[0]?.rkey ?? 'pwv-portfolio-feed';
-Astro.response.headers.set(
-  'netlify-cache-tag',
-  postsArray[0]?.rkey ?? 'pwv-portfolio-feed'
-);
+Astro.response.headers.set('netlify-cache-tag', cacheTag);
 ---
 
 <!doctype html>
