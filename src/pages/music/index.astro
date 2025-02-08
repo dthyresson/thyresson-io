@@ -5,14 +5,21 @@ import Footer from '../../components/Footer.astro';
 import ArtistSearch from '../../components/ArtistSearch';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 
-import { db, Tracks, asc, and, gte, lte, eq } from 'astro:db';
+import { db, Tracks, asc, and, gte, lte } from 'astro:db';
+
+const yearRange = {
+  start: 1984,
+  end: 1999,
+};
 
 const artists = await db
   .selectDistinct({
     artist: Tracks.artist,
   })
   .from(Tracks)
-  .where(and(gte(Tracks.year, 1984), lte(Tracks.year, 1999)))
+  .where(
+    and(gte(Tracks.year, yearRange.start), lte(Tracks.year, yearRange.end))
+  )
   .groupBy(Tracks.artist)
   .orderBy(asc(Tracks.artist));
 
@@ -69,7 +76,7 @@ Astro.response.headers.set('netlify-cdn-cache-control', 's-maxage=604800');
 // Tag the page with the content type
 // cache tag is used to invalidate the cache when the page is updated
 // tag is made up of the first post's rkey
-const cacheTag = `pwv-music-collection-${artists.length}`;
+const cacheTag = `pwv-music-collection-${yearRange.start}-${yearRange.end}`;
 Astro.response.headers.set('netlify-cache-tag', cacheTag);
 ---
 
