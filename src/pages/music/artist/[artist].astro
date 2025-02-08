@@ -24,6 +24,21 @@ const tracks = await db
   .orderBy(asc(Tracks.year), asc(Tracks.album), asc(Tracks.name));
 
 export const prerender = false;
+
+// The browser should always check freshness
+Astro.response.headers.set(
+  'cache-control',
+  'public, max-age=0, must-revalidate'
+);
+
+// The CDN should cache for a week, but revalidate if the cache tag changes
+Astro.response.headers.set('netlify-cdn-cache-control', 's-maxage=604800');
+
+// Tag the page with the content type
+// cache tag is used to invalidate the cache when the page is updated
+// tag is made up of the first post's rkey
+const cacheTag = `pwv-music-collection-${artist}`;
+Astro.response.headers.set('netlify-cache-tag', cacheTag);
 ---
 
 <!doctype html>

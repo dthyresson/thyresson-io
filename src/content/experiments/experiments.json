@@ -7,10 +7,10 @@
     "tags": ["PWV", "Portfolio", "BlueSky"]
   },
   {
-    "id": "turso-database-experiment",
+    "id": "music-collection",
     "url": "/music",
-    "title": "Turso Database Experiment",
-    "description": "An experiment to fetch music releases from a table in a Turso database.",
+    "title": "Music Collection",
+    "description": "An experiment to fetch music collection from a Turso database loaded with an old iTunes Music Library export.",
     "tags": ["Turso", "Database"]
   },
   {
