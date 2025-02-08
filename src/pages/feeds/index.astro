@@ -22,7 +22,6 @@ try {
 // The DID for your account:
 const myDid = agent.session?.did;
 
-console.log(myDid);
 const PWV_PORTFOLIO_FEED_ID = '3lbkbx6khxa22';
 const listUri = `at://${myDid}/app.bsky.graph.list/${PWV_PORTFOLIO_FEED_ID}`;
 
@@ -61,6 +60,24 @@ try {
   console.error('Failed to fetch feed:', error);
 }
 export const prerender = false;
+
+// The browser should always check freshness
+Astro.response.headers.set(
+  'cache-control',
+  'public, max-age=0, must-revalidate'
+);
+
+// The CDN should cache for an hour, but revalidate if the cache tag changes
+Astro.response.headers.set('netlify-cdn-cache-control', 's-maxage=3600');
+
+// Tag the page with the content type
+// cache tag is used to invalidate the cache when the page is updated
+// tag is made up of the first post's rkey
+const cacheTag = postsArray[0]?.rkey ?? 'pwv-portfolio-feed';
+Astro.response.headers.set(
+  'netlify-cache-tag',
+  postsArray[0]?.rkey ?? 'pwv-portfolio-feed'
+);
 ---
 
 <!doctype html>
