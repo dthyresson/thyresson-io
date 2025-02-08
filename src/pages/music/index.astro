@@ -2,15 +2,17 @@
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import ArtistSearch from '../../components/ArtistSearch';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 
-import { db, Tracks, asc } from 'astro:db';
+import { db, Tracks, asc, and, gte, lte, eq } from 'astro:db';
 
 const artists = await db
   .selectDistinct({
     artist: Tracks.artist,
   })
   .from(Tracks)
+  .where(and(gte(Tracks.year, 1984), lte(Tracks.year, 1999)))
   .groupBy(Tracks.artist)
   .orderBy(asc(Tracks.artist));
 
@@ -44,6 +46,14 @@ const sortedGroups = Object.keys(groupedArtists).sort((a, b) => {
   if (b === '?') return -1;
   return a.localeCompare(b);
 });
+
+// Transform the data for the search component
+const artistsForSearch = sortedGroups.map((letter) => ({
+  letter,
+  names: groupedArtists[letter]
+    .map((a) => a.artist)
+    .filter(Boolean) as string[],
+}));
 
 export const prerender = false;
 
@@ -82,101 +92,13 @@ Astro.response.headers.set('netlify-cache-tag', cacheTag);
             into a Turso database. You can pick an artist to see some of their
             tracks.
           </p>
+          <p>
+            Sinc there are 25k+ tracks, am filtering from mid 80s through the
+            90s.
+          </p>
           <p>It's incomplete and a bit messy, but it's a start.</p>
 
-          {
-            sortedGroups.map((letter) => (
-              <div class="mb-8">
-                <h2 class="text-2xl font-bold mb-4">{letter}</h2>
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                  {groupedArtists[letter].map((artist) => {
-                    if (!artist.artist) {
-                      return null;
-                    }
-
-                    // Get a color based on artist name length
-                    const colorFamilies = [
-                      'red',
-                      'blue',
-                      'green',
-                      'purple',
-                      'orange',
-                      'teal',
-                      'indigo',
-                      'pink',
-                    ];
-                    const colorIndex =
-                      artist.artist.length % colorFamilies.length;
-                    const colorFamily = colorFamilies[colorIndex];
-
-                    // Vary the intensity between 300-600 based on first character code
-                    const intensities = [300, 400, 500, 600];
-                    const intensityIndex =
-                      artist.artist.charCodeAt(0) % intensities.length;
-                    const intensity = intensities[intensityIndex];
-
-                    const bgColorClass = `bg-${colorFamily}-${intensity}`;
-                    // Create an object mapping all possible color combinations
-                    const bgColors = {
-                      'red-300': 'bg-red-300',
-                      'red-400': 'bg-red-400',
-                      'red-500': 'bg-red-500',
-                      'red-600': 'bg-red-600',
-                      'blue-300': 'bg-blue-300',
-                      'blue-400': 'bg-blue-400',
-                      'blue-500': 'bg-blue-500',
-                      'blue-600': 'bg-blue-600',
-                      'green-300': 'bg-green-300',
-                      'green-400': 'bg-green-400',
-                      'green-500': 'bg-green-500',
-                      'green-600': 'bg-green-600',
-                      'purple-300': 'bg-purple-300',
-                      'purple-400': 'bg-purple-400',
-                      'purple-500': 'bg-purple-500',
-                      'purple-600': 'bg-purple-600',
-                      'orange-300': 'bg-orange-300',
-                      'orange-400': 'bg-orange-400',
-                      'orange-500': 'bg-orange-500',
-                      'orange-600': 'bg-orange-600',
-                      'teal-300': 'bg-teal-300',
-                      'teal-400': 'bg-teal-400',
-                      'teal-500': 'bg-teal-500',
-                      'teal-600': 'bg-teal-600',
-                      'indigo-300': 'bg-indigo-300',
-                      'indigo-400': 'bg-indigo-400',
-                      'indigo-500': 'bg-indigo-500',
-                      'indigo-600': 'bg-indigo-600',
-                      'pink-300': 'bg-pink-300',
-                      'pink-400': 'bg-pink-400',
-                      'pink-500': 'bg-pink-500',
-                      'pink-600': 'bg-pink-600',
-                    } as const;
-
-                    const finalBgClass =
-                      bgColors[
-                        `${colorFamily}-${intensity}` as keyof typeof bgColors
-                      ];
-                    return (
-                      <div class="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
-                        <a
-                          href={`/music/artist/${encodeURIComponent(artist.artist)}`}
-                        >
-                          <div
-                            class={`aspect-square ${finalBgClass} rounded-md mb-3 flex items-center justify-center`}
-                          >
-                            <span class="text-4xl text-white">🎵</span>
-                          </div>
-                          <h2 class="font-bold text-lg leading-tight mb-1">
-                            {artist.artist}
-                          </h2>
-                        </a>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            ))
-          }
+          <ArtistSearch artists={artistsForSearch} client:load />
         </div>
       </article>
       <Footer />
