@@ -4,6 +4,7 @@ import netlify from '@astrojs/netlify';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
+import react from '@astrojs/react';
 
 import db from '@astrojs/db';
 
@@ -17,7 +18,7 @@ export default defineConfig({
     process.env.DEPLOY_URL ||
     process.env.URL ||
     'http://localhost:4321',
-  integrations: [mdx(), sitemap(), db()],
+  integrations: [mdx(), sitemap(), db(), react()],
   vite: {
     plugins: [tailwindcss()],
   },
