@@ -5,13 +5,14 @@ import Footer from '../../components/Footer.astro';
 import ArtistSearch from '../../components/ArtistSearch';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 
-import { db, Tracks, asc } from 'astro:db';
+import { db, Tracks, asc, and, gte, lte, eq } from 'astro:db';
 
 const artists = await db
   .selectDistinct({
     artist: Tracks.artist,
   })
   .from(Tracks)
+  .where(and(gte(Tracks.year, 1984), lte(Tracks.year, 1999)))
   .groupBy(Tracks.artist)
   .orderBy(asc(Tracks.artist));
 
@@ -90,6 +91,10 @@ Astro.response.headers.set('netlify-cache-tag', cacheTag);
             This experiment exported an old iTunes Library to XML and loaded
             into a Turso database. You can pick an artist to see some of their
             tracks.
+          </p>
+          <p>
+            Sinc there are 25k+ tracks, am filtering from mid 80s through the
+            90s.
           </p>
           <p>It's incomplete and a bit messy, but it's a start.</p>
 
