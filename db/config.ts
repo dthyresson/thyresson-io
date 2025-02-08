@@ -25,6 +25,32 @@ const Music = defineTable({
   ],
 });
 
+const Tracks = defineTable({
+  columns: {
+    track_id: column.number({ primaryKey: true }),
+    name: column.text({ optional: true }),
+    artist: column.text({ optional: true }),
+    album: column.text({ optional: true }),
+    genre: column.text({ optional: true }),
+    duration: column.number({ optional: true }),
+    year: column.number({ optional: true }),
+    date_added: column.date({ default: sql`CURRENT_TIMESTAMP` }),
+    play_count: column.number({ default: 0 }),
+  },
+  indexes: [
+    {
+      on: ['artist'],
+    },
+    {
+      on: ['album'],
+    },
+    {
+      on: ['artist', 'name'],
+      unique: true,
+    },
+  ],
+});
+
 export default defineDb({
-  tables: { Music }
+  tables: { Music, Tracks },
 });

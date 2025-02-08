@@ -4,12 +4,21 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 
-import { db, Music, asc, desc } from 'astro:db';
+import { db, Tracks, asc, desc, count } from 'astro:db';
 
 const music = await db
   .select()
-  .from(Music)
-  .orderBy(asc(Music.artist), desc(Music.release_year));
+  .from(Tracks)
+  .orderBy(asc(Tracks.artist), asc(Tracks.album), asc(Tracks.name))
+  .limit(500);
+
+const artists = await db
+  .selectDistinct({
+    artist: Tracks.artist,
+  })
+  .from(Tracks)
+  .groupBy(Tracks.artist)
+  .orderBy(asc(Tracks.artist));
 
 export const prerender = false;
 ---
@@ -28,15 +37,101 @@ export const prerender = false;
       <article>
         <div class="prose text-lg text-black">
           <h1 class="text-3xl font-bold mb-6">Music Collection</h1>
-          <ul class="space-y-2">
+          <p>
+            This experiment exported an old iTunes Library to XML and loaded
+            into a Turso database. You can pick an artist to see some of their
+            tracks.
+          </p>
+          <p>
+            It's not a complete collection of what I have, but it's a start.
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {
-              music.map((release) => (
-                <li class="text-lg">
-                  {release.artist} - {release.title} ({release.release_year})
-                </li>
-              ))
+              artists.map((artist) => {
+                if (!artist.artist) {
+                  return null;
+                }
+
+                // Get a color based on artist name length
+                const colorFamilies = [
+                  'red',
+                  'blue',
+                  'green',
+                  'purple',
+                  'orange',
+                  'teal',
+                  'indigo',
+                  'pink',
+                ];
+                const colorIndex = artist.artist.length % colorFamilies.length;
+                const colorFamily = colorFamilies[colorIndex];
+
+                // Vary the intensity between 300-600 based on first character code
+                const intensities = [300, 400, 500, 600];
+                const intensityIndex =
+                  artist.artist.charCodeAt(0) % intensities.length;
+                const intensity = intensities[intensityIndex];
+
+                const bgColorClass = `bg-${colorFamily}-${intensity}`;
+                // Create an object mapping all possible color combinations
+                const bgColors = {
+                  'red-300': 'bg-red-300',
+                  'red-400': 'bg-red-400',
+                  'red-500': 'bg-red-500',
+                  'red-600': 'bg-red-600',
+                  'blue-300': 'bg-blue-300',
+                  'blue-400': 'bg-blue-400',
+                  'blue-500': 'bg-blue-500',
+                  'blue-600': 'bg-blue-600',
+                  'green-300': 'bg-green-300',
+                  'green-400': 'bg-green-400',
+                  'green-500': 'bg-green-500',
+                  'green-600': 'bg-green-600',
+                  'purple-300': 'bg-purple-300',
+                  'purple-400': 'bg-purple-400',
+                  'purple-500': 'bg-purple-500',
+                  'purple-600': 'bg-purple-600',
+                  'orange-300': 'bg-orange-300',
+                  'orange-400': 'bg-orange-400',
+                  'orange-500': 'bg-orange-500',
+                  'orange-600': 'bg-orange-600',
+                  'teal-300': 'bg-teal-300',
+                  'teal-400': 'bg-teal-400',
+                  'teal-500': 'bg-teal-500',
+                  'teal-600': 'bg-teal-600',
+                  'indigo-300': 'bg-indigo-300',
+                  'indigo-400': 'bg-indigo-400',
+                  'indigo-500': 'bg-indigo-500',
+                  'indigo-600': 'bg-indigo-600',
+                  'pink-300': 'bg-pink-300',
+                  'pink-400': 'bg-pink-400',
+                  'pink-500': 'bg-pink-500',
+                  'pink-600': 'bg-pink-600',
+                } as const;
+
+                const finalBgClass =
+                  bgColors[
+                    `${colorFamily}-${intensity}` as keyof typeof bgColors
+                  ];
+                return (
+                  <div class="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+                    <a
+                      href={`/music/artist/${encodeURIComponent(artist.artist)}`}
+                    >
+                      <div
+                        class={`aspect-square ${finalBgClass} rounded-md mb-3 flex items-center justify-center`}
+                      >
+                        <span class="text-4xl text-white">🎵</span>
+                      </div>
+                      <h2 class="font-bold text-lg leading-tight mb-1">
+                        {artist.artist}
+                      </h2>
+                    </a>
+                  </div>
+                );
+              })
             }
-          </ul>
+          </div>
         </div>
       </article>
       <Footer />
