@@ -1,0 +1,43 @@
+---
+title: 'Stattleship Early History and SSAC Tradeshow Pitch'
+description: "A tradeshow pitch I did at MIT's Sloan Sports Conference in 2012 about Stattleship, a platform that gamified sports data."
+author: 'A. David Thyresson'
+pubDate: '2012 Feb 22'
+updatedDate: '2025 Feb 11'
+heroImage: '/stattleship_deck/stattleship_tradeshow_pitch_570x490.001.png'
+tags: ['Sports', 'Stattleship', 'SSAC']
+---
+
+## Some background
+
+This was a tradeshow pitch I did at MIT's Sloan Sports Conference in 2012.
+
+![Stattleship SSAC Booth](/stattleship_ssac_booth.jpg)
+
+I was working on Stattleship, a platform that gamified sports data.
+
+This was just around when sports betting sites like DraftKings and FanDuel were starting up.
+
+Stattleship was a platform for sports fans to interact with sports data - but wasn't gambling.
+
+Instead it created "stats games" combined features of sports blogging with game dynamics to create a new kind of sports experience around predicting the outcome of games, players achievements, and more.
+
+Ultimately, the market for Stattleship never took off because 1) I didn't go mobile first ... first 2) people wanted to gamble for real money 3) even though I eventually built an autmoated stats prediciton engine to generate content, it had a hard time competing with the sports betting sites.
+
+That said, the experience lead be to learn Ruby on Rails, work with toughtbot here in Boston, explore modern web app deployment, try out some early iOS development, and more.
+
+Lessons were applied to Spogo, the next company I co-founded which was a mobile app for predicitve sports gaming that partnered with local bars and restaurants to create a new kind of sports experience around socializing and sports gaming. It was acquired in 2015.
+
+---
+
+## Slides
+
+![Stattleship Tradeshow Pitch](/stattleship_deck/stattleship_tradeshow_pitch_570x490.001.png)
+![Stattleship Tradeshow Pitch](/stattleship_deck/stattleship_tradeshow_pitch_570x490.002.png)
+![Stattleship Tradeshow Pitch](/stattleship_deck/stattleship_tradeshow_pitch_570x490.003.png)
+![Stattleship Tradeshow Pitch](/stattleship_deck/stattleship_tradeshow_pitch_570x490.004.jpg)
+![Stattleship Tradeshow Pitch](/stattleship_deck/stattleship_tradeshow_pitch_570x490.005.jpg)
+![Stattleship Tradeshow Pitch](/stattleship_deck/stattleship_tradeshow_pitch_570x490.006.jpg)
+![Stattleship Tradeshow Pitch](/stattleship_deck/stattleship_tradeshow_pitch_570x490.007.jpg)
+![Stattleship Tradeshow Pitch](/stattleship_deck/stattleship_tradeshow_pitch_570x490.008.jpg)
+![Stattleship Tradeshow Pitch](/stattleship_deck/stattleship_tradeshow_pitch_570x490.009.jpg)

@@ -20,7 +20,7 @@ Key points of the research:
 - Focused on NHL player statistics as the test case
 - Challenged traditional sabermetrics by suggesting collective fan wisdom could match or exceed pure statistical analysis
 
-It lead to the development of Stattleship and Spogo, and also some work in Sports Innovation Lab.
+It lead to the development of [Stattleship](/blog/post-stattleship-ssac-tradeshow-pitch) and Spogo, and also some work in Sports Innovation Lab.
 
 ---
 
