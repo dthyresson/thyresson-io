@@ -22,34 +22,140 @@ This is an unfinished deck, but one day I want to explore this idea further.
 
 ---
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.001.jpeg)
+import { Image } from 'astro:assets';
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.002.jpeg)
+<Image
+  src="/startup-as-a-service/startup-as-a-service.001.jpeg"
+  alt="Startups as a Service Band"
+  width={800}
+  height={450}
+  format="webp"
+/>
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.003.jpeg)
+<Image
+  src="/startup-as-a-service/startup-as-a-service.002.jpeg"
+  alt="Startups as a Service Band"
+  width={800}
+  height={450}
+  format="webp"
+/>
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.004.jpeg)
+<Image
+  src="/startup-as-a-service/startup-as-a-service.003.jpeg"
+  alt="Startups as a Service Band"
+  width={800}
+  height={450}
+  format="webp"
+/>
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.005.jpeg)
+<Image
+  src="/startup-as-a-service/startup-as-a-service.004.jpeg"
+  alt="Startups as a Service Band"
+  width={800}
+  height={450}
+  format="webp"
+/>
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.006.jpeg)
+<Image
+  src="/startup-as-a-service/startup-as-a-service.005.jpeg"
+  alt="Startups as a Service Band"
+  width={800}
+  height={450}
+  format="webp"
+/>
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.007.jpeg)
+<Image
+  src="/startup-as-a-service/startup-as-a-service.006.jpeg"
+  alt="Startups as a Service Band"
+  width={800}
+  height={450}
+  format="webp"
+/>
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.008.jpeg)
+<Image
+  src="/startup-as-a-service/startup-as-a-service.007.jpeg"
+  alt="Startups as a Service Band"
+  width={800}
+  height={450}
+  format="webp"
+/>
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.009.jpeg)
+<Image
+  src="/startup-as-a-service/startup-as-a-service.008.jpeg"
+  alt="Startups as a Service Band"
+  width={800}
+  height={450}
+  format="webp"
+/>
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.010.jpeg)
+<Image
+  src="/startup-as-a-service/startup-as-a-service.009.jpeg"
+  alt="Startups as a Service Band"
+  width={800}
+  height={450}
+  format="webp"
+/>
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.011.jpeg)
+<Image
+  src="/startup-as-a-service/startup-as-a-service.010.jpeg"
+  alt="Startups as a Service Band"
+  width={800}
+  height={450}
+  format="webp"
+/>
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.012.jpeg)
+<Image
+  src="/startup-as-a-service/startup-as-a-service.011.jpeg"
+  alt="Startups as a Service Band"
+  width={800}
+  height={450}
+  format="webp"
+/>
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.013.jpeg)
+<Image
+  src="/startup-as-a-service/startup-as-a-service.012.jpeg"
+  alt="Startups as a Service Band"
+  width={800}
+  height={450}
+  format="webp"
+/>
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.014.jpeg)
+<Image
+  src="/startup-as-a-service/startup-as-a-service.013.jpeg"
+  alt="Startups as a Service Band"
+  width={800}
+  height={450}
+  format="webp"
+/>
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.019.jpeg)
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.020.jpeg)
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.021.jpeg)
+<Image
+  src="/startup-as-a-service/startup-as-a-service.014.jpeg"
+  alt="Startups as a Service Band"
+  width={800}
+  height={450}
+  format="webp"
+/>
+
+<Image
+  src="/startup-as-a-service/startup-as-a-service.019.jpeg"
+  alt="Startups as a Service Band"
+  width={800}
+  height={450}
+  format="webp"
+/>
+
+<Image
+  src="/startup-as-a-service/startup-as-a-service.020.jpeg"
+  alt="Startups as a Service Band"
+  width={800}
+  height={450}
+  format="webp"
+/>
+
+<Image
+  src="/startup-as-a-service/startup-as-a-service.021.jpeg"
+  alt="Startups as a Service Band"
+  width={800}
+  height={450}
+  format="webp"
+/>

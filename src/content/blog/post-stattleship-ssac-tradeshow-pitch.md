@@ -12,7 +12,12 @@ tags: ['Sports', 'Stattleship', 'SSAC']
 
 This was a tradeshow pitch I did at MIT's Sloan Sports Conference in 2012.
 
-![Stattleship SSAC Booth](/stattleship_ssac_booth.jpg)
+<Image
+  src="/stattleship_ssac_booth.jpg"
+  alt="Stattleship SSAC Booth"
+  width={570}
+  height={490}
+/>
 
 I was working on Stattleship, a platform that gamified sports data.
 
@@ -32,12 +37,57 @@ Lessons were applied to Spogo, the next company I co-founded which was a mobile 
 
 ## Slides
 
-![Stattleship Tradeshow Pitch](/stattleship_deck/stattleship_tradeshow_pitch_570x490.001.png)
-![Stattleship Tradeshow Pitch](/stattleship_deck/stattleship_tradeshow_pitch_570x490.002.png)
-![Stattleship Tradeshow Pitch](/stattleship_deck/stattleship_tradeshow_pitch_570x490.003.png)
-![Stattleship Tradeshow Pitch](/stattleship_deck/stattleship_tradeshow_pitch_570x490.004.jpg)
-![Stattleship Tradeshow Pitch](/stattleship_deck/stattleship_tradeshow_pitch_570x490.005.jpg)
-![Stattleship Tradeshow Pitch](/stattleship_deck/stattleship_tradeshow_pitch_570x490.006.jpg)
-![Stattleship Tradeshow Pitch](/stattleship_deck/stattleship_tradeshow_pitch_570x490.007.jpg)
-![Stattleship Tradeshow Pitch](/stattleship_deck/stattleship_tradeshow_pitch_570x490.008.jpg)
-![Stattleship Tradeshow Pitch](/stattleship_deck/stattleship_tradeshow_pitch_570x490.009.jpg)
+<Image
+  src="/stattleship_deck/stattleship_tradeshow_pitch_570x490.001.png"
+  alt="Stattleship Tradeshow Pitch"
+  width={570}
+  height={490}
+/>
+<Image
+  src="/stattleship_deck/stattleship_tradeshow_pitch_570x490.002.png"
+  alt="Stattleship Tradeshow Pitch"
+  width={570}
+  height={490}
+/>
+<Image
+  src="/stattleship_deck/stattleship_tradeshow_pitch_570x490.003.png"
+  alt="Stattleship Tradeshow Pitch"
+  width={570}
+  height={490}
+/>
+<Image
+  src="/stattleship_deck/stattleship_tradeshow_pitch_570x490.004.jpg"
+  alt="Stattleship Tradeshow Pitch"
+  width={570}
+  height={490}
+/>
+<Image
+  src="/stattleship_deck/stattleship_tradeshow_pitch_570x490.005.jpg"
+  alt="Stattleship Tradeshow Pitch"
+  width={570}
+  height={490}
+/>
+<Image
+  src="/stattleship_deck/stattleship_tradeshow_pitch_570x490.006.jpg"
+  alt="Stattleship Tradeshow Pitch"
+  width={570}
+  height={490}
+/>
+<Image
+  src="/stattleship_deck/stattleship_tradeshow_pitch_570x490.007.jpg"
+  alt="Stattleship Tradeshow Pitch"
+  width={570}
+  height={490}
+/>
+<Image
+  src="/stattleship_deck/stattleship_tradeshow_pitch_570x490.008.jpg"
+  alt="Stattleship Tradeshow Pitch"
+  width={570}
+  height={490}
+/>
+<Image
+  src="/stattleship_deck/stattleship_tradeshow_pitch_570x490.009.jpg"
+  alt="Stattleship Tradeshow Pitch"
+  width={570}
+  height={490}
+/>
