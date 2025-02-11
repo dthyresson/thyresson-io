@@ -10,16 +10,14 @@ tags: ['Marvell', 'Gallery', 'Comprehensive Program']
 
 Stanza One of The Gallery, page 40 (lines 1-8):
 
-1
-
-Clora, come view my soul, and tell
-Whether I have contrived it well.
-Now all its several lodgings lie
-Composed into one gallery;
-And the great arras-hangings, made
-Of various faces, by are laid;
-That, for all furniture, you'll find
-Only your picture in my mind.
+> 1. Clora, come view my soul, and tell
+> 2. Whether I have contrived it well.
+> 3. Now all its several lodgings lie
+> 4. Composed into one gallery;
+> 5. And the great arras-hangings, made
+> 6. Of various faces, by are laid;
+> 7. That, for all furniture, you'll find
+> 8. Only your picture in my mind.
 
 The universe (which others call the Library) is composed of an indefinite and perhaps infinite number of hexagonal galleries, with vast air shafts between, surrounded by very low railings. From any of the hexagons one can see, interminably, the upper and lower floors. The distribution of the galleries is invariable.
 Jorge Luis Borges, The Library of Babel
