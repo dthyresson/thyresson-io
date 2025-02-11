@@ -1,13 +1,21 @@
 ---
 title: 'Arcadia by Tom Stoppard, Oral Exam Passages'
 description: 'Passages from Arcadia by Tom Stoppard for my English Comprehensive Oral Exam at Middlebury College in 1996.'
-pubDate: '2025-02-09'
-updatedDate: '2025-02-09'
+pubDate: '1997-01-09'
+updatedDate: '1997-01-09'
 heroImage: '/arcadia-oral-landscape.png'
-tags: ['Oral Exam', 'Passages', 'English']
+tags:
+  [
+    'Oral Exam',
+    'Passages',
+    'English',
+    'Arcadia',
+    'Tom Stoppard',
+    'Middlebury College',
+  ]
 ---
 
-Passages from Arcadia by Tom Stoppard for my English Comprehensive Oral Exam at Middlebury College in 1996.
+**_Note: As part of the English major at Middlebury College, we had written and oral exams as part of Comps. I chose these passages from Tom toppard's Arcadia. I don't remember what I said, but I found some notes which I've included below._**
 
 ## Passage One
 
@@ -46,3 +54,38 @@ Till, in Time's stayless swing,
 Uncompromising rude reality
 Mangled the Monarch of our fashioning,
 Who quavered, sank; and now has ceased to be."
+
+---
+
+## Notes
+
+Arcadia Oral!
+
+Chaos is apparaently unpredictable behavior which arises ina deterministic system because of great sensitivity to initial condictions. Sensitivity in Arcadia is the porpensity to fall in love.
+
+But, perhaps, if you filter out the noise of passion, such an equation might exist. Valentine, here, demonstrates that, in Arcadia, love
+
+contrast valentine with septimus - a new beginning versus doomed end
+creation verus death
+hope: another cycle, another iteration
+
+Valentine's Passion
+
+UNFOLD
+reveal, examine the mysteries, discovery "start see this shape"!
+unfoldind like Spetimus' letters which reveal the drama
+
+Nature and Art
+linked by process of solving a mystery
+representations/symbols
+
+Future is disorder
+best possible time to be alivethoselove at sensitivity to initial condi
+art is another iteration of creation
+
+first -- is to recognize valentine's passion
+
+READ PASSAGE
+
+next -- to contrast valentine's perception of the world and its future with Septimus' doomed view, which I beleive leads to his insanity
+then - to concentrate on how "the unpredictable and the predetermined unfold together to make everything the way it is"; how valentine connects nature to arts of creation?

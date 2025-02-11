@@ -27,6 +27,22 @@ const posts = (await getCollection('blog')).sort(
     <main class="md:max-w-2xl lg:max-w-3xl mx-auto px-4 md:px-6">
       <Header />
       <section>
+        <div class="space-y-4">
+          <p>
+            Here you'll find my thoughts on technology, AI, and investing, along
+            with some rediscovered content from my past - including recipes and
+            papers from my English Comprehensive exams at Middlebury College
+            ('96-'97).
+          </p>
+          <p class="text-sm text-gray-500 mb-8">
+            Images AI generated using <a href="https://fal.ai" class="underline"
+              >fal.ai</a
+            > and the <a
+              href="https://fal.ai/models/fal-ai/flux/schnell"
+              class="underline">fal-ai/flux/schnell</a
+            > model.
+          </p>
+        </div>
         <ul class="space-y-4">
           {
             posts.map((post) => (
@@ -41,7 +57,10 @@ const posts = (await getCollection('blog')).sort(
                       class="rounded-lg shadow-lg"
                     />
                   )}
-                  <h2 class="text-2xl font-bold mt-2">{post.data.title}</h2>
+                  <h2 class="text-2xl font-bold my-2">{post.data.title}</h2>
+                  <h3 class="text-lg text-gray-500 my-2">
+                    {post.data.description}
+                  </h3>
                   <div class="flex flex-wrap gap-2 justify-between align-middle pt-4">
                     <p class="text-sm">
                       {post.data.tags.map((tag) => (
