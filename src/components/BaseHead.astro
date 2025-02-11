@@ -25,7 +25,7 @@ if (image) {
     src: image,
     width: 1200, // Recommended OG image width
     height: 630, // Recommended OG image height
-    // format: 'jpeg',
+    // format unspecified will use webp, avif, or original format
   });
   optimizedImageURL = new URL(optimizedImage.src, Astro.site);
 }
