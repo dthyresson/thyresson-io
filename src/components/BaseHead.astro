@@ -3,6 +3,7 @@
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
 import { SITE_TITLE } from '../consts';
+import { getImage } from 'astro:assets';
 
 interface Props {
   title: string;
@@ -16,7 +17,18 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const faviconURL = new URL('/favicon.png', Astro.site);
 const sitemapURL = new URL('/sitemap-index.xml', Astro.site);
 const rssURL = new URL('rss.xml', Astro.site);
-const siteImageURL = image ? new URL(image, Astro.site) : undefined;
+
+// Optimize image for OG tags if provided
+let optimizedImageURL;
+if (image) {
+  const optimizedImage = await getImage({
+    src: image,
+    width: 1200, // Recommended OG image width
+    height: 630, // Recommended OG image height
+    format: 'jpeg',
+  });
+  optimizedImageURL = new URL(optimizedImage.src, Astro.site);
+}
 ---
 
 <!-- Global Metadata -->
@@ -47,14 +59,18 @@ const siteImageURL = image ? new URL(image, Astro.site) : undefined;
 <meta property="og:url" content={canonicalURL} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-{siteImageURL && <meta property="og:image" content={siteImageURL} />}
+{optimizedImageURL && <meta property="og:image" content={optimizedImageURL} />}
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={canonicalURL} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-{siteImageURL && <meta property="twitter:image" content={siteImageURL} />}
+{
+  optimizedImageURL && (
+    <meta property="twitter:image" content={optimizedImageURL} />
+  )
+}
 
 <script defer data-domain="thyresson.io" src="https://plausible.io/js/script.js"
 ></script>
