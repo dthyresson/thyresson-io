@@ -1,0 +1,19 @@
+---
+title: 'Kenai, Alaska Photos of Mount Redoubt over Cook Inlet'
+description: 'Photos from Kenai, Alaska while at Entessa visiting the Tesoro Petroleum Refinery in Nikiski, Alaska in 2002'
+pubDate: '2002 Mar 02'
+updatedDate: '2025 Feb 11'
+heroImage: '/92a91cfd701b4912aa79b40b61b2d8ec.png'
+tags: ['travel', 'photos', 'Kenai', 'Alaska']
+---
+
+I took these photos in 2002 when I was in Kenai, Alaska on a visit to the Tesoro Petroleum Refinery in Nikiski, Alaska while at Entessa.
+
+At Entessa, we built order to cash and logistics solutions for midstream oil and gas companies like Tesoro, Hess, Hovensa, Valero, Chevron, Sunoco Logitics, and others.
+
+I was part of the cofounding team and we sold the company in 2010.
+
+Both of these photos are of Mount Redoubt looking across the Cook Inlet. It erupted seven years later in 2009.
+
+![Kenai, Alaska Photos](/92a91cfd701b4912aa79b40b61b2d8ec.png)
+![Kenai, Alaska Photos](/3d8fe4c0aad54f449af9042085f86a5f.png)
