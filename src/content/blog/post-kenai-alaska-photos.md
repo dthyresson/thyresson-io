@@ -16,4 +16,11 @@ I was part of the cofounding team and we sold the company in 2010.
 Both of these photos are of Mount Redoubt looking across the Cook Inlet. It erupted seven years later in 2009.
 
 ![Kenai, Alaska Photos](/92a91cfd701b4912aa79b40b61b2d8ec.png)
+
+I used this as my desktop wallpaper for a few years.
+
 ![Kenai, Alaska Photos](/3d8fe4c0aad54f449af9042085f86a5f.png)
+
+These photos were taken in 2002 with a small Canon digital camera - yes there were no iPhones yet!
+
+I had to take many shots to get the timing of the sun to align with the peak.

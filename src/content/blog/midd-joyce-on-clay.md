@@ -1,6 +1,6 @@
 ---
-title: 'Joyce on Clay'
-description: "A response to James Joyce's 'Clay' from a student writer."
+title: 'On "Clay" by James Joyce'
+description: "A response to James Joyce's short story 'Clay' in Dubliners."
 pubDate: '23 Sep 1996'
 updatedDate: '11 Feb 2025'
 heroImage: '/Dp9z1le-GOhoWlvH3sd13.png'
