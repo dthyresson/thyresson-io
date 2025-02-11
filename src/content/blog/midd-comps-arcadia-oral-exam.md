@@ -1,8 +1,8 @@
 ---
 title: 'Arcadia by Tom Stoppard, Oral Exam Passages'
 description: 'Passages from Arcadia by Tom Stoppard for my English Comprehensive Oral Exam at Middlebury College in 1996.'
-pubDate: '1997-01-09'
-updatedDate: '1997-01-09'
+pubDate: '1997-01-29'
+updatedDate: '2025-02-11'
 heroImage: '/arcadia-oral-landscape.png'
 tags:
   [
