@@ -1,7 +1,7 @@
 ---
 title: 'Cruzan Carribean Sauce'
 description: 'A recipe for a Caribbean-inspired sauce.'
-pubDate: 'Jan 23 2025'
+pubDate: 'Jul 23 2005'
 updatedDate: 'Feb 03 2025'
 heroImage: '/cruzan-rum.png'
 tags: ['Caribbean', 'Sauce', 'Cruzan', 'Appetizer']

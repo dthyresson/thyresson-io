@@ -3,7 +3,7 @@ title: 'On Ulysses, Ithaca by James Joyce'
 description: 'Ulysses, Ithaca | James Joyce Seminar | Middlebury College | Price | Fall 1996'
 pubDate: '1 Dec 1996'
 updatedDate: 'Feb 11 2025'
-heroImage: '/ulysses-ithaca.png'
+heroImage: '/joyce-ulysses-ithaca-bloom-bench-2.png'
 tags: ['Middlebury College', 'James Joyce Seminar', 'Ulysses', 'Ithaca']
 ---
 

@@ -3,7 +3,7 @@ title: 'Synthetic Soundscapes: Navigating AI’s Role in Music’s Next Era'
 description: 'Can AI Honor Music’s Legacy?'
 pubDate: 'Jan 23 2025'
 updatedDate: 'Feb 03 2025'
-heroImage: '/oflk98gCHCGk40X8sm0rj.jpeg'
+heroImage: '/post-ai-music-ethics.png'
 tags: ['AI', 'Music', 'Ethics']
 ---
 
