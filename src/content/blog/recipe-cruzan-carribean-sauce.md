@@ -7,6 +7,12 @@ heroImage: '/cruzan-rum.png'
 tags: ['Caribbean', 'Sauce', 'Cruzan', 'Appetizer']
 ---
 
+In 2005, I was working at Entessa and I made several trips to St. Croix, USVI to design and deploy a Marine Terminal management system we built for Hovensa.
+
+If you've ever been to St. Croix, then you've likly visted the Sunny Isles Shopping Center and its K Mart. It's the hub of the island. And also was a great place to buy bottles of Cruzan Rum made on the island.
+
+After a few trips, I had to figure out some uses for all the rum I was bringing back. I came up with this Caribbean-inspired sauce which is great on [wings](/blog/recipe-spicy-cruzan-chicken-wings). It's potent if used just as a dipping sauce!
+
 ## Ingredients
 
 - 1/2 cup allspice coarse ground

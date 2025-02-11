@@ -7,10 +7,12 @@ heroImage: '/cruzan-wings.png'
 tags: ['Caribbean', 'Chicken Wings', 'Spicy', 'Appetizer']
 ---
 
+For some background on how I came up with this recipe, see the [Cruzan Caribbean Sauce](/blog/recipe-cruzan-carribean-sauce) recipe.
+
 ## Ingredients
 
 - 3 pounds chicken wings
-- 5 cups Cruzan Caribbean Sauce
+- 5 cups [Cruzan Caribbean Sauce](/blog/recipe-cruzan-carribean-sauce)
 
 ## Directions
 
