@@ -7,6 +7,7 @@ import FormattedDate from '../components/FormattedDate.astro';
 import '../styles/global.css';
 import '@fontsource/zilla-slab';
 import { Image } from 'astro:assets';
+import Tag from '../components/Tag.astro';
 type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage, tags } =
@@ -15,7 +16,7 @@ const { title, description, pubDate, updatedDate, heroImage, tags } =
 
 <html lang="en">
   <head>
-    <BaseHead title={title} description={description} image={heroImage.src} />
+    <BaseHead title={title} description={description} image={heroImage} />
   </head>
 
   <body>
@@ -39,22 +40,15 @@ const { title, description, pubDate, updatedDate, heroImage, tags } =
           <h2 class="text-2xl font-bold">{title}</h2>
           <div class="flex flex-wrap gap-2 justify-between align-middle pt-4">
             <p class="text-sm">
-              {
-                tags.map((tag) => (
-                  <span class="inline-block bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-sm mr-2 mb-2">
-                    {tag}
-                  </span>
-                ))
-              }
+              {tags.map((tag) => <Tag name={tag} />)}
             </p>
+            <time class="text-sm">
+              🗓️ <FormattedDate date={pubDate} />
+            </time>
           </div>
-          <div class="flex justify-between gap-2 mt-2">
+          <div class="mt-2">
             <p class="text-lg text-gray-700 mb-4">
               {description}
-            </p>
-
-            <p class="text-sm">
-              <FormattedDate date={pubDate} />
             </p>
           </div>
 

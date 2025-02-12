@@ -1,0 +1,29 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_IMAGE } from '../consts';
+import { getCollection } from 'astro:content';
+import '@fontsource/zilla-slab';
+import '../styles/global.css';
+
+const airports = await getCollection('airports');
+const experiments = await getCollection('experiments');
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title="404" description="Page not found" image={SITE_IMAGE} />
+  </head>
+  <body>
+    <main class="md:max-w-2xl lg:max-w-3xl mx-auto px-4 md:px-6">
+      <Header />
+      <div class="flex flex-col items-center justify-center h-screen space-y-4">
+        <h1 class="text-5xl font-bold">TR 808 / 2 = 404</h1>
+        <p class="text-lg">PC Load Letter</p>
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>

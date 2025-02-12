@@ -4,7 +4,7 @@ description: "Exploring how startups mirror band dynamics and proposing a 'Start
 author: 'A. David Thyresson'
 pubDate: '2020 July 26'
 updatedDate: '2025 Feb 11'
-heroImage: '../../images/startup-as-a-service/startup-as-a-service.003.jpeg'
+heroImage: '../../images/tQtZdpH-DztJ9EZma3Qbq.png'
 tags: ['Startups as a Service', 'Startups', 'Startups as a Band', 'Scaleups']
 ---
 
@@ -22,21 +22,21 @@ This is an unfinished deck, but one day I want to explore this idea further.
 
 ---
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.001.jpeg)
+![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.001.jpeg)
 
 A take on the deodorant-scented slogan that became a revolutionary anthem for Gen X.
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.002.jpeg)
+![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.002.jpeg)
 
 Soloists. Duos. Trios.
 Single founders. Co-founders. Multi-founder teams.
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.003.jpeg)
+![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.003.jpeg)
 
 "Dreamer, you know you are a dreamer.
 Well, can you put your hands in your head? Oh no!"
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.004.jpeg)
+![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.004.jpeg)
 
 CEO's living the dream.
 

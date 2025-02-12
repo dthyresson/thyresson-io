@@ -8,6 +8,7 @@ import FormattedDate from '../../components/FormattedDate.astro';
 import { Image } from 'astro:assets';
 import '../../styles/global.css';
 import '@fontsource/zilla-slab';
+import Tag from '../../components/Tag.astro';
 
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -65,14 +66,12 @@ const posts = (await getCollection('blog')).sort(
                   <div class="flex flex-wrap gap-2 justify-between align-middle pt-4">
                     <p class="text-sm">
                       {post.data.tags.map((tag) => (
-                        <span class="inline-block bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-sm mr-2 mb-2">
-                          {tag}
-                        </span>
+                        <Tag name={tag} />
                       ))}
                     </p>
 
                     <p class="text-sm">
-                      <FormattedDate date={post.data.pubDate} />
+                      🗓️ <FormattedDate date={post.data.pubDate} />
                     </p>
                   </div>
                 </a>

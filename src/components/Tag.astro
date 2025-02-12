@@ -1,0 +1,17 @@
+---
+interface Props {
+  name: string;
+}
+
+const { name } = Astro.props;
+---
+
+<span
+  class="inline-block bg-neutral-100 text-slate-700 rounded-full px-3 py-1 text-sm mr-2 mb-2"
+>
+  <svg class="w-2 h-2 inline-block mr-1" viewBox="0 0 8 8">
+    <circle cx="4" cy="4" r="3" fill="currentColor"></circle>
+  </svg>
+  {name}
+</span>
+

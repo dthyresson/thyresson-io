@@ -1,0 +1,30 @@
+---
+title: 'From Atoms to Agents'
+description: 'Why PWV invests in the technology, tools, and infrastructure that makes AI possible'
+pubDate: '2024-10-02'
+updatedDate: '2025-02-12'
+heroImage: '../../images/atoms-to-agents.png'
+tags: ['PWV', 'AI', 'Atoms to Agents']
+---
+
+AI needs energy. AI needs quality data. AI needs efficient models. AI needs trust and guardrails. AI needs to be scalable. AI needs tools for developers to build with.
+
+It's not just the end product that we should invest in, but the technology and infrastructure that makes it possible.
+
+![PWV | AI | Atoms to Agents](../../images/pwv-ai-atoms-to-agents.png)
+
+At PWV, we're investing in companies building AI-powered products and services like Val Town, Unriddle, Parley, Purplefish, Mineflow, Myriad and more.
+
+But we're also investing in the tools and the technology and infrastructure that makes it possible.
+
+Cursor, Langbase, and fal provide developer tools to build AI applications. Not Diamond automatically determines which model is best-suited to respond.
+
+And we're investing in companies that are building the infrastructure to support the next generation of AI applications.
+
+QuantPi and Alinia focus on building trust and transparency in AI.
+
+Liquid and Poolside are building new models that are more efficient and effective than the ones currently on the market.
+
+But, we also need the energy to power the data centers AI will use. So, we've invested in Aalo.
+
+By taking a comprehensive approach to investing in AI, we can ensure that the next generation of AI applications and startups have what they need to succeed.
