@@ -1,7 +1,7 @@
 ---
 title: 'JAMStack Boston Meetup'
 description: 'A look back at the JAMStack Boston Meetup in March 2018'
-pubDate: '2018-03-03'
+pubDate: '2018-03-19'
 updatedDate: '2025-02-12'
 heroImage: '../../images/jamstack_boston_meetup_sil_march_2018/1.jpeg'
 tags: ['JAMStack', 'Boston', 'Meetup', 'Sports Innovation Lab', 'Netlify']

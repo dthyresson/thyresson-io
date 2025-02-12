@@ -28,8 +28,11 @@ A take on the deodorant-scented slogan that became a revolutionary anthem for Ge
 
 ![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.002.jpeg)
 
-Soloists. Duos. Trios.
-Single founders. Co-founders. Multi-founder teams.
+You have ⚪ solo startups where one person tries to fill all roles and play all instruments.
+
+You have ▬ duos where one person does the business and the other the technology.
+
+You have core founder ▲ groups where each have their function, but together deliver the vision.
 
 ![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.003.jpeg)
 
@@ -46,9 +49,11 @@ Startups are hard and you can't do it alone. But finding the right team and havi
 
 ![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.006.jpeg)
 
-I'd so invest in him.
+every startup needs that creatice spark and the talent to deliver.
 
 ![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.007.jpeg)
+
+Startups aren't just ideas -- they are businesses. And busineses become comples ... fast.
 
 Find your ICP. Find PMF. Find great design partners and people to help you on the way.
 
@@ -62,7 +67,7 @@ A little chaos can channel your creative energy to great things ....
 
 ![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.010.jpeg)
 
-But complexity is always around the corner.
+That complexity and overhead also presents itself when choosing the technology, architecture, and services needed to deliver on a startup's vision. What do I use? Who do I trust? Can I afford them? Am I betting on the right partner? That slows a startup down.
 
 ![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.011.jpeg)
 
@@ -80,13 +85,31 @@ And then I added on the digital complexity of the services and partners needed t
 
 It can get overwhelming. Fast.
 
+Not only do startups have to manage complexity, they have to manage constraints: you won't be able to have everything you need right away.
+
 ![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.019.jpeg)
 
 Question: Could you offer a "Startup as a Service" that provides the resources and support that startups need to grow?
 
 ![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.020.jpeg)
 
+But, what if you could?
+
 You don't need everything right away ... but you do need to know what and when and where to get it.
+
+What if your latest startup had access to:
+
+- A thoughtfully-priced plan with the Business/Enterprise features for your small (but hopefully growing) team
+
+- Someone to pre-package a tech ecosystem of some of the best-in-breed, most used services modern web projects need
+
+- The chance to get mentored by experts both in and outside the company
+
+- Membership in a Startup Community that encourages your growth
+
+- Blogs, social media, and case studies written about you that highlight not just you but the Developer Experience
+
+That would be something special; and the company that provided this would be a company I'd stick with.
 
 ![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.021.jpeg)
 
