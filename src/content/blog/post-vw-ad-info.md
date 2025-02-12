@@ -3,7 +3,7 @@ title: 'Vintage VW Ad Collection: From Magazine to Web'
 description: 'My vintage Volkswagen ad collection from 1960s-1980s magazines, with original publication details and collection history as published on the web in 1996.'
 pubDate: '1996-10-08'
 updatedDate: '2025-02-12'
-heroImage: '../../images/vw/ads_banner.jpg'
+heroImage: '../../images/k86ExDsdwat1JsbZ54KEO.png'
 tags: ['VW', 'Ads', 'Dates', 'Info']
 ---
 
