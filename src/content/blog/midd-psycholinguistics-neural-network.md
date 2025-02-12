@@ -3,7 +3,7 @@ title: "Psycholinguistics: Neural Networks and Chomsky's Rule-Based Language The
 description: "An exploration of how neural network computer models challenge Chomsky's notion that language is rule-based, examining key research in psycholinguistics."
 pubDate: '16 Oct 1996'
 updatedDate: '11 Feb 2025'
-heroImage: '/lm-a-g3JNrSAgsIqZ5kyU.png'
+heroImage: '/src/images/lm-a-g3JNrSAgsIqZ5kyU.png'
 tags: ['Psycholinguistics', 'Neural Networks', 'Chomsky']
 ---
 

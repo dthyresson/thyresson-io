@@ -3,7 +3,7 @@ title: 'Mansfield Park Response'
 description: 'Mansfield Park Response | English Comps | Section F - Wilders | 20 January 1997'
 pubDate: '20 Jan 1997'
 updatedDate: 'Feb 11 2025'
-heroImage: '/mansfield-park-response.png'
+heroImage: '/src/images/mansfield-park-response.png'
 tags: ['English Comps', 'Section F', 'Wilders', 'Jane Austen', 'Mansfield Park']
 ---
 

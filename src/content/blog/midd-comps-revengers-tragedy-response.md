@@ -4,7 +4,7 @@ author: 'A. David Thyresson'
 description: 'A response to The Revenger Tragedy by Thomas Middleton for my English Comprehensive Program at Middlebury College in 1997.'
 pubDate: '1997-01-23'
 updatedDate: '2025-02-11'
-heroImage: '/revengers-tragedy.png'
+heroImage: '/src/images/revengers-tragedy.png'
 tags: ["Revenger's Tragedy", 'English Comps']
 ---
 

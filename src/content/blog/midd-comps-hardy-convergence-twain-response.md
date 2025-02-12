@@ -3,7 +3,7 @@ title: 'Hardy - Convergence Twain'
 description: "Response to Thomas Hardy's poem 'The Convergence of the Twain' for his English Comprehensive Program at Middlebury College in 1997."
 pubDate: '1997-01-13'
 updatedDate: '2025-02-11'
-heroImage: '/hardy-convergence-titanic.png'
+heroImage: '/src/images/hardy-convergence-titanic.png'
 tags: ['Hardy', 'Convergence', 'English Comps']
 ---
 

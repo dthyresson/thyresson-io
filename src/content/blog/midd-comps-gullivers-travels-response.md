@@ -4,7 +4,7 @@ author: 'A. David Thyresson'
 description: "A response to Gulliver's Travels by Jonathan Swift for my English Comprehensive Program at Middlebury College in 1997."
 pubDate: '1997-01-16'
 updatedDate: '2025-02-11'
-heroImage: '/gulliver.png'
+heroImage: '/src/images/gulliver.png'
 tags: ["Gulliver's Travels", 'English Comps']
 ---
 

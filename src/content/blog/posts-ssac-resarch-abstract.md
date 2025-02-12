@@ -4,7 +4,7 @@ description: 'A research abstract on the use of participation engines and game d
 author: 'A. David Thyresson'
 pubDate: '2011 Sep 16'
 updatedDate: '2025 Feb 11'
-heroImage: '/ahI9OwK5blX_XBIUFtZL7.png'
+heroImage: '/src/images/ahI9OwK5blX_XBIUFtZL7.png'
 tags: ['Sports', 'Research', 'Hockey', 'Sabremetrics', 'SSAC']
 ---
 

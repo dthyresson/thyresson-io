@@ -3,7 +3,7 @@ title: 'The Secret Sharer Response'
 description: 'Secret Sharer Response | English Comps | Section F - Wilders | 8 January 1997'
 pubDate: '8 Jan 1997'
 updatedDate: 'Feb 11 2025'
-heroImage: '/secret-sharer-response.png'
+heroImage: '/src/images/secret-sharer-response.png'
 tags:
   [
     'English Comps',

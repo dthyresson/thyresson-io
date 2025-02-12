@@ -4,7 +4,7 @@ description: 'I made this in 2022 when I was consulting for Supabase based on th
 author: 'A. David Thyresson'
 pubDate: '2022 Jul 9'
 updatedDate: '2025 Feb 11'
-heroImage: '/all_your_supabase_are_belong_to_us.png'
+heroImage: '/src/images/all_your_supabase_are_belong_to_us.png'
 tags: ['Supabase', 'Memes']
 ---
 
@@ -16,9 +16,4 @@ One day, this classic meme just had to be made. It's a take on "All your base be
 
 Since I didn't have the font, I copied "Supabase" letter by letter from the existing text and pasted in place.
 
-<Image
-  src="/all_your_supabase_are_belong_to_us.png"
-  alt="My First Supabase Meme"
-  width={800}
-  height={450}
-/>
+![My First Supabase Meme](/src/images/all_your_supabase_are_belong_to_us.png)

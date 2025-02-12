@@ -4,7 +4,7 @@ author: 'A. David Thyresson'
 pubDate: 'Jan 15 1997'
 description: 'Canterbury Tales Response | English Comps | Middlebury College | 15 January 1997'
 updatedDate: 'Jan 15 1997'
-heroImage: '/chaucer-pardoner-hero.png'
+heroImage: '/src/images/chaucer-pardoner-hero.png'
 tags: ['Middlebury', 'English', 'Comps']
 ---
 

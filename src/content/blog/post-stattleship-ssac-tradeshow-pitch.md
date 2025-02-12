@@ -4,7 +4,7 @@ description: "A tradeshow pitch I did at MIT's Sloan Sports Conference in 2012 a
 author: 'A. David Thyresson'
 pubDate: '2012 Feb 22'
 updatedDate: '2025 Feb 11'
-heroImage: '/stattleship_deck/stattleship_tradeshow_pitch_570x490.001.png'
+heroImage: '/src/images/stattleship_deck/stattleship_tradeshow_pitch_570x490.001.png'
 tags: ['Sports', 'Stattleship', 'SSAC']
 ---
 
@@ -12,12 +12,7 @@ tags: ['Sports', 'Stattleship', 'SSAC']
 
 This was a tradeshow pitch I did at MIT's Sloan Sports Conference in 2012.
 
-<Image
-  src="/stattleship_ssac_booth.jpg"
-  alt="Stattleship SSAC Booth"
-  width={570}
-  height={490}
-/>
+![Stattleship SSAC Booth](/src/images/stattleship_ssac_booth.jpg)
 
 I was working on Stattleship, a platform that gamified sports data.
 
@@ -37,84 +32,39 @@ Lessons were applied to Spogo, the next company I co-founded which was a mobile 
 
 ## Slides
 
-<Image
-  src="/stattleship_deck/stattleship_tradeshow_pitch_570x490.001.png"
-  alt="Stattleship Tradeshow Pitch"
-  width={570}
-  height={490}
-/>
+![Stattleship Tradeshow Pitch](/src/images/stattleship_deck/stattleship_tradeshow_pitch_570x490.001.png)
 
 I still really like this logo. I made stickers. I still have so many stickers.
 
-<Image
-  src="/stattleship_deck/stattleship_tradeshow_pitch_570x490.002.png"
-  alt="Stattleship Tradeshow Pitch"
-  width={570}
-  height={490}
-/>
+![Stattleship Tradeshow Pitch](/src/images/stattleship_deck/stattleship_tradeshow_pitch_570x490.002.png)
 
 I thought fans might want something new, but turns out they just wanted to gamble away money. Sigh.
 
-<Image
-  src="/stattleship_deck/stattleship_tradeshow_pitch_570x490.003.png"
-  alt="Stattleship Tradeshow Pitch"
-  width={570}
-  height={490}
-/>
+![Stattleship Tradeshow Pitch](/src/images/stattleship_deck/stattleship_tradeshow_pitch_570x490.003.png)
 
 I also made the "mistake" of focussing on the NHL because I enjoy ice hockey more and was easier to write the stat games. But, in the US football and baseball are king. Tip: Know your market and ICP.
 
-<Image
-  src="/stattleship_deck/stattleship_tradeshow_pitch_570x490.004.jpg"
-  alt="Stattleship Tradeshow Pitch"
-  width={570}
-  height={490}
-/>
+![Stattleship Tradeshow Pitch](/src/images/stattleship_deck/stattleship_tradeshow_pitch_570x490.004.jpg)
 
 Essentially the stat game was a "prop bet" of a yes/no question. Remember Linsanity?
 
-<Image
-  src="/stattleship_deck/stattleship_tradeshow_pitch_570x490.005.jpg"
-  alt="Stattleship Tradeshow Pitch"
-  width={570}
-  height={490}
-/>
+![Stattleship Tradeshow Pitch](/src/images/stattleship_deck/stattleship_tradeshow_pitch_570x490.005.jpg)
 
 I automated scoring in "near real-time" by inngestsing a live stats feed first from XMLTeam and then Sportsradar. This was a great intro into queueing systems and and background jobs.
 
-<Image
-  src="/stattleship_deck/stattleship_tradeshow_pitch_570x490.006.jpg"
-  alt="Stattleship Tradeshow Pitch"
-  width={570}
-  height={490}
-/>
+![Stattleship Tradeshow Pitch](/src/images/stattleship_deck/stattleship_tradeshow_pitch_570x490.006.jpg)
 
 Then gamified the experience by creating leaderboards and more.
 
-<Image
-  src="/stattleship_deck/stattleship_tradeshow_pitch_570x490.007.jpg"
-  alt="Stattleship Tradeshow Pitch"
-  width={570}
-  height={490}
-/>
+![Stattleship Tradeshow Pitch](/src/images/stattleship_deck/stattleship_tradeshow_pitch_570x490.007.jpg)
 
 I thought that social game dynamics would be enaging, but -- again -- turns out people just wanted to gamble.
 
-<Image
-  src="/stattleship_deck/stattleship_tradeshow_pitch_570x490.008.jpg"
-  alt="Stattleship Tradeshow Pitch"
-  width={570}
-  height={490}
-/>
+![Stattleship Tradeshow Pitch](/src/images/stattleship_deck/stattleship_tradeshow_pitch_570x490.008.jpg)
 
 Here I linked dynamics and behavior to content.
 
-<Image
-  src="/stattleship_deck/stattleship_tradeshow_pitch_570x490.009.jpg"
-  alt="Stattleship Tradeshow Pitch"
-  width={570}
-  height={490}
-/>
+![Stattleship Tradeshow Pitch](/src/images/stattleship_deck/stattleship_tradeshow_pitch_570x490.009.jpg)
 
 The original hero landing page. I still like it, but really should have gonme mopbile first. But it was 2011-12 and the complexity of an iOS app was daunting vs a Rails backend and a web app.
 

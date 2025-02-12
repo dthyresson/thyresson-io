@@ -3,7 +3,7 @@ title: 'When Bubby Draws'
 description: 'A poem I wrote in 1995.'
 pubDate: '10 Oct 1995'
 updatedDate: '11 Feb 2025'
-heroImage: '/mmIlfrkWlonINDzohtomT.png'
+heroImage: '/src/images/mmIlfrkWlonINDzohtomT.png'
 tags: ['poetry', 'wwii', 'holocaust']
 ---
 

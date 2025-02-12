@@ -4,7 +4,7 @@ author: 'A. David Thyresson'
 pubDate: 'Jan 06 1997'
 description: 'Arcadia Response | English Comps | Middlebury College | 06 January 1997'
 updatedDate: 'Jan 06 1997'
-heroImage: '/arcadia-response.png'
+heroImage: '/src/images/arcadia-response.png'
 tags:
   [
     'Middlebury',
