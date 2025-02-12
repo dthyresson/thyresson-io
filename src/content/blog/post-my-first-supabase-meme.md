@@ -16,4 +16,4 @@ One day, this classic meme just had to be made. It's a take on "All your base be
 
 Since I didn't have the font, I copied "Supabase" letter by letter from the existing text and pasted in place.
 
-![My First Supabase Meme](/src/images/all_your_supabase_are_belong_to_us.png)
+![My First Supabase Meme](../../images/all_your_supabase_are_belong_to_us.png)

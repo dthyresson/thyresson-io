@@ -40,55 +40,55 @@ Well, can you put your hands in your head? Oh no!"
 
 CEO's living the dream.
 
-![Startups as a Service Band](/src/images/startup-as-a-service/startup-as-a-service.005.jpeg)
+![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.005.jpeg)
 
 Startups are hard and you can't do it alone. But finding the right team and having clear roles and responsibilities is key to success.
 
-![Startups as a Service Band](/src/images/startup-as-a-service/startup-as-a-service.006.jpeg)
+![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.006.jpeg)
 
 I'd so invest in him.
 
-![Startups as a Service Band](/src/images/startup-as-a-service/startup-as-a-service.007.jpeg)
+![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.007.jpeg)
 
 Find your ICP. Find PMF. Find great design partners and people to help you on the way.
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.008.jpeg)
+![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.008.jpeg)
 
 A little chaos can channel your creative energy to great things ....
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.009.jpeg)
+![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.009.jpeg)
 
 ... and many of the best innovations.
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.010.jpeg)
+![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.010.jpeg)
 
 But complexity is always around the corner.
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.011.jpeg)
+![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.011.jpeg)
 
 For startups, complexity compounds due to having to navigate both the digital and physical world.
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.012.jpeg)
+![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.012.jpeg)
 
 When I started Stattleship, I took on the complexity of a small office and all the costs and physical infrastructure that comes with it.
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.013.jpeg)
+![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.013.jpeg)
 
 And then I added on the digital complexity of the services and partners needed to build the product.
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.014.jpeg)
+![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.014.jpeg)
 
 It can get overwhelming. Fast.
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.019.jpeg)
+![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.019.jpeg)
 
 Question: Could you offer a "Startup as a Service" that provides the resources and support that startups need to grow?
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.020.jpeg)
+![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.020.jpeg)
 
 You don't need everything right away ... but you do need to know what and when and where to get it.
 
-![Startups as a Service Band](/startup-as-a-service/startup-as-a-service.021.jpeg)
+![Startups as a Service Band](../../images/startup-as-a-service/startup-as-a-service.021.jpeg)
 
 Because a startup is about "starting". If you are a 5 year old startup didn't you start already? You're scaling now.
 

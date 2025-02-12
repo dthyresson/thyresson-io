@@ -4,6 +4,7 @@ import { SITE_TITLE } from '../consts';
 import { Image } from 'astro:assets';
 import '@fontsource/zilla-slab';
 import '../styles/global.css';
+import ADT from '../images/ADT.jpg';
 ---
 
 <header class="max-w-3xl mx-auto mb-4 py-4">
@@ -13,7 +14,7 @@ import '../styles/global.css';
       class="text-lg md:text-xl lg:text-2xl font-bold flex items-center"
     >
       <Image
-        src="/src/images/ADT.jpg"
+        src={ADT}
         alt="DT"
         width={32}
         height={32}

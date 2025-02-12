@@ -12,7 +12,7 @@ tags: ['Sports', 'Stattleship', 'SSAC']
 
 This was a tradeshow pitch I did at MIT's Sloan Sports Conference in 2012.
 
-![Stattleship SSAC Booth](/src/images/stattleship_ssac_booth.jpg)
+![Stattleship SSAC Booth](../../images/stattleship_ssac_booth.jpg)
 
 I was working on Stattleship, a platform that gamified sports data.
 
@@ -32,39 +32,39 @@ Lessons were applied to Spogo, the next company I co-founded which was a mobile 
 
 ## Slides
 
-![Stattleship Tradeshow Pitch](/src/images/stattleship_deck/stattleship_tradeshow_pitch_570x490.001.png)
+![Stattleship Tradeshow Pitch](../../images/stattleship_deck/stattleship_tradeshow_pitch_570x490.001.png)
 
 I still really like this logo. I made stickers. I still have so many stickers.
 
-![Stattleship Tradeshow Pitch](/src/images/stattleship_deck/stattleship_tradeshow_pitch_570x490.002.png)
+![Stattleship Tradeshow Pitch](../../images/stattleship_deck/stattleship_tradeshow_pitch_570x490.002.png)
 
 I thought fans might want something new, but turns out they just wanted to gamble away money. Sigh.
 
-![Stattleship Tradeshow Pitch](/src/images/stattleship_deck/stattleship_tradeshow_pitch_570x490.003.png)
+![Stattleship Tradeshow Pitch](../../images/stattleship_deck/stattleship_tradeshow_pitch_570x490.003.png)
 
 I also made the "mistake" of focussing on the NHL because I enjoy ice hockey more and was easier to write the stat games. But, in the US football and baseball are king. Tip: Know your market and ICP.
 
-![Stattleship Tradeshow Pitch](/src/images/stattleship_deck/stattleship_tradeshow_pitch_570x490.004.jpg)
+![Stattleship Tradeshow Pitch](../../images/stattleship_deck/stattleship_tradeshow_pitch_570x490.004.jpg)
 
 Essentially the stat game was a "prop bet" of a yes/no question. Remember Linsanity?
 
-![Stattleship Tradeshow Pitch](/src/images/stattleship_deck/stattleship_tradeshow_pitch_570x490.005.jpg)
+![Stattleship Tradeshow Pitch](../../images/stattleship_deck/stattleship_tradeshow_pitch_570x490.005.jpg)
 
 I automated scoring in "near real-time" by inngestsing a live stats feed first from XMLTeam and then Sportsradar. This was a great intro into queueing systems and and background jobs.
 
-![Stattleship Tradeshow Pitch](/src/images/stattleship_deck/stattleship_tradeshow_pitch_570x490.006.jpg)
+![Stattleship Tradeshow Pitch](../../images/stattleship_deck/stattleship_tradeshow_pitch_570x490.006.jpg)
 
 Then gamified the experience by creating leaderboards and more.
 
-![Stattleship Tradeshow Pitch](/src/images/stattleship_deck/stattleship_tradeshow_pitch_570x490.007.jpg)
+![Stattleship Tradeshow Pitch](../../images/stattleship_deck/stattleship_tradeshow_pitch_570x490.007.jpg)
 
 I thought that social game dynamics would be enaging, but -- again -- turns out people just wanted to gamble.
 
-![Stattleship Tradeshow Pitch](/src/images/stattleship_deck/stattleship_tradeshow_pitch_570x490.008.jpg)
+![Stattleship Tradeshow Pitch](../../images/stattleship_deck/stattleship_tradeshow_pitch_570x490.008.jpg)
 
 Here I linked dynamics and behavior to content.
 
-![Stattleship Tradeshow Pitch](/src/images/stattleship_deck/stattleship_tradeshow_pitch_570x490.009.jpg)
+![Stattleship Tradeshow Pitch](../../images/stattleship_deck/stattleship_tradeshow_pitch_570x490.009.jpg)
 
 The original hero landing page. I still like it, but really should have gonme mopbile first. But it was 2011-12 and the complexity of an iOS app was daunting vs a Rails backend and a web app.
 

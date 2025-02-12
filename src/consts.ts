@@ -4,4 +4,4 @@
 export const SITE_TITLE = 'David Thyresson';
 export const SITE_DESCRIPTION =
   'David Thyresson, General Partner at Preston-Werner Ventures';
-export const SITE_IMAGE = '/src/images/ADT.jpg';
+export const SITE_IMAGE = '/ADT.jpg';
