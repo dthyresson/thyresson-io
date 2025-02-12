@@ -4,7 +4,7 @@ description: 'I made this in 2022 when I was consulting for Supabase based on th
 author: 'A. David Thyresson'
 pubDate: '2022 Jul 9'
 updatedDate: '2025 Feb 11'
-heroImage: '/src/images/all_your_supabase_are_belong_to_us.png'
+heroImage: '../../images/all_your_supabase_are_belong_to_us.png'
 tags: ['Supabase', 'Memes']
 ---
 

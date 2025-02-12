@@ -3,7 +3,7 @@ title: 'Mimetic Molly'
 description: 'Mimetic Final Assignment | Price: Joyce Seminar | Middlebury College | 16 December 1996'
 pubDate: '16 December 1996'
 updatedDate: 'Feb 03 2025'
-heroImage: '/src/images/mimietic-molly-bloom.png'
+heroImage: '../../images/mimietic-molly-bloom.png'
 tags: ['Middlebury', 'Joyce Seminar', 'James Joyce']
 ---
 

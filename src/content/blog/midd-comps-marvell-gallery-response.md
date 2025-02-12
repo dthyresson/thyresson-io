@@ -4,7 +4,7 @@ description: "A. David Thyresson's response to Andrew Marvell's poem 'The Galler
 author: 'A. David Thyresson'
 pubDate: '1997-01-22'
 updatedDate: '2025-02-11'
-heroImage: '/src/images/marvell-gallery.png'
+heroImage: '../../images/marvell-gallery.png'
 tags: ['Marvell', 'Gallery', 'Comprehensive Program']
 ---
 

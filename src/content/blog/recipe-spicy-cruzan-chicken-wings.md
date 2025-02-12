@@ -3,7 +3,7 @@ title: 'Spicy Cruzan Chicken Wings'
 description: 'A recipe for spicy chicken wings marinated in Cruzan Caribbean Sauce.'
 pubDate: 'Jul 24 2005'
 updatedDate: 'Feb 03 2025'
-heroImage: '/src/images/cruzan-wings.png'
+heroImage: '../../images/cruzan-wings.png'
 tags: ['Caribbean', 'Chicken Wings', 'Spicy', 'Appetizer']
 ---
 

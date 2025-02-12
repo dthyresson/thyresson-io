@@ -3,7 +3,7 @@ title: 'Are Dreams Just Next-Token Prediction?'
 description: 'Rethinking Inspiration and Creativity in the Age of Generative AI'
 pubDate: 'Jan 08 2025'
 updatedDate: 'Feb 03 2025'
-heroImage: '/src/images/post-dreams-next-token-ai.png'
+heroImage: '../../images/post-dreams-next-token-ai.png'
 tags: ['AI', 'Dreams', 'Creativity']
 ---
 

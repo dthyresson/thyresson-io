@@ -4,7 +4,7 @@ title: 'Paradise Lost Response'
 description: 'A response to Paradise Lost by John Milton for my English Comprehensive Program at Middlebury College in 1997.'
 pubDate: '1997-01-09'
 updatedDate: '2025-02-11'
-heroImage: '/src/images/paradise-lost-expulsion.png'
+heroImage: '../../images/paradise-lost-expulsion.png'
 tags: ['Paradise Lost', 'English Comps']
 ---
 

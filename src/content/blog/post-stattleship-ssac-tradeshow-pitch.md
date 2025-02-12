@@ -4,7 +4,7 @@ description: "A tradeshow pitch I did at MIT's Sloan Sports Conference in 2012 a
 author: 'A. David Thyresson'
 pubDate: '2012 Feb 22'
 updatedDate: '2025 Feb 11'
-heroImage: '/src/images/stattleship_deck/stattleship_tradeshow_pitch_570x490.001.png'
+heroImage: '../../images/stattleship_deck/stattleship_tradeshow_pitch_570x490.001.png'
 tags: ['Sports', 'Stattleship', 'SSAC']
 ---
 

@@ -4,7 +4,7 @@ description: "Exploring how startups mirror band dynamics and proposing a 'Start
 author: 'A. David Thyresson'
 pubDate: '2020 July 26'
 updatedDate: '2025 Feb 11'
-heroImage: '/src/images/startup-as-a-service/startup-as-a-service.003.jpeg'
+heroImage: '../../images/startup-as-a-service/startup-as-a-service.003.jpeg'
 tags: ['Startups as a Service', 'Startups', 'Startups as a Band', 'Scaleups']
 ---
 
