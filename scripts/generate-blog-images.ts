@@ -1,4 +1,4 @@
-import { fal } from "@fal-ai/client";
+import { fal } from '@fal-ai/client';
 import fs from 'fs/promises';
 import path from 'path';
 import { program } from 'commander';
@@ -9,19 +9,25 @@ import { input, select } from '@inquirer/prompts';
 dotenv.config();
 // Configure FAL AI client
 fal.config({
-  credentials: process.env.FAL_AI_KEY!
+  credentials: process.env.FAL_AI_KEY!,
 });
 
 // Configure Langbase client
 const langbase = new Langbase({
-  apiKey: process.env.LANGBASE_API_KEY!
+  apiKey: process.env.LANGBASE_API_KEY!,
 });
 
 interface ProcessOptions {
   style?: string;
   period?: string;
   all?: boolean;
-  imageSize?: "square_hd" | "square" | "portrait_4_3" | "portrait_16_9" | "landscape_4_3" | "landscape_16_9";
+  imageSize?:
+    | 'square_hd'
+    | 'square'
+    | 'portrait_4_3'
+    | 'portrait_16_9'
+    | 'landscape_4_3'
+    | 'landscape_16_9';
   numImages?: number;
 }
 
@@ -44,25 +50,28 @@ async function processPost(filePath: string, options: ProcessOptions) {
 
   const variables = [
     {
-      name: 'blog_post',
-      value: content
+      name: 'BLOG_POST',
+      value: content,
     },
     options.style && {
-      name: 'style',
-      value: options.style
+      name: 'STYLE',
+      value: options.style,
     },
     options.period && {
-      name: 'period',
-      value: options.period
-    }
+      name: 'PERIOD',
+      value: options.period,
+    },
   ].filter(Boolean) as { name: string; value: string }[];
 
   // console.log('Langbase variables:', JSON.stringify(variables, null, 2));
 
   console.log('Calling Langbase pipe...');
+
+  const summaryPrompt = `
+    Summarize it into a concise 5-sentence scene description for AI-generated hero and OG images.`;
   // Process through Langbase pipe
   const { completion } = await langbase.pipe.run({
-    messages: [{ role: 'user', content: content }],
+    messages: [{ role: 'user', content: summaryPrompt }],
     name: 'blog-post-gen-ai-image-prompt',
     stream: false,
     variables,
@@ -82,20 +91,20 @@ async function processPost(filePath: string, options: ProcessOptions) {
   // console.log('Gen AI ImagePrompt:', prompt);
 
   // Generate image using FAL AI
-  const imageResult = await fal.subscribe("fal-ai/flux/dev", {
+  const imageResult = await fal.subscribe('fal-ai/flux/dev', {
     input: {
       prompt,
       seed: Math.floor(Math.random() * 1000000),
-      image_size: options.imageSize || "landscape_16_9",
+      image_size: options.imageSize || 'landscape_16_9',
       num_images: options.numImages || 1,
     },
     logs: true,
     onQueueUpdate: (update) => {
       console.log(`FAL AI Status: ${update.status}`);
-      if (update.status === "IN_PROGRESS") {
+      if (update.status === 'IN_PROGRESS') {
         update.logs.map((log) => log.message).forEach(console.log);
       }
-    }
+    },
   });
 
   console.log('FAL AI generation complete. Request ID:', imageResult.requestId);
@@ -113,7 +122,10 @@ async function processPost(filePath: string, options: ProcessOptions) {
     const imageBuffer = await imageResponse.arrayBuffer();
 
     const timestamp = Date.now();
-    const imagePath = path.join(imageDir, `generated-${timestamp}-${i + 1}.png`);
+    const imagePath = path.join(
+      imageDir,
+      `generated-${timestamp}-${i + 1}.png`
+    );
     console.log('Saving image to:', imagePath);
     await fs.writeFile(imagePath, new Uint8Array(imageBuffer));
 
@@ -125,9 +137,12 @@ async function processPost(filePath: string, options: ProcessOptions) {
       imageSize: options.imageSize,
       numImages: options.numImages,
       requestId: imageResult.requestId,
-      timestamp
+      timestamp,
     };
-    const metadataPath = path.join(imageDir, `generated-${timestamp}-metadata.json`);
+    const metadataPath = path.join(
+      imageDir,
+      `generated-${timestamp}-metadata.json`
+    );
     console.log('Saving metadata to:', metadataPath);
     await fs.writeFile(metadataPath, JSON.stringify(metadata, null, 2));
   }
@@ -136,7 +151,7 @@ async function processPost(filePath: string, options: ProcessOptions) {
 
   return {
     requestId: imageResult.requestId,
-    imagePath: imageDir
+    imagePath: imageDir,
   };
 }
 
@@ -147,8 +162,15 @@ async function main() {
     .option('-s, --style <style>', 'Art style for image generation')
     .option('-p, --period <period>', 'Time period for image style')
     .option('-a, --all', 'Process all files')
-    .option('-i, --image-size <size>', 'Image size ratio (square_hd, square, portrait_4_3, portrait_16_9, landscape_4_3, landscape_16_9)')
-    .option('-n, --num-images <number>', 'Number of images to generate', parseInt)
+    .option(
+      '-i, --image-size <size>',
+      'Image size ratio (square_hd, square, portrait_4_3, portrait_16_9, landscape_4_3, landscape_16_9)'
+    )
+    .option(
+      '-n, --num-images <number>',
+      'Number of images to generate',
+      parseInt
+    )
     .parse(process.argv);
 
   let options = program.opts();
@@ -157,7 +179,7 @@ async function main() {
     const blogDir = path.join(process.cwd(), 'src/content/blog');
     console.log('Reading blog directory:', blogDir);
     const files = await fs.readdir(blogDir);
-    const mdFiles = files.filter(f => f.endsWith('.md'));
+    const mdFiles = files.filter((f) => f.endsWith('.md'));
     console.log('Found', mdFiles.length, 'markdown files in blog directory');
 
     let selectedFile: string | undefined;
@@ -166,28 +188,30 @@ async function main() {
       // Use select prompt for file selection
       selectedFile = await select({
         message: 'Select a blog post to process:',
-        choices: mdFiles.map(file => ({
+        choices: mdFiles.map((file) => ({
           name: file.replace('.md', ''),
-          value: file
-        }))
+          value: file,
+        })),
       });
     }
 
     // Prompt for missing style and period using input prompt
     if (!options.style) {
       options.style = await input({
-        message: 'Enter art style for image generation (empty will infer from post):'
+        message:
+          'Enter art style for image generation (empty will infer from post):',
       });
     }
 
     if (!options.period) {
       options.period = await input({
-        message: 'Enter time period for image style (empty will infer from post):'
+        message:
+          'Enter time period for image style (empty will infer from post):',
       });
     }
 
     if (!options.imageSize) {
-      options.imageSize = await select({
+      options.imageSize = (await select({
         message: 'Select image size ratio:',
         default: 'landscape_16_9',
         choices: [
@@ -196,21 +220,24 @@ async function main() {
           { name: 'Portrait 4:3', value: 'portrait_4_3' },
           { name: 'Portrait 16:9', value: 'portrait_16_9' },
           { name: 'Landscape 4:3', value: 'landscape_4_3' },
-          { name: 'Landscape 16:9', value: 'landscape_16_9' }
-        ]
-      }) as ProcessOptions['imageSize'];
+          { name: 'Landscape 16:9', value: 'landscape_16_9' },
+        ],
+      })) as ProcessOptions['imageSize'];
     }
 
     if (!options.numImages) {
       const numImagesInput = await input({
         message: 'Enter number of images to generate:',
-        default: '1'
+        default: '1',
       });
       options.numImages = parseInt(numImagesInput);
     }
 
     if (!options.all) {
-      const result = await processPost(path.join(blogDir, selectedFile!), options);
+      const result = await processPost(
+        path.join(blogDir, selectedFile!),
+        options
+      );
       console.log(`Generated images saved for ${selectedFile}`);
       console.log('Request ID:', result.requestId);
       console.log('Images saved to:', result.imagePath);
