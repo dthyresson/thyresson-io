@@ -51,12 +51,12 @@ pnpm astro db execute db/seed.ts --remote
 
 
 ## Blog Image Generation
+
+I have a script that generates images for the blog posts using Langbase and FAL AI and saves them to the images folder.
+
 You can run the script using one of these commands:
 
 ```bash
 # Basic run
-pnpm tsx scripts/process-blog-images.ts
-
-# With options
-pnpm tsx scripts/process-blog-images.ts --style "watercolor" --period "renaissance"
+pnpm generate-images
 ```
