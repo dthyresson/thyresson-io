@@ -48,3 +48,15 @@ Seed the *remote* database (Caution!)
 ```bash
 pnpm astro db execute db/seed.ts --remote
 ```
+
+
+## Blog Image Generation
+You can run the script using one of these commands:
+
+```bash
+# Basic run
+pnpm tsx scripts/process-blog-images.ts
+
+# With options
+pnpm tsx scripts/process-blog-images.ts --style "watercolor" --period "renaissance"
+```
