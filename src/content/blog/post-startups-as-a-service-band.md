@@ -115,4 +115,4 @@ That would be something special; and the company that provided this would be a c
 
 Because a startup is about "starting". If you are a 5 year old startup didn't you start already? You're scaling now.
 
-And bands know should also know how to play scales. :)
+And bands should also know how to play scales. :)
