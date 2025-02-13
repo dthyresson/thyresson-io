@@ -60,3 +60,10 @@ You can run the script using one of these commands:
 # Basic run
 pnpm generate-images
 ```
+
+You'll have to provide your own API keys for Langbase and FAL AI in the `.env` file.
+
+```
+LANGBASE_API_KEY=
+FAL_API_KEY=
+```
