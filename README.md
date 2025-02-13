@@ -35,6 +35,8 @@ turso db tokens create <database-name>
 ```
 ASTRO_DB_REMOTE_URL=
 ASTRO_DB_APP_TOKEN=
+BSKY_USERNAME=
+BSKY_PASSWORD=
 ```
 
 You can push your local schema changes to your remote database via the CLI using the `astro db push --remote` command:
@@ -43,12 +45,11 @@ You can push your local schema changes to your remote database via the CLI using
 pnpm astro db push --remote
 ```
 
-Seed the *remote* database (Caution!)
+Seed the _remote_ database (Caution!)
 
 ```bash
 pnpm astro db execute db/seed.ts --remote
 ```
-
 
 ## Blog Image Generation
 
