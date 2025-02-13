@@ -8,7 +8,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write .",
-    "import-tracks": "node --loader ts-node/esm scripts/import-tracks.ts"
+    "import-tracks": "node --loader ts-node/esm scripts/import-tracks.ts",
+    "generate-images": "tsx scripts/generate-blog-images.ts"
   },
   "dependencies": {
     "@astrojs/db": "^0.14.6",

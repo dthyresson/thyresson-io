@@ -36,7 +36,7 @@ async function processPost(filePath: string, options: ProcessOptions) {
 
   // Read blog post content
   const content = await fs.readFile(filePath, 'utf-8');
-  console.log('Content length:', content.length, 'characters');
+  // console.log('Content length:', content.length, 'characters');
 
   // Get filename without extension for saving images
   const fileName = path.basename(filePath, '.md');
@@ -57,7 +57,7 @@ async function processPost(filePath: string, options: ProcessOptions) {
     }
   ].filter(Boolean) as { name: string; value: string }[];
 
-  console.log('Langbase variables:', JSON.stringify(variables, null, 2));
+  // console.log('Langbase variables:', JSON.stringify(variables, null, 2));
 
   console.log('Calling Langbase pipe...');
   // Process through Langbase pipe
@@ -70,11 +70,21 @@ async function processPost(filePath: string, options: ProcessOptions) {
 
   console.log('Generated prompt:', completion);
 
+  let prompt = completion;
+  if (options.style) {
+    prompt = `In artistic style of: ${options.style}. ${prompt}`;
+  }
+  if (options.period) {
+    prompt = `In time period of: ${options.period}. ${prompt}`;
+  }
+
   console.log('Calling FAL AI for image generation...');
+  // console.log('Gen AI ImagePrompt:', prompt);
+
   // Generate image using FAL AI
   const imageResult = await fal.subscribe("fal-ai/flux/dev", {
     input: {
-      prompt: completion,
+      prompt,
       seed: Math.floor(Math.random() * 1000000),
       image_size: options.imageSize || "landscape_16_9",
       num_images: options.numImages || 1,
@@ -151,14 +161,37 @@ async function main() {
     // Prompt for missing style and period using input prompt
     if (!options.style) {
       options.style = await input({
-        message: 'Enter art style for image generation:'
+        message: 'Enter art style for image generation (empty will infer from post):'
       });
     }
 
     if (!options.period) {
       options.period = await input({
-        message: 'Enter time period for image style:'
+        message: 'Enter time period for image style (empty will infer from post):'
       });
+    }
+
+    if (!options.imageSize) {
+      options.imageSize = await select({
+        message: 'Select image size ratio:',
+        default: 'landscape_16_9',
+        choices: [
+          { name: 'Square HD', value: 'square_hd' },
+          { name: 'Square', value: 'square' },
+          { name: 'Portrait 4:3', value: 'portrait_4_3' },
+          { name: 'Portrait 16:9', value: 'portrait_16_9' },
+          { name: 'Landscape 4:3', value: 'landscape_4_3' },
+          { name: 'Landscape 16:9', value: 'landscape_16_9' }
+        ]
+      }) as ProcessOptions['imageSize'];
+    }
+
+    if (!options.numImages) {
+      const numImagesInput = await input({
+        message: 'Enter number of images to generate:',
+        default: '1'
+      });
+      options.numImages = parseInt(numImagesInput);
     }
 
     if (!options.all) {
