@@ -112,9 +112,24 @@ async function processPost(filePath: string, options: ProcessOptions) {
     const imageResponse = await fetch(imageUrl);
     const imageBuffer = await imageResponse.arrayBuffer();
 
-    const imagePath = path.join(imageDir, `generated-${Date.now()}-${i + 1}.png`);
+    const timestamp = Date.now();
+    const imagePath = path.join(imageDir, `generated-${timestamp}-${i + 1}.png`);
     console.log('Saving image to:', imagePath);
     await fs.writeFile(imagePath, new Uint8Array(imageBuffer));
+
+    // Save metadata alongside the image
+    const metadata = {
+      prompt,
+      style: options.style || null,
+      period: options.period || null,
+      imageSize: options.imageSize,
+      numImages: options.numImages,
+      requestId: imageResult.requestId,
+      timestamp
+    };
+    const metadataPath = path.join(imageDir, `generated-${timestamp}-metadata.json`);
+    console.log('Saving metadata to:', metadataPath);
+    await fs.writeFile(metadataPath, JSON.stringify(metadata, null, 2));
   }
 
   console.log('=== Finished processing post ===\n');
