@@ -8,7 +8,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write .",
-    "import-tracks": "node --loader ts-node/esm scripts/import-tracks.ts"
+    "import-tracks": "node --loader ts-node/esm scripts/import-tracks.ts",
+    "generate-images": "tsx scripts/generate-blog-images.ts"
   },
   "dependencies": {
     "@astrojs/db": "^0.14.6",
@@ -18,13 +19,17 @@
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.2.1",
     "@atproto/api": "^0.13.35",
+    "@fal-ai/client": "^1.2.3",
     "@fontsource/zilla-slab": "^5.1.1",
+    "@inquirer/prompts": "^7.3.1",
     "@libsql/client": "^0.14.0",
     "@tailwindcss/vite": "^4.0.4",
     "astro": "^5.2.5",
+    "commander": "^13.1.0",
     "csv-parse": "^5.6.0",
     "date-fns": "^4.1.0",
     "dotenv": "^16.4.7",
+    "langbase": "^1.1.28",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwindcss": "^4.0.4"
@@ -32,8 +37,10 @@
   "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16",
+    "@types/inquirer": "^9.0.7",
     "@types/react": "^19.0.8",
     "prettier": "^3.4.2",
-    "prettier-plugin-astro": "^0.14.1"
+    "prettier-plugin-astro": "^0.14.1",
+    "tsx": "^4.19.2"
   }
 }
