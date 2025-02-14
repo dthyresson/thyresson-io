@@ -9,8 +9,6 @@ import { imageService } from '@unpic/astro/service';
 
 import db from '@astrojs/db';
 
-const isNetlify = process.env.NETLIFY;
-
 // https://astro.build/config
 export default defineConfig({
   prefetch: true,
@@ -19,7 +17,7 @@ export default defineConfig({
   site: process.env.URL || process.env.DEPLOY_URL || 'http://localhost:4321',
   image: {
     service: imageService({
-      fallbackService: isNetlify ? 'netlify' : 'astro',
+      placeholder: 'blurhash',
     }),
   },
   integrations: [mdx(), sitemap(), db(), react()],
