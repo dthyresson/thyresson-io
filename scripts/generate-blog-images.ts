@@ -29,6 +29,7 @@ interface ProcessOptions {
     | 'landscape_4_3'
     | 'landscape_16_9';
   numImages?: number;
+  model?: string;
 }
 
 interface Answers {
@@ -67,8 +68,7 @@ async function processPost(filePath: string, options: ProcessOptions) {
 
   console.log('Calling Langbase pipe...');
 
-  const summaryPrompt = `
-    Summarize it into a concise 5-sentence scene description for AI-generated hero and OG images.`;
+  const summaryPrompt = ``;
   // Process through Langbase pipe
   const { completion } = await langbase.pipe.run({
     messages: [{ role: 'user', content: summaryPrompt }],
@@ -79,19 +79,24 @@ async function processPost(filePath: string, options: ProcessOptions) {
 
   console.log('Generated prompt:', completion);
 
-  let prompt = completion;
+  let prompt = '';
+
   if (options.style) {
-    prompt = `In artistic style of: ${options.style}. ${prompt}`;
+    prompt += `In artistic style of: ${options.style}. `;
   }
   if (options.period) {
-    prompt = `In time period of: ${options.period}. ${prompt}`;
+    prompt += `In time period of: ${options.period}. `;
   }
+
+  prompt += `${prompt} The scene: ${completion}`;
 
   console.log('Calling FAL AI for image generation...');
   // console.log('Gen AI ImagePrompt:', prompt);
 
+  const model = options.model || 'fast-sdxl';
+
   // Generate image using FAL AI
-  const imageResult = await fal.subscribe('fal-ai/flux/dev', {
+  const imageResult = await fal.subscribe(`fal-ai/${model}`, {
     input: {
       prompt,
       seed: Math.floor(Math.random() * 1000000),
@@ -116,28 +121,38 @@ async function processPost(filePath: string, options: ProcessOptions) {
 
   // Save the generated images
   for (let i = 0; i < imageResult.data.images.length; i++) {
-    const imageUrl = imageResult.data.images[i].url;
-    console.log('Downloading image from:', imageUrl);
-    const imageResponse = await fetch(imageUrl);
+    const image = imageResult.data.images[i];
+    const fileExtension = image.content_type?.split('/')[1] ?? 'jpg';
+
+    console.log('Downloading image from:', image.url);
+    const imageResponse = await fetch(image.url);
     const imageBuffer = await imageResponse.arrayBuffer();
 
     const timestamp = Date.now();
     const imagePath = path.join(
       imageDir,
-      `generated-${timestamp}-${i + 1}.png`
+      `generated-${timestamp}-${i + 1}.${fileExtension}`
     );
     console.log('Saving image to:', imagePath);
     await fs.writeFile(imagePath, new Uint8Array(imageBuffer));
 
     // Save metadata alongside the image
     const metadata = {
-      prompt,
+      prompt: imageResult.data.prompt,
+      url: image.url,
       style: options.style || null,
       period: options.period || null,
       imageSize: options.imageSize,
       numImages: options.numImages,
       requestId: imageResult.requestId,
+      seed: imageResult.data.seed,
       timestamp,
+      width: image.width,
+      height: image.height,
+      contentType: image.content_type,
+      filename: `generated-${timestamp}-${i + 1}.${fileExtension}`,
+      hasNSFW: imageResult.data.has_nsfw_concepts?.[i] || false,
+      inferenceTime: imageResult.data.timings?.inference,
     };
     const metadataPath = path.join(
       imageDir,
@@ -171,11 +186,28 @@ async function main() {
       'Number of images to generate',
       parseInt
     )
+    .option(
+      '-m, --model <model>',
+      'FAL AI model to use (fast-sdxl, flux/schnell, flux/dev)'
+    )
     .parse(process.argv);
 
   let options = program.opts();
 
   try {
+    // First prompt: Model selection
+    if (!options.model) {
+      options.model = (await select({
+        message: 'Select FAL AI model:',
+        default: 'fast-sdxl',
+        choices: [
+          { name: 'Fast SDXL', value: 'fast-sdxl' },
+          { name: 'Flux Schnell', value: 'flux/schnell' },
+          { name: 'Flux Dev', value: 'flux/dev' },
+        ],
+      })) as ProcessOptions['model'];
+    }
+
     const blogDir = path.join(process.cwd(), 'src/content/blog');
     console.log('Reading blog directory:', blogDir);
     const files = await fs.readdir(blogDir);
@@ -185,7 +217,7 @@ async function main() {
     let selectedFile: string | undefined;
 
     if (!options.all) {
-      // Use select prompt for file selection
+      // Second prompt: File selection
       selectedFile = await select({
         message: 'Select a blog post to process:',
         choices: mdFiles.map((file) => ({
