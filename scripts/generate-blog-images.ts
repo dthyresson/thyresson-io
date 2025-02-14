@@ -88,7 +88,7 @@ async function processPost(filePath: string, options: ProcessOptions) {
     prompt += `In time period of: ${options.period}. `;
   }
 
-  prompt += `${prompt} The scene: ${completion}`;
+  prompt += `The scene: ${completion}`;
 
   console.log('Calling FAL AI for image generation...');
   // console.log('Gen AI ImagePrompt:', prompt);
@@ -115,7 +115,7 @@ async function processPost(filePath: string, options: ProcessOptions) {
   console.log('FAL AI generation complete. Request ID:', imageResult.requestId);
 
   // Create images directory if it doesn't exist
-  const imageDir = path.join(process.cwd(), 'src/images', fileName);
+  const imageDir = path.join(process.cwd(), 'generated_images', fileName);
   console.log('Creating image directory:', imageDir);
   await fs.mkdir(imageDir, { recursive: true });
 
@@ -138,7 +138,8 @@ async function processPost(filePath: string, options: ProcessOptions) {
 
     // Save metadata alongside the image
     const metadata = {
-      prompt: imageResult.data.prompt,
+      model,
+      prompt: prompt,
       url: image.url,
       style: options.style || null,
       period: options.period || null,
