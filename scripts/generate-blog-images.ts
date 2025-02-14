@@ -141,6 +141,10 @@ async function processPost(filePath: string, options: ProcessOptions) {
       model,
       prompt: prompt,
       url: image.url,
+      source: {
+        filename: path.basename(filePath),
+        path: filePath.split('/src/')[1] || filePath,
+      },
       style: options.style || null,
       period: options.period || null,
       imageSize: options.imageSize,
@@ -260,10 +264,16 @@ async function main() {
 
     if (!options.numImages) {
       const numImagesInput = await input({
-        message: 'Enter number of images to generate:',
+        message: 'Enter number of images to generate (1-4):',
         default: '1',
+        validate: (value) => {
+          const num = Number(value);
+          return (
+            (num >= 1 && num <= 4) || 'Please enter a number between 1 and 4'
+          );
+        },
       });
-      options.numImages = parseInt(numImagesInput);
+      options.numImages = Number(numImagesInput);
     }
 
     if (!options.all) {
