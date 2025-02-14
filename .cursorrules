@@ -9,6 +9,8 @@ This is a personal blog site for A. David Thyresson built using:
     - these pages will be dynamic and not prerendered
   - has Netlify adapter for SSR
 - TailwindCSS for styles
+- uses Unpic for image optimization
+  - use import { Image } from '@unpic/astro'; instead of astro:assets
 - deploys to Netlify
   - for static pages
   - for dynamic pages (SSR)
