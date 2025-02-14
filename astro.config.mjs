@@ -13,7 +13,7 @@ import db from '@astrojs/db';
 export default defineConfig({
   prefetch: true,
   output: 'static',
-  adapter: netlify({ imageCDN: true }),
+  adapter: netlify(),
   site: process.env.URL || process.env.DEPLOY_URL || 'http://localhost:4321',
   image: {
     service: imageService(),
