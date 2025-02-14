@@ -1,7 +1,7 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
-import { Image } from 'astro:assets';
+import { Image } from '@unpic/astro';
 import '@fontsource/zilla-slab';
 import '../styles/global.css';
 import ADT from '../images/ADT.jpg';
@@ -14,10 +14,12 @@ import ADT from '../images/ADT.jpg';
       class="text-lg md:text-xl lg:text-2xl font-bold flex items-center"
     >
       <Image
+        layout="fixed"
         src={ADT}
         alt="DT"
-        height={128}
-        width={128}
+        height={32}
+        width={32}
+        format="png"
         class="w-8 h-8 inline-block rounded-md mr-2"
       />
       <h1>David Thyresson</h1>

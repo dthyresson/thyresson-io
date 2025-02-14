@@ -5,6 +5,7 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 import react from '@astrojs/react';
+import { imageService } from '@unpic/astro/service';
 
 import db from '@astrojs/db';
 
@@ -14,6 +15,11 @@ export default defineConfig({
   output: 'static',
   adapter: netlify(),
   site: process.env.URL || process.env.DEPLOY_URL || 'http://localhost:4321',
+  image: {
+    service: imageService({
+      placeholder: 'blurhash',
+    }),
+  },
   integrations: [mdx(), sitemap(), db(), react()],
   vite: {
     plugins: [tailwindcss()],
