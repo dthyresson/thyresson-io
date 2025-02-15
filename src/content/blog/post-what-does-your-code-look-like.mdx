@@ -1,0 +1,100 @@
+---
+title: 'What Does Your Code Look Like (Part 4)'
+description: 'With AI code generation, does it matter what your code looks like?'
+pubDate: '15 February 2025'
+updatedDate: '15 February 2025'
+heroImage: '../../images/what-does-your-code-look-like/hero.png'
+tags: ['Code', 'Software Development', 'Programming']
+---
+
+import { Image } from '@unpic/astro';
+import album from '../../images/what-does-your-code-look-like/album.jpg';
+
+We’ve all experienced it: the painstaking reviews of code style, the heated debates about whether to use tabs or spaces, the quest to perfectly name every variable, and the constant adjusting of braces and whitespace for visual consistency. For as long as we’ve been programming, the readability and structure of our code have been hailed as paramount.
+
+But in a world where AI coding assistants can churn out snippets, refactor old projects, and even write entire functions on our behalf, many of us are beginning to wonder: **Does code style still matter? And if the code that actually executes is never the code we literally write, what are we even optimizing for anymore?**
+
+### The Code You Write vs. The Code That Runs
+
+One simple truth of modern software development is that the code you type is rarely, if ever, the same code that eventually runs on the machine. For instance:
+
+- **TypeScript** is transpiled into JavaScript before browsers or Node.js will interpret it.
+- **C** is compiled into machine code (or sometimes into bytecode for certain platforms) before the processor touches it.
+- Even **high-level languages** like Python or Ruby undergo interpretation steps that convert your source code into lower-level instructions.
+
+Ultimately, the code a computer executes often looks completely different than the text we see in our IDEs. For this reason, many have argued that the human-readable code is just an abstraction. It’s a convenient representation for us to reason about. But if it’s only an abstraction—one that AI can increasingly manipulate—how crucial is it for humans to obsess over its style?
+
+### Who Is the Code For?
+
+Traditionally, the answer was obvious:
+
+- **The compiler/interpreter** doesn’t care about your code style. It just needs syntactically valid, semantically correct instructions.
+- **Other developers (including your future self!)** care deeply about clean and consistent style, because it’s easier to understand, debug, and modify.
+
+That’s the standard reasoning we’ve all heard time and again. Even if your style doesn’t affect the machine’s ability to run the program, it affects **human** collaboration and maintainability. But now, AI coding helpers have joined the party. They read, interpret, and auto-complete code with uncanny efficiency. They can auto-format, auto-refactor, and transform style at will. It raises a provocative question: **If an AI can quickly ‘clean up’ your code or transform it into a new style on-demand, is manual code style still important?**
+
+### The Rise of AI Coding Tools
+
+Tools like Curor, GitHub Copilot, Zed, Bolt, v0, Val Town's Townie and other AI-based systems have become increasingly good at:
+
+- **Generating boilerplate code**: You provide a function signature or a comment, and the AI suggests a complete implementation.
+- **Refactoring and cleaning up**: “Refactor this function to make it more readable” has become a valid prompt, and the AI can do it instantly.
+- **Translating between languages**: AI can convert a snippet from Python to Java, or from TypeScript to Go, etc.
+
+In the future, we might see AIs that go beyond snippet suggestions and become more holistic coding partners or even take the lead in writing entire software systems. With that shift, **the emphasis on style for humans’ sake could wane**—the AI can fix it before any human sees it, or at least keep it consistent automatically.
+
+### Why Code Still Matters (for Now)
+
+Despite the convenience of AI, there are several reasons style and structure still matter:
+
+1. **Human Readability Remains Key**
+   Even if AI can refactor on the fly, chances are humans still need to read parts of the code—whether for debugging, architectural reasoning, or auditing. A well-structured codebase still promotes better understanding for those moments when you need to manually check the logic.
+
+2. **Conventions and Consistency**
+   Teams, especially large ones, typically define a style guide. Having consistent code conventions fosters a shared understanding and makes developer onboarding easier. Until AI is integrated into every single developer’s workflow with zero friction, these conventions remain helpful guardrails.
+
+3. **Contextual Clarity**
+   Naming things (variables, functions, classes) is arguably one of the hardest parts of coding. Good naming is a form of documentation, conveying intent to anyone reading the code. Yes, AI can rename symbols, but the human behind the AI prompt still benefits from clear naming conventions.
+
+4. **Evolution of Tools**
+   AI tools, while impressive, are not yet perfect. They learn from patterns in existing code. If we collectively abandon coherent style and structure, the AI’s training data might degrade in quality, making it harder for these tools to produce consistently high-quality suggestions.
+
+### Writing Code for the AI Instead of Humans
+
+As AI assistance becomes more ubiquitous, a new perspective emerges: **What if we optimize code style for the AI?** This might mean:
+
+- **Minimal “chaff”**: We reduce unnecessary comments or overly verbose structure if the AI can intuit the meaning.
+- **Structured prompts**: We use very specific patterns or markers to help the AI parse and generate code more effectively.
+- **Emphasis on prompt engineering**: Instead of meticulously formatting our files, we focus on designing prompts and code hints that guide the AI to produce better output.
+
+We’re already seeing the first hints of this in docstring-driven development or “explanatory programming,” where the AI’s suggestions are heavily guided by how the developer writes comments, docstrings, or function signatures. In some sense, this is a new form of code style—**it’s how you speak to the AI** rather than how you speak to other humans.
+
+### A Glimpse Into the Future
+
+Looking ahead, we could envision a world where:
+
+1. **AI as Code Mediator**
+   Humans write high-level logic or requirements in a domain-specific language (or even plain English). The AI turns that into the “real” code. The AI also keeps everything in sync and consistent.
+
+2. **Style as a Configurable Layer**
+   Code style becomes a matter of a single config file or an AI directive. If you want your code to look like the Google style guide, you toggle that setting. If you want it to adopt some custom style, just update the config or prompt.
+
+3. **Code as a Communication Channel**
+   The human-to-AI conversation might take precedence over the conventional human-to-human code reading. “Style” might shift to the best practices for telling the AI exactly what you need, rather than best practices for humans reading code.
+
+### Thoughts
+
+So, **does code still matter?** Yes—and no. Yes, because collaboration, clarity, and maintainability are still vital in most real-world scenarios. No, because the final machine instructions aren’t your typed code anyway, and AI is making it easier than ever to transform code into whatever style or format you desire.
+
+**Ultimately, style is about communication**: communicating intentions to others (teammates, open-source contributors) and, increasingly, communicating intentions to your AI coding partner. As AI tools continue to improve, the emphasis on certain stylistic elements will shift. We may spend less time worrying about the manual placement of parentheses or braces and more time focusing on well-structured, meaningful naming and clarity in how we express concepts.
+
+For now, code style remains a valuable aspect of the development process. But watch this space—**AI is poised to reshape how we write, read, and interpret code** for years to come. Whether it fully eradicates the need for manual style discipline or simply changes its focus is a matter the industry will debate and discover, one AI-assisted commit at a time.
+
+### Epiilogue
+
+This posts isn't a "part 4". The title is a nod to the track "What Does Your Soul Look Like (Part 4)" by DJ Shadow.
+
+<Image src={album} alt="What Does Your Code Look Like (Part 4)" />
+<cite>Album cover for "Endtroducing" by DJ Shadow</cite>
+
+Also, yes, I used AI to write this post. So, does blogging still matter? 🤔
