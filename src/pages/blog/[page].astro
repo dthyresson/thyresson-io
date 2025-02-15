@@ -1,0 +1,108 @@
+---
+import { getCollection } from 'astro:content';
+import type { PaginateFunction } from 'astro';
+import { SITE_TITLE, SITE_IMAGE } from '../../consts';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Tag from '../../components/Tag.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import { Image } from '@unpic/astro';
+
+export async function getStaticPaths({
+  paginate,
+}: {
+  paginate: PaginateFunction;
+}) {
+  const posts = (await getCollection('blog')).sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  );
+
+  // Generate pages from our array of astronauts, with 2 to a page
+  return paginate(posts, { pageSize: 6 });
+}
+// All paginated data is passed on the "page" prop
+const { page } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title={`${SITE_TITLE} | Blog`}
+      description="Things I'm thinking about..."
+      image={SITE_IMAGE}
+    />
+  </head>
+  <body>
+    <main class="md:max-w-2xl lg:max-w-3xl mx-auto px-4 md:px-6">
+      <Header />
+      <section>
+        <div class="space-y-4">
+          <p>
+            Thoughts on technology, AI, and investing, along with things I've
+            built and some rediscovered content from my past: including photos,
+            recipes and papers from my English Comprehensive exams and Joyce
+            Seminars at Middlebury College ('96-'97) found on old Zip disks -
+            and other ephermera from my career in tech.
+          </p>
+          <p>
+            Consider the dates a timeline rather when published or first
+            written.
+          </p>
+          <p class="text-sm text-gray-500 mb-8">
+            Many hero images are AI generated using <a
+              href="https://fal.ai"
+              class="underline">fal.ai</a
+            > using the <a
+              href="https://fal.ai/models/fal-ai/flux/dev"
+              class="underline">fal-ai/flux/dev</a
+            > and <a
+              href="https://fal.ai/models/fal-ai/flux/schnell"
+              class="underline">fal-ai/flux/schnell</a
+            >&nbsp;models.
+          </p>
+        </div>
+        <ul class="space-y-4">
+          {
+            page.data.map((post) => (
+              <li class="py-4 rounded-lg border border-gray-200 p-4 shadow-md">
+                <a href={`/blog/${post.id}`}>
+                  {post.data.heroImage && (
+                    <Image
+                      width={1024}
+                      height={576}
+                      src={post.data.heroImage}
+                      alt=""
+                      class="rounded-lg shadow-lg"
+                    />
+                  )}
+                  <h2 class="text-2xl font-bold my-2">{post.data.title}</h2>
+                  <h2 class="text-lg text-gray-500 my-2">
+                    {post.data.description}
+                  </h2>
+                  <div class="flex flex-wrap gap-2 justify-between align-middle pt-4">
+                    <p class="text-sm">
+                      {post.data.tags.map((tag) => (
+                        <Tag name={tag} />
+                      ))}
+                    </p>
+
+                    <p class="text-sm">
+                      🗓️ <FormattedDate date={post.data.pubDate} />
+                    </p>
+                  </div>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+        {page.url.first ? <a href={page.url.first}>First</a> : null}
+        {page.url.prev ? <a href={page.url.prev}>Previous</a> : null}
+        {page.url.next ? <a href={page.url.next}>Next</a> : null}
+        {page.url.last ? <a href={page.url.last}>Last</a> : null}
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
