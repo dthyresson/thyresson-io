@@ -4,7 +4,7 @@ description: 'Mansfield Park Response | English Comps | Section F - Wilders | 20
 pubDate: '20 Jan 1997'
 updatedDate: 'Feb 11 2025'
 heroImage: '../../images/mansfield-park-response.png'
-tags: ['English Comps', 'Section F', 'Wilders', 'Jane Austen', 'Mansfield Park']
+tags: ['English Comps', 'Middlebury College', 'Jane Austen', 'Mansfield Park']
 ---
 
 From Chapter 27, pages 276-277:

@@ -5,7 +5,7 @@ author: 'A. David Thyresson'
 pubDate: '1997-01-22'
 updatedDate: '2025-02-11'
 heroImage: '../../images/marvell-gallery.png'
-tags: ['Marvell', 'Gallery', 'Comprehensive Program']
+tags: ['Marvell', 'Gallery', 'English Comps', 'Middlebury College']
 ---
 
 Stanza One of The Gallery, page 40 (lines 1-8):

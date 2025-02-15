@@ -5,7 +5,7 @@ description: "A response to Gulliver's Travels by Jonathan Swift for my English 
 pubDate: '1997-01-16'
 updatedDate: '2025-02-11'
 heroImage: '../../images/gulliver.png'
-tags: ["Gulliver's Travels", 'English Comps']
+tags: ['Middlebury College', 'English Comps', 'Literature', 'Satire']
 ---
 
 From Part III, Chapter viii, pages 170-171:

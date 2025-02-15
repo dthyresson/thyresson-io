@@ -5,7 +5,7 @@ description: 'A response to The Revenger Tragedy by Thomas Middleton for my Engl
 pubDate: '1997-01-23'
 updatedDate: '2025-02-11'
 heroImage: '../../images/revengers-tragedy.png'
-tags: ["Revenger's Tragedy", 'English Comps']
+tags: ["Revenger's Tragedy", 'English Comps', 'Middlebury College']
 ---
 
 > CASTIZA: Why are you she?

@@ -5,13 +5,7 @@ pubDate: '8 Jan 1997'
 updatedDate: 'Feb 11 2025'
 heroImage: '../../images/secret-sharer-response.png'
 tags:
-  [
-    'English Comps',
-    'Section F',
-    'Wilders',
-    'Joseph Conrad',
-    'The Secret Sharer',
-  ]
+  ['English Comps', 'Middlebury College', 'Joseph Conrad', 'The Secret Sharer']
 ---
 
 # The Secret Sharer Response
