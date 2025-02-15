@@ -4,9 +4,8 @@ import { SITE_TITLE, SITE_IMAGE } from '../../../consts';
 import BaseHead from '../../../components/BaseHead.astro';
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
-import TagComponent from '../../../components/Tag.astro';
-import FormattedDate from '../../../components/FormattedDate.astro';
-import { Image } from '@unpic/astro';
+
+import PostCard from '../../../components/PostCard.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -55,35 +54,7 @@ const { tag, posts } = Astro.props;
             posts.map((post) => (
               <li class="py-4 rounded-lg border border-gray-200 p-4 shadow-md">
                 <a href={`/blog/${post.id}`}>
-                  {post.data.heroImage && (
-                    <Image
-                      width={1024}
-                      height={576}
-                      src={post.data.heroImage}
-                      alt=""
-                      class="rounded-lg shadow-lg"
-                    />
-                  )}
-                  <h2 class="text-2xl font-bold my-2">{post.data.title}</h2>
-                  <h2 class="text-lg text-gray-500 my-2">
-                    {post.data.description}
-                  </h2>
-                  <div class="flex flex-wrap gap-2 justify-between items-center pt-4">
-                    <div class="flex-1 flex flex-wrap gap-2">
-                      {post.data.tags.map((tag) => (
-                        <a
-                          href={`/blog/tag/${encodeURIComponent(tag)}`}
-                          class="p-1 bg-white hover:bg-gray-50 border border-gray-200 rounded-lg text-sm text-gray-500 hover:text-gray-900 hover:underline"
-                        >
-                          {tag}
-                        </a>
-                      ))}
-                    </div>
-
-                    <p class="text-sm whitespace-nowrap">
-                      🗓️ <FormattedDate date={post.data.pubDate} />
-                    </p>
-                  </div>
+                  <PostCard post={post} />
                 </a>
               </li>
             ))

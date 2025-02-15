@@ -1,0 +1,57 @@
+---
+import { Image } from '@unpic/astro';
+import FormattedDate from './FormattedDate.astro';
+
+interface Props {
+  post: {
+    id: string;
+    data: {
+      title: string;
+      description: string;
+      heroImage: {
+        src: string;
+        width: number;
+        height: number;
+        format: string;
+      };
+      tags: string[];
+      pubDate: Date;
+    };
+  };
+}
+
+const { post } = Astro.props;
+---
+
+{
+  post.data.heroImage && (
+    <Image
+      width={1024}
+      height={576}
+      src={post.data.heroImage.src}
+      alt=""
+      class="rounded-lg shadow-lg"
+    />
+  )
+}
+<h2 class="text-2xl font-bold my-2">{post.data.title}</h2>
+<h2 class="text-lg text-gray-500 my-2">
+  {post.data.description}
+</h2>
+<div class="flex justify-between items-center pt-4">
+  <div class="flex flex-wrap gap-2">
+    {
+      post.data.tags.map((tag) => (
+        <a
+          href={`/blog/tag/${encodeURIComponent(tag)}`}
+          class="p-1 bg-white hover:bg-gray-50 border border-gray-200 rounded-lg text-sm text-gray-500 hover:text-gray-900 hover:underline"
+        >
+          {tag}
+        </a>
+      ))
+    }
+  </div>
+  <p class="text-sm whitespace-nowrap ml-auto">
+    🗓️ <FormattedDate date={post.data.pubDate} />
+  </p>
+</div>
