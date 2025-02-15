@@ -1,8 +1,8 @@
 ---
 title: 'JAMStack Boston Meetup'
 description: 'A look back at the JAMStack Boston Meetup in March 2018'
-pubDate: '2018-03-19'
-updatedDate: '2025-02-12'
+pubDate: '18 March 2018'
+updatedDate: '15 February 2025'
 heroImage: '../../images/jamstack_boston_meetup_sil_march_2018/1.jpeg'
 tags: ['JAMStack', 'Boston', 'Meetup', 'Sports Innovation Lab', 'Netlify']
 ---
@@ -25,16 +25,23 @@ import image14 from '../../images/jamstack_boston_meetup_sil_march_2018/14.jpeg'
 import image15 from '../../images/jamstack_boston_meetup_sil_march_2018/15.jpeg';
 import image16 from '../../images/jamstack_boston_meetup_sil_march_2018/16.jpeg';
 import image17 from '../../images/jamstack_boston_meetup_sil_march_2018/17.jpeg';
+import jamstack_swag from '../../images/jamstack_boston_meetup_sil_march_2018/jamstack_swag.jpg';
+import stick from '../../images/jamstack_boston_meetup_sil_march_2018/sil_founding_team_stick.jpg';
 
-<Image src={image1} alt="Jamstack Boston Meetup SIL March 2018" />
+{' '}
 
-I joined Sports Innovation Lab in the fall of 2016 as part of the founding team in Boston.
+<Image src={stick} alt="Jamstack Boston Meetup SIL March 2018" />I joined Sports
+Innovation Lab in the fall of 2016 as part of the founding team in Boston as
+CTO. In 2016, there were just four of us, but we grew to around 10 when we
+signed this stick a year or so later.
 
 <Image src={image2} alt="Jamstack Boston Meetup SIL March 2018" />
 
+We wanted understand how technology drives innovation in sports. And we were going to do this through data.
+
 <Image src={image3} alt="Jamstack Boston Meetup SIL March 2018" />
 
-<Image src={image4} alt="Jamstack Boston Meetup SIL March 2018" />
+Our CEO was Angela Ruggiero, a gold medalist in Ice Hockey at the 1998 Olympics in Nagano.
 
 <Image src={image5} alt="Jamstack Boston Meetup SIL March 2018" />
 
@@ -50,22 +57,68 @@ I found JAMStack and Netlify thanks to some articles Matt Biilmann published and
 
 <Image src={image8} alt="Jamstack Boston Meetup SIL March 2018" />
 
-Netlify was a great fit for our needs and I quickly became a fan. In fact we bacme one of Netlfy's first enterprise customers and helped shape the platform to better support our needs -- specifically around authentication and authorization.
+Netlify was a great fit for our needs and I quickly became a fan. In fact we became one of Netlfy's first enterprise customers and helped shape the platform to better support our needs -- specifically around authentication and authorization.
+
+<Image src={jamstack_swag} alt="Jamstack Boston Meetup SIL March 2018" />
+
+They even sent us some swag for the event.
 
 <Image src={image9} alt="Jamstack Boston Meetup SIL March 2018" />
 
+My JAMStack stack centered are where I'd store and access data. I chose Contentful for this.
+
 <Image src={image10} alt="Jamstack Boston Meetup SIL March 2018" />
+
+I hadn't yet jumped into Javascript, so I stuck with Ruby and used Middleman to build the site.The amount of data I was processing and number of pages generated was stressing the infrastructure I had.
+
+In early 2018, I was building 30k pages on each deploy --- this grew to over 60k before the end of year.
+
+Sidenote: Eventualy that's how I got into Javascript and building apps using Netlify functions to optimize and defer content generation from build to runtime.
 
 <Image src={image11} alt="Jamstack Boston Meetup SIL March 2018" />
 
+Our JAMStack stack incldued:
+
+- Contentful for data storage and management
+- Netlify for hosting and CI/CD
+- Middleman for building the static site
+- Netlify functions to optimize and defer content generation from build to runtime
+- Crunchbase for company and investor data
+- Clearbit for company and person data
+- Algolia for search
+- Imgix for image optimization
+- Auth0 for authentication and authorization
+
+As one of the first enterprise customers of Netlify, we were one of the first to use Auth0 within their authentication service.
+
 <Image src={image12} alt="Jamstack Boston Meetup SIL March 2018" />
+
+To build the data pipeline, I relied on:
+
+- Feedly to grab the latest news articles in sports technology
+- Diffbot to do NLP extraction on articles
+- Matillion and AWS Redshift for ETL
+- PeriscopeData (now Sisense) to build the data warehouse and analytics
+- Intercom for CRM
 
 <Image src={image13} alt="Jamstack Boston Meetup SIL March 2018" />
 
+And this was the product and data pipeline roadmap circa 2018.
+
+I actually got to build most of this before leaving ~ 2 years later in 2020 just before the pandemic hit.
+
 <Image src={image14} alt="Jamstack Boston Meetup SIL March 2018" />
+
+The plan for SIL was to build a tech community hub for sports technology in Boston.
 
 <Image src={image15} alt="Jamstack Boston Meetup SIL March 2018" />
 
+The plans for 2018 and beyond ...
+
 <Image src={image16} alt="Jamstack Boston Meetup SIL March 2018" />
 
+Sadly, this was the only year of the meetup.
+
 <Image src={image17} alt="Jamstack Boston Meetup SIL March 2018" />
+
+We're hiring! well, in 2019 I was able to hire an agency to build out a mobile app. More on that in another post.

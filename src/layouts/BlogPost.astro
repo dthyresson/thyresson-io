@@ -58,11 +58,11 @@ const { title, description, pubDate, updatedDate, heroImage, tags } =
         </div>
 
         <div class="border-t border-gray-200 mt-4 pt-4 flex justify-between">
-          <FormattedDate date={pubDate} />
+          <span>🗓️ <FormattedDate date={pubDate} /></span>
           {
             updatedDate && (
               <div class="last-updated-on">
-                Last updated on <FormattedDate date={updatedDate} />
+                ⏱️ Last updated on <FormattedDate date={updatedDate} />
               </div>
             )
           }
