@@ -19,7 +19,7 @@ export async function getStaticPaths({
   );
 
   // Generate pages from our array of astronauts, with 2 to a page
-  return paginate(posts, { pageSize: 6 });
+  return paginate(posts, { pageSize: 10 });
 }
 // All paginated data is passed on the "page" prop
 const { page } = Astro.props;
@@ -63,6 +63,13 @@ const { page } = Astro.props;
             >&nbsp;models.
           </p>
         </div>
+        <h3 class="mb-4 text-gray-600 text-lg text-right">
+          Page <a href={`/blog/${page.currentPage}`} class="hover:underline"
+            >{page.currentPage}</a
+          > of <a href={`/blog/${page.lastPage}`} class="hover:underline"
+            >{page.lastPage}</a
+          >
+        </h3>
         <ul class="space-y-4">
           {
             page.data.map((post) => (
@@ -97,10 +104,48 @@ const { page } = Astro.props;
             ))
           }
         </ul>
-        {page.url.first ? <a href={page.url.first}>First</a> : null}
-        {page.url.prev ? <a href={page.url.prev}>Previous</a> : null}
-        {page.url.next ? <a href={page.url.next}>Next</a> : null}
-        {page.url.last ? <a href={page.url.last}>Last</a> : null}
+        <div class="flex gap-6 justify-center mt-8 text-base">
+          {
+            page.url.first && (
+              <a
+                href={page.url.first}
+                class="text-gray-600 hover:text-gray-900 hover:underline flex items-center gap-1"
+              >
+                <span class="text-xl">⏮️</span>
+              </a>
+            )
+          }
+          {
+            page.url.prev && (
+              <a
+                href={page.url.prev}
+                class="text-gray-600 hover:text-gray-900 hover:underline flex items-center gap-1"
+              >
+                <span class="text-xl">◀️</span>
+              </a>
+            )
+          }
+          {
+            page.url.next && (
+              <a
+                href={page.url.next}
+                class="text-gray-600 hover:text-gray-900 hover:underline flex items-center gap-1"
+              >
+                <span class="text-xl">▶️</span>
+              </a>
+            )
+          }
+          {
+            page.url.last && (
+              <a
+                href={page.url.last}
+                class="text-gray-600 hover:text-gray-900 hover:underline flex items-center gap-1"
+              >
+                <span class="text-xl">⏭️</span>
+              </a>
+            )
+          }
+        </div>
       </section>
     </main>
     <Footer />
