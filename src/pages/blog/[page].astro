@@ -9,6 +9,8 @@ import Tag from '../../components/Tag.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import { Image } from '@unpic/astro';
 import PostCard from '../../components/PostCard.astro';
+import BlogIntro from '../../components/BlogIntro.astro';
+import BlogNavigation from '../../components/BlogNavigation.astro';
 
 export async function getStaticPaths({
   paginate,
@@ -36,41 +38,11 @@ const { page } = Astro.props;
     <main class="md:max-w-2xl lg:max-w-3xl mx-auto px-4 md:px-6">
       <Header />
       <section>
-        <div class="space-y-4">
-          <p>
-            Thoughts on technology, AI, and investing, along with things I've
-            built and some rediscovered content from my past: including photos,
-            recipes and papers from my English Comprehensive exams and Joyce
-            Seminars at Middlebury College ('96-'97) found on old Zip disks -
-            and other ephermera from my career in tech.
-          </p>
-          <p>
-            Consider the dates a timeline rather when published or first
-            written.
-          </p>
-          <p class="text-sm text-gray-500 mb-8">
-            Many hero images are AI generated using <a
-              href="https://fal.ai"
-              class="underline">fal.ai</a
-            > using the <a
-              href="https://fal.ai/models/fal-ai/flux/dev"
-              class="underline">fal-ai/flux/dev</a
-            > and <a
-              href="https://fal.ai/models/fal-ai/flux/schnell"
-              class="underline">fal-ai/flux/schnell</a
-            >&nbsp;models.
-          </p>
-        </div>
-        <h3 class="flex justify-between mb-4 text-gray-600 text-lg text-right">
-          <span><a href="/blog/tags" class="hover:none">🏷️ by Tag</a></span>
-          <span
-            >Page <a href={`/blog/${page.currentPage}`} class="hover:underline"
-              >{page.currentPage}</a
-            > of <a href={`/blog/${page.lastPage}`} class="hover:underline"
-              >{page.lastPage}</a
-            ></span
-          >
-        </h3>
+        <BlogIntro />
+        <BlogNavigation
+          currentPage={page.currentPage}
+          lastPage={page.lastPage}
+        />
         <ul class="space-y-4">
           {
             page.data.map((post) => (

@@ -1,0 +1,27 @@
+---
+interface Props {
+  currentPage: number;
+  lastPage: number;
+  showTags?: boolean;
+}
+
+const { currentPage, lastPage, showTags = true } = Astro.props;
+---
+
+<h3 class="flex justify-between mb-4 text-gray-600 text-lg text-right">
+  {
+    showTags && (
+      <span>
+        <a href="/blog/tags" class="hover:underline">
+          🏷️ by Tag
+        </a>
+      </span>
+    )
+  }
+  <span>
+    Page <a href={`/blog/${currentPage}`} class="hover:underline"
+      >{currentPage}</a
+    >
+    of <a href={`/blog/${lastPage}`} class="hover:underline">{lastPage}</a>
+  </span>
+</h3>

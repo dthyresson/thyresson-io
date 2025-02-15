@@ -1,3 +1,71 @@
 ---
-return Astro.redirect(`${Astro.site}blog/1`);
+import { getCollection } from 'astro:content';
+import { SITE_TITLE } from '../../consts';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import PostCard from '../../components/PostCard.astro';
+import BlogIntro from '../../components/BlogIntro.astro';
+import BlogNavigation from '../../components/BlogNavigation.astro';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+// Get first 10 posts (same as pageSize in [page].astro)
+const firstPagePosts = posts.slice(0, 10);
+const totalPages = Math.ceil(posts.length / 10);
 ---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title={`${SITE_TITLE} | Blog`}
+      description="Things I'm thinking about..."
+    />
+  </head>
+  <body>
+    <main class="md:max-w-2xl lg:max-w-3xl mx-auto px-4 md:px-6">
+      <Header />
+      <section>
+        <BlogIntro />
+        <BlogNavigation currentPage={1} lastPage={totalPages} />
+        <ul class="space-y-4">
+          {
+            firstPagePosts.map((post) => (
+              <li class="py-4 rounded-lg border border-gray-200 p-4 shadow-md">
+                <a href={`/blog/${post.id}`}>
+                  <PostCard post={post} />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+        <div class="flex gap-6 justify-center mt-8 text-base">
+          {
+            totalPages > 1 && (
+              <a
+                href="/blog/2"
+                class="text-gray-600 hover:text-gray-900 hover:underline flex items-center gap-1"
+              >
+                <span class="text-xl">▶️</span>
+              </a>
+            )
+          }
+          {
+            totalPages > 1 && (
+              <a
+                href={`/blog/${totalPages}`}
+                class="text-gray-600 hover:text-gray-900 hover:underline flex items-center gap-1"
+              >
+                <span class="text-xl">⏭️</span>
+              </a>
+            )
+          }
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
