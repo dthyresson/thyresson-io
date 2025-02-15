@@ -4,7 +4,7 @@ description: 'A recipe for a Caribbean-inspired sauce.'
 pubDate: 'Jul 23 2005'
 updatedDate: 'Feb 03 2025'
 heroImage: '../../images/cruzan-rum.png'
-tags: ['Caribbean', 'Sauce', 'Cruzan', 'Appetizer']
+tags: ['Recipe', 'Caribbean', 'Appetizer']
 ---
 
 In 2005, I was working at Entessa and I made several trips to St. Croix, USVI to design and deploy a Marine Terminal management system we built for Hovensa.

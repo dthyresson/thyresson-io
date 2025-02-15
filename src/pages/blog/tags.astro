@@ -1,0 +1,53 @@
+---
+import { getCollection } from 'astro:content';
+import { SITE_TITLE } from '../../consts';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Tag from '../../components/Tag.astro';
+
+// Get the current tag from URL params if any
+const currentTag = Astro.url.searchParams.get('tag');
+
+const posts = await getCollection('blog');
+const allTags = [...new Set(posts.flatMap((post) => post.data.tags))].sort();
+
+// Count posts per tag
+const tagCounts = allTags.reduce(
+  (acc, tag) => {
+    acc[tag] = posts.filter((post) => post.data.tags.includes(tag)).length;
+    return acc;
+  },
+  {} as Record<string, number>
+);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title={`${SITE_TITLE} | Blog Tags`}
+      description="Browse blog posts by tag"
+    />
+  </head>
+  <body>
+    <main class="md:max-w-2xl lg:max-w-3xl mx-auto px-4 md:px-6">
+      <Header />
+      <section>
+        <h1 class="text-3xl font-bold mb-8">Blog Tags</h1>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          {
+            allTags.map((tag) => (
+              <Tag
+                tag={tag}
+                count={tagCounts[tag]}
+                isSelected={currentTag === tag}
+              />
+            ))
+          }
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -4,7 +4,7 @@ description: "An exploration of how neural network computer models challenge Cho
 pubDate: '16 Oct 1996'
 updatedDate: '11 Feb 2025'
 heroImage: '../../images/lm-a-g3JNrSAgsIqZ5kyU.png'
-tags: ['Psycholinguistics', 'Neural Networks', 'Chomsky']
+tags: ['Middlebury College', 'Linguistics', 'AI']
 ---
 
 # Psycholinguistics - Presentation Outline

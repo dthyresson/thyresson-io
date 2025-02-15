@@ -4,7 +4,7 @@ description: "Response to Thomas Hardy's poem 'The Convergence of the Twain' for
 pubDate: '1997-01-13'
 updatedDate: '2025-02-11'
 heroImage: '../../images/hardy-convergence-titanic.png'
-tags: ['Hardy', 'Convergence', 'English Comps']
+tags: ['Middlebury College', 'English Comps', 'Literature', 'Poetry']
 ---
 
 > In a solitude of the sea

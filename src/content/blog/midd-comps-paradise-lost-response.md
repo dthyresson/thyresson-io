@@ -5,7 +5,7 @@ description: 'A response to Paradise Lost by John Milton for my English Comprehe
 pubDate: '1997-01-09'
 updatedDate: '2025-02-11'
 heroImage: '../../images/paradise-lost-expulsion.png'
-tags: ['Paradise Lost', 'English Comps']
+tags: ['Paradise Lost', 'English Comps', 'Middlebury College']
 ---
 
 ## Book IX, 163-178 (p.187-188)

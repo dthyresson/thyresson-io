@@ -5,19 +5,7 @@ pubDate: 'Jan 06 1997'
 description: 'Arcadia Response | English Comps | Middlebury College | 06 January 1997'
 updatedDate: 'Jan 06 1997'
 heroImage: '../../images/arcadia-response.png'
-tags:
-  [
-    'Middlebury',
-    'English',
-    'Comps',
-    'Arcadia',
-    'Chaos Theory',
-    'Human Nature',
-    'Mathematics',
-    'Science',
-    'Stoppard',
-    'Drama',
-  ]
+tags: ['Middlebury College', 'English Comps', 'Literature', 'Theater']
 ---
 
 > **CHLOË**: "Byron Fought Fatal Duel, Syas Don" ... Valentine, do you think I'm the first person to think of this?

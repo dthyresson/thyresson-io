@@ -7,7 +7,7 @@ import FormattedDate from '../components/FormattedDate.astro';
 import '../styles/global.css';
 import '@fontsource/zilla-slab';
 import { Image } from '@unpic/astro';
-import Tag from '../components/Tag.astro';
+import PostCard from '../components/PostCard.astro';
 type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage, tags } =
@@ -23,52 +23,36 @@ const { title, description, pubDate, updatedDate, heroImage, tags } =
     <main class="container max-w-3xl mx-auto px-4 md:px-6">
       <Header />
       <article>
+        <PostCard
+          post={{
+            id: '', // or generate an ID if needed
+            data: Astro.props,
+          }}
+        />
+
+        <div class="mt-8">
+          <p class="text-lg text-gray-700 mb-4 border-b border-gray-200 pb-4">
+            {description}
+          </p>
+        </div>
+
+        <div class="prose text-black text-lg my-4">
+          <slot />
+        </div>
+      </article>
+
+      <div class="border-t border-gray-200 mt-4 pt-4 flex justify-between">
+        <span>🗓️ <FormattedDate date={pubDate} /></span>
         {
-          heroImage && (
-            <div class="">
-              <Image
-                width={1024}
-                height={576}
-                src={heroImage}
-                alt=""
-                class="rounded-lg shadow-lg"
-              />
+          updatedDate && (
+            <div class="last-updated-on">
+              ⏱️ Last updated on <FormattedDate date={updatedDate} />
             </div>
           )
         }
-        <div class="py-4">
-          <h2 class="text-2xl font-bold">{title}</h2>
-          <div class="flex flex-wrap gap-2 justify-between align-middle pt-4">
-            <p class="text-sm">
-              {tags.map((tag) => <Tag name={tag} />)}
-            </p>
-            <time class="text-sm">
-              🗓️ <FormattedDate date={pubDate} />
-            </time>
-          </div>
-          <div class="mt-2">
-            <p class="text-lg text-gray-700 mb-4">
-              {description}
-            </p>
-          </div>
-
-          <div class="prose text-black text-lg my-4">
-            <slot />
-          </div>
-        </div>
-
-        <div class="border-t border-gray-200 mt-4 pt-4 flex justify-between">
-          <span>🗓️ <FormattedDate date={pubDate} /></span>
-          {
-            updatedDate && (
-              <div class="last-updated-on">
-                ⏱️ Last updated on <FormattedDate date={updatedDate} />
-              </div>
-            )
-          }
-        </div>
-      </article>
+      </div>
     </main>
+
     <Footer />
   </body>
 </html>

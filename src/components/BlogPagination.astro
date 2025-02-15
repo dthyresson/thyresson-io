@@ -1,0 +1,56 @@
+---
+interface Props {
+  currentPage: number;
+  lastPage: number;
+  firstUrl?: string;
+  prevUrl?: string;
+  nextUrl?: string;
+  lastUrl?: string;
+}
+
+const { currentPage, lastPage, firstUrl, prevUrl, nextUrl, lastUrl } =
+  Astro.props;
+---
+
+<div class="flex gap-6 justify-center mt-8 text-base">
+  {
+    firstUrl && (
+      <a
+        href={firstUrl}
+        class="text-gray-600 hover:text-gray-900 hover:underline flex items-center gap-1"
+      >
+        <span class="text-xl">⏮️</span>
+      </a>
+    )
+  }
+  {
+    prevUrl && (
+      <a
+        href={prevUrl}
+        class="text-gray-600 hover:text-gray-900 hover:underline flex items-center gap-1"
+      >
+        <span class="text-xl">◀️</span>
+      </a>
+    )
+  }
+  {
+    nextUrl && (
+      <a
+        href={nextUrl}
+        class="text-gray-600 hover:text-gray-900 hover:underline flex items-center gap-1"
+      >
+        <span class="text-xl">▶️</span>
+      </a>
+    )
+  }
+  {
+    lastUrl && (
+      <a
+        href={lastUrl}
+        class="text-gray-600 hover:text-gray-900 hover:underline flex items-center gap-1"
+      >
+        <span class="text-xl">⏭️</span>
+      </a>
+    )
+  }
+</div>

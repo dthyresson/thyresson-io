@@ -1,0 +1,66 @@
+---
+import { getCollection } from 'astro:content';
+import { SITE_TITLE } from '../../../consts';
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+
+import PostCard from '../../../components/PostCard.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  const tags = [...new Set(posts.flatMap((post) => post.data.tags))];
+
+  return tags.map((tag) => {
+    const filteredPosts = posts
+      .filter((post) => post.data.tags.includes(tag))
+      .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+    return {
+      params: { tag },
+      props: { posts: filteredPosts, tag },
+    };
+  });
+}
+
+const { tag, posts } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title={`${SITE_TITLE} | Posts tagged "${tag}"`}
+      description={`Blog posts tagged with ${tag}`}
+    />
+  </head>
+  <body>
+    <main class="md:max-w-2xl lg:max-w-3xl mx-auto px-4 md:px-6">
+      <Header />
+      <section>
+        <div class="flex justify-between items-center mb-8">
+          <h1 class="text-3xl font-bold">Posts tagged "{tag}"</h1>
+          <a
+            href="/blog/tags"
+            class="text-gray-600 hover:text-gray-900 hover:underline"
+          >
+            View all tags
+          </a>
+        </div>
+
+        <ul class="space-y-4">
+          {
+            posts.map((post) => (
+              <li class="py-4 rounded-lg border border-gray-200 p-4 shadow-md">
+                <a href={`/blog/${post.id}`}>
+                  <PostCard post={post} />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -1,18 +1,21 @@
 ---
+import { getCollection } from 'astro:content';
+import { SITE_TITLE } from '../../consts';
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import { SITE_TITLE, SITE_IMAGE } from '../../consts';
-import { getCollection } from 'astro:content';
-import FormattedDate from '../../components/FormattedDate.astro';
-import { Image } from '@unpic/astro';
-import '../../styles/global.css';
-import '@fontsource/zilla-slab';
-import Tag from '../../components/Tag.astro';
+import PostCard from '../../components/PostCard.astro';
+import BlogIntro from '../../components/BlogIntro.astro';
+import BlogNavigation from '../../components/BlogNavigation.astro';
+import BlogPagination from '../../components/BlogPagination.astro';
 
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
+
+// Get first 10 posts (same as pageSize in [page].astro)
+const firstPagePosts = posts.slice(0, 10);
+const totalPages = Math.ceil(posts.length / 10);
 ---
 
 <!doctype html>
@@ -21,67 +24,31 @@ const posts = (await getCollection('blog')).sort(
     <BaseHead
       title={`${SITE_TITLE} | Blog`}
       description="Things I'm thinking about..."
-      image={SITE_IMAGE}
     />
   </head>
   <body>
     <main class="md:max-w-2xl lg:max-w-3xl mx-auto px-4 md:px-6">
       <Header />
       <section>
-        <div class="space-y-4">
-          <p>
-            Here you'll find my thoughts on technology, AI, and investing, along
-            with some rediscovered content from my past - including photos,
-            recipes and papers from my English Comprehensive exams and Joyce
-            Seminars at Middlebury College ('96-'97) found on old Zip disks -
-            and other ephermera from my career in tech.
-          </p>
-          <p class="text-sm text-gray-500 mb-8">
-            Images AI generated using <a href="https://fal.ai" class="underline"
-              >fal.ai</a
-            > using the <a
-              href="https://fal.ai/models/fal-ai/flux/dev"
-              class="underline">fal-ai/flux/dev</a
-            > and <a
-              href="https://fal.ai/models/fal-ai/flux/schnell"
-              class="underline">fal-ai/flux/schnell</a
-            >&nbsp;models.
-          </p>
-        </div>
+        <BlogIntro />
+        <BlogNavigation currentPage={1} lastPage={totalPages} />
         <ul class="space-y-4">
           {
-            posts.map((post) => (
+            firstPagePosts.map((post) => (
               <li class="py-4 rounded-lg border border-gray-200 p-4 shadow-md">
-                <a href={`/blog/${post.id}/`}>
-                  {post.data.heroImage && (
-                    <Image
-                      width={1024}
-                      height={576}
-                      src={post.data.heroImage}
-                      alt=""
-                      class="rounded-lg shadow-lg"
-                    />
-                  )}
-                  <h2 class="text-2xl font-bold my-2">{post.data.title}</h2>
-                  <h3 class="text-lg text-gray-500 my-2">
-                    {post.data.description}
-                  </h3>
-                  <div class="flex flex-wrap gap-2 justify-between align-middle pt-4">
-                    <p class="text-sm">
-                      {post.data.tags.map((tag) => (
-                        <Tag name={tag} />
-                      ))}
-                    </p>
-
-                    <p class="text-sm">
-                      🗓️ <FormattedDate date={post.data.pubDate} />
-                    </p>
-                  </div>
+                <a href={`/blog/${post.id}`}>
+                  <PostCard post={post} />
                 </a>
               </li>
             ))
           }
         </ul>
+        <BlogPagination
+          currentPage={1}
+          lastPage={totalPages}
+          nextUrl={totalPages > 1 ? '/blog/2' : undefined}
+          lastUrl={totalPages > 1 ? `/blog/${totalPages}` : undefined}
+        />
       </section>
     </main>
     <Footer />

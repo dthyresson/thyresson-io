@@ -4,15 +4,7 @@ description: 'Passages from Arcadia by Tom Stoppard for my English Comprehensive
 pubDate: '1997-01-29'
 updatedDate: '2025-02-11'
 heroImage: '../../images/arcadia-oral-landscape.png'
-tags:
-  [
-    'Oral Exam',
-    'Passages',
-    'English',
-    'Arcadia',
-    'Tom Stoppard',
-    'Middlebury College',
-  ]
+tags: ['Middlebury College', 'English Comps', 'Literature', 'Theater']
 ---
 
 **_Note: As part of the English major at Middlebury College, we had written and oral exams as part of Comps. I chose these passages from Tom toppard's Arcadia. I don't remember what I said, but I found some notes which I've included below._**

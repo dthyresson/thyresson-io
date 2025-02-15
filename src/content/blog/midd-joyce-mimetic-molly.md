@@ -4,7 +4,7 @@ description: 'Mimetic Final Assignment | Price: Joyce Seminar | Middlebury Colle
 pubDate: '16 December 1996'
 updatedDate: 'Feb 03 2025'
 heroImage: '../../images/mimietic-molly-bloom.png'
-tags: ['Middlebury', 'Joyce Seminar', 'James Joyce']
+tags: ['Middlebury College', 'Literature', 'Joyce']
 ---
 
 **_Note: Me in 2025. I cannot remember the assignment (I know I took liberties), but I do remember writing this while listening to the Portishead album 'Dummy' on repeat and also experimenting with BeOS ... which I even mention in the Critique section. Looking back, I'm fascinated to see how I combined my interest in technology with literature at the time._**

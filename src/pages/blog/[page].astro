@@ -1,0 +1,70 @@
+---
+import { getCollection } from 'astro:content';
+import type { PaginateFunction } from 'astro';
+import { SITE_TITLE } from '../../consts';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Tag from '../../components/Tag.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import { Image } from '@unpic/astro';
+import PostCard from '../../components/PostCard.astro';
+import BlogIntro from '../../components/BlogIntro.astro';
+import BlogNavigation from '../../components/BlogNavigation.astro';
+import BlogPagination from '../../components/BlogPagination.astro';
+
+export async function getStaticPaths({
+  paginate,
+}: {
+  paginate: PaginateFunction;
+}) {
+  const posts = (await getCollection('blog')).sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  );
+
+  return paginate(posts, { pageSize: 10 });
+}
+const { page } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title={`${SITE_TITLE} | Blog`}
+      description="Things I'm thinking about..."
+    />
+  </head>
+  <body>
+    <main class="md:max-w-2xl lg:max-w-3xl mx-auto px-4 md:px-6">
+      <Header />
+      <section>
+        <BlogIntro />
+        <BlogNavigation
+          currentPage={page.currentPage}
+          lastPage={page.lastPage}
+        />
+        <ul class="space-y-4">
+          {
+            page.data.map((post) => (
+              <li class="py-4 rounded-lg border border-gray-200 p-4 shadow-md">
+                <a href={`/blog/${post.id}`}>
+                  <PostCard post={post} />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+        <BlogPagination
+          currentPage={page.currentPage}
+          lastPage={page.lastPage}
+          firstUrl={page.url.first}
+          prevUrl={page.url.prev}
+          nextUrl={page.url.next}
+          lastUrl={page.url.last}
+        />
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
