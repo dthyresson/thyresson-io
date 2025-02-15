@@ -63,11 +63,14 @@ const { page } = Astro.props;
             >&nbsp;models.
           </p>
         </div>
-        <h3 class="mb-4 text-gray-600 text-lg text-right">
-          Page <a href={`/blog/${page.currentPage}`} class="hover:underline"
-            >{page.currentPage}</a
-          > of <a href={`/blog/${page.lastPage}`} class="hover:underline"
-            >{page.lastPage}</a
+        <h3 class="flex justify-between mb-4 text-gray-600 text-lg text-right">
+          <span><a href="/blog/tags" class="hover:none">🏷️ by Tag</a></span>
+          <span
+            >Page <a href={`/blog/${page.currentPage}`} class="hover:underline"
+              >{page.currentPage}</a
+            > of <a href={`/blog/${page.lastPage}`} class="hover:underline"
+              >{page.lastPage}</a
+            ></span
           >
         </h3>
         <ul class="space-y-4">
@@ -88,14 +91,19 @@ const { page } = Astro.props;
                   <h2 class="text-lg text-gray-500 my-2">
                     {post.data.description}
                   </h2>
-                  <div class="flex flex-wrap gap-2 justify-between align-middle pt-4">
-                    <p class="text-sm">
+                  <div class="flex flex-wrap gap-2 justify-between items-center pt-4">
+                    <div class="flex-1 flex flex-wrap gap-2">
                       {post.data.tags.map((tag) => (
-                        <Tag name={tag} />
+                        <a
+                          href={`/blog/tag/${encodeURIComponent(tag)}`}
+                          class="p-1 bg-white hover:bg-gray-50 border border-gray-200 rounded-lg text-sm text-gray-500 hover:text-gray-900 hover:underline"
+                        >
+                          {tag}
+                        </a>
                       ))}
-                    </p>
+                    </div>
 
-                    <p class="text-sm">
+                    <p class="text-sm whitespace-nowrap">
                       🗓️ <FormattedDate date={post.data.pubDate} />
                     </p>
                   </div>

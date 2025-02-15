@@ -1,0 +1,96 @@
+---
+import { getCollection } from 'astro:content';
+import { SITE_TITLE, SITE_IMAGE } from '../../../consts';
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import TagComponent from '../../../components/Tag.astro';
+import FormattedDate from '../../../components/FormattedDate.astro';
+import { Image } from '@unpic/astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  const tags = [...new Set(posts.flatMap((post) => post.data.tags))];
+
+  return tags.map((tag) => {
+    const filteredPosts = posts
+      .filter((post) => post.data.tags.includes(tag))
+      .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+    return {
+      params: { tag },
+      props: { posts: filteredPosts, tag },
+    };
+  });
+}
+
+const { tag, posts } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title={`${SITE_TITLE} | Posts tagged "${tag}"`}
+      description={`Blog posts tagged with ${tag}`}
+      image={SITE_IMAGE}
+    />
+  </head>
+  <body>
+    <main class="md:max-w-2xl lg:max-w-3xl mx-auto px-4 md:px-6">
+      <Header />
+      <section>
+        <div class="flex justify-between items-center mb-8">
+          <h1 class="text-3xl font-bold">Posts tagged "{tag}"</h1>
+          <a
+            href="/blog/tags"
+            class="text-gray-600 hover:text-gray-900 hover:underline"
+          >
+            View all tags
+          </a>
+        </div>
+
+        <ul class="space-y-4">
+          {
+            posts.map((post) => (
+              <li class="py-4 rounded-lg border border-gray-200 p-4 shadow-md">
+                <a href={`/blog/${post.id}`}>
+                  {post.data.heroImage && (
+                    <Image
+                      width={1024}
+                      height={576}
+                      src={post.data.heroImage}
+                      alt=""
+                      class="rounded-lg shadow-lg"
+                    />
+                  )}
+                  <h2 class="text-2xl font-bold my-2">{post.data.title}</h2>
+                  <h2 class="text-lg text-gray-500 my-2">
+                    {post.data.description}
+                  </h2>
+                  <div class="flex flex-wrap gap-2 justify-between items-center pt-4">
+                    <div class="flex-1 flex flex-wrap gap-2">
+                      {post.data.tags.map((tag) => (
+                        <a
+                          href={`/blog/tag/${encodeURIComponent(tag)}`}
+                          class="p-1 bg-white hover:bg-gray-50 border border-gray-200 rounded-lg text-sm text-gray-500 hover:text-gray-900 hover:underline"
+                        >
+                          {tag}
+                        </a>
+                      ))}
+                    </div>
+
+                    <p class="text-sm whitespace-nowrap">
+                      🗓️ <FormattedDate date={post.data.pubDate} />
+                    </p>
+                  </div>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
