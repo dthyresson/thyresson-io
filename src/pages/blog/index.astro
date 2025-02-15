@@ -7,6 +7,7 @@ import Footer from '../../components/Footer.astro';
 import PostCard from '../../components/PostCard.astro';
 import BlogIntro from '../../components/BlogIntro.astro';
 import BlogNavigation from '../../components/BlogNavigation.astro';
+import BlogPagination from '../../components/BlogPagination.astro';
 
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -42,28 +43,12 @@ const totalPages = Math.ceil(posts.length / 10);
             ))
           }
         </ul>
-        <div class="flex gap-6 justify-center mt-8 text-base">
-          {
-            totalPages > 1 && (
-              <a
-                href="/blog/2"
-                class="text-gray-600 hover:text-gray-900 hover:underline flex items-center gap-1"
-              >
-                <span class="text-xl">▶️</span>
-              </a>
-            )
-          }
-          {
-            totalPages > 1 && (
-              <a
-                href={`/blog/${totalPages}`}
-                class="text-gray-600 hover:text-gray-900 hover:underline flex items-center gap-1"
-              >
-                <span class="text-xl">⏭️</span>
-              </a>
-            )
-          }
-        </div>
+        <BlogPagination
+          currentPage={1}
+          lastPage={totalPages}
+          nextUrl={totalPages > 1 ? '/blog/2' : undefined}
+          lastUrl={totalPages > 1 ? `/blog/${totalPages}` : undefined}
+        />
       </section>
     </main>
     <Footer />

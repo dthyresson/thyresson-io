@@ -11,6 +11,7 @@ import { Image } from '@unpic/astro';
 import PostCard from '../../components/PostCard.astro';
 import BlogIntro from '../../components/BlogIntro.astro';
 import BlogNavigation from '../../components/BlogNavigation.astro';
+import BlogPagination from '../../components/BlogPagination.astro';
 
 export async function getStaticPaths({
   paginate,
@@ -54,48 +55,14 @@ const { page } = Astro.props;
             ))
           }
         </ul>
-        <div class="flex gap-6 justify-center mt-8 text-base">
-          {
-            page.url.first && (
-              <a
-                href={page.url.first}
-                class="text-gray-600 hover:text-gray-900 hover:underline flex items-center gap-1"
-              >
-                <span class="text-xl">⏮️</span>
-              </a>
-            )
-          }
-          {
-            page.url.prev && (
-              <a
-                href={page.url.prev}
-                class="text-gray-600 hover:text-gray-900 hover:underline flex items-center gap-1"
-              >
-                <span class="text-xl">◀️</span>
-              </a>
-            )
-          }
-          {
-            page.url.next && (
-              <a
-                href={page.url.next}
-                class="text-gray-600 hover:text-gray-900 hover:underline flex items-center gap-1"
-              >
-                <span class="text-xl">▶️</span>
-              </a>
-            )
-          }
-          {
-            page.url.last && (
-              <a
-                href={page.url.last}
-                class="text-gray-600 hover:text-gray-900 hover:underline flex items-center gap-1"
-              >
-                <span class="text-xl">⏭️</span>
-              </a>
-            )
-          }
-        </div>
+        <BlogPagination
+          currentPage={page.currentPage}
+          lastPage={page.lastPage}
+          firstUrl={page.url.first}
+          prevUrl={page.url.prev}
+          nextUrl={page.url.next}
+          lastUrl={page.url.last}
+        />
       </section>
     </main>
     <Footer />
