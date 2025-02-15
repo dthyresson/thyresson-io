@@ -5,7 +5,7 @@ author: 'A. David Thyresson'
 pubDate: '2011 Sep 16'
 updatedDate: '2025 Feb 11'
 heroImage: '../../images/ahI9OwK5blX_XBIUFtZL7.png'
-tags: ['Sports', 'Research', 'Hockey', 'Sabremetrics', 'SSAC']
+tags: ['Stattleship', 'Sports', 'Research', 'Hockey', 'Sabremetrics', 'SSAC']
 ---
 
 # Some background

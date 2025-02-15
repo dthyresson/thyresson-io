@@ -17,9 +17,9 @@ const { currentPage, lastPage, firstUrl, prevUrl, nextUrl, lastUrl } =
     firstUrl && (
       <a
         href={firstUrl}
-        class="text-gray-600 hover:text-gray-900 hover:underline flex items-center gap-1"
+        class="text-gray-600 hover:text-gray-900 hover:underline   flex items-center gap-1"
       >
-        <span class="text-xl">⏮️</span>
+        <span class="text-lg">⏮️ First</span>
       </a>
     )
   }
@@ -27,9 +27,9 @@ const { currentPage, lastPage, firstUrl, prevUrl, nextUrl, lastUrl } =
     prevUrl && (
       <a
         href={prevUrl}
-        class="text-gray-600 hover:text-gray-900 hover:underline flex items-center gap-1"
+        class="text-gray-600 hover:text-gray-900 flex items-center gap-1"
       >
-        <span class="text-xl">◀️</span>
+        <span class="text-lg">◀️ Previous</span>
       </a>
     )
   }
@@ -37,9 +37,9 @@ const { currentPage, lastPage, firstUrl, prevUrl, nextUrl, lastUrl } =
     nextUrl && (
       <a
         href={nextUrl}
-        class="text-gray-600 hover:text-gray-900 hover:underline flex items-center gap-1"
+        class="text-gray-600 hover:text-gray-900 flex items-center gap-1"
       >
-        <span class="text-xl">▶️</span>
+        <span class="text-lg">Next ▶️</span>
       </a>
     )
   }
@@ -47,9 +47,9 @@ const { currentPage, lastPage, firstUrl, prevUrl, nextUrl, lastUrl } =
     lastUrl && (
       <a
         href={lastUrl}
-        class="text-gray-600 hover:text-gray-900 hover:underline flex items-center gap-1"
+        class="text-gray-600 hover:text-gray-900 flex items-center gap-1"
       >
-        <span class="text-xl">⏭️</span>
+        <span class="text-lg">⏭️ Last</span>
       </a>
     )
   }
