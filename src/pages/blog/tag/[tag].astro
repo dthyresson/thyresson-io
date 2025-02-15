@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import { SITE_TITLE, SITE_IMAGE } from '../../../consts';
+import { SITE_TITLE } from '../../../consts';
 import BaseHead from '../../../components/BaseHead.astro';
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
@@ -32,7 +32,6 @@ const { tag, posts } = Astro.props;
     <BaseHead
       title={`${SITE_TITLE} | Posts tagged "${tag}"`}
       description={`Blog posts tagged with ${tag}`}
-      image={SITE_IMAGE}
     />
   </head>
   <body>

@@ -5,6 +5,9 @@ import '../styles/global.css';
 import { SITE_TITLE } from '../consts';
 import { getImage } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
+
+import ADT from '../images/ADT.jpg';
+
 interface Props {
   title: string;
   description: string;
@@ -20,14 +23,16 @@ const rssURL = new URL('rss.xml', Astro.site);
 
 // Optimize image for OG tags if provided
 let optimizedImageURL;
+
 if (image) {
   const optimizedImage = await getImage({
     src: image,
-    width: 1200, // Recommended OG image width
-    height: 630, // Recommended OG image height
-    // format unspecified will use webp, avif, or original format
+    width: 1200,
+    height: 630,
   });
   optimizedImageURL = new URL(optimizedImage.src, Astro.site);
+} else {
+  optimizedImageURL = new URL(ADT.src, Astro.site);
 }
 ---
 
