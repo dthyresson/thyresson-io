@@ -1,6 +1,6 @@
 ---
-title: 'Stat Shots'
-description: 'A look back at the Stat Shots'
+title: 'Stat Shots: Personalized Sports. In pictures.'
+description: 'A look back at the Stat Shots concept from Stattleship for social media engagement.'
 pubDate: '06 October 2016'
 updatedDate: '15 February 2025'
 heroImage: '../../images/stattleship-stat-shots/../../images/stattleship-stat-shots/Screenshot 2016-08-28 13.24.22.png'
@@ -56,15 +56,17 @@ I knew that images had more engagement than text on social media. So, I scaled o
 
 I had my second shot at making Stattlehip a success.
 
-<Image src={statShot0819} alt="Stat Shot from August 19, 2016" />
+<Image src={statShot0910} alt="Stat Shot from September 10, 2016" />
 
-We tried partnering with leagues and teams. We tested a proof of concept with the NY Jets.
+I built an engine that could generate images in real-time based on stats data and matched them to branded image templates.
+
+In the first version, I created Mustache templates for branded images. Anyone could design these templates to display stats data. The templates rendered into HTML and supported custom images and fonts. They could match images to different subjects like brands, teams, and stat types (touchdowns or recaps). The HTML markup was then converted to PDF and finally to an image. At the time, this was the only way I knew to generate these images. They could be served up and Imgix provided a CDN for caching.
 
 <Image src={statShotRecap} alt="Stat Shots Recap" />
 
-<Image src={statShot0828} alt="Stat Shot from August 28, 2016" />
+We tried partnering with leagues and teams. We tested a proof of concept with the NY Jets.
 
-<Image src={statShot0910} alt="Stat Shot from September 10, 2016" />
+<Image src={statShot0828} alt="Stat Shot from August 28, 2016" />
 
 We went through some iterations: style and design mattered so I had to improve my templating engine and image genration to handle custom fots and image background and assets.
 
@@ -72,43 +74,89 @@ We went through some iterations: style and design mattered so I had to improve m
 
 They even published some to Instagram and elsewhere.
 
+<Image src={statShot0819} alt="Stat Shot from August 19, 2016" />
+
+This was the management dashboard for the Stat Shots that got created in real-tie. You could then pick one to publish directly to your connected social media account like Facebook or Twitter ... or download for later use.
+
+<Image src={statShot1028d} alt="Stat Shot from October 28, 2016" />
+
+When the proof of concept with the Jets ended, I pivoted to letting fans engage with their own Stat Shots.
+
+Thanks to [Aaron Tenbuuren](https://www.linkedin.com/in/aaron10buuren/) for these great icons.
+
 <Image src={statShot0914} alt="Stat Shot from September 14, 2016" />
+
+A mobile app let you follow your favorite teams and players. Then you could post your own Stat Shots to social media you reactions. They got auto hashtagged and could be discovered by others.
 
 <Image src={statShot1005} alt="Stat Shot from October 5, 2016" />
 
 <Image src={statShot1006a} alt="Stat Shot 1 from October 6, 2016" />
 
+I timed it to launch around the same time Twitter was streaming NFL Thursday Night Football in 2016.
+
 <Image src={statShot1006b} alt="Stat Shot 2 from October 6, 2016" />
+
+And it worked! The scores and tweets with Stat Shots matched!
 
 <Image src={statShot1027a} alt="Stat Shot 1 from October 27, 2016" />
 
+You could add your own message like this one to showcasing the first goal scored in a new arena.
+
 <Image src={statShot1027b} alt="Stat Shot 2 from October 27, 2016" />
+
+You add your own "pasta" emoji 🍝 for your favorite player.
 
 <Image src={statShot1027c} alt="Stat Shot 3 from October 27, 2016" />
 
+Share the despair.
+
 <Image src={statShot1027d} alt="Stat Shot 4 from October 27, 2016" />
+
+And the excitement.
 
 <Image src={statShot1027e} alt="Stat Shot 5 from October 27, 2016" />
 
+Realize it's not meant to be.
+
 <Image src={statShot1027f} alt="Stat Shot 6 from October 27, 2016" />
+
+Levwerage that Twitter added icons for known promoted hashtags.
 
 <Image src={statShot1027g} alt="Stat Shot 7 from October 27, 2016" />
 
+The stat shots also told mini stories about the play.
+
 <Image src={statShot1027h} alt="Stat Shot 8 from October 27, 2016" />
+
+Question a call.
 
 <Image src={statShot1027i} alt="Stat Shot 9 from October 27, 2016" />
 
+Celebrate the win.
+
 <Image src={statShot1027j} alt="Stat Shot 10 from October 27, 2016" />
+
+Enjoy feats. So close!
 
 <Image src={statShot1027k} alt="Stat Shot 11 from October 27, 2016" />
 
+Commiserate with the fans.
+
 <Image src={statShot1027l} alt="Stat Shot 12 from October 27, 2016" />
+
+Real-time stats ... fast as a fastball.
 
 <Image src={statShot1027m} alt="Stat Shot 13 from October 27, 2016" />
 
+And the play had context like shots distance. Missed a dunk.
+
 <Image src={statShot1028a} alt="Stat Shot 1 from October 28, 2016" />
 
+All these Stat Shots were available in a responsive Rails web app.
+
 <Image src={statShot1028b} alt="Stat Shot 2 from October 28, 2016" />
+
+The image generation was simplified be done all within Imgix composition with backgrounds, logo watermarks and more.
 
 <Image src={statShot1028c} alt="Stat Shot 3 from October 28, 2016" />
 
