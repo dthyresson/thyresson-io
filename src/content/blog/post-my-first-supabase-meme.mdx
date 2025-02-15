@@ -8,6 +8,9 @@ heroImage: '../../images/all_your_supabase_are_belong_to_us.png'
 tags: ['Supabase', 'Memes']
 ---
 
+import { Image } from '@unpic/astro';
+import meme from '../../images/all_your_supabase_are_belong_to_us.png';
+
 Supabase is the undisputed king of "meme-marketing" in the dev ops world.
 
 Back in 2022, I consulted for them working on authentication and some early GraphQL examples.
@@ -16,4 +19,4 @@ One day, this classic meme just had to be made. It's a take on "All your base be
 
 Since I didn't have the font, I copied "Supabase" letter by letter from the existing text and pasted in place.
 
-![My First Supabase Meme](../../images/all_your_supabase_are_belong_to_us.png)
+<Image src={meme} alt="Supabase Meme" />
