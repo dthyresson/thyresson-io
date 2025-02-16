@@ -79,6 +79,45 @@ Astro.response.headers.set('netlify-cdn-cache-control', 's-maxage=3600');
 // tag is made up of the first post's rkey
 const cacheTag = postsArray[0]?.rkey ?? 'pwv-portfolio-feed';
 Astro.response.headers.set('netlify-cache-tag', cacheTag);
+
+// Add this helper function in the script section
+function formatPostText(post: any): string {
+  if (!post.record.text || !post.record.facets) {
+    return post.record.text || '';
+  }
+
+  let text = post.record.text;
+  const facets = [...post.record.facets].sort(
+    (a, b) => b.index.byteStart - a.index.byteStart
+  );
+
+  for (const facet of facets) {
+    const start = facet.index.byteStart;
+    const end = facet.index.byteEnd;
+
+    if (facet.features[0].$type === 'app.bsky.richtext.facet#link') {
+      const link = facet.features[0].uri;
+      text =
+        text.slice(0, start) +
+        `<a href="${link}" class="text-blue-600 hover:underline inline" target="_blank">` +
+        text.slice(start, end) +
+        '</a>' +
+        text.slice(end);
+    } else if (facet.features[0].$type === 'app.bsky.richtext.facet#mention') {
+      const handle = facet.features[0].did;
+      text =
+        text.slice(0, start) +
+        `<a href="https://bsky.app/profile/${handle}" class="text-blue-600 hover:underline inline" target="_blank">` +
+        text.slice(start, end) +
+        '</a>' +
+        text.slice(end);
+    }
+  }
+
+  // Replace newlines with <br> tags and preserve whitespace
+  text = `<span class="whitespace-pre-wrap">${text}</span>`;
+  return text;
+}
 ---
 
 <!doctype html>
@@ -93,8 +132,8 @@ Astro.response.headers.set('netlify-cache-tag', cacheTag);
     <main class="md:max-w-2xl lg:max-w-3xl mx-auto px-4 md:px-6">
       <Header />
       <h1 class="text-4xl font-bold mb-4">PWV Portfolio Feed</h1>
-      <h2 class="text-xl font-bold mb-4 text-gray-500 font-sans">
-        What our portfolio companies are saying on BlueSky...
+      <h2 class="text-lg font-bold mb-4">
+        What our portfolio companies are saying on BlueSky ...
       </h2>
       <div class="space-y-6 font-sans">
         {
@@ -127,7 +166,10 @@ Astro.response.headers.set('netlify-cache-tag', cacheTag);
 
                 {/* Content section */}
                 <div class="py-3 border-b border-gray-100">
-                  <p class="w-full">{item.post.record.text}</p>
+                  <pre
+                    class="whitespace-pre-wrap font-sans w-full"
+                    set:html={formatPostText(item.post)}
+                  />
                   {item.post.embed?.images?.[0]?.thumb && (
                     <img
                       src={item.post.embed.images[0].thumb}
@@ -160,10 +202,10 @@ Astro.response.headers.set('netlify-cache-tag', cacheTag);
                   <span class="flex items-center gap-1">
                     💬 {item.post.replyCount}
                   </span>
-                  <span class="flex items-center gap-1">
-                    🔄 {item.post.repostCount}
+                  <span class="flex items-center gap-1 text-green-500">
+                    ♻️ {item.post.repostCount}
                   </span>
-                  <span class="flex items-center gap-1">
+                  <span class="flex items-center gap-1 text-red-500">
                     ❤️ {item.post.likeCount}
                   </span>
                 </div>

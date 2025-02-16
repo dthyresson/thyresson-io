@@ -18,6 +18,8 @@ This is a personal blog site for A. David Thyresson built using:
 
   Important:
 
+- When making Astro components enclose sceript within `---` sections
+- Use TypeScript and declare types for all variables and functions
 - Only answer with code for Astro framework
 - Always use spaces, not tabs
 - Always be concise, but helpful
