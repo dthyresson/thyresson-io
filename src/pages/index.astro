@@ -1,4 +1,6 @@
 ---
+import { Image } from '@unpic/astro';
+
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -6,9 +8,18 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { getCollection } from 'astro:content';
 import '@fontsource/zilla-slab';
 import '../styles/global.css';
+import { formatDistanceToNow } from 'date-fns';
 
 const airports = await getCollection('airports');
 const experiments = await getCollection('experiments');
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) =>
+    (b.data.updatedDate || b.data.pubDate).valueOf() -
+    (a.data.updatedDate || a.data.pubDate).valueOf()
+);
+
+const recentPosts = posts.slice(0, 5);
 ---
 
 <!doctype html>
@@ -60,6 +71,52 @@ const experiments = await getCollection('experiments');
               >Factory Records</a
             >), vintage 🥁 🤖 drum machines &amp; 🎹 synths.
           </p>
+          <div>
+            <h2 class="text-xl font-bold">Latest Updates</h2>
+
+            {
+              recentPosts.map((post) => (
+                <div class="flex flex-row gap-4 border-b border-gray-200 pb-4">
+                  {post.data.heroImage && (
+                    <Image
+                      width={160}
+                      height={90}
+                      src={post.data.heroImage.src}
+                      alt=""
+                      class="rounded-md shadow-md"
+                    />
+                  )}
+                  <div class="py-2 w-full">
+                    <a
+                      href={`/blog/${post.id}`}
+                      target="_blank"
+                      class="hover:opacity-80"
+                    >
+                      <p class="font-medium">{post.data.title}</p>
+                    </a>
+                    {post.data.description && (
+                      <p class="text-gray-600">{post.data.description}</p>
+                    )}
+                    <time class="text-gray-600 text-sm mt-auto text-right block">
+                      ⏰
+                      {post.data.updatedDate
+                        ? formatDistanceToNow(new Date(post.data.updatedDate), {
+                            addSuffix: true,
+                          })
+                        : formatDistanceToNow(new Date(post.data.pubDate), {
+                            addSuffix: true,
+                          })}
+                    </time>
+                  </div>
+                </div>
+              ))
+            }
+            <p class="text-right">
+              <a href="/blog">
+                <span class="text-gray-600 text-sm">Read more ...</span>
+              </a>
+            </p>
+          </div>
           <h2 class="text-xl font-bold">Experiments</h2>
           <ul>
             {
