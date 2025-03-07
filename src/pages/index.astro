@@ -86,7 +86,7 @@ const recentPosts = posts.slice(0, 5);
                       class="rounded-md shadow-md"
                     />
                   )}
-                  <div class="py-2">
+                  <div class="py-2 w-full">
                     <a
                       href={`/blog/${post.id}`}
                       target="_blank"
@@ -98,7 +98,7 @@ const recentPosts = posts.slice(0, 5);
                       <p class="text-gray-600">{post.data.description}</p>
                     )}
                     <time class="text-gray-600 text-sm mt-auto text-right block">
-                      ⏰ Updated:
+                      ⏰
                       {post.data.updatedDate
                         ? formatDistanceToNow(new Date(post.data.updatedDate), {
                             addSuffix: true,
