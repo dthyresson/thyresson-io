@@ -1,5 +1,12 @@
 [
   {
+    "id": "baseball-pi-day",
+    "url": "https://baseballpiday.com",
+    "title": "Baseball Pi Day",
+    "description": "5,000 decimals of PI as pairs of in-game baseball inning scores. A hack for Boston Baseball Hackday 2019 ",
+    "tags": ["Baseball", "Pi Day", "Hackathon"]
+  },
+  {
     "id": "pwv-portfolio-feed",
     "url": "/feeds",
     "title": "PWV Portfolio Feed",
