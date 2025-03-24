@@ -1,4 +1,43 @@
-# David Thyresson
+---
+description: Builing my personal Blog using Astro
+globs: 
+alwaysApply: false
+---
+This is a personal blog site for A. David Thyresson built using:
+
+- Astro framework
+  - has static site generator
+    - most pages will be static and prerendered
+  - has database adapter
+    - uses Astro DB adapter
+    - uses Turso as remote production database
+    - these pages will be dynamic and not prerendered
+  - has Netlify adapter for SSR
+- TailwindCSS for styles
+- uses Unpic for image optimization
+  - use import { Image } from '@unpic/astro'; instead of astro:assets
+- deploys to Netlify
+  - for static pages
+  - for dynamic pages (SSR)
+- Use pnpm as package manager (not yarn or npm)
+
+## Directory Structure
+
+```
+.
+├── data
+├── db
+├── public
+│   └── fonts
+├── scripts
+└── src
+    ├── components
+    ├── content
+    ├── images
+    ├── layouts
+    ├── pages
+    └── styles
+```
 
 Personal website and blog built with Astro, Cursor, Netlify, fal, and Tailwind CSS.
 
@@ -68,3 +107,14 @@ You'll have to provide your own API keys for Langbase and FAL AI in the `.env` f
 LANGBASE_API_KEY=
 FAL_API_KEY=
 ```
+
+
+## Important:
+
+- When making Astro components enclose sceript within `---` sections
+- Use TypeScript and declare types for all variables and functions
+- Only answer with code for Astro framework
+- Always use spaces, not tabs
+- Always be concise, but helpful
+
+
