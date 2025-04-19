@@ -12,16 +12,54 @@ const yearRange = {
   end: 1999,
 };
 
-const artists = await db
-  .selectDistinct({
-    artist: Tracks.artist,
-  })
-  .from(Tracks)
-  .where(
-    and(gte(Tracks.year, yearRange.start), lte(Tracks.year, yearRange.end))
-  )
-  .groupBy(Tracks.artist)
-  .orderBy(asc(Tracks.artist));
+// Define the artist type
+type Artist = {
+  artist: string | null;
+};
+
+// Cache key for this query
+const CACHE_KEY = `artists-${yearRange.start}-${yearRange.end}`;
+
+// Get artists with caching
+let artists: Artist[] = [];
+try {
+  const cached = await caches.open('artists-list');
+  const response = await cached.match(CACHE_KEY);
+
+  if (response) {
+    artists = await response.json();
+  } else {
+    artists = await db
+      .selectDistinct({
+        artist: Tracks.artist,
+      })
+      .from(Tracks)
+      .where(
+        and(gte(Tracks.year, yearRange.start), lte(Tracks.year, yearRange.end))
+      )
+      .groupBy(Tracks.artist)
+      .orderBy(asc(Tracks.artist));
+
+    await cached.put(
+      CACHE_KEY,
+      new Response(JSON.stringify(artists), {
+        headers: { 'Cache-Control': 'max-age=3600' },
+      })
+    );
+  }
+} catch (error) {
+  // Fallback to direct DB query if caching fails
+  artists = await db
+    .selectDistinct({
+      artist: Tracks.artist,
+    })
+    .from(Tracks)
+    .where(
+      and(gte(Tracks.year, yearRange.start), lte(Tracks.year, yearRange.end))
+    )
+    .groupBy(Tracks.artist)
+    .orderBy(asc(Tracks.artist));
+}
 
 // Group artists by first letter
 const groupedArtists = artists.reduce(
@@ -64,18 +102,16 @@ const artistsForSearch = sortedGroups.map((letter) => ({
 
 export const prerender = false;
 
-// The browser should always check freshness
+// Allow browser to cache for 5 minutes, then revalidate
 Astro.response.headers.set(
   'cache-control',
-  'public, max-age=0, must-revalidate'
+  'public, max-age=300, must-revalidate'
 );
 
 // The CDN should cache for a week, but revalidate if the cache tag changes
 Astro.response.headers.set('netlify-cdn-cache-control', 's-maxage=604800');
 
 // Tag the page with the content type
-// cache tag is used to invalidate the cache when the page is updated
-// tag is made up of the first post's rkey
 const cacheTag = `pwv-music-collection-${yearRange.start}-${yearRange.end}`;
 Astro.response.headers.set('netlify-cache-tag', cacheTag);
 ---

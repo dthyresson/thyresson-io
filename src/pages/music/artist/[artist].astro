@@ -17,18 +17,56 @@ if (!artist) {
   return Astro.redirect('/music');
 }
 
-const tracks = await db
-  .select()
-  .from(Tracks)
-  .where(eq(Tracks.artist, artist))
-  .orderBy(asc(Tracks.year), asc(Tracks.album), asc(Tracks.name));
+// Define the track type
+type Track = {
+  name: string | null;
+  artist: string | null;
+  album: string | null;
+  genre: string | null;
+  duration: number | null;
+  year: number | null;
+};
+
+// Cache key for this query
+const CACHE_KEY = `artist-tracks-${artist}`;
+
+// Get tracks with caching
+let tracks: Track[] = [];
+try {
+  const cached = await caches.open('artist-tracks');
+  const response = await cached.match(CACHE_KEY);
+
+  if (response) {
+    tracks = await response.json();
+  } else {
+    tracks = await db
+      .select()
+      .from(Tracks)
+      .where(eq(Tracks.artist, artist))
+      .orderBy(asc(Tracks.year), asc(Tracks.album), asc(Tracks.name));
+
+    await cached.put(
+      CACHE_KEY,
+      new Response(JSON.stringify(tracks), {
+        headers: { 'Cache-Control': 'max-age=3600' },
+      })
+    );
+  }
+} catch (error) {
+  // Fallback to direct DB query if caching fails
+  tracks = await db
+    .select()
+    .from(Tracks)
+    .where(eq(Tracks.artist, artist))
+    .orderBy(asc(Tracks.year), asc(Tracks.album), asc(Tracks.name));
+}
 
 export const prerender = false;
 
-// The browser should always check freshness
+// Allow browser to cache for 5 minutes, then revalidate
 Astro.response.headers.set(
   'cache-control',
-  'public, max-age=0, must-revalidate'
+  'public, max-age=300, must-revalidate'
 );
 
 // The CDN should cache for a week, but revalidate if the cache tag changes
@@ -36,7 +74,6 @@ Astro.response.headers.set('netlify-cdn-cache-control', 's-maxage=604800');
 
 // Tag the page with the content type
 // cache tag is used to invalidate the cache when the page is updated
-// tag is made up of the first post's rkey
 const cacheTag = `pwv-music-collection-${artist}`;
 Astro.response.headers.set('netlify-cache-tag', cacheTag);
 ---
