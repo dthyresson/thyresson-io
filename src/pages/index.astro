@@ -130,7 +130,7 @@ const recentPosts = posts.slice(0, 5);
                   )}
                   {experiment.data.tags && (
                     <span>
-                      {experiment.data.tags.map((tag) => (
+                      {experiment.data.tags.map((tag: string) => (
                         <span class="inline-block bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-sm mr-2 mb-2">
                           {tag}
                         </span>
