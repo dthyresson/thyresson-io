@@ -93,3 +93,7 @@ Place"**](https://en.wikipedia.org/wiki/Everybody_in_the_Place), a 1991
 single by The Prodigy. A reminder that culture, like technology, often
 finds its power in moving from everywhere to here -- in the place where
 we live it._
+
+The image was generarated by [fal](https://fal.ai) and the [flux-1/schnell](https://fal.ai/models/fal-ai/flux-1/schnell) model using the following prompt:
+
+> A conceptual illustration showing the unfolding of AI across three movements: “Everywhere” as glowing cloud-like networks in the sky, symbolizing vast foundation models and the dream of AGI; “Somewhere” as structured geometric shapes or pathways representing agents giving direction and purpose; and “Here” as embedded AI inside everyday physical objects like a smartphone, robot, and car chip. The style should be modern, sleek, and slightly abstract — blending digital networks with physical devices to convey intelligence flowing from the cloud into the real world.
