@@ -4,7 +4,7 @@ description: 'GitHub Co-Founder Tom Preston-Werner on the 5-year rule, pivots, a
 pubDate: 'Aug 25 2025'
 updatedDate: 'Aug 05 2025'
 heroImage: '../../images/post-startup-multiverse-5-year/post-startup-multiverse-5-year-hero.png'
-tags: ['Startups', 'Multiverse', 'Time Travel', 'Tom Preston-Werner']
+tags: ['Startups', 'Entrepreneurship', 'Time Travel', 'Tom Preston-Werner']
 ---
 
 # The Startup Multiverse: Why Five Years Reveals the Winning Branch
@@ -13,37 +13,47 @@ In the five years I’ve worked with Tom Preston-Werner, I’ve learned many thi
 
 It turns out you can see startups the same way. Each idea creates a new branch in the founder’s multiverse. Some timelines fade. Some reinvent themselves. And sometimes—just sometimes—one emerges as the winning branch.
 
-And for Tom, the point where you know which branch survives is five years in:
+And for Tom, the point where you know which branch survives is five years in.
 
 > Give something five years, if you can. If you have an idea and think, _this is going to change the world_, within five years you’ll know.
 
-## The Startup Multiverse
+## Why Tom Shared This Story
 
-Startups don’t move forward in straight lines. They branch. Every product iteration, every pivot, every reinvention is a fork in the timeline.
+Tom didn’t share this idea as a neat theory. He framed it as a **teaching moment for the founder community** around one of the hardest choices in entrepreneurship: when to pivot or quit.
 
-Some branches fall away—features that never caught on, business models that didn’t hold. Others stretch forward—gaining traction, stabilizing, drawing resources and attention.
+> We thought it would be interesting to tell a story of how do you decide when to quit or pivot or change your mind about something? Because in the startup game, we like to think that we’ll succeed. And how do you do that? The general advice is, well, you just have to not quit. And then you’ll succeed. Is that true? For me, that definitely hasn’t been true.
 
-In this **startup multiverse**, most branches fade. But one—if you’re lucky—emerges as the canonical path, the winning narrative that carries the company forward.
+### The Chatterbug Example
+
+His case study was **Chatterbug**, a language-learning platform he co-founded after GitHub:
+
+- **Great product** – It worked, taking learners from zero to C1/C2 fluency.
+- **Clear market need** – It addressed gaps left by Duolingo and others.
+- **Strong team** – GitHub co-founders with proven track record.
+- **Adequate time** – They gave it five full years of effort.
+- **Still failed commercially** – The economics of user acquisition and scale didn’t work.
+
+The sobering lesson: sometimes even with all the “right” ingredients, a branch of the multiverse fails.
 
 ## The Five-Year Filter
 
-Tom Preston-Werner, co-founder of GitHub, frames five years as the moment of truth: _“You don’t want to spend your whole life doing the one thing that doesn’t work. That’s not a good algorithm for startup success.”_
+That’s why Tom emphasizes the five-year mark. It’s the checkpoint in the multiverse where you step back and ask: has this branch stabilized, or is it collapsing?
 
-The first two years are too early—branches are still forming. Years three and four reveal which are strengthening, which are wilting. By year five, the pattern is unmistakable. The multiverse has collapsed into a verdict: either one branch thrives, or none do.
+> You don’t want to spend your whole life doing the one thing that doesn’t work. That’s not a good algorithm for startup success.
 
-Think of it as a **temporal filter**: a checkpoint in the multiverse. If no branch has stabilized by then, you don’t keep propping up dying timelines. You step into a new future.
+The first two years are too soon—branches are still forming. Years three and four start to show patterns. By year five, the verdict is clear.
 
 ## Infinite Branches, Finite Outcomes
 
-You can also think of this as the **Infinite Ideas Theory**:
+Tom’s framework comes from what he calls the **Infinite Ideas Theory**:
 
 > There’s no sense in banging your head against the wall for twenty years on an idea that won’t take off. There are infinite ideas, and plenty of them are good enough to actually work.
 
-Even within one startup, infinite micro-futures emerge—pivots, experiments, feature bets. Most are disposable branches. That’s not failure—it’s natural pruning.
+Even within a single startup, infinite micro-futures unfold—product pivots, experiments, features, marketing strategies. Most are disposable branches. That’s not failure—it’s natural pruning.
 
-The founder’s job is not to keep every branch alive, but to recognize which one deserves the story’s full energy.
+The work of the founder isn’t to keep every branch alive. It’s to recognize the one that can grow into the canonical storyline.
 
-## 🌀 Field Note: Famous Winning Branches
+## Field Note: Famous Winning Branches
 
 Some of the most iconic startups only became what they are today by pruning dead branches and finding the one that stuck:
 
@@ -57,22 +67,32 @@ Some of the most iconic startups only became what they are today by pruning dead
 
 ## Sanity in the Multiverse
 
-In time-travel stories, the danger isn’t branching—it’s refusing to let go of the timelines that are already collapsing. The same goes for founders.
+The hardest part is letting go. In time-travel stories, the danger isn’t branching—it’s clinging too long to timelines that are already collapsing.
 
-Tom cautions:
+As Tom puts it:
 
 > For your own mental sanity, there comes a time to move on. It’s not within the first year, or even the second. But if by the third, fourth, and especially the fifth year things aren’t happening, that’s the signal.
 
-Five years is not about arbitrary patience—it’s about mental clarity. A boundary where you stop propping up dying branches and allow the strongest one to become the canon.
+Persistence is important. But endless persistence can be toxic. Five years is long enough to know if the branch is alive—or if it’s time to step into a different future.
 
 ## Closing Loop
 
-The beauty of the startup multiverse is that you don’t need every branch to win. You just need one.
+Tom’s Chatterbug story isn’t about failure. It’s about wisdom. It’s about giving founders **permission** to pivot, reinvent, or quit—without shame—because in the startup multiverse, not every branch is meant to survive.
 
-By year five, you’ll know which timeline has become the real plot—the version of the story worth telling. And if no branch has stabilized? Then it’s time to close the book and start another, with a new first chapter waiting in the infinite library of ideas.
+The beauty of this perspective is that you don’t need every branch to win. You just need one.
 
-Tom reminds me:
+By year five, you’ll know which storyline is becoming the real plot—the version of your startup worth telling. And if none has stabilized? Close the book, and begin another.
+
+As Tom reminds us:
 
 > There’s no sense in killing yourself to make an idea work that isn’t timed right, or that you’re not the right person to execute.
 
 Because in his favorite time-travel stories—as in startups—only one timeline becomes canon.
+
+> ### The Permission to Quit
+>
+> Founders are often told _“never give up.”_ But Tom’s five-year rule reframes the story: quitting or pivoting isn’t weakness, it’s strategy.
+>
+> Giving up on a failing branch isn’t the end of the journey. It’s how you find the one timeline that works.
+>
+> Persistence matters. But clarity matters more.
