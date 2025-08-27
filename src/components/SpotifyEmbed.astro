@@ -1,0 +1,22 @@
+---
+interface Props {
+  type: 'track' | 'album' | 'playlist';
+  id: string;
+  height?: string;
+}
+
+const { type, id, height = type === 'track' ? '152' : '352' } = Astro.props;
+---
+
+<div class="relative w-full max-w-md mx-auto my-6">
+  <iframe
+    src={`https://open.spotify.com/embed/${type}/${id}?utm_source=generator`}
+    width="100%"
+    height={height}
+    frameborder="0"
+    allowfullscreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy"
+    class="w-full rounded-xl shadow-lg"
+  ></iframe>
+</div>
