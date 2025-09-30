@@ -1,8 +1,8 @@
 ---
 title: 'The Startup Multiverse: Why Five Years Reveals the Winning Branch'
 description: 'GitHub Co-Founder Tom Preston-Werner on the 5-year rule, pivots, and finding the winning branch in the startup multiverse.'
-pubDate: 'Aug 25 2025'
-updatedDate: 'Aug 25 2025'
+pubDate: 'Sep 8 2025'
+updatedDate: 'Sep 8 2025'
 heroImage: '../../images/post-startup-multiverse-5-year/post-startup-multiverse-5-year-hero.png'
 tags: ['Startups', 'Entrepreneurship', 'Time Travel', 'Tom Preston-Werner']
 ---

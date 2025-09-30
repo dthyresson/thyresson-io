@@ -2,10 +2,10 @@
 description: From foundation models to agents to embodied intelligence,
   AI is unfolding from everywhere to here.
 heroImage: '../../images/post-ai-everywhere-somehwere-here/dM5pFbnhgGVpNo7_4WWXb.jpeg'
-pubDate: Aug 19 2025
+pubDate: Aug 27 2025
 tags: [AI, Edge, 'Embodied Intelligence']
 title: 'Everywhere, Somewhere, Here: Intelligence in the Place'
-updatedDate: Aug 19 2025
+updatedDate: Aug 27 2025
 ---
 
 # Everywhere, Somewhere, Here: Intelligence in the Place
