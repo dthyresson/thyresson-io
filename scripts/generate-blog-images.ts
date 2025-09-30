@@ -46,7 +46,7 @@ async function processPost(filePath: string, options: ProcessOptions) {
   // console.log('Content length:', content.length, 'characters');
 
   // Get filename without extension for saving images
-  const fileName = path.basename(filePath, '.md');
+  const fileName = path.basename(filePath, '.mdx').replace('.md', '');
   console.log('Processing for fileName:', fileName);
 
   const variables = [
@@ -216,7 +216,9 @@ async function main() {
     const blogDir = path.join(process.cwd(), 'src/content/blog');
     console.log('Reading blog directory:', blogDir);
     const files = await fs.readdir(blogDir);
-    const mdFiles = files.filter((f) => f.endsWith('.md'));
+    const mdFiles = files
+      .filter((f) => f.endsWith('.md') || f.endsWith('.mdx'))
+      .sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
     console.log('Found', mdFiles.length, 'markdown files in blog directory');
 
     let selectedFile: string | undefined;
@@ -226,7 +228,7 @@ async function main() {
       selectedFile = await select({
         message: 'Select a blog post to process:',
         choices: mdFiles.map((file) => ({
-          name: file.replace('.md', ''),
+          name: file.replace('.mdx', '').replace('.md', ''),
           value: file,
         })),
       });
