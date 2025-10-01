@@ -43,6 +43,11 @@ import chemicalBrothersMontrealAdvert from '../../images/post-concerts-been-to/c
 import spinningTraveler from '../../images/post-concerts-been-to/spinning-traveller-ticket-no-bg.png';
 import u2PlaysForum from '../../images/post-concerts-been-to/u2-plays-forum.jpeg';
 import montrealFansRockToU2 from '../../images/post-concerts-been-to/montreal-fans-rock-to-u2.jpeg';
+import philipGlassTowerRecordsAd from '../../images/post-concerts-been-to/philip-glass-tower-records-ad.jpeg';
+import philipGlass from '../../images/post-concerts-been-to/philip-glass.jpeg';
+import sneakerPimpsHeadlineAvalon from '../../images/post-concerts-been-to/sneaker-pimps-headline-avalon.jpeg';
+import sneakerPimpsHmvAd from '../../images/post-concerts-been-to/sneaker-pimps-hmv-ad.jpeg';
+import davidByrneDaviesSf2008 from '../../images/post-concerts-been-to/david-byrne-davies-sf-2008.jpeg';
 
 ### **In a world where everything is on-demand, live music is the one thing that still demands you to show up.**
 
@@ -114,6 +119,7 @@ A college ballroom show, and the energy was electric. It felt like something spe
   <Image
     src={spinningTraveler}
     alt="Blues Traveler + Spin Doctors — Apr 23, 1992 (University of Vermont)"
+    class="shadow-lg p-2 border border-gray-200 rounded-lg"
   />
 </p>
 
@@ -153,18 +159,19 @@ Find the [Spin Doctors set, the segue into the Blues Traveler set, and the begin
 
 ## **U2 (with Pixies) — Mar 23, 1992 (Montreal Forum)**
 
-<p align="center">
+<p class="flex flex-row gap-4 justify-center items-center">
+  {' '}
   <Image
     src={u2PlaysForum}
     alt="U2 (with Pixies) — Mar 23, 1992 (Montreal Forum)"
     height={400}
-    class="shadow-lg"
+    class="shadow-lg p-2 border border-gray-200 rounded-lg"
   />
   <Image
     src={montrealFansRockToU2}
     alt="Montreal fans rock to U2"
-    height={400}
-    class="shadow-lg"
+    height={300}
+    class="shadow-lg p-2 border border-gray-200 rounded-lg"
   />
 </p>
 
@@ -263,7 +270,7 @@ The high-tech show is certainly impressive, but must leave room for organic rock
   <Image
     src={lollapaloozaAdvert}
     alt="Lollapalooza (Red Hot Chili Peppers, Lush) — Aug 8, 1992 (Great Woods, MA)"
-    class="shadow-lg"
+    class="shadow-lg p-2 border border-gray-200 rounded-lg"
   />
 </p>
 
@@ -280,27 +287,58 @@ It wasn’t just a concert—it was a cultural moment. Alternative music taking 
 ## **B.B. King — Oct 25, 1993 (Cirkus, Stockholm)**
 
 <p align="center">
-  <Image src={bbKingTicket} alt="" />
+  <Image
+    src={bbKingTicket}
+    alt="B.B. King — Oct 25, 1993 (Cirkus, Stockholm) Ticket"
+    class="shadow-lg p-2 border border-gray-200 rounded-lg"
+  />
 </p>
 
 Seeing a legend like B.B. King in an intimate venue overseas? That was a gift. You don’t forget the feeling of blues played by the man himself.
 
 ## **James Brown — Dec 4, 1993 (Ericsson Globe, Stockholm)**
 
-<p align="center">
-  <Image src={jamesBrownTicket} alt="" />
-  <Image src={jamesBrownConcert} alt="" />
+<p class="flex flex-row gap-4 justify-center">
+  <Image
+    src={jamesBrownTicket}
+    alt="James Brown — Dec 4, 1993 (Ericsson Globe, Stockholm) Ticket"
+    class="shadow-lg p-2 border border-gray-200 rounded-lg"
+  />
+  <Image
+    src={jamesBrownConcert}
+    alt="James Brown — Dec 4, 1993 (Ericsson Globe, Stockholm) Concert"
+    class="shadow-lg p-2 border border-gray-200 rounded-lg"
+  />
 </p>
 The Godfather of Soul. The energy, the moves, the sheer showmanship—this was a
 master class in performance.
 
 ## **The Chemical Brothers — May 14, 1997 (Métropolis, Montreal)**
 
-<Image src={chemicalBrothersMontrealAdvert} alt="" />
+<Image
+  src={chemicalBrothersMontrealAdvert}
+  alt="The Chemical Brothers — May 14, 1997 (Métropolis, Montreal) Advert"
+  class="shadow-lg p-2 border border-gray-200 rounded-lg"
+/>
 
 Electronic music as a full-body experience. Beats, lights, and the sense that the future had arrived on the dance floor.
 
 ## **Sneaker Pimps (with Luke Vibert; Aphex Twin) — Sep 7–8, 1997 (Avalon, Boston)**
+
+<p class="flex flex-col gap-4 justify-center items-center">
+  <Image
+    src={sneakerPimpsHeadlineAvalon}
+    alt="Sneaker Pimps — Sep 7–8, 1997 (Avalon, Boston) Headline"
+    class="shadow-lg p-2 border border-gray-200 rounded-lg"
+    width={500}
+  />
+  <Image
+    src={sneakerPimpsHmvAd}
+    alt="Sneaker Pimps — Sep 7–8, 1997 (Avalon, Boston) HMV Ad"
+    class="shadow-lg p-2 border border-gray-200 rounded-lg"
+    height={600}
+  />
+</p>
 
 This one felt ahead of its time. Trip-hop colliding with experimental electronica, and Aphex Twin bending sound into shapes no one else dared.
 
@@ -352,6 +390,7 @@ At the CMJ Musicfest, the presence of guys like Vibert and James had the effect 
   <Image
     src={middleEastAdvert}
     alt="Flyer for Tortoise and Oval at The Middle East, Cambridge, May 6, 1998"
+    class="shadow-lg p-2 border border-gray-200 rounded-lg"
   />
 </p>
 
@@ -362,6 +401,21 @@ From the "Road Tripping" columns of the Arts section on page 4 of the May 1, 199
 > Post-rock instrumental visionaries Tortoise return with another big-production experimental jazz/dub/electronic thingamabob, and tagging along is Berliner Marcus Popp, who records as Oval, which is also the name he's given to the software he's created to deconstruct and reassemble digital sound files. He'll be on stage accompanied only by his laptop, and the screen will be projected behind him so you can see how he does it. That's at Lupo's Heartbreak Hotel (401-272-5876) in Providence on May 5, and at the Middle East on May 6.
 
 ## **Phillip Glass — January 15, 1999 (Wang Center, Boston, MA)**
+
+<p class="flex flex-row gap-4 justify-center">
+  <Image
+    src={philipGlassTowerRecordsAd}
+    alt="Phillip Glass — January 15, 1999 (Wang Center, Boston, MA) Advert"
+    class="shadow-lg p-2 border border-gray-200 rounded-lg"
+    height={400}
+  />
+  <Image
+    src={philipGlass}
+    alt="Phillip Glass — January 15, 1999 (Wang Center, Boston, MA) Concert"
+    class="shadow-lg p-2 border border-gray-200 rounded-lg"
+    height={400}
+  />
+</p>
 
 <ReferencePanel title="Tone Poet - Philip Glass returns to Koyaanisqatsi" author="Tristram Lozaw" source="The Boston Phoenix" href="https://bostonphoenix.com/archive/music/99/01/07/PHILIP_GLASS.html">
 
@@ -383,6 +437,14 @@ A small club, a beloved band, and songs that still sound as vital as the first t
 <SpotifyEmbed type="album" id="6Gkr2rfEaP8tWbxZdt7HOv" />
 
 ## **David Byrne — Oct 7, 2008 (Davies Symphony Hall, San Francisco)**
+
+<p class="flex flex-row gap-4 justify-center">
+  <Image
+    src={davidByrneDaviesSf2008}
+    alt="David Byrne — Oct 7, 2008 (Davies Symphony Hall, San Francisco)"
+    class="shadow-lg p-2 border border-gray-200 rounded-lg"
+  />
+</p>
 
 Byrne performing Byrne/Eno material with theatrical brilliance. It was art, music, and storytelling all at once.
 
