@@ -1,0 +1,50 @@
+---
+export interface Props {
+  title?: string;
+  author?: string;
+  source?: string;
+  href?: string;
+}
+
+const { title, author, source, href } = Astro.props as Props;
+---
+
+<aside
+  class="font-sans my-6 rounded-md border border-neutral-300/60 bg-neutral-50/60 p-4 dark:border-neutral-400/30 dark:bg-neutral-950/20"
+>
+  <header class="mb-2">
+    {
+      title ? (
+        <div class="text-xl font-semibold text-neutral-900 dark:text-neutral-200 mb-4">
+          {title}
+        </div>
+      ) : null
+    }
+    {
+      author || source ? (
+        <div class="text-medium text-neutral-800/90 dark:text-neutral-300/80">
+          {author ? author : ''}
+          {author && source ? ' · ' : ''}
+          {source ? source : ''}
+        </div>
+      ) : null
+    }
+    {
+      href ? (
+        <a
+          href={href}
+          class="text-sm text-neutral-900 underline underline-offset-2 hover:no-underline dark:text-neutral-300"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          View original
+        </a>
+      ) : null
+    }
+  </header>
+  <div
+    class="mt-4 font-sans prose prose-zinc max-w-none text-zinc-800 dark:prose-invert dark:text-zinc-200"
+  >
+    <slot />
+  </div>
+</aside>
