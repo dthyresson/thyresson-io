@@ -1,0 +1,39 @@
+---
+import { Image } from '@unpic/astro';
+
+interface Props {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+  priority?: boolean;
+  class?: string;
+  caption?: string;
+}
+
+const {
+  src,
+  alt,
+  width = 800,
+  height = 600,
+  priority = false,
+  class: className = '',
+  caption
+} = Astro.props;
+---
+
+<figure class={`relative w-full max-w-full my-8 ${className}`}>
+  <Image
+    src={src}
+    alt={alt}
+    width={width}
+    height={height}
+    priority={priority}
+    class="block w-full h-auto rounded-lg shadow-lg"
+  />
+  {caption && (
+    <figcaption class="mt-2 text-sm text-gray-600 text-center italic">
+      {caption}
+    </figcaption>
+  )}
+</figure>

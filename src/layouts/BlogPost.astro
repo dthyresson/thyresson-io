@@ -30,13 +30,7 @@ const { title, description, pubDate, updatedDate, heroImage, tags } =
           }}
         />
 
-        <div class="mt-8">
-          <p class="text-lg text-gray-700 mb-4 border-b border-gray-200 pb-4">
-            {description}
-          </p>
-        </div>
-
-        <div class="prose text-black text-lg my-4">
+        <div class="prose text-black text-lg my-4 max-w-5xl">
           <slot />
         </div>
       </article>

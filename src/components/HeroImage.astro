@@ -1,0 +1,32 @@
+---
+import { Image } from '@unpic/astro';
+
+interface Props {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+  priority?: boolean;
+  class?: string;
+}
+
+const {
+  src,
+  alt,
+  width = 1200,
+  height = 600,
+  priority = true,
+  class: className = ''
+} = Astro.props;
+---
+
+<div class={`relative w-full overflow-hidden mb-8 ${className}`}>
+  <Image
+    src={src}
+    alt={alt}
+    width={width}
+    height={height}
+    priority={priority}
+    class="block w-full h-64 md:h-80 lg:h-96 object-cover rounded-lg shadow-xl"
+  />
+</div>
