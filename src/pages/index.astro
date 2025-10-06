@@ -1,5 +1,6 @@
 ---
 import { Image } from '@unpic/astro';
+import PWVLogo from '../components/PWVLogo.astro';
 
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
@@ -34,7 +35,10 @@ const recentPosts = posts.slice(0, 5);
         <div class="prose text-lg text-black">
           <p>
             I&#x27;m a Managing Director and General Partner at
-            <a href="https://www.pwv.com/" target="_blank">PWV</a>
+            <span class="inline-flex items-baseline gap-2">
+              <PWVLogo size={20} />
+              <a href="https://www.pwv.com/" target="_blank">PWV</a>
+            </span>
             where I invest in early stage technology startups alongside
             <a href="https://tom.preston-werner.com" target="_blank"
               >Tom Preston-Werner</a
