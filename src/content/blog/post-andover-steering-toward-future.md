@@ -3,7 +3,7 @@ title: 'Steering Toward the Future: Andover’s Framework for 21st-Century Learn
 description: 'A conversation with Head of School Raynard S. Kington, MD, PhD, P’24, P’27, and Nicholas Zufelt, Instructor in Mathematics, Statistics, and Computer Science'
 pubDate: '2025 Oct 07'
 updatedDate: '2025 Oct 07'
-heroImage: '../../images/post-concerts-been-to/generated-1759269020516-3.jpeg'
+heroImage: '../../images/post-andover-steering-toward-future/72OpvFmceIiCvnstoDFQu.png'
 tags: ['Andover', 'Learning', '21st-Century Learning', 'AI']
 ---
 
