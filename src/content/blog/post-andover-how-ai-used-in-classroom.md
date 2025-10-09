@@ -1,5 +1,5 @@
 ---
-title: 'Examples of how AI is used in the Classroom at Phillips Andover'
+title: 'Examples of How AI is Used in the Classroom at Phillips Andover'
 description: 'Nicholas Zufelt, Instructor in Mathematics, Statistics, and Computer Science at Phillips Andover described several concrete examples of how Andover teachers are already using AI in their classrooms'
 pubDate: '2025 Oct 09'
 updatedDate: '2025 Oct 09'
@@ -7,11 +7,15 @@ heroImage: '../../images/post-andover-how-ai-used-in-classroom/etMfuD4RBmbwhLycB
 tags: ['Andover', 'Learning', '21st-Century Learning', 'AI']
 ---
 
-# Examples of how AI is used in the Classroom at Phillips Andover
+# Examples of How AI is Used in the Classroom at Phillips Andover
 
-Nicholas Zufelt, Instructor in Mathematics, Statistics, and Computer Science at Phillips Andover, described **several concrete examples of how Andover teachers are already using AI in their classrooms**, both in his own Computer Science courses and in other departments.
+On October 8th, I attended an evening discussion in Boston featuring [Phillips Academy Andover's](https://www.andover.edu) [Head of School, Dr. Raynard S. Kington](https://www.andover.edu/people/raynard-kington), and [Computer Science instructor Nicholas Zufelt](https://www.andover.edu/people/nicholas-zufelt).
 
----
+You can [read the transcript of the discussion here](/blog/post-andover-steering-toward-future).
+
+Nicholas Zufelt described **several concrete examples of how Andover teachers are already using AI in their classrooms**, both in his own Computer Science courses and in other departments.
+
+I've included the examples below, with some thoughts.
 
 ### **1. AI as a Simulation Tool (Computer Science)**
 
@@ -23,6 +27,8 @@ Students feed their code into AI with instructions like:
 This helps students **rehearse conceptual understanding** and practice clear explanations.
 It treats AI as a **supporting partner**, not a replacement for thinking.
 
+Thoughts: like pair programming and collaboration
+
 ---
 
 ### **2. “AI as \_\_\_\_” Framework**
@@ -33,7 +39,7 @@ Zufelt encourages teachers to imagine different “AI as…” use cases:
 - **AI as a student** – where the human teaches and explains concepts to the AI, reinforcing their own understanding.
 - **AI as a manager** – simulating an employee–manager conversation to help students plan and practice interpersonal communication.
 
-This broadens how AI can be used as a **creative and reflective learning tool.**
+Thoughts: This broadens how AI can be used as a **creative and reflective learning tool.**
 
 ---
 
@@ -43,6 +49,8 @@ He highlighted **Dr. Carrie Lambert’s** work in the History Department:
 After studying a real primary source, students **prompt AI to generate a fake version** in the same style.
 Then they compare the authentic and AI versions to identify inaccuracies or biases.
 This helps students **strengthen source analysis, critical reading, and prompt design** skills.
+
+Thoughts: critical think. dont just accept what AI says. still see if it's accurate. don't abdicate your own critical thinking.
 
 ---
 
@@ -57,13 +65,18 @@ Zufelt described a widely used writing experiment called the **seven-prompt essa
 
 This approach assesses **editorial judgment, reflection, and metacognition** — how well the student communicates with and directs AI — rather than the quality of the AI’s writing.
 
+Thoughts: worklogs and agentic coding.
+
 ---
 
 ### **5. “Unplugged” Assessment and Creativity**
 
 Finally, he mentioned teachers who still assign **handwritten, in-class work** but use it creatively:
 students might **cut up and rearrange** their written work, simulating the editing process digitally without AI tools.
+
 This preserves **hands-on critical thinking** while maintaining creativity and adaptability in assessment design.
+
+Thoughts: paper and pencil is still valuable. dont just go digital.
 
 ---
 
