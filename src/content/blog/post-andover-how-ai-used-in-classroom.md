@@ -1,8 +1,8 @@
 ---
 title: 'Examples of how AI is used in the Classroom at Phillips Andover'
 description: 'Nicholas Zufelt, Instructor in Mathematics, Statistics, and Computer Science at Phillips Andover described several concrete examples of how Andover teachers are already using AI in their classrooms'
-pubDate: '2025 Oct 08'
-updatedDate: '2025 Oct 08'
+pubDate: '2025 Oct 09'
+updatedDate: '2025 Oct 09'
 heroImage: '../../images/post-andover-how-ai-used-in-classroom/etMfuD4RBmbwhLycBzWVC.png'
 tags: ['Andover', 'Learning', '21st-Century Learning', 'AI']
 ---

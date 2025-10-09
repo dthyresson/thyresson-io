@@ -1,18 +1,31 @@
 ---
 title: 'Steering Toward the Future: Andover’s Framework for 21st-Century Learning'
 description: 'A conversation with Head of School Raynard S. Kington, MD, PhD, P’24, P’27, and Nicholas Zufelt, Instructor in Mathematics, Statistics, and Computer Science'
-pubDate: '2025 Oct 07'
-updatedDate: '2025 Oct 07'
+pubDate: '2025 Oct 08'
+updatedDate: '2025 Oct 08'
 heroImage: '../../images/post-andover-steering-toward-future/72OpvFmceIiCvnstoDFQu.png'
 tags: ['Andover', 'Learning', '21st-Century Learning', 'AI']
 ---
 
-# Steering Toward the Future: Andover’s Framework for 21st-Century Learning
+# Steering Toward the Future: Andover's Framework for 21st-Century Learning
+
+Last night, I attended an evening discussion in Boston featuring [Phillips Academy Andover's](https://www.andover.edu) [Head of School, Dr. Raynard S. Kington](https://www.andover.edu/people/raynard-kington), and [Computer Science instructor Nicholas Zufelt](https://www.andover.edu/people/nicholas-zufelt).
+
+As an alumnus (class of '91) and an [investor in AI startups](https://pwv.com/portfolio?tags=ai), I wanted to hear more about the school's commitment to teaching and learning in the AI era.
+
+Their conversation about how [Andover](https://www.andover.edu) is reimagining education for the AI era—focusing on competencies over content, critical thinking over rote learning, and embracing AI as a supportive tool rather than fearing it—offered valuable insights into the future of teaching and learning.
+
+What follows is the transcript from the evening.
+
+Note: The hero image is AI generated using [fal](https://fal.ai) using a photo of the empty room/stage that I took before the talk began using the [fal-ai/qwen-image-edit/image-to-image](https://fal.ai/models/fal-ai/qwen-image-edit/image-to-image) model using the prompt:
+
+`add ai robots in seats listening to human speakers give talk about ai in classroom. show electric waves connecting the robots and human minds like lightning glowing energy`
 
 ### **Event Details**
 
-Thank you so much for joining us this evening in Boston for _Steering Toward the Future: Andover's Framework for 21st-Century Learning_ with **Head of School Raynard S. Kington, MD, PhD, P’24, P’27**, and **Nicholas Zufelt, Instructor in Mathematics, Statistics, and Computer Science.**
-
+- _Steering Toward the Future: Andover's Framework for 21st-Century Learning_
+- Head of School [**Raynard S. Kington**](https://www.andover.edu/people/raynard-kington), MD, PhD, P’24, P’27
+- [**Nicholas Zufelt**](https://www.andover.edu/people/nicholas-zufelt), Instructor in Mathematics, Statistics, and Computer Science.
 - **Date:** Tuesday, October 7, 2025, 6–8 p.m.
 - **Location:** Sheraton Boston Hotel, Commonwealth Room
 
