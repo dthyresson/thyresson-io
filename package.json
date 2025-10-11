@@ -23,7 +23,7 @@
     "@libsql/client": "^0.14.0",
     "@tailwindcss/vite": "^4.1.11",
     "@unpic/astro": "^1.0.1",
-    "astro": "^5.14.1",
+    "astro": "^5.14.3",
     "date-fns": "^4.1.0",
     "dotenv": "^16.4.7",
     "react": "^19.1.1",
