@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://thyresson.io/sitemap-index.xml

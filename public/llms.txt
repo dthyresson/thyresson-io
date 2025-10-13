@@ -1,0 +1,45 @@
+# David Thyresson - Personal Website and Blog
+
+> David Thyresson, General Partner at Preston-Werner Ventures
+
+## About
+
+This is the personal website and blog of A. David Thyresson.
+
+David is a Managing Director and General Partner at PWV (Preston-Werner Ventures) where he invests in early stage technology startups alongside Tom Preston-Werner and David Price.
+
+## Key URLs
+
+- Home: /
+- Blog: /blog
+- RSS Feed: /rss.xml
+- Music: /music
+- Feeds: /feeds
+
+## Topics
+
+This site covers:
+- Venture capital and startup investing
+- Technology (RedwoodJS, Supabase, web development)
+- Education and AI in education
+- Music (concerts attended, music technology, drum machines, synthesizers)
+- Personal essays and poetry
+- Recipes
+- Academic papers (Joyce, Middlebury coursework)
+
+## Technology Stack
+
+Built with:
+- Astro framework
+- TailwindCSS
+- Astro DB (Turso)
+- Netlify
+
+## Contact
+
+- GitHub: https://github.com/dthyresson
+- X: https://x.com/dthyresson
+- Bluesky: https://bsky.app/profile/thyresson.co
+- LinkedIn: https://www.linkedin.com/in/dthyresson/
+- Val.town: https://www.val.town/u/dthyresson
+

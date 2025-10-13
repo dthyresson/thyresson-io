@@ -121,30 +121,6 @@ const recentPosts = posts.slice(0, 5);
               </a>
             </p>
           </div>
-          <h2 class="text-xl font-bold">Experiments</h2>
-          <ul>
-            {
-              experiments.map((experiment) => (
-                <li>
-                  <a href={experiment.data.url} target="_blank">
-                    {experiment.data.title}
-                  </a>
-                  {experiment.data.description && (
-                    <span> - {experiment.data.description}</span>
-                  )}
-                  {experiment.data.tags && (
-                    <span>
-                      {experiment.data.tags.map((tag: string) => (
-                        <span class="inline-block bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-sm mr-2 mb-2">
-                          {tag}
-                        </span>
-                      ))}
-                    </span>
-                  )}
-                </li>
-              ))
-            }
-          </ul>
           <h2 class="text-xl font-bold">About me</h2>
           <div class="space-y-4">
             <p>
