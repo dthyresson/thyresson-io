@@ -197,7 +197,7 @@ How are you teaching students to prompt AI?
 ---
 
 **Zufelt:**
-There are lots of great examples across campus. In **History**, Dr. Carrie Lambert has students work with primary sources — then prompts AI to create a _fake_ primary source in that style. Students then compare and analyze how the AI got it wrong.
+There are lots of great examples across campus. In **History**, Dr. Keri Lambert has students work with primary sources — then prompts AI to create a _fake_ primary source in that style. Students then compare and analyze how the AI got it wrong.
 
 In my own field, it’s about **metacognition** — knowing what you know and how that shapes your interaction with AI.
 

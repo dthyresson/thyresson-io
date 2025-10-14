@@ -53,7 +53,7 @@ What makes this framework particularly effective is its flexibility — it turns
 
 ### **3. AI in History: Creating and Analyzing “Fake” Primary Sources**
 
-He highlighted **Dr. Carrie Lambert’s** work in the History Department:
+He highlighted **Dr. Keri Lambert’s** work in the History Department:
 After studying a real primary source, students **prompt AI to generate a fake version** in the same style.
 Then they compare the authentic and AI versions to identify inaccuracies or biases.
 This helps students **strengthen source analysis, critical reading, and prompt design** skills.
