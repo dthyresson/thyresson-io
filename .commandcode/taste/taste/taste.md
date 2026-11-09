@@ -7,4 +7,5 @@
 - Dislikes blog prose written as a long run of one-sentence paragraphs; wants sections (especially conclusions) tightened into a few dense paragraphs that keep the key beats and cut the rest. Confidence: 0.65
 - When he has supplied his own copy (abstracts, descriptions, blurbs), wants it used verbatim instead of being rewritten or "improved" — offer alternatives alongside it, but keep his original wording as the default. Confidence: 0.6
 - When a blog post names a company in a heading, wants the company's logo shown inline with that heading (not text alone); logos can be pulled from the company/portfolio site. Confidence: 0.55
+- Prefers post section headings to reuse the caption/title text of the accompanying slide image verbatim (e.g. "Bands Thrive on Energy, Grow with Structure, Succeed with Success") instead of freshly written headings. Confidence: 0.55
 - Prefers upgrading dependencies/frameworks to current versions to fix problems "at the source" rather than patching transitive packages or staying on outdated versions. Confidence: 0.6
