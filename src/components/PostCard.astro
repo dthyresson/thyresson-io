@@ -7,6 +7,7 @@ interface Props {
     id: string;
     data: {
       title: string;
+      subtitle?: string;
       description: string;
       heroImage: {
         src: string;
@@ -40,6 +41,19 @@ const { post, featured = false } = Astro.props;
 ) : (
   <h2 class="text-2xl font-bold my-2">{post.data.title}</h2>
 )}
+{
+  post.data.subtitle && (
+    <p
+      class={
+        featured
+          ? 'text-xl md:text-2xl text-gray-700 my-2'
+          : 'text-lg text-gray-600 my-1'
+      }
+    >
+      {post.data.subtitle}
+    </p>
+  )
+}
 {featured ? (
   <p class="text-xl text-gray-500 my-2">{post.data.description}</p>
 ) : (

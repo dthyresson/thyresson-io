@@ -1,11 +1,21 @@
 # Taste
 - When having creative assets (e.g. generated images) produced, wants several candidate variants to choose from rather than a single output. Confidence: 0.7
 - In an artwork set, expects the hero/primary image to use a distinct design, palette and composition from the supporting/section images — not a reused treatment — and to be the boldest, most eye-catching piece. Confidence: 0.75
+- For new post artwork, expects the design to be grounded in the curated reference sleeves kept in the post's artwork source folder (e.g. `artwork/<post>/klf-source/`) so new pieces match the established visual language rather than being invented fresh. Confidence: 0.5
 - Wants at least one hero variant laid out for SEO/OG social sharing (wide, readable at small preview sizes), with the remaining art kept in their native album/square format. Confidence: 0.6
 - Blog posts should end with a short tools footnote crediting what was used, each with a link plus the exact model name and tool version (e.g. fal + model id, Command Code v1.88.5 + model id). Confidence: 0.7
 - Prefers blog post intros kept short — cuts scene-setting/atmospheric buildup in favor of fewer, tighter paragraphs that get straight to the point. Confidence: 0.55
 - Dislikes blog prose written as a long run of one-sentence paragraphs; wants sections (especially conclusions) tightened into a few dense paragraphs that keep the key beats and cut the rest. Confidence: 0.65
-- When he has supplied his own copy (abstracts, descriptions, blurbs), wants it used verbatim instead of being rewritten or "improved" — offer alternatives alongside it, but keep his original wording as the default. Confidence: 0.6
+- When he has supplied his own copy (abstracts, descriptions, blurbs, closing paragraph of a section), wants it used verbatim instead of being rewritten or "improved" — offer alternatives alongside it, but keep his original wording as the default. Confidence: 0.7
 - When a blog post names a company in a heading, wants the company's logo shown inline with that heading (not text alone); logos can be pulled from the company/portfolio site. Confidence: 0.55
 - Prefers post section headings to reuse the caption/title text of the accompanying slide image verbatim (e.g. "Bands Thrive on Energy, Grow with Structure, Succeed with Success") instead of freshly written headings. Confidence: 0.55
 - Prefers upgrading dependencies/frameworks to current versions to fix problems "at the source" rather than patching transitive packages or staying on outdated versions. Confidence: 0.6
+- Wants titles/subtitles/blurbs to be factually supported by the post body — rejects catchy copy whose claim the post doesn't actually make (e.g. "Great Products Fail" when the post only argues good products stall on adoption); offer a few on-message alternatives instead. Confidence: 0.6
+- Wants the firm referred to as "PWV (Preston-Werner Ventures)" rather than spelling out "Preston-Werner Ventures" alone — applies across posts and site metadata. Confidence: 0.7
+- Strongly dislikes "AI slop" writing style: avoid em dashes and AI-like constructions/phrasing in prose. Confidence: 0.85
+- When writing about a portfolio company, wants the copy grounded in the concrete facts from his own source material (IC memo: named customers, founder backgrounds, what the product actually does) rather than generic description; rejects sections that are "too long and kind of weak". Confidence: 0.6
+- Prefers constructive, non-combative framing when writing about competitive strategy: "Disrupt the incumbents" / "attacking an incumbent's architecture" is "a bit harsh" — favor framings like "become the layer" that show how a company wins without declaring war on incumbents. Confidence: 0.7
+- Do not invoke school pedigree (e.g. "you don't need MIT or Stanford") when making a point about founders or ambition — education and credentials shouldn't be called out at all; make the point without reference to schools. Confidence: 0.65
+- Do not publish contract dollar amounts (deal sizes, ARR, SAFE terms) from IC memos in public posts — describe the customers and work qualitatively instead of citing figures. Confidence: 0.7
+- Cuts explicit lesson-statement/moralizing paragraphs that spell out the takeaway ("Good founders challenge their own assumptions…", "essential to building a company") — let the narrative carry the point. Confidence: 0.5
+0.5

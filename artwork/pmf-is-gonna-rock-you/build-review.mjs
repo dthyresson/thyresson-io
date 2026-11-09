@@ -9,6 +9,7 @@ const manifest = JSON.parse(fs.readFileSync(path.join(dir, 'manifest.json'), 'ut
 const recommended = new Set([
   'manual-a.png',
   'manual-b.png',
+  'pmf-b-same-book.png',
   'hero-og-purple.png',
   'hero-d-pmf-grid.png',
   'hero-e-pmf-purple-stacked.png',
@@ -21,9 +22,10 @@ const recommended = new Set([
   'jura-b-its-grim-pre-fit.png'
 ]);
 
-const groupOrder = ['Intro', 'Hero', 'Cursor', 'fal', 'Turso', 'Workbrew', 'Zoo', 'Jura'];
+const groupOrder = ['Intro', 'PMF', 'Hero', 'Cursor', 'fal', 'Turso', 'Workbrew', 'Zoo', 'Jura'];
 const labels = {
   manual: 'Intro',
+  pmf: 'PMF',
   hero: 'Hero',
   cursor: 'Cursor',
   fal: 'fal',
@@ -455,7 +457,7 @@ const html = `<!doctype html>
 var ART = ${artData};
 var SOURCES = ${sourceData};
 
-var groupOrder = ['Hero', 'Cursor', 'fal', 'Turso', 'Workbrew', 'Zoo', 'Jura'];
+var groupOrder = ['Intro', 'PMF', 'Hero', 'Cursor', 'fal', 'Turso', 'Workbrew', 'Zoo', 'Jura'];
 var filter = 'All';
 var visible = [];
 var current = 0;

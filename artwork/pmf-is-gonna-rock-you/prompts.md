@@ -43,6 +43,39 @@ Square 1:1 vinyl sleeve, late-1980s British acid-house design. Deep black backgr
 
 ---
 
+## PMF: The Same Book
+
+Transition sleeve for the paragraph: "Silicon Valley has been trying to write the same book for decades. We call it product-market fit. PMF."
+
+### PMF A: off-white checklist
+**File:** `pmf-a-same-book.png`
+**Reference:** *The Manual* (1988) + KLF Communications sleeve language
+**Direction:** off-white test card, giant PMF, four checkbox questions, orange rubber stamp.
+
+```text
+Square 1:1 vinyl sleeve, late-1980s British acid-house design in the style of KLF Communications. Off-white uncoated paper background. At the top, an enormous black ultra-condensed word 'PMF' cropped slightly by the left and right edges. Above it, one line of small black Helvetica: 'PRODUCT MARKET FIT'. Below the PMF, a heavy black horizontal rule. In the middle, four stacked lines of heavy black condensed capitals, each with an empty black square checkbox at the left: 'DOES THE PRODUCT WORK?', 'DOES ANYONE WANT IT?', 'WILL THEY PAY FOR IT?', 'WILL THEY COME BACK?'. In the lower right, a large safety-orange rubber stamp at a slight angle reading 'THE SAME BOOK FOR DECADES'. Bottom left, small black Helvetica: 'PWV COMMUNICATIONS'. Bottom right, a small black circular emblem containing a black pyramid built from a brick wall and a boombox silhouette. Bottom edge tiny black Helvetica: 'PWV 007 · SILICON VALLEY'. Photocopy grain, halftone dots, worn paper, faint creases. Severe, minimal, high contrast. Render every quoted text exactly, correctly spelled, crisp and legible. No other text, no real band logos, no signatures.
+```
+
+### PMF B: black and lime questions
+**File:** `pmf-b-same-book.png`
+**Reference:** The KLF, *What Time Is Love? (Pure Trance 1)* black and lime typography
+**Direction:** giant lime question mark, four checkbox questions, lime PRODUCT MARKET FIT.
+
+```text
+Square 1:1 vinyl sleeve, late-1980s British acid-house design. Solid black background with faint print noise. At the top, an enormous fluorescent lime-green question mark '?' in a heavy condensed sans, cropped slightly by the top edge, with the letters 'PMF' in small lime Helvetica at its base. Below, four stacked lines of heavy white condensed capitals, left-aligned, each with a small lime square checkbox: 'DOES IT WORK?', 'DOES ANYONE WANT IT?', 'WILL THEY PAY?', 'WILL THEY COME BACK?'. Across the bottom, heavy lime italic condensed capitals: 'PRODUCT MARKET FIT'. Bottom left, small white Helvetica: 'PWV COMMUNICATIONS'. Bottom right, small lime Helvetica: 'PWV 007'. Very bottom edge tiny white Helvetica: 'THE SAME BOOK FOR DECADES'. Photocopy grain, halftone dots, subtle sleeve wear. Severe, minimal, high contrast. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures.
+```
+
+### PMF C: purple Venn diagram
+**File:** `pmf-c-same-book.png`
+**Reference:** The KLF, *The White Room* (1989 Director's Cut purple sleeve)
+**Direction:** white Venn circles for PRODUCT, MARKET, FIT; lime PMF intersection.
+
+```text
+Square 1:1 vinyl sleeve, late-1980s British acid-house design. Flat electric violet-purple background (#6B2BE0). Three large overlapping circles outlined in thick white lines, arranged as a Venn diagram. The left circle is labeled 'PRODUCT', the right circle 'MARKET', and the lower circle 'FIT', in heavy white condensed capitals. In the center intersection, a solid fluorescent lime-green circle containing the black letters 'PMF' in heavy condensed capitals. Above the diagram, one line of small white Helvetica: 'THE SAME BOOK FOR DECADES'. Below the diagram, heavy white italic condensed capitals: 'DOES ANYONE WANT IT?'. Bottom left tiny white Helvetica 'PWV COMMUNICATIONS'. Bottom right a small white circular emblem containing a black pyramid built from a brick wall and boombox silhouette. Bottom edge tiny white Helvetica 'PWV 007 · PRODUCT MARKET FIT'. Photocopy grain, halftone dots, subtle sleeve wear. Severe, minimal, high contrast. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures.
+```
+
+---
+
 ## Cursor — Doctorin' the Product
 
 ### Cursor A — police car + speech bubble
@@ -237,6 +270,33 @@ more documentary.
 
 ```text
 Square 1:1 vinyl single sleeve, late-1980s British acid-house design. Pale blue-white sky background. A high-contrast photograph of a battered black-and-white 1960s American police car speeding past a ruined red-brick warehouse, dust and exhaust trailing behind it. At top left, huge black condensed capitals 'CURSOR'. At bottom right, heavy black italic condensed capitals 'DOCTORIN' THE PRODUCT'. Top right, a small black circular emblem containing a white pyramid built from brick wall and boombox silhouette. Along the bottom edge, tiny black Helvetica 'CUR 001 · PWV COMMUNICATIONS'. Photocopy grain, slight colour fade, worn paper. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures.
+```
+
+## Cursor D: Venture said to founders
+**File:** `cursor-d-venture-said-to-founders.png`
+**Reference:** The KLF, *Kylie Said to Jason* (1989)
+**Direction:** same documentary sleeve; the phrase becomes "Venture said to founders," with PIVOT as the punchline.
+
+```text
+Square 1:1 vinyl single sleeve, late-1980s British acid-house design in the style of The KLF's 'Kylie Said to Jason' sleeve. Pale blue-white sky. A high-contrast photograph of a battered black-and-white 1960s American police car speeding past a ruined red-brick office park, dust and exhaust trailing behind it, a faded 'FOR LEASE' sign on the building, a lone founder in a grey hoodie walking away with a laptop bag. At the top left, huge black condensed capitals: 'VENTURE'. At the bottom right, heavy black italic condensed capitals: 'SAID TO FOUNDERS'. Across the very bottom, one enormous safety-orange italic condensed word: 'PIVOT'. Top right, a small black circular emblem containing a white pyramid built from a brick wall and boombox silhouette. Bottom edge tiny black Helvetica: 'CUR 003 · PRODUCT MARKET FIT'. Photocopy grain, slight colour fade, worn paper. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures.
+```
+
+## Cursor E: Silicon Valley said to startups
+**File:** `cursor-e-silicon-valley-said-to-startups.png`
+**Reference:** The KLF, *Kylie Said to Jason* (1989)
+**Direction:** same sleeve, but the phrase is aimed at startups instead of founders.
+
+```text
+Square 1:1 vinyl single sleeve, late-1980s British acid-house design in the style of The KLF's 'Kylie Said to Jason' sleeve. Pale blue-white sky. A high-contrast photograph of a battered black-and-white 1960s American police car speeding past a ruined red-brick office park, dust and exhaust trailing behind it, a faded 'FOR LEASE' sign on the building, a lone founder in a grey hoodie walking away with a laptop bag. At the top left, huge black condensed capitals: 'SILICON VALLEY'. At the bottom right, heavy black italic condensed capitals: 'SAID TO STARTUPS'. Across the very bottom, one enormous safety-orange italic condensed word: 'PIVOT'. Top right, a small black circular emblem containing a white pyramid built from a brick wall and boombox silhouette. Bottom edge tiny black Helvetica: 'CUR 004 · PRODUCT MARKET FIT'. Photocopy grain, slight colour fade, worn paper. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures.
+```
+
+## Cursor F: Market said to product
+**File:** `cursor-f-market-said-to-product.png`
+**Reference:** The KLF, *Kylie Said to Jason* (1989)
+**Direction:** the inversion. Market speaks to product; the punchline is FIT?
+
+```text
+Square 1:1 vinyl single sleeve, late-1980s British acid-house design in the style of The KLF's 'Kylie Said to Jason' sleeve. Pale blue-white sky. A high-contrast photograph of a battered black-and-white 1960s American police car speeding past a ruined red-brick office park, dust and exhaust trailing behind it, a faded 'FOR LEASE' sign on the building, a lone founder in a grey hoodie walking away with a laptop bag. At the top left, huge black condensed capitals: 'MARKET'. At the bottom right, heavy black italic condensed capitals: 'SAID TO PRODUCT'. Across the very bottom, one enormous safety-orange italic condensed word: 'FIT?'. Top right, a small black circular emblem containing a white pyramid built from a brick wall and boombox silhouette. Bottom edge tiny black Helvetica: 'CUR 005 · PRODUCT MARKET FIT'. Photocopy grain, slight colour fade, worn paper. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures.
 ```
 
 ## fal C — orange stacked Come Down Dawn

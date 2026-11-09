@@ -1,50 +1,50 @@
 ---
-title: 'PMF Is Gonna Rock Ya!'
-description: 'A breakout session for The Eleven Society Summit: five lessons on product-market fit from Cursor, fal, Turso, Workbrew, and Zoo, with a detour through The KLF, The Manual, and a million pounds burned on Jura.'
-author: 'A. David Thyresson'
-pubDate: '2026 Nov 09'
-updatedDate: '2026 Nov 09'
-heroImage: '../../images/post-pmf-is-gonna-rock-you/hero-og-purple.png'
-tags: ['Startups', 'Product-Market Fit', 'Venture Capital', 'PWV', 'Music']
+title: "PMF Is Gonna Rock Ya!"
+subtitle: "Why Good Products Stall, Unexpected Ideas Succeed, and Timing Is Everything"
+description: "How did Cursor spend years searching for the right product before becoming an AI coding sensation? How did fal turn a Python data science tool into a generative AI powerhouse? Through real stories from the PWV (Preston-Werner Ventures) portfolio, we'll explore product-market fit: how startups discover what customers actually want, why timing and finding the right buyer matter, and why even brilliant technology can struggle to find a market."
+author: "A. David Thyresson"
+pubDate: "2026 Nov 09"
+updatedDate: "2026 Nov 09"
+heroImage: "../../images/post-pmf-is-gonna-rock-you/hero-og-purple.png"
+tags: ["Startups", "Product-Market Fit", "Venture Capital", "PWV", "Music"]
 ---
 
-import { Image } from '@unpic/astro';
-import manualArt from '../../images/post-pmf-is-gonna-rock-you/manual-pmf-cover.png';
-import manualAltArt from '../../images/post-pmf-is-gonna-rock-you/manual-pmf-cover-a.png';
-import cursorArt from '../../images/post-pmf-is-gonna-rock-you/cursor-a-doctorin-the-product.png';
-import falArt from '../../images/post-pmf-is-gonna-rock-you/fal-b-last-train-to-model-central.png';
-import tursoArt from '../../images/post-pmf-is-gonna-rock-you/turso-b-what-time-is-fit.png';
-import workbrewArt from '../../images/post-pmf-is-gonna-rock-you/workbrew-b-3am-eternal.png';
-import zooArt from '../../images/post-pmf-is-gonna-rock-you/zoo-a-justified-and-validated.png';
-import juraArt from '../../images/post-pmf-is-gonna-rock-you/jura-b-its-grim-pre-fit.png';
+import { Image } from "@unpic/astro";
+import manualArt from "../../images/post-pmf-is-gonna-rock-you/manual-pmf-cover.png";
+import manualAltArt from "../../images/post-pmf-is-gonna-rock-you/manual-pmf-cover-a.png";
+import marketSaidArt from "../../images/post-pmf-is-gonna-rock-you/cursor-f-market-said-to-product.png";
+import cursorArt from "../../images/post-pmf-is-gonna-rock-you/cursor-a-doctorin-the-product.png";
+import falArt from "../../images/post-pmf-is-gonna-rock-you/fal-b-last-train-to-model-central.png";
+import tursoArt from "../../images/post-pmf-is-gonna-rock-you/turso-b-what-time-is-fit.png";
+import workbrewArt from "../../images/post-pmf-is-gonna-rock-you/workbrew-b-3am-eternal.png";
+import zooArt from "../../images/post-pmf-is-gonna-rock-you/zoo-a-justified-and-validated.png";
+import juraArt from "../../images/post-pmf-is-gonna-rock-you/jura-b-its-grim-pre-fit.png";
 
-_This post is the written version of my breakout session, **PMF Is Gonna Rock Ya!**, at [The Eleven Society Summit](https://luma.com/au81vqz3?tk=rVCbrU) on Sunday, November 15._
+_This post is the written version of my breakout session, **PMF Is Gonna Rock Ya!**, at the [Northeast Entrepreneurship Summit](https://luma.com/au81vqz3?tk=rVCbrU), hosted by The Eleven Society, on Sunday, November 15._
 
-_**Session abstract:** A breakout session for The Eleven Society Summit: five lessons on product-market fit from Cursor, fal, Turso, Workbrew, and Zoo, with a detour through The KLF, The Manual, and a million pounds burned on Jura._
+_I'm also judging at the summit. The session is intentionally small and informal: a conversation for liberal arts undergrads from NESCAC schools, not a lecture. More on [The Eleven Society](https://www.theelevensociety.com/)._
 
-_I'm also judging at the summit. The session is intentionally small and informal — a conversation for liberal arts undergrads from NESCAC schools, not a lecture. More on [The Eleven Society](https://www.theelevensociety.com/)._
-
-In the late 1980s, Bill Drummond and Jimmy Cauty made records as The JAMs, The Timelords, and eventually The KLF. They weren't virtuoso musicians; they sampled, borrowed, and combined things in unexpected ways, and became one of the most successful pop acts of their time.
+In the late 1980s and early 1990s, Bill Drummond and Jimmy Cauty recorded under a series of overlapping names: the Justified Ancients of Mu Mu (the JAMs), the Timelords, and the KLF. Neither was a virtuoso; they were conceptualists who sampled, borrowed, and collided other people's records, often without permission. In 1991, as the KLF, they were the biggest-selling singles act in the world.
 
 <Image
-  src={manualAltArt}
-  alt="The PMF Manual — a stark cover in the style of The KLF's The Manual"
+  src={manualArt}
+  alt="The PMF Manual, a cover in the style of The KLF's The Manual"
   width={448}
   height={600}
   class="shadow-lg mx-auto"
 />
 
-Then they wrote [_The Manual: How to Have a Number One the Easy Way_](https://en.wikipedia.org/wiki/The_Manual) (1988): a tongue-in-cheek guide to a No. 1 with no money or musical skills, using their novelty hit "Doctorin' the Tardis" as the case study.
+Then they wrote [_The Manual: How to Have a Number One the Easy Way_](https://en.wikipedia.org/wiki/The_Manual) (first published in 1988): a tongue-in-cheek guide to a No. 1 with no money or musical skills, using their novelty hit "Doctorin' the Tardis" as the case study.
 
-The advice was blunt: be skint and on the dole, because "having no money sharpens the wits"; if you're already a musician, "stop playing your instrument. Even better, sell the junk." The book also predicted the home-recording revolution — soon you could "do the whole thing at home" and "sod off all that crap about going into studios."
+The advice was blunt: be skint and on the dole, because "having no money sharpens the wits"; if you're already a musician, "stop playing your instrument. Even better, sell the junk." The book also predicted the home-recording revolution: soon you could "do the whole thing at home" and "sod off all that crap about going into studios."
 
-Drummond's point was simpler than a business plan: "If you want to do something, go and do it! Don't wait to be asked."
+Drummond's point was simpler than a business plan: "If you want to do something, go and do it! Don't wait to be asked..."
 
 <Image
-  src={manualArt}
-  alt="The PMF Manual — a cover in the style of The KLF's The Manual"
+  src={marketSaidArt}
+  alt="Market said to product, a KLF-style Kylie Said to Jason sleeve with FIT? as the punchline"
   width={448}
-  height={600}
+  height={448}
   class="shadow-lg mx-auto"
 />
 
@@ -52,19 +52,19 @@ Silicon Valley has been trying to write the same book for decades. We call it **
 
 You don't need to invent a new technology. Sometimes the opportunity is recognizing what existing technology makes possible.
 
-Here are five examples from companies we've invested in at [Preston-Werner Ventures](https://www.pwv.com).
+Here are five examples from companies we've invested in at [PWV (Preston-Werner Ventures)](https://www.pwv.com).
 
 ## Doctorin' the Product / Last Train to Model Central
 
 <Image
   src={cursorArt}
-  alt="Cursor — Doctorin' the Product, after The Timelords' Doctorin' the Tardis"
+  alt="Cursor, Doctorin' the Product, after The Timelords' Doctorin' the Tardis"
   width={448}
   height={448}
   class="shadow-lg mx-auto"
 />
 
-### <img src="/logos/cursor.png" alt="Cursor logo" width="24" height="24" class="inline-block h-6 w-6 rounded align-middle mr-2 my-0" /> Cursor — change the product
+### <img src="/logos/cursor.png" alt="Cursor logo" width="24" height="24" class="inline-block h-6 w-6 rounded align-middle mr-2 my-0" /> Cursor: change the product
 
 We first looked at Cursor at its seed round.
 
@@ -72,51 +72,39 @@ Frankly, the product wasn't great.
 
 We liked the founders. We believed AI would fundamentally change how software gets written. But the product wasn't there yet.
 
-Four months later, at the Series A, we saw it again.
+Ten months later, at the Series A, we saw it again.
 
 It was dramatically better.
 
-Same founders. Same opportunity. Very different product.
+Same founders. Same thesis. Very different product.
 
-Anysphere had started in 2022, exploring different ideas before focusing on Cursor. They'd already spent considerable time figuring out what to build.
+Anysphere had started in 2022 trying an AI email client and an AI-powered CAD tool for mechanical engineers. Their CAD project was even called Cursor at first. They pivoted to code, but they'd already spent considerable time figuring out what to build.
 
 And even after finding the right direction, they kept improving it.
 
 **The lesson: your first idea is a hypothesis, not your destiny.**
 
-Good founders challenge their own assumptions. They look at the evidence and change their minds.
-
-That's something you practice in a liberal arts education. It's also essential to building a company.
-
 <Image
   src={falArt}
-  alt="fal — Last Train to Model Central, after The KLF's Last Train to Trancentral"
+  alt="fal, Last Train to Model Central, after The KLF's Last Train to Trancentral"
   width={448}
   height={448}
   class="shadow-lg mx-auto"
 />
 
-### <img src="/logos/fal.png" alt="fal logo" width="24" height="24" class="inline-block h-6 w-6 rounded align-middle mr-2 my-0" /> fal — change the market
+### <img src="/logos/fal.png" alt="fal logo" width="24" height="24" class="inline-block h-6 w-6 rounded align-middle mr-2 my-0" /> fal: change the market
 
-fal's story is almost the opposite.
+Where Cursor changed the product, fal changed the market.
 
-They started by building Python data science infrastructure.
+Burkay and Gorkem started by building Python data infrastructure for data pipelines, analytics, and ML training. It was highly optimized, but it was not the business that made them successful.
 
-But they discovered that what they'd built was exceptionally good at running AI models that generate images and video.
+We had been looking for a platform to generate images, video, and music. Most demos were slow or clumsy. Then we saw fal's "Make it Real" collaboration with our portfolio company tldraw: you sketched on screen, and an image appeared milliseconds later.
 
-Then generative media took off.
+That was the tell. Their infrastructure was exceptionally good at running generative models at scale. When Stable Diffusion took off, they pointed it at the new market.
 
-They recognized that their technology had a much more valuable application than the one they'd started with.
+Jensen Huang says every pixel will be "generated, not rendered." fal is one of the teams making that true.
 
-So they changed the market they served.
-
-**Cursor changed the product. fal changed the market.**
-
-Neither started with exactly the business that made it successful.
-
-And neither had to invent all the underlying technology.
-
-They recognized an opportunity, made something useful out of it, and followed the evidence.
+Neither started with exactly the business that made it successful. Neither had to invent all the underlying technology. They recognized an opportunity, made something useful out of it, and followed the evidence.
 
 **Sometimes the best opportunity isn't the one you set out to find.**
 
@@ -124,129 +112,75 @@ They recognized an opportunity, made something useful out of it, and followed th
 
 <Image
   src={tursoArt}
-  alt="Turso — What Time Is Fit?, after The KLF's What Time Is Love? (Pure Trance 1)"
+  alt="Turso, What Time Is Fit?, after The KLF's What Time Is Love? (Pure Trance 1)"
   width={448}
   height={448}
   class="shadow-lg mx-auto"
 />
 
-### <img src="/logos/turso.png" alt="Turso logo" width="24" height="24" class="inline-block h-6 w-6 rounded align-middle mr-2 my-0" /> Turso — the market catches up
+### <img src="/logos/turso.png" alt="Turso logo" width="24" height="24" class="inline-block h-6 w-6 rounded align-middle mr-2 my-0" /> Turso: the market catches up
 
 I consulted with Supabase back in 2021.
 
-Supabase took databases, something complicated and fairly intimidating, and made them much easier for developers to use.
+Supabase won the previous era by being an all-in-one platform: Postgres, auth, storage, edge functions, and a heavy Docker setup. Training data and vibe-coding tools like Lovable defaulted to it.
 
-So when we invested in Turso, I asked its founder, Glauber Costa, a fairly obvious question:
+Turso built for unlimited databases: one per user, one per agent, one per task. Its multi-tenant isolation and local-first experience were already suited for the agentic era.
 
-**"Why aren't you building Supabase for SQLite?"**
+Turso was not Supabase yet, and the reason was capital, not product or architecture.
 
-SQLite is an incredibly popular lightweight database. Why not take the same approach?
+We had already invested at seed. When Glauber was raising a Series A, he believed the future was millions of small databases. At the time, that was an interesting idea, not yet a market.
 
-Glauber had a different point of view.
+Then AI agents arrived. They need to spin up a database, use it, and throw it away. Turso had the right shape for that. The team stopped using the word "ephemeral" because it implied the data was unimportant.
 
-He believed the future was millions of small, independent databases.
-
-One for every user. Every AI agent. Every task.
-
-At the time, that was an interesting architectural idea. But was there really a market for it?
-
-Then AI agents started becoming a reality.
-
-Suddenly, having millions of isolated databases looked much more valuable.
-
-And in October 2026, Supabase acquired Turso.
-
-Apparently, they saw something in that future too.
+In October 2026, Supabase acquired Turso. The company that won the last era bought the company built for the next one.
 
 **Sometimes you don't find the market. The market finds you.**
 
-Glauber's advantage wasn't just technical. He had a different perspective on how software would work in the future.
-
 <Image
   src={workbrewArt}
-  alt="Workbrew — 3 A.M. Eternal, after The KLF's 3 A.M. Eternal"
+  alt="Workbrew, 3 A.M. Eternal, after The KLF's 3 A.M. Eternal"
   width={448}
   height={448}
   class="shadow-lg mx-auto"
 />
 
-### <img src="/logos/workbrew.png" alt="Workbrew logo" width="24" height="24" class="inline-block h-6 w-6 rounded align-middle mr-2 my-0" /> Workbrew — find the buyer
+### <img src="/logos/workbrew.png" alt="Workbrew logo" width="24" height="24" class="inline-block h-6 w-6 rounded align-middle mr-2 my-0" /> Workbrew: find the buyer
 
-Workbrew solves a different problem.
+Developers love Homebrew, the free tool for installing software on macOS and Linux. Corporate IT departments do not love employees installing whatever they want. They need visibility, security, and control.
 
-Developers love Homebrew. It's a free tool for installing software on Macs.
+Workbrew built a business in that gap. Developers use the software. Companies pay to manage it.
 
-But corporate IT departments don't necessarily love employees installing whatever they want.
+**The person who uses your product isn't always the person who pays for it.** This is really about understanding people.
 
-They need visibility, security, and control.
-
-Workbrew recognized the opportunity between those two groups.
-
-Developers use the software. Companies pay to manage it.
-
-We invested because we saw an opportunity to build a business around something developers already loved.
-
-**The person who uses your product isn't always the person who pays for it.**
-
-This is really about understanding people.
-
-Two groups can look at exactly the same product and see completely different problems.
-
-Recognizing those differences is often where the business opportunity lies.
+Two groups can look at exactly the same product and see completely different problems. Recognizing those differences is often where the business opportunity lies.
 
 ## Justified & Validated?
 
 <Image
   src={zooArt}
-  alt="Zoo — Justified & Validated, after The KLF's Justified & Ancient"
+  alt="Zoo, Justified & Validated, after The KLF's Justified & Ancient"
   width={448}
   height={448}
   class="shadow-lg mx-auto"
 />
 
-### <img src="/logos/zoo.png" alt="Zoo logo" width="24" height="24" class="inline-block h-6 w-6 rounded align-middle mr-2 my-0" /> Zoo — interest is not adoption
+### <img src="/logos/zoo.png" alt="Zoo logo" width="24" height="24" class="inline-block h-6 w-6 rounded align-middle mr-2 my-0" /> Zoo: become the layer
 
-Zoo is another of our investments, and this story is still unfolding.
+Zoo is another PWV investment, and it shows a different way to take on an entrenched market.
 
-Think about how engineers design physical things.
+CAD has been one of the most entrenched software markets in the world for over 50 years. The incumbents built deep moats around proprietary file formats, workstation-bound execution, and workflows that were never designed for cloud compute or machine learning. Hardware design data mostly sits in static files that are hard to use as training data.
 
-Aircraft parts. Cars. Rocket engines.
+Zoo rebuilt the CAD stack from first principles. Its code-native design language, KCL, turns design intent into a machine-readable representation. Its geometry engine runs on GPUs and through an API. The team is credible: Jordan Noone co-founded Relativity Space, Jessie Frazelle co-founded Oxide Computer, and Jenna Bryant built early teams at Oculus, Tinder, and Snap.
 
-They use sophisticated computer-aided design software, but much of the process is still manual.
+But Zoo does not need to replace the incumbents to win. It is designed to be adopted incrementally inside existing engineering stacks, and its API-first architecture connects design, analysis, manufacturing, and downstream systems that were previously siloed.
 
-Zoo is building technology that lets engineers use software and AI to generate designs.
+The early proof is Blue Origin, which is feeding millions of existing CAD files into a fine-tuned Text-to-CAD model.
 
-It's ambitious. And the technology is impressive.
+Because it lowers the skill and time required to design, Zoo can expand the market rather than only compete within it. That is how it becomes the AI-native infrastructure layer for hardware engineering.
 
-But the question for us isn't just whether it works.
+The analogy to Cursor is direct: rebuild the workflow around the model rather than bolt AI onto the old stack.
 
-**Will engineers actually change how they work?**
-
-Zoo has promising pilots and early customers. But a demonstration isn't the same as a product people depend on.
-
-People have habits. Organizations have established workflows. Engineers have years of experience with existing tools.
-
-Even if something is technically better, people don't automatically adopt it.
-
-So what do we look for?
-
-Do customers come back?
-
-Does a pilot become a production deployment?
-
-Do people depend on the product?
-
-Will they pay for it year after year?
-
-**If everyone loves your demo but nobody changes their behavior, do you have product-market fit?**
-
-Probably not.
-
-This is why understanding people matters.
-
-Technology can make something possible. But people decide whether it becomes valuable.
-
-**A great product solves a technical problem. A successful product also solves a human problem.**
+**The lesson: you do not have to replace the incumbent to win the market. Become the layer it cannot build itself.**
 
 ## It's Grim Pre-Fit / Burn the Runway
 
@@ -260,30 +194,28 @@ Technology can make something possible. But people decide whether it becomes val
 
 Five companies. Five different lessons.
 
-| Company      | PMF lesson           | What it requires        |
-| ------------ | -------------------- | ----------------------- |
-| <img src="/logos/cursor.png" alt="Cursor logo" width="20" height="20" class="inline-block h-5 w-5 rounded align-middle mr-2 my-0" /> **Cursor**   | Change the product   | Question assumptions    |
-| <img src="/logos/fal.png" alt="fal logo" width="20" height="20" class="inline-block h-5 w-5 rounded align-middle mr-2 my-0" /> **fal**      | Change the market    | Recognize opportunities |
-| <img src="/logos/turso.png" alt="Turso logo" width="20" height="20" class="inline-block h-5 w-5 rounded align-middle mr-2 my-0" /> **Turso**    | Get the timing right | Have a point of view    |
-| <img src="/logos/workbrew.png" alt="Workbrew logo" width="20" height="20" class="inline-block h-5 w-5 rounded align-middle mr-2 my-0" /> **Workbrew** | Find the buyer       | Understand people       |
-| <img src="/logos/zoo.png" alt="Zoo logo" width="20" height="20" class="inline-block h-5 w-5 rounded align-middle mr-2 my-0" /> **Zoo**      | Prove adoption       | Understand behavior     |
+| Company                                                                                                                                               | PMF lesson            | What it requires        |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- | ----------------------- |
+| <img src="/logos/cursor.png" alt="Cursor logo" width="20" height="20" class="inline-block h-5 w-5 rounded align-middle mr-2 my-0" /> **Cursor**       | Change the product    | Question assumptions    |
+| <img src="/logos/fal.png" alt="fal logo" width="20" height="20" class="inline-block h-5 w-5 rounded align-middle mr-2 my-0" /> **fal**                | Change the market     | Recognize opportunities |
+| <img src="/logos/turso.png" alt="Turso logo" width="20" height="20" class="inline-block h-5 w-5 rounded align-middle mr-2 my-0" /> **Turso**          | The market catches up | Have a point of view    |
+| <img src="/logos/workbrew.png" alt="Workbrew logo" width="20" height="20" class="inline-block h-5 w-5 rounded align-middle mr-2 my-0" /> **Workbrew** | Find the buyer        | Understand people       |
+| <img src="/logos/zoo.png" alt="Zoo logo" width="20" height="20" class="inline-block h-5 w-5 rounded align-middle mr-2 my-0" /> **Zoo**                | Become the layer      | Connect the lifecycle   |
 
 There's no single formula for product-market fit. Much of what makes great founders successful has little to do with being the best programmer in the room: curiosity, creativity, taste, critical thinking, understanding people, and the willingness to change your mind. Those aren't exclusive to liberal arts graduates, but they're exactly what a liberal arts education develops.
 
-You don't need MIT or Stanford to recognize a problem worth solving, and you don't have to invent the underlying technology. You can learn the tools, find collaborators, or bring together complementary skills. What matters is having a point of view about how the world could be different — and being willing to find out whether you're right.
+You don't need anyone's permission to recognize a problem worth solving, and you don't have to invent the underlying technology. You can learn the tools, find collaborators, or bring together complementary skills. What matters is having a point of view about how the world could be different, and being willing to find out whether you're right.
 
 Which brings me back to The KLF. They didn't invent the instruments. They took what already existed, combined it in original ways, and made a mark on popular culture. They found an audience, became enormously successful, and even wrote the manual.
 
-Then, in 1992, they quit the music business. Two years later they took a million pounds in cash to a Scottish island called Jura and burned it. Literally.
+Then, in 1992, they quit the music business. Two years later, as the K Foundation, they took a million pounds in cash to a Scottish island called Jura and burned it. Literally.
 
-As a venture capitalist, I've seen plenty of startups burn through a million pounds — but rarely quite so efficiently. It was a deliberate artistic act, not a business failure. And it makes one last point: **finding product-market fit and building a lasting business are two different things.** You can find fit, lose it, or walk away from it.
+As a venture capitalist, I've seen plenty of startups burn through a million pounds, but rarely quite so efficiently. They framed it as a deliberate artistic act, not a business failure. And it makes one last point: **finding product-market fit and building a lasting business are two different things.** You can find fit, lose it, or walk away from it.
 
 The KLF had the creativity, taste, and point of view to make something people wanted. That's the connection I want to leave you with: **you don't have to invent the instruments to change the music.** You need an idea, the imagination to do something with it, and enough curiosity to discover whether anyone else cares.
 
 Because ultimately, **you don't get to decide whether the world wants what you've built. The world decides.**
 
-### PMF Is Gonna Rock Ya!
-
 ---
 
-**Tools:** [fal](https://fal.ai/) for image generation — model `google/nano-banana-2.1`. [Command Code](https://commandcode.ai/) v1.88.5 for writing and editing — model `deepseek-v4.1-flash-fast-(latest)`.
+**Tools:** [fal](https://fal.ai/) for image generation (model `google/nano-banana-2.1`). [Command Code](https://commandcode.ai/) v1.88.5 for writing and editing (model `deepseek-v4.1-flash-fast-(latest)`).

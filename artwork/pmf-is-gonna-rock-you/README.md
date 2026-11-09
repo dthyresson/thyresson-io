@@ -21,7 +21,7 @@ See also the [Startup as a Band artwork](../startup-as-a-band/).
 - **`build-review.mjs`** — regenerates `index.html` and the thumbnails from `manifest.json`:
 
   ```sh
-  node artwork/build-review.mjs
+  node artwork/pmf-is-gonna-rock-you/build-review.mjs
   ```
 
 ## Source references
@@ -65,8 +65,9 @@ See also the [Startup as a Band artwork](../startup-as-a-band/).
 | Workbrew — 3 A.M. Eternal | `workbrew-b-3am-eternal.png` | Pint-glass terminal is more original than the inset office. |
 | Zoo — Justified & Validated | `zoo-a-justified-and-validated.png` | Ice-cream van with the condensed ZOO wordmark. |
 | Jura — It's Grim Pre-Fit | `jura-b-its-grim-pre-fit.png` | Close-up burning £50 is a cleaner read than the suitcase. |
+| PMF: The Same Book | `pmf-b-same-book.png` | Black and lime checklist; the four questions match the paragraph exactly. |
 
-These nine are inlined in the post: `manual-a.png`, `manual-b.png`, `hero-og-purple.png`, `cursor-a`, `fal-b`, `turso-b`, `workbrew-b`, `zoo-a`, `jura-b`. The square hero alternates remain available for the OG card or a different layout.
+These ten are inlined in the post: `manual-a.png`, `manual-b.png`, `pmf-b-same-book.png`, `hero-og-purple.png`, `cursor-a`, `fal-b`, `turso-b`, `workbrew-b`, `zoo-a`, `jura-b`. The square hero alternates remain available for the OG card or a different layout.
 
 The first-pass heroes (`hero-a`, `hero-b`, `hero-c`) are superseded as hero picks. `hero-b` and
 `hero-c` repeated the police-car and glowing *3 A.M. Eternal* treatments used by the section covers;
