@@ -8,6 +8,12 @@ const manifest = JSON.parse(fs.readFileSync(path.join(dir, 'manifest.json'), 'ut
 const thumbsDir = path.join(dir, 'thumbs');
 fs.mkdirSync(thumbsDir, { recursive: true });
 
+function groupOf(art) {
+  if (art.file.startsWith('poster-')) return 'Posters';
+  if (art.use === 'hero' || art.use === 'hero-alternate') return 'Heroes';
+  return 'Classified ads';
+}
+
 const items = [];
 
 for (const art of manifest.artwork) {
@@ -23,7 +29,7 @@ for (const art of manifest.artwork) {
       .toFile(out);
   }
 
-  items.push({ ...art, thumb });
+  items.push({ ...art, thumb, portrait: art.aspect === '3:4', landscape43: art.aspect === '4:3', group: groupOf(art) });
 }
 
 const data = JSON.stringify(items).replace(/</g, '\\u003c');
@@ -33,7 +39,7 @@ const html = `<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Artwork Review — Startups as a Band: Smells Like Team Spirit</title>
+<title>Artwork Review — Smells Like Team Spirit: Startups as a Band</title>
 <style>
   :root {
     --paper: #f4f1e8;
@@ -53,6 +59,32 @@ const html = `<!doctype html>
     padding: 56px clamp(20px, 5vw, 76px) 28px;
     border-bottom: 2px solid var(--line);
   }
+  .filters {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 14px clamp(20px, 5vw, 76px);
+    background: rgba(244, 241, 232, .95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .filters button {
+    appearance: none;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--ink);
+    padding: 7px 13px;
+    font: inherit;
+    font-size: 11px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .filters button:hover { background: #e7e3d8; }
+  .filters button.active { background: var(--ink); color: var(--paper); }
   .eyebrow {
     font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
     font-size: 11px;
@@ -113,6 +145,8 @@ const html = `<!doctype html>
     border-bottom: 2px solid var(--line);
     cursor: zoom-in;
   }
+  .thumb.portrait { aspect-ratio: 3 / 4; }
+  .thumb.landscape43 { aspect-ratio: 4 / 3; }
   .thumb img {
     width: 100%;
     height: 100%;
@@ -276,25 +310,29 @@ const html = `<!doctype html>
 <body>
 <header>
   <div class="eyebrow">Artwork review · fal.ai · google/nano-banana-2.1</div>
-  <h1>Startups as a <em>Band</em></h1>
-  <div class="subtitle">Smells Like Team Spirit</div>
+  <h1>Smells Like <em>Team Spirit</em></h1>
+  <div class="subtitle">Startups as a Band</div>
   <p class="lede">
-    Black-and-white hero directions for the Eleven Society breakout post. This review is kept
-    separate from the <a href="../pmf-is-gonna-rock-you/index.html">KLF PMF artwork review</a>. Click either hero to
+    Black-and-white artwork for the Eleven Society breakout post. This review is kept separate from
+    the <a href="../pmf-is-gonna-rock-you/index.html">KLF PMF artwork review</a>. Click any piece to
     inspect it full size; expand <strong>Prompt</strong> to read or copy the generation prompt.
   </p>
   <div class="stats">
-    <span><b id="total">2</b> hero options</span>
-    <span>16:9 · 2752 × 1536</span>
-    <span>Hero A is wired into the post</span>
+    <span><b id="total">17</b> pieces</span>
+    <span>Graffiti heroes + shapes + classified ads</span>
+    <span>Graffiti Hero A, the red-circled classifieds, the ELEVEN Perfect Co-Founder ad, and the Influences card are in the post</span>
+    <span id="count">17 of 17 pieces</span>
   </div>
 </header>
+
+<nav class="filters" id="filters" aria-label="Filter artwork"></nav>
 
 <main>
   <div class="grid" id="grid"></div>
   <p class="note">
-    Hero A (shapes) is the post hero; Hero B is the shapes alternate. Poster A/B are earlier
-    gig-poster directions, kept as alternates.
+    Graffiti Hero A, the all-three red-circled classifieds page, the ELEVEN Perfect Co-Founder ad,
+    and the Influences card are in the post. Graffiti B/C, the shapes slides, the focused circles,
+    the PWV ad, the single ad, the bullet-run Influences card, and Poster A/B are alternates.
   </p>
 </main>
 
@@ -311,6 +349,8 @@ const html = `<!doctype html>
 <script>
 var ART = ${data};
 var current = 0;
+var filter = 'All';
+var visible = ART.slice();
 
 function esc(value) {
   return String(value).replace(/[&<>"]/g, function (c) {
@@ -326,11 +366,11 @@ function cardHTML(item, index) {
     ? '<a class="crop" href="' + item.socialCrop + '" target="_blank" rel="noopener">1200×630 social crop</a>'
     : '';
   return '<article class="card">' +
-    '<div class="thumb" data-index="' + index + '" role="button" tabindex="0" aria-label="Open ' + esc(item.concept) + '">' +
+    '<div class="thumb' + (item.portrait ? ' portrait' : item.landscape43 ? ' landscape43' : '') + '" data-index="' + index + '" role="button" tabindex="0" aria-label="Open ' + esc(item.concept) + '">' +
       '<img loading="lazy" src="' + item.thumb + '" alt="' + esc(item.concept) + '">' + badge +
     '</div>' +
     '<div class="card-body">' +
-      '<div class="meta">Hero · ' + item.dimensions.width + '×' + item.dimensions.height + ' · 16:9</div>' +
+      '<div class="meta">' + esc(item.group) + ' · ' + item.dimensions.width + '×' + item.dimensions.height + ' · ' + (item.aspect || '16:9') + '</div>' +
       '<h2>' + esc(item.concept) + '</h2>' +
       crop +
       '<details><summary>Prompt</summary>' +
@@ -341,9 +381,33 @@ function cardHTML(item, index) {
   '</article>';
 }
 
+function renderFilters() {
+  var host = document.getElementById('filters');
+  var values = ['All', 'Heroes', 'Classified ads', 'Posters', 'In post'];
+  host.innerHTML = '';
+  values.forEach(function (value) {
+    var button = document.createElement('button');
+    button.textContent = value;
+    if (value === filter) button.classList.add('active');
+    button.addEventListener('click', function () {
+      filter = value;
+      renderFilters();
+      render();
+    });
+    host.appendChild(button);
+  });
+}
+
 function render() {
-  document.getElementById('grid').innerHTML = ART.map(cardHTML).join('');
+  visible = ART.filter(function (item) {
+    if (filter === 'All') return true;
+    if (filter === 'In post') return item.recommended;
+    return item.group === filter;
+  });
+
+  document.getElementById('grid').innerHTML = visible.map(cardHTML).join('');
   document.getElementById('total').textContent = String(ART.length);
+  document.getElementById('count').textContent = visible.length + ' of ' + ART.length + ' pieces';
 
   Array.prototype.forEach.call(document.querySelectorAll('.thumb'), function (thumb) {
     thumb.addEventListener('click', function () {
@@ -377,7 +441,7 @@ function copyPrompt(event) {
   event.preventDefault();
   event.stopPropagation();
   var button = event.currentTarget;
-  var item = ART[Number(button.dataset.index)];
+  var item = visible[Number(button.dataset.index)];
   var done = function () {
     button.textContent = 'Copied';
     setTimeout(function () { button.textContent = 'Copy prompt'; }, 1500);
@@ -393,7 +457,7 @@ function copyPrompt(event) {
 
 function openLightbox(index) {
   current = index;
-  var item = ART[current];
+  var item = visible[current];
   document.getElementById('lbImg').src = item.file;
   document.getElementById('lbImg').alt = item.concept;
   document.getElementById('lbCap').innerHTML =
@@ -409,8 +473,8 @@ function closeLightbox() {
 }
 
 function step(direction) {
-  if (!ART.length) return;
-  current = (current + direction + ART.length) % ART.length;
+  if (!visible.length) return;
+  current = (current + direction + visible.length) % visible.length;
   openLightbox(current);
 }
 
@@ -428,6 +492,7 @@ document.addEventListener('keydown', function (event) {
   if (event.key === 'ArrowRight') step(1);
 });
 
+renderFilters();
 render();
 </script>
 </body>
@@ -435,4 +500,4 @@ render();
 `;
 
 fs.writeFileSync(path.join(dir, 'index.html'), html);
-console.log('Wrote index.html with', items.length, 'hero options.');
+console.log('Wrote index.html with', items.length, 'pieces.');
