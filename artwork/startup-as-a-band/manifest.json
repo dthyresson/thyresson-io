@@ -1,0 +1,58 @@
+{
+  "project": "Startups as a Band: Smells Like Team Spirit",
+  "post": "src/content/blog/post-startup-as-a-band.mdx",
+  "generated": "2026-11-09",
+  "provider": "fal.ai",
+  "model": "google/nano-banana-2.1",
+  "settings": {
+    "aspect_ratio": "16:9",
+    "resolution": "2K",
+    "output_format": "png",
+    "thinking_level": "high",
+    "safety_tolerance": "4"
+  },
+  "notes": "Hero A (shapes) is the post hero; Hero B is the shapes alternate. Poster A/B are earlier gig-poster directions, kept as alternates.",
+  "artwork": [
+    {
+      "file": "hero-a.png",
+      "concept": "Hero A — shapes slide",
+      "use": "hero",
+      "recommended": true,
+      "dimensions": { "width": 2752, "height": 1536 },
+      "socialCrop": "hero-a-1200x630.png",
+      "requestId": "01a1c12f-7533-7373-9ec6-f887a5134005",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1cbf7/AGJbobaFNynnEJl-6PKsu_VQqpOkBL.png",
+      "prompt": "Wide 16:9 presentation slide, plain white background, clean 1990s PowerPoint/Visio aesthetic. At the top, large black Helvetica capitals: 'STARTUPS AS A BAND'. Directly below, a smaller black Helvetica line: 'SMELLS LIKE TEAM SPIRIT'. Across the lower half, four simple flat gray geometric shapes in a row, each with a thin black outline and a subtle drop shadow: a circle, a wide rectangle, a triangle, and a square. Below each shape, a small black label: 'SOLO', 'DUO', 'TRIO', 'QUARTET'. Bottom edge, tiny black Helvetica: 'THE ELEVEN SOCIETY SUMMIT'. No gradients, no 3D, no photos. Simple flat shaded shapes like clip art. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "hero-b.png",
+      "concept": "Hero B — shapes slide, title left",
+      "use": "hero",
+      "recommended": false,
+      "dimensions": { "width": 2752, "height": 1536 },
+      "requestId": "01a1c12f-756c-7d42-a735-1f83d45b00d1",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1cbf7/hTs1XDWUt1mQnSYdtBb4f_v9wJ4kHd.png",
+      "prompt": "Wide 16:9 presentation slide, plain white background, clean PowerPoint/Visio style. Top left, large black Helvetica: 'STARTUPS AS A BAND'. Below it, smaller black Helvetica: 'SMELLS LIKE TEAM SPIRIT'. Right half: four simple flat gray shapes in a row (circle, rectangle, triangle, square) with thin black outlines and soft drop shadows, each labeled 'SOLO', 'DUO', 'TRIO', 'QUARTET'. Bottom edge small black: 'THE ELEVEN SOCIETY SUMMIT · PWV'. Simple clip-art geometry, no photos, no gradients, no 3D. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "poster-a.png",
+      "concept": "Poster A — silhouettes, subtitle below",
+      "use": "hero-alternate",
+      "recommended": false,
+      "dimensions": { "width": 2752, "height": 1536 },
+      "requestId": "01a1c12a-8a71-7c03-9914-56b6a347b947",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1cbd7/yVL8JdjZyG2CdtvhPZWP8_eyK2XyYc.png",
+      "prompt": "Wide 16:9 social share card, stark black-and-white, 1980s independent gig poster. Off-white paper background. Left two-thirds: three stacked lines of enormous black ultra-condensed grotesque capitals, tightly leaded: 'STARTUPS', 'AS A', 'BAND'. Directly below, one line of smaller heavy black condensed capitals: 'SMELLS LIKE TEAM SPIRIT'. Right third: four simple black silhouettes of a four-piece band — singer, guitar, bass, drums — standing in a row like a lineup. Bottom left, small black Helvetica: 'THE ELEVEN SOCIETY SUMMIT'. Bottom right, small black 'PWV'. Photocopy grain, halftone dots, worn paper edges. Severe, minimal, high contrast, readable at small sizes. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "poster-b.png",
+      "concept": "Poster B — silhouettes, subtitle as top kicker",
+      "use": "hero-alternate",
+      "recommended": false,
+      "dimensions": { "width": 2752, "height": 1536 },
+      "requestId": "01a1c12a-8a72-7512-b696-77834a24dc6a",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1cbd7/zIih9hILZWr2CyKgdANH2_ZCc1Kp9e.png",
+      "prompt": "Wide 16:9 social share card, stark black-and-white, 1980s independent gig poster. Off-white paper background. Top left, a line of heavy black condensed capitals: 'SMELLS LIKE TEAM SPIRIT'. Below it, three stacked lines of enormous black ultra-condensed capitals: 'STARTUPS', 'AS A', 'BAND'. Right third: four simple black silhouettes of a four-piece band — singer, guitar, bass, drums — standing in a row. Bottom edge small black Helvetica: 'THE ELEVEN SOCIETY SUMMIT · PWV'. Photocopy grain, halftone dots, worn paper edges. Severe, minimal, high contrast, readable at small sizes. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    }
+  ]
+}
