@@ -36,7 +36,7 @@ Wide 16:9 black-and-white documentary photograph of a weathered wall, like the f
 Wide 16:9 scan of a 1980s Village Voice classifieds page, black ink on aged newsprint. A small headline at the top: 'CLASSIFIEDS'. Three boxed ads in a row with thick black borders. Left box: 'WANTED: DRUMMER. Influences: Diamond Head, Iron Maiden, shipping. No junior Ginger Bakers.' Middle box: 'WANTED: TECH CO-FOUNDER. Equity only. Influences: Aerosmith, Alice Cooper. No time wasters.' Right box: 'WANTED: DREAMER. No experience necessary. Must have a point of view.' Along the bottom, a small typewriter line: 'START A BAND. OR A COMPANY.' Halftone dots, photocopy grain, torn paper edge. Black and white only. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures.
 ```
 
-## Classifieds — red circle around all three (used in post)
+## Classifieds — red circle around all three (alternate)
 **File:** `ad-circle-all.png`
 **Edit prompt:**
 
@@ -67,7 +67,7 @@ Landscape 4:3 scan of a vintage 1971 Melody Maker classified ad, black ink on ag
 Landscape 4:3 scan of a vintage 1971 Melody Maker classified ad, black ink on aged yellowed newsprint, a small rectangular clipping with a thick black border and pieces of aged tape at the corners. At the top, bold black serif type in quotes: 'The Perfect Co-Founder'. Below, smaller bold sans-serif: 'for AVANT-ROCK COMPANY'. Then a block of italic serif text: 'Original, creative, adaptable, technical, fast, slow, elegant, witty, scary, stable, tricky'. Below, bold condensed caps: 'QUALITY PEOPLE ONLY'. At the bottom, bold type: '"PWV" 223 0296'. Slight stains, worn paper, photocopy grain. Aged newsprint tone with black ink. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures.
 ```
 
-## Influences — list (used in post)
+## Influences — list (alternate)
 **File:** `influences-list.png`
 
 ```text

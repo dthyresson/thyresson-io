@@ -320,7 +320,7 @@ const html = `<!doctype html>
   <div class="stats">
     <span><b id="total">17</b> pieces</span>
     <span>Graffiti heroes + shapes + classified ads</span>
-    <span>Graffiti Hero A, the red-circled classifieds, the PWV Perfect Co-Founder ad, and the Influences card are in the post</span>
+    <span>Graffiti Hero A and the PWV Perfect Co-Founder ad are in the post</span>
     <span id="count">17 of 17 pieces</span>
   </div>
 </header>
@@ -330,9 +330,8 @@ const html = `<!doctype html>
 <main>
   <div class="grid" id="grid"></div>
   <p class="note">
-    Graffiti Hero A, the all-three red-circled classifieds page, the PWV Perfect Co-Founder ad,
-    and the Influences card are in the post. Graffiti B/C, the shapes slides, the focused circles,
-    the ELEVEN ad, the single ad, the bullet-run Influences card, and Poster A/B are alternates.
+    Graffiti Hero A and the PWV Perfect Co-Founder ad are in the post. Graffiti B/C, the shapes
+    slides, all classified-ad variants, the influences cards, and Poster A/B are alternates.
   </p>
 </main>
 

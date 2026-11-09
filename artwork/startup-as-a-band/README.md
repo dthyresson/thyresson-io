@@ -1,7 +1,8 @@
 # Smells Like Team Spirit: Startups as a Band — artwork
 
-Separate from the KLF / PMF artwork review in the parent folder. The post uses a graffiti-wall hero
-and two 80s classifieds pages; the earlier slides and shapes remain as alternates.
+Separate from the KLF / PMF artwork review in the parent folder. The post uses the graffiti-wall hero
+and the PWV Perfect Co-Founder ad; the earlier slides, classified ads, and influences cards remain as
+alternates.
 
 | Path | Contents |
 | --- | --- |
@@ -13,12 +14,12 @@ and two 80s classifieds pages; the earlier slides and shapes remain as alternate
 | `hero-b.png` | Graffiti alternate — STARTUPS SMELL LIKE TEAM SPIRIT. |
 | `hero-c.png` | Graffiti alternate — STARTUPS AS A BAND. |
 | `shapes-a.png`, `shapes-b.png` | Shapes-slide alternates. |
-| `ad-circle-all.png` | In-post classifieds page with a red marker circle around all three ads. |
+| `ad-circle-all.png` | Red-circled classifieds page (alternate). |
 | `ad-circle-tech.png`, `ad-circle-drummer.png` | Focused red-circle alternates. |
 | `ad-circle-single.png`, `ad-a.png` | Portrait single-ad clean/circled alternates. |
 | `perfect-cofounder-pwv.png` | In-post Roxy Music-style “Perfect Co-Founder” ad. |
 | `perfect-cofounder-eleven.png` | ELEVEN alternate. |
-| `influences-list.png` | In-post influences card — Pixies, Stone Roses, Galaxie 500, B-52s, New Order, Debbie Harry, Happy Mondays. |
+| `influences-list.png` | Influences card (alternate). |
 | `influences-run.png` | Bullet-run influences alternate. |
 | `ad-b.png` | Clean Village Voice classifieds page. |
 | `poster-a.png`, `poster-b.png` | Earlier gig-poster directions. |

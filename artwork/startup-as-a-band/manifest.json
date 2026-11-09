@@ -11,7 +11,7 @@
     "thinking_level": "high",
     "safety_tolerance": "4"
   },
-  "notes": "Graffiti hero A, the all-three red-circled classifieds page, the PWV Perfect Co-Founder ad, and the Influences card are used in the post. Graffiti B/C, the shapes slides, the focused circles, the ELEVEN ad, the single ad, the bullet-run Influences card, and Poster A/B are alternates.",
+  "notes": "Graffiti hero A and the PWV Perfect Co-Founder ad are used in the post. Graffiti B/C, the shapes slides, all classified-ad variants, the influences cards, and Poster A/B are alternates.",
   "artwork": [
     {
       "file": "hero-a.png",
@@ -88,7 +88,7 @@
       "file": "ad-circle-all.png",
       "concept": "Classifieds — red circle around all three ads",
       "use": "inline",
-      "recommended": true,
+      "recommended": false,
       "aspect": "16:9",
       "dimensions": {
         "width": 2752,
@@ -172,7 +172,7 @@
       "file": "influences-list.png",
       "concept": "Influences — one band per line",
       "use": "inline",
-      "recommended": true,
+      "recommended": false,
       "aspect": "4:3",
       "dimensions": {
         "width": 2400,
