@@ -4,3 +4,8 @@
 
 [build.environment]
   NODE_VERSION = "22.23.4"
+
+[[redirects]]
+  from = "/blog/post-startup-as-a-band"
+  to = "/blog/post-smells-like-team-spirit"
+  status = 301

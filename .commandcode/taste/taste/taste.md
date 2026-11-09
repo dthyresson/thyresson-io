@@ -17,5 +17,5 @@
 - Prefers constructive, non-combative framing when writing about competitive strategy: "Disrupt the incumbents" / "attacking an incumbent's architecture" is "a bit harsh" — favor framings like "become the layer" that show how a company wins without declaring war on incumbents. Confidence: 0.7
 - Do not invoke school pedigree (e.g. "you don't need MIT or Stanford") when making a point about founders or ambition — education and credentials shouldn't be called out at all; make the point without reference to schools. Confidence: 0.65
 - Do not publish contract dollar amounts (deal sizes, ARR, SAFE terms) from IC memos in public posts — describe the customers and work qualitatively instead of citing figures. Confidence: 0.7
+- Prefers blog lists rendered as running prose paragraphs ("You have ⚪ solo startups where…", "You have ▬ duos where…") instead of bulleted/bold-lead lists. Confidence: 0.55
 - Cuts explicit lesson-statement/moralizing paragraphs that spell out the takeaway ("Good founders challenge their own assumptions…", "essential to building a company") — let the narrative carry the point. Confidence: 0.5
-0.5
