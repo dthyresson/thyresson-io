@@ -280,7 +280,7 @@ const html = `<!doctype html>
   <div class="subtitle">Smells Like Team Spirit</div>
   <p class="lede">
     Black-and-white hero directions for the Eleven Society breakout post. This review is kept
-    separate from the <a href="../index.html">KLF PMF artwork review</a>. Click either hero to
+    separate from the <a href="../pmf-is-gonna-rock-you/index.html">KLF PMF artwork review</a>. Click either hero to
     inspect it full size; expand <strong>Prompt</strong> to read or copy the generation prompt.
   </p>
   <div class="stats">

@@ -7,18 +7,18 @@ const dir = path.dirname(fileURLToPath(import.meta.url));
 const manifest = JSON.parse(fs.readFileSync(path.join(dir, 'manifest.json'), 'utf8'));
 
 const recommended = new Set([
-  'pmf-is-gonna-rock-you/manual-a.png',
-  'pmf-is-gonna-rock-you/manual-b.png',
-  'pmf-is-gonna-rock-you/hero-og-purple.png',
-  'pmf-is-gonna-rock-you/hero-d-pmf-grid.png',
-  'pmf-is-gonna-rock-you/hero-e-pmf-purple-stacked.png',
-  'pmf-is-gonna-rock-you/hero-f-pmf-split.png',
-  'pmf-is-gonna-rock-you/cursor-a-doctorin-the-product.png',
-  'pmf-is-gonna-rock-you/fal-b-last-train-to-model-central.png',
-  'pmf-is-gonna-rock-you/turso-b-what-time-is-fit.png',
-  'pmf-is-gonna-rock-you/workbrew-b-3am-eternal.png',
-  'pmf-is-gonna-rock-you/zoo-a-justified-and-validated.png',
-  'pmf-is-gonna-rock-you/jura-b-its-grim-pre-fit.png'
+  'manual-a.png',
+  'manual-b.png',
+  'hero-og-purple.png',
+  'hero-d-pmf-grid.png',
+  'hero-e-pmf-purple-stacked.png',
+  'hero-f-pmf-split.png',
+  'cursor-a-doctorin-the-product.png',
+  'fal-b-last-train-to-model-central.png',
+  'turso-b-what-time-is-fit.png',
+  'workbrew-b-3am-eternal.png',
+  'zoo-a-justified-and-validated.png',
+  'jura-b-its-grim-pre-fit.png'
 ]);
 
 const groupOrder = ['Intro', 'Hero', 'Cursor', 'fal', 'Turso', 'Workbrew', 'Zoo', 'Jura'];
@@ -417,7 +417,8 @@ const html = `<!doctype html>
   <p class="lede">
     KLF-inspired artwork for the <strong>PMF Is Gonna Rock Ya!</strong> blog post. Each piece
     connects a company to a KLF album or single. The wide purple card is the SEO/OG social hero, the
-    3:4 book cover is the intro, and the square pieces are album art. Click any sleeve to inspect it
+    3:4 book cover is the intro, and the square pieces are album art. See also the
+    <a href="../startup-as-a-band/index.html">Startup as a Band review</a>. Click any sleeve to inspect it
     full size, expand <strong>Prompt</strong> to read or copy the exact generation prompt.
   </p>
   <div class="stats">

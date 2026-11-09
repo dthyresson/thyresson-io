@@ -15,7 +15,7 @@ Helvetica credits, catalogue code, photocopy grain, halftone, worn paper.
 ## Hero
 
 ### Hero A — "THE PMF" lime sleeve
-**File:** `pmf-is-gonna-rock-you/hero-a-pmf-lime.png`
+**File:** `hero-a-pmf-lime.png`
 **Reference:** The KLF — green "THE KLF" promo sleeve (*The White Room* era)
 **Direction:** giant black "PMF" on fluorescent lime, cropped top and bottom, "THE" above the P.
 
@@ -24,7 +24,7 @@ Square 1:1 vinyl album sleeve, late-1980s British acid-house graphic design in t
 ```
 
 ### Hero B — Ford Timelord / Doctorin' the Tardis
-**File:** `pmf-is-gonna-rock-you/hero-b-ford-timelord.png`
+**File:** `hero-b-ford-timelord.png`
 **Reference:** The Timelords — *Doctorin' the Tardis* (1988)
 **Direction:** cream publicity-photo sleeve, police car, jagged speech bubble, outlined title.
 
@@ -33,7 +33,7 @@ Square 1:1 vinyl single sleeve parody in the style of a 1988 British novelty pop
 ```
 
 ### Hero C — glowing 3 A.M. Eternal
-**File:** `pmf-is-gonna-rock-you/hero-c-3am-eternal.png`
+**File:** `hero-c-3am-eternal.png`
 **Reference:** The KLF — *3 A.M. Eternal* (1991)
 **Direction:** black sleeve, glowing orange type, inset night motorway photo.
 
@@ -46,7 +46,7 @@ Square 1:1 vinyl sleeve, late-1980s British acid-house design. Deep black backgr
 ## Cursor — Doctorin' the Product
 
 ### Cursor A — police car + speech bubble
-**File:** `pmf-is-gonna-rock-you/cursor-a-doctorin-the-product.png`
+**File:** `cursor-a-doctorin-the-product.png`
 **Reference:** The Timelords — *Doctorin' the Tardis* (1988)
 **Direction:** closest parody of the original single sleeve; cursor arrow on the hood.
 
@@ -55,7 +55,7 @@ Square 1:1 vinyl single sleeve parody, 1988 British novelty pop design. Cream pa
 ```
 
 ### Cursor B — orange garage respray
-**File:** `pmf-is-gonna-rock-you/cursor-b-doctorin-the-product.png`
+**File:** `cursor-b-doctorin-the-product.png`
 **Reference:** *Doctorin' the Tardis* back-cover typography
 **Direction:** giant vertical CURSOR, halftone photo of the car being resprayed.
 
@@ -68,7 +68,7 @@ Square 1:1 vinyl sleeve, late-1980s British acid-house design. Flat fluorescent 
 ## fal — Last Train to Model Central
 
 ### fal A — station light trails
-**File:** `pmf-is-gonna-rock-you/fal-a-last-train-to-model-central.png`
+**File:** `fal-a-last-train-to-model-central.png`
 **Reference:** The KLF — *Last Train to Trancentral* (1991)
 **Direction:** long-exposure train through a station, lime type over the photo.
 
@@ -77,7 +77,7 @@ Square 1:1 vinyl sleeve, late-1980s British acid-house design. Black background.
 ```
 
 ### fal B — viaduct + giant FAL
-**File:** `pmf-is-gonna-rock-you/fal-b-last-train-to-model-central.png`
+**File:** `fal-b-last-train-to-model-central.png`
 **Reference:** *Last Train to Trancentral* / *Chill Out* night-train imagery
 **Direction:** huge cropped lime FAL, inset viaduct photo, white italic title.
 
@@ -90,7 +90,7 @@ Square 1:1 vinyl sleeve, late-1980s British acid-house design. Solid black backg
 ## Turso — What Time Is Fit?
 
 ### Turso A — Pure Trance "1"
-**File:** `pmf-is-gonna-rock-you/turso-a-what-time-is-fit.png`
+**File:** `turso-a-what-time-is-fit.png`
 **Reference:** The KLF — *What Time Is Love? (Pure Trance 1)* (1988)
 **Direction:** black sleeve, giant lime "1", lime italic title, circular emblem.
 
@@ -99,7 +99,7 @@ Square 1:1 vinyl sleeve, late-1980s British acid-house design. Solid black backg
 ```
 
 ### Turso B — orange "FIT" with database dot
-**File:** `pmf-is-gonna-rock-you/turso-b-what-time-is-fit.png`
+**File:** `turso-b-what-time-is-fit.png`
 **Reference:** *What Time Is Love? (Pure Trance 1)*, orange rework
 **Direction:** giant white FIT; a database cylinder replaces the dot over the I.
 
@@ -112,7 +112,7 @@ Square 1:1 vinyl sleeve, late-1980s British acid-house design. Flat safety-orang
 ## Workbrew — 3 A.M. Eternal
 
 ### Workbrew A — office inset
-**File:** `pmf-is-gonna-rock-you/workbrew-a-3am-eternal.png`
+**File:** `workbrew-a-3am-eternal.png`
 **Reference:** The KLF — *3 A.M. Eternal* (1991)
 **Direction:** black sleeve, inset photo of an empty office at 3 a.m., one lit laptop.
 
@@ -121,7 +121,7 @@ Square 1:1 vinyl sleeve, late-1980s British acid-house design. Deep black backgr
 ```
 
 ### Workbrew B — pint-glass terminal
-**File:** `pmf-is-gonna-rock-you/workbrew-b-3am-eternal.png`
+**File:** `workbrew-b-3am-eternal.png`
 **Reference:** *3 A.M. Eternal*
 **Direction:** a beer glass containing a lit terminal; more original, stronger icon.
 
@@ -134,7 +134,7 @@ Square 1:1 vinyl sleeve, late-1980s British acid-house design. Deep black backgr
 ## Zoo — Justified & Validated
 
 ### Zoo A — ice-cream van, condensed ZOO
-**File:** `pmf-is-gonna-rock-you/zoo-a-justified-and-validated.png`
+**File:** `zoo-a-justified-and-validated.png`
 **Reference:** The KLF — *Justified & Ancient* (1991)
 **Direction:** green haze, pink cream van, "Freshly Made For You". The narrow ZOO reads slightly like "700".
 
@@ -143,7 +143,7 @@ Square 1:1 vinyl sleeve, late-1980s British acid-house design. Soft acid-green h
 ```
 
 ### Zoo B — wide legible ZOO
-**File:** `pmf-is-gonna-rock-you/zoo-b-justified-and-validated.png`
+**File:** `zoo-b-justified-and-validated.png`
 **Reference:** *Justified & Ancient*
 **Direction:** same van idea, but ZOO set wide with generous spacing for legibility.
 
@@ -156,7 +156,7 @@ Square 1:1 vinyl sleeve, late-1980s British acid-house design. Acid-green haze b
 ## Jura — It's Grim Pre-Fit / Burn the Runway
 
 ### Jura A — burning suitcase
-**File:** `pmf-is-gonna-rock-you/jura-a-its-grim-pre-fit.png`
+**File:** `jura-a-its-grim-pre-fit.png`
 **Reference:** The KLF / The JAMs — *It's Grim Up North* (1991) + the Jura million-pound burn (1994)
 **Direction:** suitcase of burning £50 notes on a Hebridean hillside, two silhouettes.
 
@@ -165,7 +165,7 @@ Square 1:1 vinyl sleeve, late-1980s British acid-house design. Black night sky o
 ```
 
 ### Jura B — burning £50 close-up
-**File:** `pmf-is-gonna-rock-you/jura-b-its-grim-pre-fit.png`
+**File:** `jura-b-its-grim-pre-fit.png`
 **Reference:** *It's Grim Up North* + Jura
 **Direction:** tighter, simpler composition; a hand holding a burning note.
 
@@ -190,8 +190,8 @@ the grid's bottom strap clipped and the split duplicated "ROCK YA". Their square
 as album art.
 
 ## Hero OG — purple stacked 16:9 social card
-**File:** `pmf-is-gonna-rock-you/hero-og-purple.png`
-**Social crop:** `pmf-is-gonna-rock-you/hero-og-purple-1200x630.png`
+**File:** `hero-og-purple.png`
+**Social crop:** `hero-og-purple-1200x630.png`
 **Reference:** The KLF — *The White Room* (1989 Director's Cut purple sleeve)
 **Direction:** 16:9 SEO/OG card. Title occupies the left two-thirds; emblem sits in its own circle
 on the right. Designed to stay legible at 600 px wide.
@@ -201,7 +201,7 @@ Wide 16:9 social share card and album sleeve, late-1980s British acid-house desi
 ```
 
 ## Hero D — PMF repetition grid
-**File:** `pmf-is-gonna-rock-you/hero-d-pmf-grid.png`
+**File:** `hero-d-pmf-grid.png`
 **Reference:** The KLF — *12 INCH* promo sleeve pattern (1991)
 **Direction:** square album art. Wall of repeated "PMF" with a central record label.
 
@@ -210,7 +210,7 @@ Square 1:1 promo sleeve, late-1980s British acid-house design in the style of KL
 ```
 
 ## Hero E — purple stacked THE PMF
-**File:** `pmf-is-gonna-rock-you/hero-e-pmf-purple-stacked.png`
+**File:** `hero-e-pmf-purple-stacked.png`
 **Reference:** The KLF — *The White Room* (1989 Director's Cut purple sleeve)
 **Direction:** square album art version of the purple hero.
 
@@ -219,7 +219,7 @@ Square 1:1 vinyl album sleeve, late-1980s British acid-house design. Flat electr
 ```
 
 ## Hero F — purple/lime diagonal split
-**File:** `pmf-is-gonna-rock-you/hero-f-pmf-split.png`
+**File:** `hero-f-pmf-split.png`
 **Reference:** *The White Room* purple + *Pure Trance* lime
 **Direction:** square album art. Hard diagonal colour split; maximum contrast.
 
@@ -230,7 +230,7 @@ Square 1:1 vinyl sleeve, late-1980s British acid-house design. A hard diagonal s
 ---
 
 ## Cursor C — Kylie Said to Jason
-**File:** `pmf-is-gonna-rock-you/cursor-c-doctorin-the-product.png`
+**File:** `cursor-c-doctorin-the-product.png`
 **Reference:** The KLF — *Kylie Said to Jason* (1989)
 **Direction:** pale sky, police car and ruined warehouse, asymmetric type. Less "novelty single",
 more documentary.
@@ -240,7 +240,7 @@ Square 1:1 vinyl single sleeve, late-1980s British acid-house design. Pale blue-
 ```
 
 ## fal C — orange stacked Come Down Dawn
-**File:** `pmf-is-gonna-rock-you/fal-c-last-train-to-model-central.png`
+**File:** `fal-c-last-train-to-model-central.png`
 **Reference:** The KLF — *Come Down Dawn* (1991) / *Last Train to Trancentral*
 **Direction:** flat orange, black stacked columns. No inset photo; pure typography.
 
@@ -256,7 +256,7 @@ Two covers inspired by the 1988 Cauty/Drummond book. Both are used in the post: 
 introduces the book, **B** (branded) closes the Manual section.
 
 ## Manual A — stark book cover
-**File:** `pmf-is-gonna-rock-you/manual-a.png`
+**File:** `manual-a.png`
 **Reference:** *The Manual: How to Have a Number One the Easy Way* (1988)
 **Direction:** 3:4 book cover. Giant stacked THE / PMF / MANUAL, one-line bracketed subtitle, small
 line-art emblem bottom right, PWV Press imprint.
@@ -266,7 +266,7 @@ Portrait 3:4 book cover, 1988 British paperback, stark white uncoated paper. Thr
 ```
 
 ## Manual B — branded alternate
-**File:** `pmf-is-gonna-rock-you/manual-b.png`
+**File:** `manual-b.png`
 **Reference:** *The Manual* — leyline cover variant
 **Direction:** 3:4 book cover. Centered stack, larger circular emblem, skewed PWV box.
 
