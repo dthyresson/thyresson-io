@@ -53,14 +53,14 @@ Add a loose hand-drawn red marker circle around all three 'WANTED' ads as one gr
 All three focused edits use the same instruction as above with the target ad named, and “Do not
 change any text.”
 
-## Perfect Co-Founder — ELEVEN (used in post)
+## Perfect Co-Founder — ELEVEN (alternate)
 **File:** `perfect-cofounder-eleven.png`
 
 ```text
 Landscape 4:3 scan of a vintage 1971 Melody Maker classified ad, black ink on aged yellowed newsprint, a small rectangular clipping with a thick black border and pieces of aged tape at the corners. At the top, bold black serif type in quotes: 'The Perfect Co-Founder'. Below, smaller bold sans-serif: 'for AVANT-ROCK STARTUP'. Then a block of italic serif text: 'Original, creative, adaptable, technical, fast, slow, elegant, witty, scary, stable, tricky'. Below, bold condensed caps: 'QUALITY PEOPLE ONLY'. At the bottom, bold type: '"ELEVEN" 223 0296'. Slight stains, worn paper, photocopy grain. Aged newsprint tone with black ink. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures.
 ```
 
-## Perfect Co-Founder — PWV (alternate)
+## Perfect Co-Founder — PWV (used in post)
 **File:** `perfect-cofounder-pwv.png`
 
 ```text

@@ -16,8 +16,8 @@ and two 80s classifieds pages; the earlier slides and shapes remain as alternate
 | `ad-circle-all.png` | In-post classifieds page with a red marker circle around all three ads. |
 | `ad-circle-tech.png`, `ad-circle-drummer.png` | Focused red-circle alternates. |
 | `ad-circle-single.png`, `ad-a.png` | Portrait single-ad clean/circled alternates. |
-| `perfect-cofounder-eleven.png` | In-post Roxy Music-style “Perfect Co-Founder” ad. |
-| `perfect-cofounder-pwv.png` | Clean PWV alternate. |
+| `perfect-cofounder-pwv.png` | In-post Roxy Music-style “Perfect Co-Founder” ad. |
+| `perfect-cofounder-eleven.png` | ELEVEN alternate. |
 | `influences-list.png` | In-post influences card — Pixies, Stone Roses, Galaxie 500, B-52s, New Order, Debbie Harry, Happy Mondays. |
 | `influences-run.png` | Bullet-run influences alternate. |
 | `ad-b.png` | Clean Village Voice classifieds page. |
