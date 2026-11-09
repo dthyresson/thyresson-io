@@ -1,0 +1,10 @@
+# Taste
+- When having creative assets (e.g. generated images) produced, wants several candidate variants to choose from rather than a single output. Confidence: 0.7
+- In an artwork set, expects the hero/primary image to use a distinct design, palette and composition from the supporting/section images — not a reused treatment — and to be the boldest, most eye-catching piece. Confidence: 0.75
+- Wants at least one hero variant laid out for SEO/OG social sharing (wide, readable at small preview sizes), with the remaining art kept in their native album/square format. Confidence: 0.6
+- Blog posts should end with a short tools footnote crediting what was used, each with a link plus the exact model name and tool version (e.g. fal + model id, Command Code v1.88.5 + model id). Confidence: 0.7
+- Prefers blog post intros kept short — cuts scene-setting/atmospheric buildup in favor of fewer, tighter paragraphs that get straight to the point. Confidence: 0.55
+- Dislikes blog prose written as a long run of one-sentence paragraphs; wants sections (especially conclusions) tightened into a few dense paragraphs that keep the key beats and cut the rest. Confidence: 0.65
+- When he has supplied his own copy (abstracts, descriptions, blurbs), wants it used verbatim instead of being rewritten or "improved" — offer alternatives alongside it, but keep his original wording as the default. Confidence: 0.6
+- When a blog post names a company in a heading, wants the company's logo shown inline with that heading (not text alone); logos can be pulled from the company/portfolio site. Confidence: 0.55
+- Prefers upgrading dependencies/frameworks to current versions to fix problems "at the source" rather than patching transitive packages or staying on outdated versions. Confidence: 0.6

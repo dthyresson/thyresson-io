@@ -3,7 +3,7 @@ import BaseHead from '../../../components/BaseHead.astro';
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../../consts';
-import { db, Tracks, asc, eq } from 'astro:db';
+import { getDb } from '../../../lib/db';
 
 function formatDuration(seconds: number) {
   const mins = Math.floor(seconds / 60_000);
@@ -30,6 +30,15 @@ type Track = {
 // Cache key for this query
 const CACHE_KEY = `artist-tracks-${artist}`;
 
+async function getTracks(artistName: string): Promise<Track[]> {
+  const result = await getDb().execute({
+    sql: 'SELECT name, artist, album, genre, duration, year FROM Tracks WHERE artist = ? ORDER BY year ASC, album ASC, name ASC',
+    args: [artistName],
+  });
+
+  return result.rows as unknown as Track[];
+}
+
 // Get tracks with caching
 let tracks: Track[] = [];
 try {
@@ -39,11 +48,7 @@ try {
   if (response) {
     tracks = await response.json();
   } else {
-    tracks = await db
-      .select()
-      .from(Tracks)
-      .where(eq(Tracks.artist, artist))
-      .orderBy(asc(Tracks.year), asc(Tracks.album), asc(Tracks.name));
+    tracks = await getTracks(artist);
 
     await cached.put(
       CACHE_KEY,
@@ -54,11 +59,7 @@ try {
   }
 } catch (error) {
   // Fallback to direct DB query if caching fails
-  tracks = await db
-    .select()
-    .from(Tracks)
-    .where(eq(Tracks.artist, artist))
-    .orderBy(asc(Tracks.year), asc(Tracks.album), asc(Tracks.name));
+  tracks = await getTracks(artist);
 }
 
 export const prerender = false;

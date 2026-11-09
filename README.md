@@ -4,6 +4,8 @@ Personal website and blog built with Astro, Cursor, Netlify, fal, and Tailwind C
 
 ## Commands
 
+Requires Node 22.23.4 or newer (see `.nvmrc`).
+
 All commands are run from the root of the project, from a terminal:
 
 | Command                    | Action                                           |
@@ -16,7 +18,9 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm run format`          | Format your code with Prettier                   |
 | `pnpm run astro -- --help` | Get help using the Astro CLI                     |
 
-## Astro DB / Turso
+## Music / Turso
+
+The music pages query a Turso database with `@libsql/client`.
 
 Show the database URL
 
@@ -39,16 +43,22 @@ BSKY_USERNAME=
 BSKY_PASSWORD=
 ```
 
-You can push your local schema changes to your remote database via the CLI using the `astro db push --remote` command:
+Create the schema
 
 ```bash
-pnpm astro db push --remote
+turso db shell <database-name> < db/schema.sql
 ```
 
 Seed the _remote_ database (Caution!)
 
 ```bash
-pnpm astro db execute db/seed.ts --remote
+pnpm tsx db/seed.ts
+```
+
+Import the track dump
+
+```bash
+pnpm import-tracks
 ```
 
 ## Blog Image Generation
