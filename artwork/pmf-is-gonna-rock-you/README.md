@@ -3,7 +3,7 @@
 KLF-inspired sleeve artwork generated with `google/nano-banana-2.1` on fal for the blog post
 `src/content/blog/post-pmf-is-gonna-rock-you.mdx`.
 
-See also the [Startup as a Band artwork](../startup-as-a-band/).
+See also the [Startup as a Band artwork](../smells-like-team-spirit/).
 
 ## Folders
 

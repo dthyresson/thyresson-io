@@ -420,7 +420,7 @@ const html = `<!doctype html>
     KLF-inspired artwork for the <strong>PMF Is Gonna Rock Ya!</strong> blog post. Each piece
     connects a company to a KLF album or single. The wide purple card is the SEO/OG social hero, the
     3:4 book cover is the intro, and the square pieces are album art. See also the
-    <a href="../startup-as-a-band/index.html">Smells Like Team Spirit review</a>. Click any sleeve to inspect it
+    <a href="../smells-like-team-spirit/index.html">Smells Like Team Spirit review</a>. Click any sleeve to inspect it
     full size, expand <strong>Prompt</strong> to read or copy the exact generation prompt.
   </p>
   <div class="stats">

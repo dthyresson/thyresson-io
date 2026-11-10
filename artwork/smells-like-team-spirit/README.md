@@ -32,5 +32,5 @@ alternates.
 Classified-ad inspiration: [10 classified ads that launched legendary rock bands](https://medium.com/@mashster/10-classified-ads-that-launched-legendary-rock-bands-9e90b72bbf4).
 
 ```sh
-node artwork/startup-as-a-band/build-review.mjs
+node artwork/smells-like-team-spirit/build-review.mjs
 ```
