@@ -1,5 +1,6 @@
 import { file, glob } from 'astro/loaders';
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
+import { z } from 'astro/zod';
 
 const airports = defineCollection({
   loader: file('src/content/airports/airports.json'),
@@ -16,6 +17,7 @@ const blog = defineCollection({
   schema: ({ image }) =>
     z.object({
       title: z.string(),
+      subtitle: z.string().optional(),
       description: z.string(),
       // Transform string to Date object
       pubDate: z.coerce.date(),

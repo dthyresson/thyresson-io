@@ -7,20 +7,26 @@ import tailwindcss from '@tailwindcss/vite';
 import react from '@astrojs/react';
 import { imageService } from '@unpic/astro/service';
 
-import db from '@astrojs/db';
-
 // https://astro.build/config
 export default defineConfig({
   prefetch: true,
   output: 'static',
-  adapter: netlify(),
+  compressHTML: true,
+  session: false,
+  adapter: netlify({
+    devFeatures: {
+      environmentVariables: false,
+      images: true,
+      edgeFunctions: false,
+    },
+  }),
   site: process.env.URL || process.env.DEPLOY_URL || 'http://localhost:4321',
   image: {
     service: imageService({
       placeholder: 'blurhash',
     }),
   },
-  integrations: [mdx(), sitemap(), db(), react()],
+  integrations: [mdx(), sitemap(), react()],
   vite: {
     plugins: [tailwindcss()],
   },
