@@ -1,12 +1,12 @@
 # David Thyresson - Personal Website and Blog
 
-> David Thyresson, General Partner at Preston-Werner Ventures
+> David Thyresson, Cofounder and General Partner at Preston-Werner Ventures
 
 ## About
 
 This is the personal website and blog of A. David Thyresson.
 
-David is a Managing Director and General Partner at PWV (Preston-Werner Ventures) where he invests in early stage technology startups alongside Tom Preston-Werner and David Price.
+David is a Cofounder and General Partner at PWV (Preston-Werner Ventures) where he invests in early stage technology startups alongside Tom Preston-Werner and David Price.
 
 ## Key URLs
 

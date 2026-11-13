@@ -3,4 +3,4 @@
 
 export const SITE_TITLE = 'David Thyresson';
 export const SITE_DESCRIPTION =
-  'David Thyresson, General Partner at PWV (Preston-Werner Ventures)';
+  'David Thyresson, Cofounder and General Partner at PWV (Preston-Werner Ventures)';
