@@ -20,7 +20,11 @@ export default defineConfig({
       edgeFunctions: false,
     },
   }),
-  site: process.env.URL || process.env.DEPLOY_URL || 'http://localhost:4321',
+  site:
+    process.env.SITE_URL ||
+    process.env.URL ||
+    process.env.DEPLOY_URL ||
+    'http://localhost:4321',
   image: {
     service: imageService({
       placeholder: 'blurhash',

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Breakout Sessions — Double Bill with medallions v2</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; background: #111; color: #111; -webkit-font-smoothing: antialiased; }
+  .card { position: relative; width: 1200px; height: 630px; display: flex; flex-direction: column; overflow: hidden; }
+  .grain {
+    position: absolute; inset: 0; z-index: 10; pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity: 0.05; mix-blend-mode: overlay;
+  }
+  .split { position: relative; flex: 1; display: flex; min-height: 0; }
+  .half { position: relative; flex: 1; overflow: hidden; }
+  .half img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .half.pmf { background: #6B2BE0; }
+  .half.pmf img { object-position: left center; transform: scale(0.8); transform-origin: left center; }
+  .half.team img { object-position: center center; }
+  .seam { position: absolute; z-index: 3; top: 0; bottom: 0; left: 50%; width: 6px; transform: translateX(-3px); background: #C6FF00; }
+
+  .medallion {
+    position: absolute; z-index: 4; bottom: 18px; right: 18px;
+    width: 104px; height: 104px; border-radius: 50%;
+    background-size: cover; background-repeat: no-repeat;
+    box-shadow: 0 10px 22px rgba(0,0,0,.3);
+  }
+  .pmf .medallion { width: 90px; height: 120px; border-radius: 3px; border: 4px solid #fff; background-image: url("../../../src/images/post-pmf-is-gonna-rock-you/manual-pmf-cover.png"); background-position: center; }
+  .team .medallion { top: 18px; bottom: auto; border: 4px solid #111; background-image: url("../../smells-like-team-spirit/sources/kurt-talent.png"); background-position: center 25%; box-shadow: 0 0 0 5px #C6FF00, 0 10px 22px rgba(0,0,0,.3); }
+
+  .rail {
+    position: relative; z-index: 5; height: 84px; flex: none;
+    background: #C6FF00; color: #111;
+    display: flex; align-items: center; justify-content: space-between; gap: 24px;
+    padding: 0 22px 0 24px;
+  }
+  .speaker { display: flex; align-items: center; gap: 12px; flex: none; }
+  .avatar {
+    width: 44px; height: 44px; border-radius: 50%; flex: none;
+    background-image: url("../../../public/ADT.jpg");
+    background-size: cover; background-position: center;
+    box-shadow: 0 0 0 2px #111;
+  }
+  .who strong { display: block; font-size: 16px; font-weight: 800; letter-spacing: -0.01em; }
+  .who span { display: block; margin-top: 3px; font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(17,17,17,.65); }
+  .event { flex: 1; text-align: center; }
+  .event strong { display: block; font-size: 10.5px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; }
+  .event span { display: block; margin-top: 4px; font-size: 9px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(17,17,17,.64); }
+  .logos { display: flex; align-items: center; gap: 16px; flex: none; }
+  .pwv { height: 20px; width: auto; display: block; }
+  .eleven { height: 28px; width: auto; display: block; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="grain"></div>
+
+  <main class="split">
+    <section class="half pmf">
+      <img src="../../pmf-is-gonna-rock-you/hero-og-purple-1200x630.png" alt="PMF Is Gonna Rock Ya!">
+      <div class="medallion"></div>
+    </section>
+    <section class="half team">
+      <img src="../../smells-like-team-spirit/hero-a-1200x630.png" alt="Smells Like Team Spirit">
+      <div class="medallion"></div>
+    </section>
+    <div class="seam"></div>
+  </main>
+
+  <footer class="rail">
+    <div class="speaker">
+      <span class="avatar"></span>
+      <div class="who">
+        <strong>David Thyresson (DT)</strong>
+        <span>Cofounder &amp; General Partner, PWV</span>
+      </div>
+    </div>
+    <div class="event">
+      <strong>Northeast Entrepreneurship Summit</strong>
+      <span>Breakout 01 PMF &middot; Breakout 02 Team Spirit &middot; Nov 15, 2026 &middot; Boston</span>
+    </div>
+    <div class="logos">
+      <img class="pwv" src="../../logos/pwv-logo-black-1920.svg" alt="PWV">
+      <img class="eleven" src="../../logos/Eleven%20Society.svg" alt="The Eleven Society">
+    </div>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,11 +1,11 @@
 {
   "name": "thyresson-io",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "BROWSER=none SITE_URL=http://localhost:8888 netlify serve",
     "astro": "astro",
     "format": "prettier --write .",
     "import-tracks": "tsx scripts/import-tracks.ts",
@@ -44,6 +44,7 @@
     "commander": "^13.1.0",
     "csv-parse": "^5.6.0",
     "langbase": "^1.2.3",
+    "netlify-cli": "^27.17.0",
     "prettier": "^3.6.2",
     "prettier-plugin-astro": "^0.14.1",
     "tailwindcss": "^4.3.5",

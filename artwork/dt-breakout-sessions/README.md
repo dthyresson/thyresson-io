@@ -11,6 +11,7 @@ Print-ready one-pager for the two breakout sessions at the Northeast Entrepreneu
 | `dt-breakout-sessions.md` | Markdown version of the same content. |
 | `hero-pmf.jpg`, `hero-team.jpg` | Downscaled hero images used by the HTML and PDF. |
 | `dt-breakout-sessions-preview.png` | First-page preview. |
+| `social/` | LinkedIn (1200 × 630) and square (1080 × 1080) share cards for both sessions, plus combined double-bill variants using the post OG art. Open [`social/index.html`](social/index.html) for the review page. |
 
 ## Render
 

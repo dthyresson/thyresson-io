@@ -14,11 +14,13 @@ import { formatDistanceToNow } from 'date-fns';
 const airports = await getCollection('airports');
 const experiments = await getCollection('experiments');
 
-const posts = (await getCollection('blog')).sort(
-  (a, b) =>
-    (b.data.updatedDate || b.data.pubDate).valueOf() -
-    (a.data.updatedDate || a.data.pubDate).valueOf()
-);
+const posts = (await getCollection('blog'))
+  .filter((post) => !post.data.draft)
+  .sort(
+    (a, b) =>
+      (b.data.updatedDate || b.data.pubDate).valueOf() -
+      (a.data.updatedDate || a.data.pubDate).valueOf()
+  );
 
 const recentPosts = posts.slice(0, 5);
 ---
@@ -48,18 +50,20 @@ const recentPosts = posts.slice(0, 5);
           </p>
           <p>
             I've advised 🌲
-            <a href="https://www.rwsdk.com/" target="_blank">RedwoodJS</a> and consulted at ⚡️<a
-              href="https://www.supabase.com/"
-              target="_blank">Supabase</a
+            <a href="https://www.rwsdk.com/" target="_blank">RedwoodJS</a> and consulted
+            at ⚡️<a href="https://www.supabase.com/" target="_blank"
+              >Supabase</a
             > back in 2021.
           </p>
           <p>
-            Before then I was part of a few 🏟 <a href="https://www.sportsilab.com" target="_blank">sports</a>, 🔋 energy-related and 🤔
-            consulting startups with exits.
+            Before then I was part of a few 🏟 <a
+              href="https://www.sportsilab.com"
+              target="_blank">sports</a
+            >, 🔋 energy-related and 🤔 consulting startups with exits.
           </p>
           <p>
-            I enjoy ☕️ coffee and collecting 🖍 street art, 🧷 punk/new wave/rock
-            poster art and ephemera (mainly
+            I enjoy ☕️ coffee and collecting 🖍 street art, 🧷 punk/new
+            wave/rock poster art and ephemera (mainly
             <a href="https://www.mdmarchive.co.uk/archive" target="_blank"
               >Madchester</a
             >,

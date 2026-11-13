@@ -10,13 +10,18 @@ import { Image } from '@unpic/astro';
 import PostCard from '../components/PostCard.astro';
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage, tags } =
+const { title, description, pubDate, updatedDate, heroImage, tags, draft } =
   Astro.props;
 ---
 
 <html lang="en">
   <head>
-    <BaseHead title={title} description={description} image={heroImage} />
+    <BaseHead
+      title={title}
+      description={description}
+      image={heroImage}
+      noindex={draft}
+    />
   </head>
 
   <body>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PMF Is Gonna Rock Ya! — sleeve alternate</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; background: #6B2BE0; color: #fff; -webkit-font-smoothing: antialiased; }
+  .card { position: relative; width: 1200px; height: 630px; display: flex; flex-direction: column; background: #6B2BE0; overflow: hidden; }
+  .grain {
+    position: absolute; inset: 0; z-index: 5; pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity: 0.06; mix-blend-mode: overlay;
+  }
+  .stage { position: relative; flex: 1; display: flex; align-items: center; }
+  .copy { position: relative; z-index: 3; width: 760px; padding: 30px 20px 26px 52px; }
+  .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #C6FF00; }
+  .eyebrow .sl { color: rgba(255,255,255,.45); padding: 0 7px; }
+  h1 { margin-top: 12px; font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-weight: 400; }
+  .the { display: block; font-size: 26px; letter-spacing: 0.34em; line-height: 1; margin-left: 4px; margin-bottom: 14px; }
+  .pmf { display: block; font-size: 272px; line-height: 0.75; letter-spacing: -0.012em; margin-left: -8px; }
+  .rock { display: block; font-size: 74px; line-height: 0.98; letter-spacing: 0.008em; margin-top: 8px; }
+  .sub { margin-top: 20px; max-width: 480px; font-size: 18px; line-height: 1.42; color: rgba(255,255,255,.88); }
+  .speaker { margin-top: 26px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,.28); display: flex; align-items: center; gap: 14px; max-width: 500px; }
+  .avatar {
+    width: 52px; height: 52px; border-radius: 50%; flex: none;
+    background-image: url("../../../public/ADT.jpg");
+    background-size: cover; background-position: center;
+    box-shadow: 0 0 0 1px rgba(255,255,255,.55);
+  }
+  .who strong { display: block; font-size: 20px; font-weight: 800; letter-spacing: -0.01em; }
+  .who span { display: block; margin-top: 3px; font-size: 10.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,.72); }
+
+  .emblem { position: relative; z-index: 2; flex: 1; height: 100%; }
+  .ring {
+    position: absolute; top: 50%; left: 54%; transform: translate(-50%,-50%);
+    width: 392px; height: 392px; border-radius: 50%; border: 7px solid #fff;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+  }
+  .ring::before { content: ""; position: absolute; inset: 16px; border-radius: 50%; border: 2px solid rgba(255,255,255,.65); }
+  .num { font-family: Impact, Haettenschweiler, sans-serif; font-size: 190px; line-height: 0.8; color: #C6FF00; }
+  .emblem-note { margin-top: 12px; font-size: 10px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; text-align: center; color: #fff; }
+  .emblem-note small { display: block; margin-top: 5px; font-size: 9px; letter-spacing: 0.18em; color: rgba(255,255,255,.7); }
+  .catalog { position: absolute; z-index: 4; left: 52px; top: 16px; font-size: 10px; font-weight: 700; letter-spacing: 0.18em; color: rgba(255,255,255,.75); }
+
+  .rail {
+    position: relative; z-index: 4; height: 74px; flex: none; background: #C6FF00; color: #111;
+    display: flex; align-items: center; justify-content: space-between; padding: 0 22px 0 24px;
+  }
+  .bugs { display: flex; align-items: center; gap: 14px; }
+  .pwv { height: 22px; width: auto; display: block; }
+  .rail .rule { width: 1px; height: 26px; background: rgba(17,17,17,.35); }
+  .rail .meta { font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; }
+  .right-bugs { display: flex; align-items: center; gap: 16px; }
+  .eleven { height: 34px; width: auto; display: block; }
+  .session-tag { font-family: Impact, Haettenschweiler, sans-serif; font-size: 21px; letter-spacing: 0.06em; border: 2px solid #111; padding: 2px 9px 1px; line-height: 1; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="grain"></div>
+  <div class="catalog">PWV COMMUNICATIONS &middot; PWV 001</div>
+
+  <main class="stage">
+    <section class="copy">
+      <div class="eyebrow">Northeast Entrepreneurship Summit<span class="sl">/</span>Breakout 01</div>
+      <h1>
+        <span class="the">The</span>
+        <span class="pmf">PMF</span>
+        <span class="rock">Is Gonna Rock Ya!</span>
+      </h1>
+      <p class="sub">Why Good Products Stall, Unexpected Ideas Succeed, and Timing Is Everything</p>
+      <div class="speaker">
+        <span class="avatar"></span>
+        <div class="who">
+          <strong>David Thyresson (DT)</strong>
+          <span>Cofounder &amp; General Partner, PWV</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="emblem">
+      <div class="ring">
+        <div class="num">01</div>
+        <div class="emblem-note">Product &middot; Market &middot; Fit<small>Sunday, Nov 15, 2026 &middot; Boston</small></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rail">
+    <div class="bugs">
+      <img class="pwv" src="../../logos/pwv-logo-black-1920.svg" alt="PWV">
+      <span class="rule"></span>
+      <span class="meta">Why Good Products Stall &middot; Session 01</span>
+    </div>
+    <div class="right-bugs">
+      <span class="session-tag">01</span>
+      <img class="eleven" src="../../logos/Eleven%20Society.svg" alt="The Eleven Society">
+    </div>
+  </footer>
+</div>
+</body>
+</html>

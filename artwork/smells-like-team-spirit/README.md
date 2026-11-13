@@ -26,6 +26,7 @@ alternates.
 | `sources/R-990295-1556911978-2799.jpg` | Nirvana — "Smells Like Teen Spirit" single cover. |
 | `sources/412560ede7b04d58cda41a2da8626a01.jpg` | The "Kurt smells like teen spirit" wall reference. |
 | `sources/1_AZ6WyA4oVdN1-Esvpr1Yqw.webp` | Roxy Music “The Perfect Guitarist” classified ad reference. |
+| `sources/kurt-talent.heif` | Kurt Cobain portrait used for the talent callout on the breakout-session social card. Converted to `sources/kurt-talent.png` for the HTML render. |
 | `thumbs/` | Review thumbnails. |
 | `build-review.mjs` | Regenerates `index.html` and thumbnails. |
 
