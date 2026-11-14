@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(pnpm:*)",
+      "mcp__fal__recommend_model"
+    ],
+    "deny": [],
+    "defaultMode": "default"
+  }
+}

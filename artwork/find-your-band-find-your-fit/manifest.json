@@ -1,0 +1,64 @@
+{
+  "project": "Smells Like Team Spirit: PMF Is Gonna Rock Ya!",
+  "post": "src/content/blog/post-find-your-band-find-your-fit.mdx",
+  "generated": "2026-11-13",
+  "provider": "fal.ai",
+  "model": "google/nano-banana-2.1/edit",
+  "settings": {
+    "aspect_ratio": "16:9",
+    "resolution": "2K",
+    "output_format": "png",
+    "thinking_level": "high",
+    "num_images": 3,
+    "safety_tolerance": 4
+  },
+  "dimensions": {
+    "width": 2752,
+    "height": 1536
+  },
+  "chosen": "variants/hero-klf-a.png",
+  "sourceReferences": [
+    {
+      "file": "artwork/pmf-is-gonna-rock-you/hero-og-purple.png",
+      "release": "KLF purple 16:9 sleeve",
+      "url": "https://v3b.fal.media/files/b/0ab1ca7f/BfviKaAhBETZBculsuwff_Bx333sOU.png"
+    },
+    {
+      "file": "artwork/smells-like-team-spirit/hero-a.png",
+      "release": "Team Spirit graffiti wall hero",
+      "url": "https://v3b.fal.media/files/b/0ab1ce47/KfEp_t5TrRCW7eVI1YXV5_zIhXQnm4.png"
+    }
+  ],
+  "artwork": [
+    {
+      "file": "variants/hero-klf-a.png",
+      "concept": "KLF sleeve with band/van inset",
+      "use": "hero",
+      "chosen": true,
+      "requestId": "01a1d541-a568-7471-b582-c84706c4b7fe",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab24f81/-VvWBresswzp7FqMFcMeE_0pYAYpnA.png"
+    },
+    {
+      "file": "variants/hero-klf-b.png",
+      "concept": "KLF sleeve alternate B",
+      "use": "hero-alternate",
+      "chosen": false,
+      "requestId": "01a1d541-a568-7471-b582-c84706c4b7fe",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab24f81/HQ5Jkoz1vfCyxWjCDSO_O_fwvuGm0B.png"
+    },
+    {
+      "file": "variants/hero-klf-c.png",
+      "concept": "KLF sleeve alternate C",
+      "use": "hero-alternate",
+      "chosen": false,
+      "requestId": "01a1d541-a568-7471-b582-c84706c4b7fe",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab24f81/iNCiDmcWSx54niuw33rA1_xWb5Nxvp.png"
+    }
+  ],
+  "social": [
+    "social-wide-1200x630.png",
+    "social-wide-2400x1260.png",
+    "social-square-1080x1080.png",
+    "social-square-2160x2160.png"
+  ]
+}

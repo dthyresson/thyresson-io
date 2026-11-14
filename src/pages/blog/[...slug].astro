@@ -7,7 +7,9 @@ import { render } from 'astro:content';
 // export const prerender = true;
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
+  const posts = (await getCollection('blog')).filter(
+    (post) => import.meta.env.DEV || process.env.SITE_URL || !post.data.draft
+  );
   return posts.map((post) => ({
     params: { slug: post.id },
     props: post,

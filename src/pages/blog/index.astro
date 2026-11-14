@@ -9,9 +9,9 @@ import BlogIntro from '../../components/BlogIntro.astro';
 import BlogNavigation from '../../components/BlogNavigation.astro';
 import BlogPagination from '../../components/BlogPagination.astro';
 
-const posts = (await getCollection('blog')).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
+const posts = (await getCollection('blog'))
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 // Get first 10 posts (same as pageSize in [page].astro)
 const firstPagePosts = posts.slice(0, 10);

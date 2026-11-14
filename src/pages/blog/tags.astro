@@ -9,7 +9,7 @@ import Tag from '../../components/Tag.astro';
 // Get the current tag from URL params if any
 const currentTag = Astro.url.searchParams.get('tag');
 
-const posts = await getCollection('blog');
+const posts = (await getCollection('blog')).filter((post) => !post.data.draft);
 const allTags = [...new Set(posts.flatMap((post) => post.data.tags))].sort();
 
 // Count posts per tag

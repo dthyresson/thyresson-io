@@ -5,7 +5,7 @@ import Footer from '../../components/Footer.astro';
 import ArtistSearch from '../../components/ArtistSearch';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 
-import { db, Tracks, asc, and, gte, lte } from 'astro:db';
+import { getDb } from '../../lib/db';
 
 const yearRange = {
   start: 1984,
@@ -20,6 +20,15 @@ type Artist = {
 // Cache key for this query
 const CACHE_KEY = `artists-${yearRange.start}-${yearRange.end}`;
 
+async function getArtists(): Promise<Artist[]> {
+  const result = await getDb().execute({
+    sql: `SELECT artist FROM Tracks WHERE year >= ? AND year <= ? AND artist IS NOT NULL GROUP BY artist ORDER BY artist ASC`,
+    args: [yearRange.start, yearRange.end],
+  });
+
+  return result.rows.map((row) => ({ artist: row.artist as string | null }));
+}
+
 // Get artists with caching
 let artists: Artist[] = [];
 try {
@@ -29,16 +38,7 @@ try {
   if (response) {
     artists = await response.json();
   } else {
-    artists = await db
-      .selectDistinct({
-        artist: Tracks.artist,
-      })
-      .from(Tracks)
-      .where(
-        and(gte(Tracks.year, yearRange.start), lte(Tracks.year, yearRange.end))
-      )
-      .groupBy(Tracks.artist)
-      .orderBy(asc(Tracks.artist));
+    artists = await getArtists();
 
     await cached.put(
       CACHE_KEY,
@@ -49,16 +49,7 @@ try {
   }
 } catch (error) {
   // Fallback to direct DB query if caching fails
-  artists = await db
-    .selectDistinct({
-      artist: Tracks.artist,
-    })
-    .from(Tracks)
-    .where(
-      and(gte(Tracks.year, yearRange.start), lte(Tracks.year, yearRange.end))
-    )
-    .groupBy(Tracks.artist)
-    .orderBy(asc(Tracks.artist));
+  artists = await getArtists();
 }
 
 // Group artists by first letter

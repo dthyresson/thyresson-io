@@ -1,0 +1,510 @@
+{
+  "project": "PMF Is Gonna Rock Ya!",
+  "post": "src/content/blog/post-pmf-is-gonna-rock-you.mdx",
+  "generated": "2026-11-09",
+  "provider": "fal.ai",
+  "model": "google/nano-banana-2.1",
+  "settings": {
+    "aspect_ratio": "1:1",
+    "resolution": "2K",
+    "output_format": "png",
+    "thinking_level": "high",
+    "safety_tolerance": "4"
+  },
+  "dimensions": {
+    "width": 2048,
+    "height": 2048
+  },
+  "sourceReferences": [
+    {
+      "files": [
+        "klf-source/R-142447-1148417810.jpg",
+        "klf-source/R-142447-1301460989.jpg"
+      ],
+      "release": "The Timelords — Doctorin' the Tardis",
+      "year": 1988,
+      "discogs": "https://www.discogs.com/release/142447"
+    },
+    {
+      "files": [
+        "klf-source/R-64061-1158584786.jpg",
+        "klf-source/R-64061-1164005042.jpg"
+      ],
+      "release": "The KLF — Justified & Ancient",
+      "year": 1991,
+      "discogs": "https://www.discogs.com/release/64061"
+    },
+    {
+      "files": [
+        "klf-source/R-92768-1191859145.jpg",
+        "klf-source/R-92768-1459735552-7495.jpg"
+      ],
+      "release": "The KLF — What Time Is Love? (Pure Trance 1) + green 'THE KLF' promo sleeve",
+      "year": 1988,
+      "discogs": "https://www.discogs.com/release/92768"
+    },
+    {
+      "files": [
+        "klf-source/R-112781-1259349301.jpg"
+      ],
+      "release": "The KLF — Kylie Said to Jason",
+      "year": 1989,
+      "discogs": "https://www.discogs.com/release/112781"
+    },
+    {
+      "files": [
+        "klf-source/R-194588-1615141234-6380.jpg"
+      ],
+      "release": "The KLF — The White Room",
+      "year": 1991,
+      "discogs": "https://www.discogs.com/release/194588"
+    },
+    {
+      "files": [
+        "klf-source/R-159933-1256590664.jpg",
+        "klf-source/R-159933-1256590676.jpg",
+        "klf-source/R-159933-1256590696.jpg"
+      ],
+      "release": "The KLF — 3 A.M. Eternal",
+      "year": 1991,
+      "discogs": "https://www.discogs.com/release/159933"
+    },
+    {
+      "files": [
+        "klf-source/R-144646-1357739118-4048.jpg"
+      ],
+      "release": "The KLF — Make It Rain / No More Tears 12\" promo",
+      "year": 1991,
+      "discogs": "https://www.discogs.com/release/144646"
+    },
+    {
+      "files": [
+        "klf-source/R-38520075-1790264297-8844.jpg"
+      ],
+      "release": "The KLF — The White Room (1989 Director's Cut purple sleeve)",
+      "year": 1989,
+      "discogs": "https://www.discogs.com/release/38520075"
+    },
+    {
+      "files": [
+        "klf-source/R-38520741-1790268421-9844.jpg"
+      ],
+      "release": "The KLF — Come Down Dawn",
+      "year": 1991,
+      "discogs": "https://www.discogs.com/release/38520741"
+    },
+    {
+      "files": [
+        "klf-source/9781899858651-us.jpg"
+      ],
+      "release": "The Manual: How to Have a Number One the Easy Way (Jimmy Cauty & Bill Drummond)",
+      "year": 1988,
+      "discogs": "https://en.wikipedia.org/wiki/The_Manual"
+    },
+    {
+      "files": [
+        "klf-source/9798342963251-us.jpg"
+      ],
+      "release": "The Manual — leyline cover variant",
+      "year": "n.d.",
+      "discogs": ""
+    }
+  ],
+  "artwork": [
+    {
+      "file": "hero-a-pmf-lime.png",
+      "concept": "Hero A — THE PMF lime sleeve",
+      "use": "hero",
+      "company": null,
+      "albumReference": "The KLF — green 'THE KLF' promo sleeve (The White Room era)",
+      "catalogCode": "PWV 001",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c0e9-8f69-7922-898b-9976f14d4298",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1ca2d/9Ruzb1UmiSszy_RT_5JYS_KgQTQMUp.png",
+      "prompt": "Square 1:1 vinyl album sleeve, late-1980s British acid-house graphic design in the style of KLF Communications. Flat fluorescent chartreuse-lime background (#C6FF00). The enormous word 'PMF' in heavy black Helvetica Black condensed capitals, tightly tracked, cropped by the top and bottom edges so it fills the frame. A tiny black word 'THE' sits above the P. At the bottom, one line of heavy black italic condensed capitals: 'IS GONNA ROCK YA!' In the bottom-right corner, a small black circular emblem containing a black pyramid built from a brick wall and a boombox silhouette. Top-right corner, tiny black Helvetica: 'PWV 001'. Along the very bottom edge, tiny black Helvetica credits: 'PRESTON-WERNER VENTURES · PRODUCT · MARKET · FIT'. Slight photocopy grain, halftone dots, subtle vinyl sleeve wear and creases. Severe, minimal, high contrast. Render every quoted text exactly, correctly spelled, crisp and legible. No other text, no real band logos, no signatures."
+    },
+    {
+      "file": "hero-b-ford-timelord.png",
+      "concept": "Hero B — Ford Timelord / Doctorin' the Tardis",
+      "use": "hero",
+      "company": null,
+      "albumReference": "The Timelords — Doctorin' the Tardis (1988)",
+      "catalogCode": "PWV 002",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c0ea-7512-7713-9519-9d7cb45dd16f",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1ca33/3AFPbtBETSmuVA7u_VVVD_mSlFq919.png",
+      "prompt": "Square 1:1 vinyl single sleeve parody in the style of a 1988 British novelty pop record. Warm cream paper background. Centered three-quarter front photograph of a battered black-and-white 1960s American police car with a single blue roof beacon, chrome bumper, and a white front door panel. On the door, white stencil capitals read 'TO SERVE AND PRODUCT'. A small black-and-white pixel cursor-arrow decal sits on the hood. At the top, small black capitals 'PWV COMMUNICATIONS PRESENT' and then a huge title 'PMF' in heavy white capitals with a hard navy-blue drop shadow and thin navy outline, slightly condensed. Below it, a line of heavy safety-orange italic capitals: 'IS GONNA ROCK YA!'. Lower left, a jagged comic speech bubble with an orange outline and cream fill containing black handwritten marker text: 'Hi! I'm Product Market Fit. I've made a record.' Top right, tiny black Helvetica 'PWV 002'. Slight photocopy grain, halftone, worn paper. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "hero-c-3am-eternal.png",
+      "concept": "Hero C — glowing 3 A.M. Eternal",
+      "use": "hero",
+      "company": null,
+      "albumReference": "The KLF — 3 A.M. Eternal (1991)",
+      "catalogCode": "PWV 003",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c0ea-7560-7b53-9a80-bb09c0969453",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1ca33/j9kZOBgSWAk6tPPXizeHF_cRTWWCZp.png",
+      "prompt": "Square 1:1 vinyl sleeve, late-1980s British acid-house design. Deep black background with faint print noise. Across the top, huge heavy condensed capitals glowing safety-orange with a red drop shadow: 'PMF'. Immediately below, the same glowing orange condensed style: 'IS GONNA ROCK YA!'. In the middle, a wide inset night photograph with a thin red-and-white border: a deserted motorway at 3 a.m., sodium streetlights, streaking red and white car light trails, a distant city tower. Top left tiny white Helvetica: 'PRESTON-WERNER VENTURES'. Top right tiny white: 'PWV 003'. Bottom edge tiny orange Helvetica: 'PRODUCT · MARKET · FIT'. Subtle photocopy grain and sleeve wear. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "cursor-a-doctorin-the-product.png",
+      "concept": "Cursor A — police car + speech bubble",
+      "use": "section",
+      "section": "Doctorin' the Product / Last Train to Model Central",
+      "company": "Cursor",
+      "albumReference": "The Timelords — Doctorin' the Tardis (1988)",
+      "catalogCode": "CUR 001",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c0ea-755f-7fd2-b3da-04b9c1f3acd5",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1ca33/Mdxh6fP9aRaY8eYdOx6aB_4pte5A0M.png",
+      "prompt": "Square 1:1 vinyl single sleeve parody, 1988 British novelty pop design. Cream paper background. Centered three-quarter photograph of a battered black-and-white 1960s American police car with a blue roof beacon and a white front door panel; white stencil capitals on the door read 'TO SERVE AND PRODUCT'; a small black pixel cursor arrow is painted on the hood. At top, small black capitals 'PWV COMMUNICATIONS PRESENT'. Huge title 'CURSOR' in heavy white capitals with hard navy-blue drop shadow and thin navy outline, slightly condensed. Below, heavy safety-orange italic capitals: 'DOCTORIN' THE PRODUCT'. Lower left, jagged comic speech bubble with orange outline and cream fill, black handwritten marker text: 'Hi! I'm Cursor. I changed the product.' Top right tiny black Helvetica 'CUR 001'. Photocopy grain, halftone, worn paper. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "cursor-b-doctorin-the-product.png",
+      "concept": "Cursor B — orange garage respray",
+      "use": "section",
+      "section": "Doctorin' the Product / Last Train to Model Central",
+      "company": "Cursor",
+      "albumReference": "Doctorin' the Tardis back-cover typography",
+      "catalogCode": "CUR 001",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c0eb-fb9b-7890-9d1f-1d18a8497ed6",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1ca3d/ynGe1HWjLeYKJ_0dL1kmq_46DTmAm6.png",
+      "prompt": "Square 1:1 vinyl sleeve, late-1980s British acid-house design. Flat fluorescent safety-orange background. On the left, a giant black condensed 'CURSOR' set vertically bottom-to-top, cropped by the edges. On the right, a high-contrast black-and-white halftone photograph of a battered 1960s American police car up on a garage lift, a mechanic's hand spraying it with a paint gun, white overspray. Across the bottom, heavy black italic condensed capitals: 'DOCTORIN' THE PRODUCT'. Top left tiny black Helvetica 'PWV COMMUNICATIONS'. Top right tiny black 'CUR 001'. Photocopy grain, halftone dots, subtle sleeve wear. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "fal-a-last-train-to-model-central.png",
+      "concept": "fal A — station light trails",
+      "use": "section",
+      "section": "Doctorin' the Product / Last Train to Model Central",
+      "company": "fal",
+      "albumReference": "The KLF — Last Train to Trancentral (1991)",
+      "catalogCode": "FAL 002",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c0ea-755b-7050-8a45-99171adb8950",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1ca33/DOH2g7OCAroOOiMyH9xcb_vzYkcFEn.png",
+      "prompt": "Square 1:1 vinyl sleeve, late-1980s British acid-house design. Black background. Long-exposure night photograph of a train streaking through a dark railway station, intense lime-green and sodium-orange light trails, wet platform reflections, a station sign reading 'MODEL CENTRAL' in white capitals. Over the image, enormous heavy condensed italic capitals in glowing fluorescent lime-green with a hard dark shadow: 'LAST TRAIN TO MODEL CENTRAL'. Top left tiny white Helvetica 'PWV COMMUNICATIONS'. Top right tiny lime 'FAL 002'. Bottom edge tiny white Helvetica 'GENERATIVE MEDIA'. Photocopy grain, halftone dots, slight sleeve wear. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "fal-b-last-train-to-model-central.png",
+      "concept": "fal B — viaduct + giant FAL",
+      "use": "section",
+      "section": "Doctorin' the Product / Last Train to Model Central",
+      "company": "fal",
+      "albumReference": "Last Train to Trancentral / Chill Out night-train imagery",
+      "catalogCode": "FAL 002",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c0eb-fb9c-7c71-9430-a32ad3a549e4",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1ca3d/UTCrwnfvJ9ykNW7qdA7nU_6uh9rhL7.png",
+      "prompt": "Square 1:1 vinyl sleeve, late-1980s British acid-house design. Solid black background. On the right, an enormous fluorescent lime-green word 'FAL' in heavy condensed capitals, cropped by the top and right edges. In the middle, a lime-green and orange long-exposure photograph of a train crossing a stone viaduct at night under a full moon, light trails on the tracks. Across the bottom, heavy white italic condensed capitals: 'LAST TRAIN TO MODEL CENTRAL'. Top left tiny white Helvetica 'PWV COMMUNICATIONS'. Top right tiny lime 'FAL 002'. Bottom edge tiny lime Helvetica 'GENERATIVE MEDIA'. Photocopy grain, halftone, sleeve wear. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "turso-a-what-time-is-fit.png",
+      "concept": "Turso A — Pure Trance 1",
+      "use": "section",
+      "section": "What Time Is Fit?",
+      "company": "Turso",
+      "albumReference": "The KLF — What Time Is Love? (Pure Trance 1) (1988)",
+      "catalogCode": "TRS 003",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c0ea-756a-72c2-9c01-d3a34018ab16",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1ca33/1Khg-bMyE1SLTfES_rEH9_uSpeU4ow.png",
+      "prompt": "Square 1:1 vinyl sleeve, late-1980s British acid-house design. Solid black background. On the right half, an enormous fluorescent lime-green numeral '1' in a heavy condensed sans, cropped by the right and bottom edges. Top left, small lime circular emblem containing a black pyramid built from a brick wall and a boombox silhouette, with tiny lime Helvetica 'TURSO' beside it. Top right, heavy lime italic condensed capitals 'PURE DATA'. Across the bottom left, huge heavy lime italic condensed capitals 'WHAT TIME IS FIT?'. Very bottom edge tiny white Helvetica 'MILLIONS OF DATABASES · TRS 003'. Photocopy grain, halftone, sleeve wear. Severe minimal high contrast. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "turso-b-what-time-is-fit.png",
+      "concept": "Turso B — orange FIT with database dot",
+      "use": "section",
+      "section": "What Time Is Fit?",
+      "company": "Turso",
+      "albumReference": "What Time Is Love? (Pure Trance 1), orange rework",
+      "catalogCode": "TRS 003",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c0eb-fc36-7290-8e09-34abbc99511a",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1ca3d/4wybGnbYl0s82Rq7dLeVf_sSuD77kg.png",
+      "prompt": "Square 1:1 vinyl sleeve, late-1980s British acid-house design. Flat safety-orange background. An enormous white word 'FIT' in heavy condensed capitals fills the center, cropped by the bottom edge, with a black cylindrical database icon forming the dot over the letter I. Above it, heavy black italic condensed capitals 'WHAT TIME IS FIT?'. Top left, small black circular emblem with a white pyramid built from a brick wall and boombox silhouette, and tiny black Helvetica 'TURSO'. Top right, heavy black condensed capitals 'PURE DATA 1'. Bottom edge tiny black Helvetica 'MILLIONS OF DATABASES · TRS 003'. Photocopy grain, halftone, sleeve wear. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "workbrew-a-3am-eternal.png",
+      "concept": "Workbrew A — office inset",
+      "use": "section",
+      "section": "What Time Is Fit?",
+      "company": "Workbrew",
+      "albumReference": "The KLF — 3 A.M. Eternal (1991)",
+      "catalogCode": "WRK 004",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c0ea-755d-7503-b0b9-70355f52a815",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1ca33/YcpKbT3fVqEG2ilF7-G5g_V0Kncs8h.png",
+      "prompt": "Square 1:1 vinyl sleeve, late-1980s British acid-house design. Deep black background. In the center, a wide inset night photograph with a thin red-and-white border: a dark empty corporate office at 3 a.m., rows of desks, a single glowing laptop screen casting amber light, a distant security light. Above the photo, heavy condensed capitals glowing safety-orange with a red drop shadow: '3 A.M. ETERNAL'. Below the photo, glowing orange condensed capitals: 'WORKBREW'. Top left tiny white Helvetica 'PWV COMMUNICATIONS'. Top right tiny white 'WRK 004'. Very bottom edge tiny orange Helvetica 'HOMEBREW FOR WORK'. Photocopy grain, slight sleeve wear. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "workbrew-b-3am-eternal.png",
+      "concept": "Workbrew B — pint-glass terminal",
+      "use": "section",
+      "section": "What Time Is Fit?",
+      "company": "Workbrew",
+      "albumReference": "The KLF — 3 A.M. Eternal (1991)",
+      "catalogCode": "WRK 004",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c0eb-fc34-7d01-af0a-bdbcaaa1953f",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1ca3d/rQ8ccUZWo2sxbTd5vOLhr_iPz1PI9L.png",
+      "prompt": "Square 1:1 vinyl sleeve, late-1980s British acid-house design. Deep black background. In the center, a glowing safety-orange illustration of a pint beer glass whose interior is a lit computer terminal with green text, condensation and orange glow. Above, heavy glowing orange condensed capitals with a red drop shadow: '3 A.M. ETERNAL'. Below, heavy glowing orange condensed capitals: 'WORKBREW'. Top left tiny white Helvetica 'PWV COMMUNICATIONS'. Top right tiny white 'WRK 004'. Bottom edge tiny orange Helvetica 'HOMEBREW FOR WORK'. Photocopy grain, halftone, sleeve wear. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "zoo-a-justified-and-validated.png",
+      "concept": "Zoo A — ice-cream van, condensed ZOO",
+      "use": "section",
+      "section": "Justified & Validated?",
+      "company": "Zoo",
+      "albumReference": "The KLF — Justified & Ancient (1991)",
+      "catalogCode": "ZOO 005",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c0ea-7562-7e71-8bc6-104179520db7",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1ca33/P3Nqonedq7kAPzuF8xgBv_XL8kZ51G.png",
+      "prompt": "Square 1:1 vinyl sleeve, late-1980s British acid-house design. Soft acid-green haze background fading to black at the edges. Centered side-view photograph of a pink-and-cream 1970s ice-cream van with a lit serving window, parked on a dark road, green smoke drifting behind it. Tiny cursive lettering on the van side reads 'Freshly Made For You'. In the upper left, enormous cream condensed capitals 'ZOO'. In the upper right corner, a small cream circular emblem containing a black pyramid built from a brick wall and boombox silhouette. Across the bottom, enormous bold italic cream capitals 'JUSTIFIED & VALIDATED'. Very bottom edge tiny cream Helvetica 'ZOO 005 · COMPUTER-AIDED DESIGN'. Photocopy grain, halftone, sleeve wear. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "zoo-b-justified-and-validated.png",
+      "concept": "Zoo B — wide legible ZOO",
+      "use": "section",
+      "section": "Justified & Validated?",
+      "company": "Zoo",
+      "albumReference": "The KLF — Justified & Ancient (1991)",
+      "catalogCode": "ZOO 005",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c0eb-fc30-78c1-945e-33299460fcbb",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1ca3d/z3Ixc4hMin5ZIY9QR6vf-_RaWSo3Fe.png",
+      "prompt": "Square 1:1 vinyl sleeve, late-1980s British acid-house design. Acid-green haze background. Across the top, an enormous cream word 'ZOO' in a wide heavy grotesque sans, perfectly legible letters Z-O-O with generous spacing. Below it, centered side-view photograph of a pink-and-cream 1970s ice-cream van with a lit serving window, green smoke behind it. Small cursive lettering on the van side reads 'Freshly Made For You'. Across the bottom, heavy black italic condensed capitals 'JUSTIFIED & VALIDATED'. Top right small cream circular emblem with a black pyramid built from brick wall and boombox silhouette. Bottom edge tiny black Helvetica 'ZOO 005 · COMPUTER-AIDED DESIGN'. Photocopy grain, halftone, sleeve wear. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "jura-a-its-grim-pre-fit.png",
+      "concept": "Jura A — burning suitcase",
+      "use": "conclusion",
+      "section": "It's Grim Pre-Fit / Burn the Runway",
+      "company": null,
+      "albumReference": "The KLF / The JAMs — It's Grim Up North (1991) + Jura burn (1994)",
+      "catalogCode": "PWV 006",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c0ea-7589-7ff3-a982-6b3b269ad357",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1ca33/-X1RbK1xl3CLHEwGP0MYI_OgMGPwsR.png",
+      "prompt": "Square 1:1 vinyl sleeve, late-1980s British acid-house design. Black night sky over a bleak Scottish island hillside. In the lower third, a bonfire of burning fifty-pound banknotes in an open metal suitcase, intense orange flames and sparks, two distant silhouetted figures watching. Across the top, enormous heavy condensed capitals in glowing safety-orange with a red drop shadow: 'IT'S GRIM PRE-FIT'. Across the bottom, heavy white italic condensed capitals: 'BURN THE RUNWAY'. Top right tiny white 'JURA 1994'. Very bottom edge tiny orange Helvetica 'PWV 006 · A MILLION POUNDS'. Photocopy grain, halftone, sleeve wear. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "jura-b-its-grim-pre-fit.png",
+      "concept": "Jura B — burning £50 close-up",
+      "use": "conclusion",
+      "section": "It's Grim Pre-Fit / Burn the Runway",
+      "company": null,
+      "albumReference": "The KLF / The JAMs — It's Grim Up North (1991) + Jura burn (1994)",
+      "catalogCode": "PWV 006",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c0eb-fc37-7ab3-aa7f-5448e67251e1",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1ca3d/eYB4T8nWyIsc_EwRdWWsf_lbUfRqL8.png",
+      "prompt": "Square 1:1 vinyl sleeve, late-1980s British acid-house design. Black background. A dramatic close-up photograph of a burning British fifty-pound banknote held in a hand, orange flames curling up the paper, embers flying, dark Hebridean hills behind. Across the top, heavy white condensed capitals: 'IT'S GRIM PRE-FIT'. Across the bottom, heavy safety-orange italic condensed capitals: 'BURN THE RUNWAY'. Top right tiny white 'JURA 1994'. Bottom edge tiny orange Helvetica 'PWV 006 · A MILLION POUNDS'. Photocopy grain, halftone dots, subtle sleeve wear. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "hero-d-pmf-grid.png",
+      "concept": "Hero D — PMF repetition grid",
+      "use": "hero",
+      "company": null,
+      "albumReference": "The KLF — 12 INCH promo sleeve pattern (1991)",
+      "catalogCode": "PWV 001",
+      "aspect": "1:1",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c0f3-7432-7392-83c7-cbdd7854f755",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1ca6e/yfvx0dE_OUqDWOPPxc-qi_w61KlOnh.png",
+      "prompt": "Square 1:1 promo sleeve, late-1980s British acid-house design in the style of KLF Communications. Off-white paper background. A tight repeating grid of the giant black ultra-condensed word 'PMF', four rows and three columns, cropped by the edges, each 'PMF' with a tiny black 'PWV' beneath it. In the exact center, a white circular record label with a thin black ring, printed in black: 'PWV 001', 'SIDE A', 'PRODUCT MARKET FIT'. Top right, tiny black Helvetica 'PWV COMMUNICATIONS'. Photocopy grain, halftone dots, worn paper and faint sleeve creases. Severe, graphic, high contrast, eye-catching. Render every 'PMF' and all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "hero-e-pmf-purple-stacked.png",
+      "concept": "Hero E — purple stacked THE PMF",
+      "use": "hero",
+      "company": null,
+      "albumReference": "The KLF — The White Room (1989 Director's Cut purple sleeve)",
+      "catalogCode": "PWV 001",
+      "aspect": "1:1",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c0f4-5537-7cd2-89e0-96f474179512",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1ca74/Mar2vVXg6nV9WQyz2o2C6_CarjkqSV.png",
+      "prompt": "Square 1:1 vinyl album sleeve, late-1980s British acid-house design. Flat electric violet-purple background (#6B2BE0). Four stacked lines of enormous white ultra-condensed grotesque capitals, tightly leaded, filling the frame and cropped by the left and right edges: 'THE', 'PMF', 'IS GONNA', 'ROCK YA!'. The middle 'PMF' is the largest. Top right, a white circular outline emblem containing a black-and-white halftone boombox and typewriter forming a pyramid. Bottom edge, small white Helvetica: 'PWV COMMUNICATIONS · PWV 001'. Photocopy grain, halftone, subtle vinyl sleeve wear. Severe, minimal, maximum contrast, eye-catching. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "hero-f-pmf-split.png",
+      "concept": "Hero F — purple/lime diagonal split",
+      "use": "hero",
+      "company": null,
+      "albumReference": "The KLF — The White Room purple sleeve + Pure Trance lime",
+      "catalogCode": "PWV 001",
+      "aspect": "1:1",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c0f4-5538-7901-8d46-ae8de61f231a",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1ca74/0mR_3ZFKABV_-q7mXpxid_Uq2cgHIy.png",
+      "prompt": "Square 1:1 vinyl sleeve, late-1980s British acid-house design. A hard diagonal split: the upper-left half is flat electric violet-purple, the lower-right half is flat fluorescent lime-green. An enormous white 'PMF' in ultra-condensed capitals straddles the split, cropped by the left and right edges, with a hard black offset shadow. Beneath it, heavy black italic condensed capitals: 'IS GONNA ROCK YA!'. Top right, a small black circular emblem with a lime pyramid built from a brick wall and boombox silhouette. Bottom edge tiny black Helvetica: 'PWV 001 · PRODUCT · MARKET · FIT'. Photocopy grain, halftone dots, subtle sleeve wear. Maximum contrast, bold, eye-catching. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "hero-og-purple.png",
+      "concept": "Hero OG — purple stacked 16:9 social card",
+      "use": "hero-og",
+      "company": null,
+      "albumReference": "The KLF — The White Room (1989 Director's Cut purple sleeve)",
+      "catalogCode": "PWV 001",
+      "aspect": "16:9",
+      "dimensions": {
+        "width": 2752,
+        "height": 1536
+      },
+      "socialCrop": "hero-og-purple-1200x630.png",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c0f6-124e-7642-bf5d-e5d1002726cf",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1ca7f/BfviKaAhBETZBculsuwff_Bx333sOU.png",
+      "prompt": "Wide 16:9 social share card and album sleeve, late-1980s British acid-house design. Flat electric violet-purple background (#6B2BE0). On the left two-thirds, four stacked lines of enormous white ultra-condensed grotesque capitals, tightly leaded, filling the height: 'THE', 'PMF', 'IS GONNA', 'ROCK YA!'. The word 'PMF' is the largest. On the right third, a large white circular outline emblem containing a black-and-white halftone boombox and typewriter forming a pyramid. Bottom left, small white Helvetica: 'PWV COMMUNICATIONS · PWV 001'. Photocopy grain, halftone, subtle vinyl sleeve wear. Severe, minimal, maximum contrast, bold and eye-catching at small sizes. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "cursor-c-doctorin-the-product.png",
+      "concept": "Cursor C — Kylie Said to Jason",
+      "use": "section",
+      "section": "Doctorin' the Product / Last Train to Model Central",
+      "company": "Cursor",
+      "albumReference": "The KLF — Kylie Said to Jason (1989)",
+      "catalogCode": "CUR 001",
+      "aspect": "1:1",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c0f4-5538-7fb0-af9e-bc9a170f3795",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1ca74/6kecLd-tAPIrFLtlCAafy_Ah4qwpQm.png",
+      "prompt": "Square 1:1 vinyl single sleeve, late-1980s British acid-house design. Pale blue-white sky background. A high-contrast photograph of a battered black-and-white 1960s American police car speeding past a ruined red-brick warehouse, dust and exhaust trailing behind it. At top left, huge black condensed capitals 'CURSOR'. At bottom right, heavy black italic condensed capitals 'DOCTORIN' THE PRODUCT'. Top right, a small black circular emblem containing a white pyramid built from brick wall and boombox silhouette. Along the bottom edge, tiny black Helvetica 'CUR 001 · PWV COMMUNICATIONS'. Photocopy grain, slight colour fade, worn paper. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "fal-c-last-train-to-model-central.png",
+      "concept": "fal C — orange stacked Come Down Dawn",
+      "use": "section",
+      "section": "Doctorin' the Product / Last Train to Model Central",
+      "company": "fal",
+      "albumReference": "The KLF — Come Down Dawn (1991) / Last Train to Trancentral",
+      "catalogCode": "FAL 002",
+      "aspect": "1:1",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c0f4-5572-71d1-a564-81273adfb645",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1ca74/SzKma3WatU356T2all_A1_PHE1ZCGI.png",
+      "prompt": "Square 1:1 vinyl sleeve, late-1980s British acid-house design. Flat safety-orange background. Four stacked lines of enormous black ultra-condensed capitals, tightly leaded, filling the frame and cropped by the edges: 'LAST', 'TRAIN', 'TO MODEL', 'CENTRAL'. Top right, a small black circular emblem containing an orange boombox and typewriter forming a pyramid. Bottom edge tiny black Helvetica: 'FAL 002 · GENERATIVE MEDIA · PWV COMMUNICATIONS'. Photocopy grain, halftone, sleeve wear. Severe, minimal, high contrast, eye-catching. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "manual-a.png",
+      "concept": "Intro — THE PMF MANUAL cover A",
+      "use": "intro",
+      "company": null,
+      "albumReference": "The Manual: How to Have a Number One the Easy Way (1988)",
+      "catalogCode": "PWV PRESS",
+      "aspect": "3:4",
+      "dimensions": {
+        "width": 1792,
+        "height": 2400
+      },
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c106-4c35-7733-9b12-3e77eea60f09",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1cae9/jFB6fFG9q4lPcTQ-OuvFw_I2aseBn5.png",
+      "prompt": "Portrait 3:4 book cover, 1988 British paperback, stark white uncoated paper. Three stacked lines of massive black ultra-condensed grotesque capitals, tightly leaded, filling the upper half and cropped slightly by the left and right edges: 'THE', 'PMF', 'MANUAL'. Below, one line of heavy black condensed capitals in parentheses: '(HOW TO HAVE PRODUCT-MARKET FIT THE EASY WAY)'. Bottom left, small black capitals: 'PWV PRESS'. Bottom right, a small black-and-white line-art emblem of a boombox, typewriter and pyramid. Slight photocopy grain, worn paper edges, one faint crease. Severe, minimal, high contrast. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "manual-b.png",
+      "concept": "Intro — THE PMF MANUAL cover B",
+      "use": "intro",
+      "company": null,
+      "albumReference": "The Manual: How to Have a Number One the Easy Way (1988)",
+      "catalogCode": "PWV PRESS",
+      "aspect": "3:4",
+      "dimensions": {
+        "width": 1792,
+        "height": 2400
+      },
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c106-4c85-7b81-8832-644c6112d2ca",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1cae9/FQQpG20q044svexX3zf4c_49V9F20w.png",
+      "prompt": "Portrait 3:4 book cover, 1988 British paperback, off-white paper. Centered stack of black ultra-condensed capitals: a small 'THE', an enormous 'PMF', an enormous 'MANUAL', then a bold bracketed line '(HOW TO HAVE PRODUCT-MARKET FIT THE EASY WAY)'. Below, a black circular emblem containing a white boombox, typewriter and pyramid, with a skewed black box beside it reading 'PWV'. Bottom edge small black 'PWV PRESS · 1988'. Slight photocopy grain, halftone, worn paper. Severe, minimal, high contrast. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "pmf-a-same-book.png",
+      "concept": "PMF A: off-white checklist",
+      "use": "intro",
+      "section": "The Same Book",
+      "company": null,
+      "albumReference": "The Manual (1988) + KLF Communications sleeve language",
+      "catalogCode": "PWV 007",
+      "aspect": "1:1",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c235-5513-76b3-8abc-63a2b8bebd3e",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1d2ab/8_bDPXysDpb7wNffp_OYj_EfKDMABG.png",
+      "prompt": "Square 1:1 vinyl sleeve, late-1980s British acid-house design in the style of KLF Communications. Off-white uncoated paper background. At the top, an enormous black ultra-condensed word 'PMF' cropped slightly by the left and right edges. Above it, one line of small black Helvetica: 'PRODUCT MARKET FIT'. Below the PMF, a heavy black horizontal rule. In the middle, four stacked lines of heavy black condensed capitals, each with an empty black square checkbox at the left: 'DOES THE PRODUCT WORK?', 'DOES ANYONE WANT IT?', 'WILL THEY PAY FOR IT?', 'WILL THEY COME BACK?'. In the lower right, a large safety-orange rubber stamp at a slight angle reading 'THE SAME BOOK FOR DECADES'. Bottom left, small black Helvetica: 'PWV COMMUNICATIONS'. Bottom right, a small black circular emblem containing a black pyramid built from a brick wall and a boombox silhouette. Bottom edge tiny black Helvetica: 'PWV 007 · SILICON VALLEY'. Photocopy grain, halftone dots, worn paper, faint creases. Severe, minimal, high contrast. Render every quoted text exactly, correctly spelled, crisp and legible. No other text, no real band logos, no signatures."
+    },
+    {
+      "file": "pmf-b-same-book.png",
+      "concept": "PMF B: black and lime questions",
+      "use": "intro",
+      "section": "The Same Book",
+      "company": null,
+      "albumReference": "The KLF, What Time Is Love? (Pure Trance 1) black and lime typography",
+      "catalogCode": "PWV 007",
+      "aspect": "1:1",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c235-f885-7c82-b52f-1e9691b9ef9e",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1d2af/WJb0l145fgffWXX1qmNXu_KoIiVPO3.png",
+      "prompt": "Square 1:1 vinyl sleeve, late-1980s British acid-house design. Solid black background with faint print noise. At the top, an enormous fluorescent lime-green question mark '?' in a heavy condensed sans, cropped slightly by the top edge, with the letters 'PMF' in small lime Helvetica at its base. Below, four stacked lines of heavy white condensed capitals, left-aligned, each with a small lime square checkbox: 'DOES IT WORK?', 'DOES ANYONE WANT IT?', 'WILL THEY PAY?', 'WILL THEY COME BACK?'. Across the bottom, heavy lime italic condensed capitals: 'PRODUCT MARKET FIT'. Bottom left, small white Helvetica: 'PWV COMMUNICATIONS'. Bottom right, small lime Helvetica: 'PWV 007'. Very bottom edge tiny white Helvetica: 'THE SAME BOOK FOR DECADES'. Photocopy grain, halftone dots, subtle sleeve wear. Severe, minimal, high contrast. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "pmf-c-same-book.png",
+      "concept": "PMF C: purple Venn diagram",
+      "use": "intro",
+      "section": "The Same Book",
+      "company": null,
+      "albumReference": "The KLF, The White Room (1989 Director's Cut purple sleeve)",
+      "catalogCode": "PWV 007",
+      "aspect": "1:1",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c235-f898-7a73-b4a9-c586a311a741",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1d2af/At_fiHVU3dMoirTTNcjCH_wzDngVzb.png",
+      "prompt": "Square 1:1 vinyl sleeve, late-1980s British acid-house design. Flat electric violet-purple background (#6B2BE0). Three large overlapping circles outlined in thick white lines, arranged as a Venn diagram. The left circle is labeled 'PRODUCT', the right circle 'MARKET', and the lower circle 'FIT', in heavy white condensed capitals. In the center intersection, a solid fluorescent lime-green circle containing the black letters 'PMF' in heavy condensed capitals. Above the diagram, one line of small white Helvetica: 'THE SAME BOOK FOR DECADES'. Below the diagram, heavy white italic condensed capitals: 'DOES ANYONE WANT IT?'. Bottom left tiny white Helvetica 'PWV COMMUNICATIONS'. Bottom right a small white circular emblem containing a black pyramid built from a brick wall and boombox silhouette. Bottom edge tiny white Helvetica 'PWV 007 · PRODUCT MARKET FIT'. Photocopy grain, halftone dots, subtle sleeve wear. Severe, minimal, high contrast. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "cursor-d-venture-said-to-founders.png",
+      "concept": "Cursor D: Venture said to founders",
+      "use": "section",
+      "section": "Doctorin' the Product / Last Train to Model Central",
+      "company": "Cursor",
+      "albumReference": "The KLF, Kylie Said to Jason (1989)",
+      "catalogCode": "CUR 003",
+      "aspect": "1:1",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c239-c460-76c3-a38e-3f2010bb4e9d",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1d2c8/fLJFbVCXmoSX1AkPJhG-s_ANJ5ToVI.png",
+      "prompt": "Square 1:1 vinyl single sleeve, late-1980s British acid-house design in the style of The KLF's 'Kylie Said to Jason' sleeve. Pale blue-white sky. A high-contrast photograph of a battered black-and-white 1960s American police car speeding past a ruined red-brick office park, dust and exhaust trailing behind it, a faded 'FOR LEASE' sign on the building, a lone founder in a grey hoodie walking away with a laptop bag. At the top left, huge black condensed capitals: 'VENTURE'. At the bottom right, heavy black italic condensed capitals: 'SAID TO FOUNDERS'. Across the very bottom, one enormous safety-orange italic condensed word: 'PIVOT'. Top right, a small black circular emblem containing a white pyramid built from a brick wall and boombox silhouette. Bottom edge tiny black Helvetica: 'CUR 003 · PRODUCT MARKET FIT'. Photocopy grain, slight colour fade, worn paper. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "cursor-e-silicon-valley-said-to-startups.png",
+      "concept": "Cursor E: Silicon Valley said to startups",
+      "use": "section",
+      "section": "Doctorin' the Product / Last Train to Model Central",
+      "company": "Cursor",
+      "albumReference": "The KLF, Kylie Said to Jason (1989)",
+      "catalogCode": "CUR 004",
+      "aspect": "1:1",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c239-c53e-70d0-9650-236848ee47c2",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1d2c8/WBLmejD1aBTxEFkyo1Hrn_9fGOH59r.png",
+      "prompt": "Square 1:1 vinyl single sleeve, late-1980s British acid-house design in the style of The KLF's 'Kylie Said to Jason' sleeve. Pale blue-white sky. A high-contrast photograph of a battered black-and-white 1960s American police car speeding past a ruined red-brick office park, dust and exhaust trailing behind it, a faded 'FOR LEASE' sign on the building, a lone founder in a grey hoodie walking away with a laptop bag. At the top left, huge black condensed capitals: 'SILICON VALLEY'. At the bottom right, heavy black italic condensed capitals: 'SAID TO STARTUPS'. Across the very bottom, one enormous safety-orange italic condensed word: 'PIVOT'. Top right, a small black circular emblem containing a white pyramid built from a brick wall and boombox silhouette. Bottom edge tiny black Helvetica: 'CUR 004 · PRODUCT MARKET FIT'. Photocopy grain, slight colour fade, worn paper. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    },
+    {
+      "file": "cursor-f-market-said-to-product.png",
+      "concept": "Cursor F: Market said to product",
+      "use": "section",
+      "section": "Doctorin' the Product / Last Train to Model Central",
+      "company": "Cursor",
+      "albumReference": "The KLF, Kylie Said to Jason (1989)",
+      "catalogCode": "CUR 005",
+      "aspect": "1:1",
+      "model": "google/nano-banana-2.1",
+      "requestId": "01a1c239-c45b-7ab0-8d0f-187efcd9cca8",
+      "sourceUrl": "https://v3b.fal.media/files/b/0ab1d2c8/4JOh5PQQayMuQgLQkyrY0_Tc1ZCAZT.png",
+      "prompt": "Square 1:1 vinyl single sleeve, late-1980s British acid-house design in the style of The KLF's 'Kylie Said to Jason' sleeve. Pale blue-white sky. A high-contrast photograph of a battered black-and-white 1960s American police car speeding past a ruined red-brick office park, dust and exhaust trailing behind it, a faded 'FOR LEASE' sign on the building, a lone founder in a grey hoodie walking away with a laptop bag. At the top left, huge black condensed capitals: 'MARKET'. At the bottom right, heavy black italic condensed capitals: 'SAID TO PRODUCT'. Across the very bottom, one enormous safety-orange italic condensed word: 'FIT?'. Top right, a small black circular emblem containing a white pyramid built from a brick wall and boombox silhouette. Bottom edge tiny black Helvetica: 'CUR 005 · PRODUCT MARKET FIT'. Photocopy grain, slight colour fade, worn paper. Render all quoted text exactly, correctly spelled and legible. No real logos, no signatures."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Smells Like Team Spirit: PMF Is Gonna Rock Ya! — square OG</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html, body { width: 1080px; height: 1080px; overflow: hidden; background: #111; }
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #F2EFE6; -webkit-font-smoothing: antialiased;
+      }
+      .card { position: relative; width: 1080px; height: 1080px; overflow: hidden; }
+      .bg {
+        position: absolute; inset: -60px;
+        background-image: url("../../src/images/post-find-your-band-find-your-fit/hero.png");
+        background-size: cover; background-position: center;
+        filter: blur(34px) brightness(.5) saturate(1.2);
+        transform: scale(1.12);
+      }
+      .veil { position: absolute; inset: 0; background: rgba(33,9,74,.36); }
+      .sleeve {
+        position: absolute; z-index: 1; top: 238px; left: 0;
+        width: 1080px; height: 603px; object-fit: cover; display: block;
+        box-shadow: 0 24px 60px rgba(0,0,0,.45);
+      }
+      .credit {
+        position: absolute; z-index: 2; left: 0; right: 0; text-align: center;
+        font-weight: 800; text-transform: uppercase;
+      }
+      .credit.top { top: 76px; font-size: 14px; letter-spacing: .24em; }
+      .credit.bottom { bottom: 76px; font-size: 12px; letter-spacing: .2em; color: rgba(242,239,230,.82); }
+      .credit .lime { color: #C6FF00; }
+      .rule {
+        position: absolute; z-index: 2; left: 50%; transform: translateX(-50%);
+        width: 64px; height: 3px; background: #C6FF00;
+      }
+      .rule.top { top: 116px; }
+      .rule.bottom { bottom: 116px; }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="bg"></div>
+      <div class="veil"></div>
+      <div class="credit top">Northeast Entrepreneurship Summit</div>
+      <div class="rule top"></div>
+      <img
+        class="sleeve"
+        src="../../src/images/post-find-your-band-find-your-fit/hero.png"
+        alt="Smells Like Team Spirit: PMF Is Gonna Rock Ya!"
+      />
+      <div class="rule bottom"></div>
+      <div class="credit bottom">Nov 15, 2026 <span class="lime">&middot;</span> Boston, MA <span class="lime">&middot;</span> The Eleven Society</div>
+    </div>
+  </body>
+</html>

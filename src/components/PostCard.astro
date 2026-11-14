@@ -7,6 +7,7 @@ interface Props {
     id: string;
     data: {
       title: string;
+      subtitle?: string;
       description: string;
       heroImage: {
         src: string;
@@ -18,9 +19,10 @@ interface Props {
       pubDate: Date;
     };
   };
+  featured?: boolean;
 }
 
-const { post } = Astro.props;
+const { post, featured = false } = Astro.props;
 ---
 
 {
@@ -34,10 +36,29 @@ const { post } = Astro.props;
     />
   )
 }
-<h2 class="text-2xl font-bold my-2">{post.data.title}</h2>
-<h2 class="text-lg text-gray-500 my-2">
-  {post.data.description}
-</h2>
+{featured ? (
+  <h1 class="text-4xl md:text-5xl font-bold leading-tight my-4">{post.data.title}</h1>
+) : (
+  <h2 class="text-2xl font-bold my-2">{post.data.title}</h2>
+)}
+{
+  post.data.subtitle && (
+    <p
+      class={
+        featured
+          ? 'text-xl md:text-2xl text-gray-700 my-2'
+          : 'text-lg text-gray-600 my-1'
+      }
+    >
+      {post.data.subtitle}
+    </p>
+  )
+}
+{featured ? (
+  <p class="text-xl text-gray-500 my-2">{post.data.description}</p>
+) : (
+  <h2 class="text-lg text-gray-500 my-2">{post.data.description}</h2>
+)}
 <div class="flex justify-between items-center pt-4">
   <div class="flex flex-wrap gap-2">
     {

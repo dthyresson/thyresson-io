@@ -10,3 +10,18 @@
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     'Liberation Mono', 'Courier New', monospace;
 }
+
+.prose blockquote.callout {
+  font-style: normal;
+  font-weight: 500;
+  border-left: 4px solid #111;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.75em 1.25em;
+  border-radius: 0 0.25rem 0.25rem 0;
+  color: #2d2b28;
+}
+
+.prose blockquote.callout p:first-of-type::before,
+.prose blockquote.callout p:last-of-type::after {
+  content: none;
+}
