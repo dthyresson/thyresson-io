@@ -175,70 +175,65 @@
     padding: 0.5in 0.62in 0.35in;
   }
 
-  .cover-top {
+  .cover-grid {
     display: grid;
-    grid-template-columns: 1fr 3.7in;
+    grid-template-columns: 1fr 4.4in;
     column-gap: 0.6in;
     align-items: center;
-    flex: 0 0 auto;
+    flex: 1 1 auto;
+    min-height: 0;
+  }
+
+  .cover-left {
+    display: flex;
+    flex-direction: column;
   }
 
   .cover .eyebrow {
-    font-size: 9pt;
+    font-size: 9.5pt;
     font-weight: 700;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #555555;
   }
 
-  .cover h1 {
-    margin: 16pt 0 0;
-    font-size: 60pt;
-    line-height: 0.88;
-    letter-spacing: -0.045em;
-    max-width: 7.2in;
-  }
-
-  .cover-sub {
-    margin-top: 16pt;
-    font-size: 17pt;
-    line-height: 1.24;
-    color: #333333;
-    max-width: 6.3in;
-  }
-
-  .cover-meta {
-    margin-top: 22pt;
-    font-size: 11pt;
-    line-height: 1.5;
-    color: #333333;
-  }
-
-  .cover-meta strong {
+  .cover-tagline {
+    margin-top: 14pt;
+    font-size: 24pt;
+    line-height: 1.06;
+    letter-spacing: -0.025em;
     font-weight: 800;
-    color: #000000;
-  }
-
-  .cover-sleeve {
-    display: block;
-    width: 3.7in;
-    height: 3.7in;
-    object-fit: cover;
-    border: 0.75pt solid #000000;
+    max-width: 7.2in;
   }
 
   .cover-desc {
     margin-top: 14pt;
-    font-size: 10.5pt;
+    font-size: 17pt;
     line-height: 1.36;
     color: #333333;
-    max-width: 12in;
+    max-width: 7.2in;
+  }
+
+  .cover-desc p {
+    margin: 0 0 8pt;
+  }
+
+  .cover-desc p:last-child {
+    margin-bottom: 0;
+  }
+
+  .cover-sleeve {
+    display: block;
+    width: 4.4in;
+    height: 4.4in;
+    object-fit: cover;
+    border: 0.75pt solid #000000;
   }
 
   .cover-bottom {
     margin-top: auto;
     border-top: 1.5pt solid #000000;
-    padding-top: 12pt;
+    padding-top: 10pt;
     display: flex;
     align-items: center;
     gap: 14pt;
@@ -247,8 +242,8 @@
 
   .cover-qr {
     display: block;
-    width: 1.5in;
-    height: 1.5in;
+    width: 1.4in;
+    height: 1.4in;
   }
 
   .cover-bottom .kicker {
@@ -270,6 +265,19 @@
     margin-top: 3pt;
     font-size: 10.5pt;
     color: #333333;
+  }
+
+  .cover-bottom-meta {
+    margin-left: auto;
+    text-align: right;
+    font-size: 10.5pt;
+    line-height: 1.5;
+    color: #333333;
+  }
+
+  .cover-bottom-meta strong {
+    color: #000000;
+    font-weight: 800;
   }
 
   /* Bio */
@@ -678,25 +686,27 @@
 
 <!-- 01 Cover -->
 <section class="slide cover">
-  <div class="cover-top">
-    <div>
+  <div class="cover-grid">
+    <div class="cover-left">
       <div class="eyebrow">Northeast Entrepreneurship Summit &middot; Breakout session</div>
-      <h1>PMF Is<br>Gonna Rock Ya!</h1>
-      <div class="cover-sub">Why good products stall, unexpected ideas succeed, and timing is everything.</div>
-      <div class="cover-meta">
-        <strong>David Thyresson</strong> &middot; Cofounder &amp; General Partner, PWV<br>
-        Sunday, November 15, 2026 &middot; Boston
+      <div class="cover-tagline">Why good products stall, unexpected ideas succeed, and timing is everything.</div>
+      <div class="cover-desc">
+        <p>How did Cursor spend years searching for the right product before becoming an AI coding sensation? How did fal turn a Python data science tool into a generative AI powerhouse?</p>
+        <p>Through real stories from the PWV (Preston-Werner Ventures) portfolio, we'll explore product-market fit: how startups discover what customers actually want, why timing and finding the right buyer matter, and why even brilliant technology can struggle to find a market.</p>
       </div>
     </div>
     <img class="cover-sleeve" src="thumbs/hero-e-pmf-purple-stacked.webp" alt="The PMF Is Gonna Rock Ya! sleeve">
   </div>
-  <div class="cover-desc">How did Cursor spend years searching for the right product before becoming an AI coding sensation? How did fal turn a Python data science tool into a generative AI powerhouse? Through real stories from the PWV (Preston-Werner Ventures) portfolio, we'll explore product-market fit: how startups discover what customers actually want, why timing and finding the right buyer matter, and why even brilliant technology can struggle to find a market.</div>
   <div class="cover-bottom">
     <img class="cover-qr" src="qr/post-pmf.png" alt="QR code to the post">
     <div>
       <div class="kicker">The full post</div>
       <div class="cover-url">thyresson.io/blog/post-pmf-is-gonna-rock-you</div>
       <div class="cover-hint">Scan while this is up, or find me after the session.</div>
+    </div>
+    <div class="cover-bottom-meta">
+      <strong>David Thyresson</strong> &middot; Cofounder &amp; General Partner, PWV<br>
+      Sunday, November 15, 2026 &middot; Boston
     </div>
   </div>
 </section>
