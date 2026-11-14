@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PMF Is Gonna Rock Ya! — Speaker Deck</title>
+<style>
+  @page {
+    size: 13.333in 7.5in;
+    margin: 0;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+  }
+
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000000;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .slide {
+    width: 13.333in;
+    height: 7.5in;
+    padding: 0.5in 0.62in 0.4in;
+    display: flex;
+    flex-direction: column;
+    page-break-after: always;
+    break-after: page;
+    position: relative;
+  }
+
+  .slide:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  .hd {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1.5pt solid #000000;
+    padding-bottom: 7pt;
+    flex: 0 0 auto;
+  }
+
+  .hd .n,
+  .hd .tag {
+    font-size: 9.5pt;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+  }
+
+  .hd .n {
+    font-family: "SF Mono", Menlo, monospace;
+    letter-spacing: 0.08em;
+    color: #000000;
+  }
+
+  h1 {
+    margin: 18pt 0 0;
+    font-size: 34pt;
+    line-height: 0.96;
+    letter-spacing: -0.028em;
+    font-weight: 800;
+    text-transform: uppercase;
+    max-width: 11.5in;
+  }
+
+  .lead {
+    margin: 10pt 0 0;
+    font-size: 14.5pt;
+    line-height: 1.34;
+    color: #333333;
+    max-width: 9.6in;
+  }
+
+  .cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0;
+    margin-top: 16pt;
+    flex: 1 1 auto;
+  }
+
+  .col {
+    padding-right: 0.42in;
+    min-width: 0;
+  }
+
+  .col + .col {
+    padding-right: 0;
+    padding-left: 0.42in;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  .co {
+    display: flex;
+    align-items: baseline;
+    gap: 8pt;
+    margin-bottom: 8pt;
+  }
+
+  .co-name {
+    font-size: 18pt;
+    font-weight: 800;
+    letter-spacing: -0.012em;
+  }
+
+  .co-move {
+    font-size: 8.5pt;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: #000000;
+    white-space: nowrap;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    position: relative;
+    padding-left: 13pt;
+    margin-bottom: 6.5pt;
+    font-size: 14pt;
+    line-height: 1.3;
+  }
+
+  li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5.5pt;
+    width: 4.5pt;
+    height: 4.5pt;
+    background: #000000;
+  }
+
+  .tight li {
+    margin-bottom: 5pt;
+  }
+
+  .lesson {
+    margin-top: 10pt;
+    padding-left: 10pt;
+    border-left: 3.5pt solid #000000;
+    font-size: 14pt;
+    line-height: 1.28;
+    font-weight: 700;
+  }
+
+  .ask {
+    margin-top: 7pt;
+    font-size: 11.5pt;
+    line-height: 1.3;
+    font-style: italic;
+    color: #555555;
+  }
+
+  .foot {
+    margin-top: auto;
+    padding-top: 7pt;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    font-size: 8pt;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: #555555;
+    flex: 0 0 auto;
+  }
+
+  /* Cover */
+  .cover {
+    justify-content: flex-end;
+    padding-bottom: 0.62in;
+  }
+
+  .cover .bar {
+    width: 1.5in;
+    height: 7pt;
+    background: #000000;
+    margin-bottom: 22pt;
+  }
+
+  .cover .eyebrow {
+    font-size: 10pt;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 14pt;
+  }
+
+  .cover h1 {
+    margin: 0;
+    font-size: 78pt;
+    line-height: 0.86;
+    letter-spacing: -0.045em;
+    max-width: 11in;
+  }
+
+  .cover .sub {
+    margin: 18pt 0 0;
+    font-size: 19pt;
+    line-height: 1.24;
+    max-width: 8.4in;
+    color: #222222;
+    font-weight: 500;
+  }
+
+  .cover .who {
+    margin-top: auto;
+    padding-top: 34pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 10.5pt;
+    letter-spacing: 0.06em;
+    color: #333333;
+  }
+
+  .cover .who strong {
+    font-weight: 800;
+    color: #000000;
+  }
+
+  /* Bio */
+  .bio-name {
+    margin-top: 20pt;
+    font-size: 46pt;
+    line-height: 0.94;
+    letter-spacing: -0.035em;
+    font-weight: 800;
+  }
+
+  .bio-role {
+    margin-top: 10pt;
+    font-size: 15pt;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #000000;
+    max-width: 6.6in;
+  }
+
+  .bio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.55in;
+    margin-top: 20pt;
+  }
+
+  .label {
+    font-size: 9pt;
+    font-weight: 700;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    color: #555555;
+    margin-bottom: 8pt;
+    padding-bottom: 5pt;
+    border-bottom: 1.5pt solid #000000;
+  }
+
+  /* Single company */
+  .split {
+    display: grid;
+    grid-template-columns: 1.32fr 1fr;
+    column-gap: 0.55in;
+    margin-top: 16pt;
+    flex: 1 1 auto;
+  }
+
+  .split .side {
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    padding-left: 0.45in;
+  }
+
+  .side-quote {
+    font-size: 27pt;
+    line-height: 1.06;
+    letter-spacing: -0.028em;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .side-note {
+    margin-top: 14pt;
+    font-size: 13pt;
+    line-height: 1.36;
+    color: #333333;
+  }
+
+  /* Table slide */
+  .table-wrap {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    column-gap: 0.55in;
+    margin-top: 14pt;
+    flex: 1 1 auto;
+  }
+
+  .t-head,
+  .t-row {
+    display: grid;
+    grid-template-columns: 22pt 0.9fr 1.15fr 1.2fr;
+    align-items: baseline;
+    column-gap: 10pt;
+  }
+
+  .t-head {
+    padding-bottom: 5pt;
+    border-bottom: 1.5pt solid #000000;
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #555555;
+  }
+
+  .t-row {
+    padding: 10pt 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 12.5pt;
+    line-height: 1.25;
+  }
+
+  .t-row .num {
+    font-family: "SF Mono", Menlo, monospace;
+    font-size: 8.5pt;
+    color: #000000;
+  }
+
+  .t-row .co-cell {
+    font-weight: 800;
+    font-size: 13.5pt;
+  }
+
+  .t-row .req {
+    color: #333333;
+  }
+
+  /* Close */
+  .close-line {
+    font-size: 40pt;
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+    font-weight: 800;
+    text-transform: uppercase;
+    max-width: 10.6in;
+  }
+
+  .close-sub {
+    margin-top: 18pt;
+    font-size: 16pt;
+    line-height: 1.34;
+    color: #222222;
+    max-width: 8.6in;
+  }
+
+  .close-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.55in;
+    margin-top: 22pt;
+    border-top: 1.5pt solid #000000;
+    padding-top: 12pt;
+  }
+
+  .close-grid li {
+    font-size: 12.5pt;
+    margin-bottom: 6pt;
+  }
+</style>
+</head>
+<body>
+
+<!-- 01 Cover -->
+<section class="slide cover">
+  <div class="bar"></div>
+  <div class="eyebrow">Northeast Entrepreneurship Summit &middot; Breakout Session</div>
+  <h1>PMF Is<br>Gonna Rock Ya!</h1>
+  <div class="sub">Why good products stall, unexpected ideas succeed, and timing is everything.</div>
+  <div class="who">
+    <div><strong>David Thyresson</strong> &nbsp;&middot;&nbsp; Cofounder &amp; General Partner, PWV</div>
+    <div>Sunday, November 15, 2026 &nbsp;&middot;&nbsp; Boston</div>
+  </div>
+</section>
+
+<!-- 02 Who I am -->
+<section class="slide">
+  <div class="hd"><div class="n">02 / 08</div><div class="tag">Who I am</div></div>
+  <div class="bio-name">David Thyresson</div>
+  <div class="bio-role">Cofounder &amp; General Partner, PWV (Preston-Werner Ventures)</div>
+  <div class="bio-grid">
+    <div>
+      <div class="label">The path here</div>
+      <ul>
+        <li>I invest early stage alongside Tom Preston-Werner and David Price.</li>
+        <li>Before PWV: sports, energy, and consulting startups, with exits.</li>
+        <li>Advised RedwoodJS. Consulted at Supabase in 2021.</li>
+        <li>Middlebury grad. Phillips Andover before that.</li>
+      </ul>
+    </div>
+    <div>
+      <div class="label">Why this talk</div>
+      <ul>
+        <li>I'm also judging the startup competition today, when eleven schools pitch.</li>
+        <li>I collect Factory Records and Madchester poster art, vintage drum machines and synths. That's the lens.</li>
+        <li>At PWV I've watched five companies find fit five different ways. None started with the thing that worked.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><div>PMF Is Gonna Rock Ya! &middot; Northeast Entrepreneurship Summit</div><div>02</div></div>
+</section>
+
+<!-- 03 Open -->
+<section class="slide">
+  <div class="hd"><div class="n">03 / 08</div><div class="tag">The Manual</div></div>
+  <h1>&ldquo;If you want to do something, go and do it. Don't wait to be asked.&rdquo;</h1>
+  <div class="lead">Bill Drummond, The KLF &mdash; <em>The Manual</em>, 1988</div>
+  <div class="cols">
+    <div class="col">
+      <div class="co"><span class="co-name">Little money or talent</span><span class="co-move">Five top-ten singles</span></div>
+      <ul>
+        <li>An ex-label A&amp;R man and a squat-dwelling guitarist.</li>
+        <li>Not virtuosos. Conceptualists who sampled and collided other people's records.</li>
+        <li>By 1991, the biggest-selling singles act in the world.</li>
+        <li>They never invented the instruments.</li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="co"><span class="co-name">The same book</span><span class="co-move">Different title</span></div>
+      <ul>
+        <li>Silicon Valley has spent decades trying to write <em>The Manual</em>.</li>
+        <li>We call it product-market fit.</li>
+        <li>Does it work? Does anyone want it?</li>
+        <li>Do they use it, pay for it, and keep coming back?</li>
+      </ul>
+    </div>
+  </div>
+  <div class="lesson">You don't need to invent a new technology. Sometimes the opportunity is recognizing what existing technology makes possible.</div>
+  <div class="foot"><div>Five PWV companies. Five answers.</div><div>03</div></div>
+</section>
+
+<!-- 04 Doctorin' the Product / Last Train to Model Central -->
+<section class="slide">
+  <div class="hd"><div class="n">04 / 08</div><div class="tag">Doctorin' the Product / Last Train to Model Central</div></div>
+  <h1>Change the product. Change the market.</h1>
+  <div class="cols">
+    <div class="col">
+      <div class="co"><span class="co-name">Cursor</span><span class="co-move">Change the product</span></div>
+      <ul class="tight">
+        <li>Seed: right founders, right thesis. The developer experience wasn't there yet.</li>
+        <li>GitHub had the world's code and Copilot arriving. They didn't take the moment. Cursor did.</li>
+        <li>Anysphere tried an AI email client, then AI CAD for mechanical engineers. The CAD tool was even called Cursor.</li>
+        <li>Series A, months later: same founders, same thesis, dramatically better product.</li>
+      </ul>
+      <div class="lesson">Your first idea is a hypothesis, not your destiny.</div>
+      <div class="ask">What hypothesis are you treating as destiny &mdash; and what would it take to test it this month?</div>
+    </div>
+    <div class="col">
+      <div class="co"><span class="co-name">fal</span><span class="co-move">Change the market</span></div>
+      <ul class="tight">
+        <li>Burkay and Gorkem built highly optimized Python data infrastructure: pipelines, analytics, ML training.</li>
+        <li>The tell: tldraw's &ldquo;Make it Real.&rdquo; Sketch on screen, image in milliseconds.</li>
+        <li>Their stack was exceptionally good at running generative models at scale. When Stable Diffusion took off, they pointed it there.</li>
+        <li>&ldquo;Every pixel will be generated, not rendered.&rdquo; The market showed up and they were already standing in it.</li>
+      </ul>
+      <div class="lesson">The best opportunity isn't always the one you set out to find.</div>
+      <div class="ask">What have you already built that you could point at a completely different market?</div>
+    </div>
+  </div>
+  <div class="foot"><div>PMF Is Gonna Rock Ya!</div><div>04</div></div>
+</section>
+
+<!-- 05 What Time Is Fit? -->
+<section class="slide">
+  <div class="hd"><div class="n">05 / 08</div><div class="tag">What Time Is Fit?</div></div>
+  <h1>The market catches up. Find the buyer.</h1>
+  <div class="cols">
+    <div class="col">
+      <div class="co"><span class="co-name">Turso</span><span class="co-move">The market catches up</span></div>
+      <ul class="tight">
+        <li>Supabase won the last era by being all-in-one: Postgres, auth, storage, edge functions. Vibe-coding tools defaulted to it.</li>
+        <li>Turso bet on unlimited SQLite: one database per user, per agent, per task. Multi-tenant, local-first.</li>
+        <li>At the time, millions of small databases was an emerging idea, not yet a market.</li>
+        <li>Then agents arrived, needing a database as easily as a file, cheap and on demand. Turso had the shape.</li>
+      </ul>
+      <div class="lesson">Sometimes you don't find the market. The market finds you.</div>
+      <div class="ask">What's your two-year bet &mdash; and how will you know if you're early or just wrong?</div>
+    </div>
+    <div class="col">
+      <div class="co"><span class="co-name">Workbrew</span><span class="co-move">Find the buyer</span></div>
+      <ul class="tight">
+        <li>Developers love Homebrew. Corporate IT does not love employees installing whatever they want.</li>
+        <li>IT needs visibility, security, and control.</li>
+        <li>Workbrew built the business in that gap: developers use it, companies pay to manage it.</li>
+        <li>Two groups look at the same product and see completely different problems.</li>
+      </ul>
+      <div class="lesson">The person who uses your product isn't always the person who pays for it.</div>
+      <div class="ask">What free tool would companies pay to bring under control &mdash; and what would each side say they're buying?</div>
+    </div>
+  </div>
+  <div class="foot"><div>October 2026: the company that won the last era bought the company built for the next one.</div><div>05</div></div>
+</section>
+
+<!-- 06 Justified & Validated? -->
+<section class="slide">
+  <div class="hd"><div class="n">06 / 08</div><div class="tag">Justified &amp; Validated?</div></div>
+  <h1>Don't replace the incumbent. Become the layer.</h1>
+  <div class="lead">CAD has been one of the most entrenched software markets in the world for fifty years. Zoo never tried to replace it.</div>
+  <div class="split">
+    <div>
+      <ul>
+        <li>Proprietary file formats, workstation-bound execution, workflows never designed for cloud compute or machine learning.</li>
+        <li>Design data sits in static files. Hard to use as training data.</li>
+        <li>Zoo rebuilt the stack from first principles: KCL turns design intent into machine-readable code, and a GPU-backed geometry engine runs through an API.</li>
+        <li>It plugs into existing stacks, connecting design, analysis, and manufacturing. Blue Origin is already feeding millions of CAD files into a fine-tuned Text-to-CAD model.</li>
+        <li>The analogy to Cursor is direct: rebuild the workflow around the model instead of bolting AI onto the old stack.</li>
+      </ul>
+    </div>
+    <div class="side">
+      <div class="side-quote">Become the layer it cannot build itself.</div>
+      <div class="side-note">You do not have to replace the incumbent to win the market. That is how you take on a fifty-year-old category without a fifty-year fight.</div>
+      <div class="ask">What's one entrenched market you would never try to replace &mdash; and what layer could you build underneath it?</div>
+    </div>
+  </div>
+  <div class="lesson">This requires connecting the lifecycle, not just shipping a feature.</div>
+  <div class="foot"><div>PMF Is Gonna Rock Ya!</div><div>06</div></div>
+</section>
+
+<!-- 07 It's Grim Pre-Fit / Burn the Runway -->
+<section class="slide">
+  <div class="hd"><div class="n">07 / 08</div><div class="tag">It's Grim Pre-Fit / Burn the Runway</div></div>
+  <h1>Five companies. Five lessons.</h1>
+  <div class="table-wrap">
+    <div>
+      <div class="t-head"><div>#</div><div>Company</div><div>PMF lesson</div><div>What it requires</div></div>
+      <div class="t-row"><div class="num">01</div><div class="co-cell">Cursor</div><div>Change the product</div><div class="req">Question assumptions</div></div>
+      <div class="t-row"><div class="num">02</div><div class="co-cell">fal</div><div>Change the market</div><div class="req">Recognize opportunities</div></div>
+      <div class="t-row"><div class="num">03</div><div class="co-cell">Turso</div><div>The market catches up</div><div class="req">Have a point of view</div></div>
+      <div class="t-row"><div class="num">04</div><div class="co-cell">Workbrew</div><div>Find the buyer</div><div class="req">Understand people</div></div>
+      <div class="t-row"><div class="num">05</div><div class="co-cell">Zoo</div><div>Become the layer</div><div class="req">Connect the lifecycle</div></div>
+    </div>
+    <div class="side">
+      <div class="label">No single formula</div>
+      <ul class="tight">
+        <li>Curiosity, creativity, taste, critical thinking, understanding people, changing your mind.</li>
+        <li>Not exclusive to liberal arts grads. Exactly what a liberal arts education builds.</li>
+        <li>No permission required. No invention required.</li>
+      </ul>
+      <div class="side-note">The KLF wrote the manual, quit the music business in 1992, and in 1994 burned a million pounds on a Scottish island. Literally.</div>
+    </div>
+  </div>
+  <div class="lesson">Fit isn't a finish line. You find it, lose it, re-earn it &mdash; and if you're lucky, build something that outlasts you.</div>
+  <div class="foot"><div>PMF Is Gonna Rock Ya!</div><div>07</div></div>
+</section>
+
+<!-- 08 Close -->
+<section class="slide">
+  <div class="hd"><div class="n">08 / 08</div><div class="tag">Questions</div></div>
+  <div style="margin-top: 30pt;">
+    <div class="close-line">You don't have to invent the instruments to change the music.</div>
+    <div class="close-sub">You need an idea, the imagination to do something with it, and enough curiosity to find out whether anyone else cares. You don't get to decide whether the world wants what you've built. The world decides.</div>
+  </div>
+  <div class="close-grid">
+    <div>
+      <div class="label">For the room</div>
+      <ul>
+        <li>How do you know it's real fit, not early enthusiasm?</li>
+        <li>Pivot the product or the market? Cursor vs. fal.</li>
+      </ul>
+    </div>
+    <div>
+      <ul style="margin-top: 22pt;">
+        <li>What if the buyer and the user are far apart?</li>
+        <li>Is being early just another word for wrong?</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><div>David Thyresson &middot; PWV &middot; pwv.com</div><div>08</div></div>
+</section>
+
+</body>
+</html>

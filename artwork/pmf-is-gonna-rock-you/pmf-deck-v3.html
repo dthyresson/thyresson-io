@@ -1,0 +1,1010 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PMF Is Gonna Rock Ya! — Speaker Deck v3</title>
+<style>
+  @page {
+    size: 13.333in 7.5in;
+    margin: 0;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+  }
+
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000000;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .slide {
+    width: 13.333in;
+    height: 7.5in;
+    padding: 0.5in 0.62in 0.4in;
+    display: flex;
+    flex-direction: column;
+    page-break-after: always;
+    break-after: page;
+    position: relative;
+  }
+
+  .slide:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  .hd {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1.5pt solid #000000;
+    padding-bottom: 7pt;
+    flex: 0 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hd .n,
+  .hd .tag {
+    font-size: 9.5pt;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+  }
+
+  .hd .n {
+    font-family: "SF Mono", Menlo, monospace;
+    letter-spacing: 0.08em;
+  }
+
+  h1 {
+    margin: 18pt 0 0;
+    font-size: 34pt;
+    line-height: 0.96;
+    letter-spacing: -0.028em;
+    font-weight: 800;
+    text-transform: uppercase;
+    max-width: 11.5in;
+  }
+
+  .lead {
+    margin: 10pt 0 0;
+    font-size: 14.5pt;
+    line-height: 1.34;
+    color: #333333;
+    max-width: 9.6in;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    position: relative;
+    padding-left: 13pt;
+    margin-bottom: 6.5pt;
+    font-size: 14pt;
+    line-height: 1.3;
+  }
+
+  li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5.5pt;
+    width: 4.5pt;
+    height: 4.5pt;
+    background: #000000;
+  }
+
+  .tight li {
+    margin-bottom: 5pt;
+  }
+
+  .lesson {
+    margin-top: 10pt;
+    padding-left: 10pt;
+    border-left: 3.5pt solid #000000;
+    font-size: 14pt;
+    line-height: 1.28;
+    font-weight: 700;
+    flex: 0 0 auto;
+  }
+
+  .ask {
+    margin-top: 7pt;
+    font-size: 11.5pt;
+    line-height: 1.3;
+    font-style: italic;
+    color: #555555;
+  }
+
+  .foot {
+    margin-top: auto;
+    align-items: center;
+    padding-top: 7pt;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    font-size: 8pt;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: #555555;
+    flex: 0 0 auto;
+  }
+
+  .label {
+    font-size: 9pt;
+    font-weight: 700;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    color: #555555;
+    margin-bottom: 8pt;
+    padding-bottom: 5pt;
+    border-bottom: 1.5pt solid #000000;
+  }
+
+  img.sleeve {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 0.75pt solid #000000;
+  }
+
+  .caption {
+    margin-top: 6pt;
+    font-size: 8pt;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #555555;
+    line-height: 1.3;
+  }
+
+  /* Cover */
+  .cover {
+    padding: 0.5in 0.62in 0.35in;
+  }
+
+  .cover-top {
+    display: grid;
+    grid-template-columns: 1fr 3.7in;
+    column-gap: 0.6in;
+    align-items: center;
+    flex: 0 0 auto;
+  }
+
+  .cover .eyebrow {
+    font-size: 9pt;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #555555;
+  }
+
+  .cover h1 {
+    margin: 16pt 0 0;
+    font-size: 60pt;
+    line-height: 0.88;
+    letter-spacing: -0.045em;
+    max-width: 7.2in;
+  }
+
+  .cover-sub {
+    margin-top: 16pt;
+    font-size: 17pt;
+    line-height: 1.24;
+    color: #333333;
+    max-width: 6.3in;
+  }
+
+  .cover-meta {
+    margin-top: 22pt;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #333333;
+  }
+
+  .cover-meta strong {
+    font-weight: 800;
+    color: #000000;
+  }
+
+  .cover-sleeve {
+    display: block;
+    width: 3.7in;
+    height: 3.7in;
+    object-fit: cover;
+    border: 0.75pt solid #000000;
+  }
+
+  .cover-desc {
+    margin-top: 14pt;
+    font-size: 10.5pt;
+    line-height: 1.36;
+    color: #333333;
+    max-width: 12in;
+  }
+
+  .cover-bottom {
+    margin-top: auto;
+    border-top: 1.5pt solid #000000;
+    padding-top: 12pt;
+    display: flex;
+    align-items: center;
+    gap: 14pt;
+    flex: 0 0 auto;
+  }
+
+  .cover-qr {
+    display: block;
+    width: 1.5in;
+    height: 1.5in;
+  }
+
+  .cover-bottom .kicker {
+    font-size: 8.5pt;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #555555;
+  }
+
+  .cover-url {
+    margin-top: 4pt;
+    font-size: 13pt;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .cover-hint {
+    margin-top: 3pt;
+    font-size: 10.5pt;
+    color: #333333;
+  }
+
+  /* Bio */
+  .bio-name {
+    margin-top: 20pt;
+    font-size: 46pt;
+    line-height: 0.94;
+    letter-spacing: -0.035em;
+    font-weight: 800;
+  }
+
+  .bio-role {
+    margin-top: 10pt;
+    font-size: 15pt;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #333333;
+    max-width: 6.6in;
+  }
+
+  .bio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.55in;
+    margin-top: 20pt;
+  }
+
+  /* Manual slide */
+  .manual-grid {
+    display: grid;
+    grid-template-columns: 1fr 2.05in;
+    column-gap: 0.55in;
+    margin-top: 14pt;
+    flex: 1 1 auto;
+    min-height: 0;
+  }
+
+  .co {
+    display: flex;
+    align-items: baseline;
+    gap: 8pt;
+    margin-bottom: 7pt;
+  }
+
+  .co-name {
+    font-size: 16.5pt;
+    font-weight: 800;
+    letter-spacing: -0.012em;
+  }
+
+  .co-move {
+    font-size: 8.5pt;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: #333333;
+    white-space: nowrap;
+  }
+
+  .group + .group {
+    margin-top: 14pt;
+    padding-top: 12pt;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  /* Two-column company slides */
+  .cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 14pt;
+    flex: 1 1 auto;
+    min-height: 0;
+  }
+
+  .col {
+    padding-right: 0.4in;
+    min-width: 0;
+  }
+
+  .col + .col {
+    padding-right: 0;
+    padding-left: 0.4in;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  .co-head {
+    display: flex;
+    align-items: center;
+    gap: 11pt;
+    margin-bottom: 9pt;
+  }
+
+  .co-head .sleeve {
+    width: 0.82in;
+    flex: 0 0 auto;
+  }
+
+  .co-head .co-name {
+    font-size: 18pt;
+    line-height: 1;
+  }
+
+  .co-head .co-move {
+    display: block;
+    margin-top: 4pt;
+    white-space: normal;
+    line-height: 1.2;
+  }
+
+  /* Zoo */
+  .split {
+    display: grid;
+    grid-template-columns: 1.4fr 2.1in;
+    column-gap: 0.55in;
+    margin-top: 14pt;
+    flex: 1 1 auto;
+    min-height: 0;
+  }
+
+  .split .side {
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    padding-left: 0.4in;
+  }
+
+  .split .side .sleeve {
+    width: 1.85in;
+  }
+
+  .side-quote {
+    margin-top: 12pt;
+    font-size: 20pt;
+    line-height: 1.05;
+    letter-spacing: -0.028em;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .side-note {
+    margin-top: 10pt;
+    font-size: 11.5pt;
+    line-height: 1.34;
+    color: #333333;
+  }
+
+  /* Table */
+  .table-wrap {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    column-gap: 0.55in;
+    margin-top: 14pt;
+    flex: 1 1 auto;
+    min-height: 0;
+  }
+
+  .t-head,
+  .t-row {
+    display: grid;
+    grid-template-columns: 0.56in 0.85fr 1.05fr 1.1fr;
+    align-items: center;
+    column-gap: 9pt;
+  }
+
+  .t-head {
+    padding-bottom: 5pt;
+    border-bottom: 1.5pt solid #000000;
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #555555;
+  }
+
+  .t-row {
+    padding: 7pt 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 12.5pt;
+    line-height: 1.25;
+  }
+
+  .t-row .sleeve {
+    width: 0.46in;
+    border-width: 0.5pt;
+  }
+
+  .t-row .co-cell {
+    font-weight: 800;
+    font-size: 13pt;
+  }
+
+  .t-row .req {
+    color: #333333;
+  }
+
+  /* Close */
+  .close-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 2.4in;
+    column-gap: 0.55in;
+    flex: 1 1 auto;
+    min-height: 0;
+    margin-top: 24pt;
+  }
+
+  .close-line {
+    font-size: 34pt;
+    line-height: 1.03;
+    letter-spacing: -0.035em;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .close-sub {
+    margin-top: 14pt;
+    font-size: 14.5pt;
+    line-height: 1.34;
+    color: #333333;
+  }
+
+  .ref {
+    margin-top: 14pt;
+    padding-top: 10pt;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  .ref .kicker {
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #555555;
+  }
+
+  .ref-title {
+    margin-top: 4pt;
+    font-size: 13.5pt;
+    font-weight: 800;
+    line-height: 1.15;
+  }
+
+  .ref-url {
+    margin-top: 3pt;
+    font-size: 9.5pt;
+    color: #333333;
+  }
+
+  .ref-qr {
+    display: block;
+    width: 1.4in;
+    height: 1.4in;
+    margin-top: 8pt;
+    border: 0.5pt solid #000000;
+  }
+
+  .close .side {
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    padding-left: 0.4in;
+  }
+
+  .qa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.4in;
+    margin-top: 18pt;
+    border-top: 1.5pt solid #000000;
+    padding-top: 10pt;
+  }
+
+  .qa li {
+    font-size: 11.5pt;
+    margin-bottom: 6pt;
+  }
+
+  /* v3: post link + QR */
+  .foot-right {
+    display: flex;
+    align-items: center;
+    gap: 9pt;
+  }
+
+  .foot-url {
+    text-transform: none;
+    letter-spacing: 0.02em;
+    font-size: 7.5pt;
+    color: #333333;
+  }
+
+  .foot-qr {
+    display: block;
+    width: 0.46in;
+    height: 0.46in;
+    border: 0.5pt solid #000000;
+  }
+
+  .foot-n {
+    font-family: "SF Mono", Menlo, monospace;
+    letter-spacing: 0.06em;
+  }
+
+  .post-strip {
+    margin-top: auto;
+    padding-top: 10pt;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 14pt;
+    flex: 0 0 auto;
+  }
+
+  .post-qr {
+    display: block;
+    width: 1.3in;
+    height: 1.3in;
+    border: 0.5pt solid #000000;
+  }
+
+  .post-strip .kicker {
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #555555;
+  }
+
+  .post-strip .url {
+    margin-top: 3pt;
+    font-size: 12pt;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .post-strip .hint {
+    margin-top: 2pt;
+    font-size: 10pt;
+    color: #333333;
+  }
+
+  .band-post {
+    display: flex;
+    align-items: center;
+    gap: 10pt;
+  }
+
+  .band-qr {
+    display: block;
+    width: 0.62in;
+    height: 0.62in;
+  }
+
+  /* Connect slide */
+  .connect-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.5in;
+    margin-top: 16pt;
+    flex: 1 1 auto;
+    min-height: 0;
+  }
+
+  .connect-item {
+    display: flex;
+    gap: 14pt;
+    align-items: flex-start;
+    padding: 13pt 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  .connect-item .qr {
+    display: block;
+    width: 1.9in;
+    height: 1.9in;
+    border: 0.5pt solid #000000;
+    flex: 0 0 auto;
+  }
+
+  .connect-item .kicker {
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #555555;
+  }
+
+  .connect-item .title {
+    margin-top: 3pt;
+    font-size: 14.5pt;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+
+  .connect-item .url {
+    margin-top: 3pt;
+    font-size: 10.5pt;
+    color: #333333;
+  }
+
+  .connect-item .desc {
+    margin-top: 5pt;
+    font-size: 10.5pt;
+    line-height: 1.32;
+    color: #555555;
+  }
+</style>
+</head>
+<body>
+
+<!-- 01 Cover -->
+<section class="slide cover">
+  <div class="cover-top">
+    <div>
+      <div class="eyebrow">Northeast Entrepreneurship Summit &middot; Breakout session</div>
+      <h1>PMF Is<br>Gonna Rock Ya!</h1>
+      <div class="cover-sub">Why good products stall, unexpected ideas succeed, and timing is everything.</div>
+      <div class="cover-meta">
+        <strong>David Thyresson</strong> &middot; Cofounder &amp; General Partner, PWV<br>
+        Sunday, November 15, 2026 &middot; Boston
+      </div>
+    </div>
+    <img class="cover-sleeve" src="thumbs/hero-e-pmf-purple-stacked.webp" alt="The PMF Is Gonna Rock Ya! sleeve">
+  </div>
+  <div class="cover-desc">How did Cursor spend years searching for the right product before becoming an AI coding sensation? How did fal turn a Python data science tool into a generative AI powerhouse? Through real stories from the PWV (Preston-Werner Ventures) portfolio, we'll explore product-market fit: how startups discover what customers actually want, why timing and finding the right buyer matter, and why even brilliant technology can struggle to find a market.</div>
+  <div class="cover-bottom">
+    <img class="cover-qr" src="qr/post-pmf.png" alt="QR code to the post">
+    <div>
+      <div class="kicker">The full post</div>
+      <div class="cover-url">thyresson.io/blog/post-pmf-is-gonna-rock-you</div>
+      <div class="cover-hint">Scan while this is up, or find me after the session.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 Who I am -->
+<section class="slide">
+  <div class="hd"><div class="n">02 / 09</div><div class="tag">Who I am</div></div>
+  <div class="bio-name">David Thyresson</div>
+  <div class="bio-role">Cofounder &amp; General Partner, PWV (Preston-Werner Ventures)</div>
+  <div class="bio-grid">
+    <div>
+      <div class="label">The path here</div>
+      <ul>
+        <li>PWV is Tom Preston-Werner, GitHub's cofounder, David Price, and me. We invest early stage.</li>
+        <li>Before PWV: sports, energy, and consulting startups, with exits.</li>
+        <li>Advised RedwoodJS. Consulted at Supabase in 2021.</li>
+        <li>Middlebury grad. Phillips Andover before that.</li>
+      </ul>
+    </div>
+    <div>
+      <div class="label">Why this talk</div>
+      <ul>
+        <li>I'm also judging the startup competition today, when eleven schools pitch.</li>
+        <li>I collect Factory Records and Madchester poster art, vintage drum machines and synths. That's the lens.</li>
+        <li>At PWV I've watched five companies find fit five different ways. None started with the thing that worked.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="post-strip">
+    <img class="post-qr" src="qr/post-pmf.png" alt="QR code to the post">
+    <div>
+      <div class="kicker">The full post</div>
+      <div class="url">thyresson.io/blog/post-pmf-is-gonna-rock-you</div>
+      <div class="hint">Scan for the long version, with the companies, the questions, and the artwork.</div>
+    </div>
+  </div>
+  <div class="foot"><div>PMF Is Gonna Rock Ya! &middot; Northeast Entrepreneurship Summit</div><div class="foot-right"><span class="foot-url">thyresson.io/blog/post-pmf-is-gonna-rock-you</span><img class="foot-qr" src="qr/post-pmf.png" alt="QR code to the post"><span class="foot-n">02</span></div></div>
+</section>
+
+<!-- 03 The Manual -->
+<section class="slide">
+  <div class="hd"><div class="n">03 / 09</div><div class="tag">The Manual</div></div>
+  <h1>&ldquo;If you want to do something, go and do it. Don't wait to be asked.&rdquo;</h1>
+  <div class="lead">Bill Drummond, The KLF &mdash; <em>The Manual</em>, 1988</div>
+  <div class="manual-grid">
+    <div>
+      <div class="group">
+        <div class="co"><span class="co-name">Little money or talent</span><span class="co-move">Five top-ten singles</span></div>
+        <ul>
+          <li>An ex-label A&amp;R man and a squat-dwelling guitarist.</li>
+          <li>Not virtuosos. Conceptualists who sampled and collided other people's records.</li>
+          <li>By 1991, the biggest-selling singles act in the world.</li>
+          <li>They never invented the instruments.</li>
+        </ul>
+      </div>
+      <div class="group">
+        <div class="co"><span class="co-name">The same book</span><span class="co-move">Different title</span></div>
+        <ul>
+          <li>Silicon Valley has spent decades trying to write <em>The Manual</em>.</li>
+          <li>We call it product-market fit.</li>
+          <li>Does it work? Does anyone want it?</li>
+          <li>Do they use it, pay for it, and keep coming back?</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <img class="sleeve" src="thumbs/manual-a.webp" alt="The PMF Manual book cover">
+      <div class="caption">The Manual, rewritten<br>for product-market fit</div>
+    </div>
+  </div>
+  <div class="lesson">You don't need to invent a new technology. Sometimes the opportunity is recognizing what existing technology makes possible.</div>
+  <div class="foot"><div>Five PWV companies. Five answers.</div><div class="foot-right"><span class="foot-url">thyresson.io/blog/post-pmf-is-gonna-rock-you</span><img class="foot-qr" src="qr/post-pmf.png" alt="QR code to the post"><span class="foot-n">03</span></div></div>
+</section>
+
+<!-- 04 Doctorin' the Product / Last Train to Model Central -->
+<section class="slide">
+  <div class="hd"><div class="n">04 / 09</div><div class="tag">Doctorin' the Product / Last Train to Model Central</div></div>
+  <h1>Change the product. Change the market.</h1>
+  <div class="cols">
+    <div class="col">
+      <div class="co-head">
+        <img class="sleeve" src="thumbs/cursor-a-doctorin-the-product.webp" alt="Cursor sleeve">
+        <div>
+          <span class="co-name">Cursor</span>
+          <span class="co-move">Change the product</span>
+        </div>
+      </div>
+      <ul class="tight">
+        <li>Seed: right founders, right thesis. The developer experience wasn't there yet.</li>
+        <li>GitHub had the world's code and Copilot arriving. They didn't take the moment. Cursor did.</li>
+        <li>Anysphere tried AI email, then AI CAD. The CAD tool was even called Cursor.</li>
+        <li>Series A, months later: same founders, same thesis, dramatically better product.</li>
+        <li><strong>SpaceX acquired Cursor for $60B.</strong></li>
+      </ul>
+      <div class="lesson">Your first idea is a hypothesis, not your destiny.</div>
+      <div class="ask">What hypothesis are you treating as destiny &mdash; and how would you test it?</div>
+    </div>
+    <div class="col">
+      <div class="co-head">
+        <img class="sleeve" src="thumbs/fal-b-last-train-to-model-central.webp" alt="fal sleeve">
+        <div>
+          <span class="co-name">fal</span>
+          <span class="co-move">Change the market</span>
+        </div>
+      </div>
+      <ul class="tight">
+        <li>Burkay and Gorkem built highly optimized Python data infrastructure: pipelines, analytics, ML training.</li>
+        <li>The tell: tldraw's &ldquo;Make it Real.&rdquo; Sketch on screen, image in milliseconds.</li>
+        <li>Their stack was exceptionally good at running generative models at scale. When Stable Diffusion took off, they pointed it there.</li>
+        <li>&ldquo;Every pixel will be generated, not rendered.&rdquo; The market showed up and they were standing in it.</li>
+        <li><strong>fal raised $1.3B at a $16B valuation.</strong></li>
+      </ul>
+      <div class="lesson">The best opportunity isn't always the one you set out to find.</div>
+      <div class="ask">What have you already built that could serve a different market?</div>
+    </div>
+  </div>
+  <div class="foot"><div>PMF Is Gonna Rock Ya!</div><div class="foot-right"><span class="foot-url">thyresson.io/blog/post-pmf-is-gonna-rock-you</span><img class="foot-qr" src="qr/post-pmf.png" alt="QR code to the post"><span class="foot-n">04</span></div></div>
+</section>
+
+<!-- 05 What Time Is Fit? -->
+<section class="slide">
+  <div class="hd"><div class="n">05 / 09</div><div class="tag">What Time Is Fit?</div></div>
+  <h1>The market catches up. Find the buyer.</h1>
+  <div class="cols">
+    <div class="col">
+      <div class="co-head">
+        <img class="sleeve" src="thumbs/turso-b-what-time-is-fit.webp" alt="Turso sleeve">
+        <div>
+          <span class="co-name">Turso</span>
+          <span class="co-move">The market catches up</span>
+        </div>
+      </div>
+      <ul class="tight">
+        <li>Supabase won the last era by being all-in-one: Postgres, auth, storage, edge functions. Vibe-coding tools defaulted to it.</li>
+        <li>Turso bet on unlimited SQLite: one database per user, per agent, per task. Multi-tenant, local-first.</li>
+        <li>At the time, millions of small databases was an emerging idea, not yet a market.</li>
+        <li>Then agents arrived, needing a database as easily as a file, cheap and on demand. Turso had the shape.</li>
+        <li><strong>October 2026: Supabase acquired Turso.</strong></li>
+      </ul>
+      <div class="lesson">Sometimes you don't find the market. The market finds you.</div>
+      <div class="ask">What's your two-year bet &mdash; and how will you know if you're early or just wrong?</div>
+    </div>
+    <div class="col">
+      <div class="co-head">
+        <img class="sleeve" src="thumbs/workbrew-b-3am-eternal.webp" alt="Workbrew sleeve">
+        <div>
+          <span class="co-name">Workbrew</span>
+          <span class="co-move">Find the buyer</span>
+        </div>
+      </div>
+      <ul class="tight">
+        <li>Developers love Homebrew. Corporate IT does not love employees installing whatever they want.</li>
+        <li>IT needs visibility, security, and control.</li>
+        <li>Workbrew built the business in that gap: developers use it, companies pay to manage it.</li>
+        <li>Two groups look at the same product and see completely different problems.</li>
+      </ul>
+      <div class="lesson">The person who uses your product isn't always the person who pays for it.</div>
+      <div class="ask">What free tool would companies pay to bring under control &mdash; and what would each side say they're buying?</div>
+    </div>
+  </div>
+  <div class="foot"><div>The company that won the last era bought the company built for the next one.</div><div class="foot-right"><span class="foot-url">thyresson.io/blog/post-pmf-is-gonna-rock-you</span><img class="foot-qr" src="qr/post-pmf.png" alt="QR code to the post"><span class="foot-n">05</span></div></div>
+</section>
+
+<!-- 06 Justified & Validated? -->
+<section class="slide">
+  <div class="hd"><div class="n">06 / 09</div><div class="tag">Justified &amp; Validated?</div></div>
+  <h1>Become the layer.</h1>
+  <div class="lead">CAD has been one of the most entrenched software markets in the world for fifty years. Zoo never tried to replace it.</div>
+  <div class="split">
+    <div>
+      <ul>
+        <li>Proprietary file formats, workstation-bound execution, workflows never designed for cloud compute or machine learning.</li>
+        <li>Design data sits in static files. Hard to use as training data.</li>
+        <li>Zoo rebuilt the stack from first principles: KCL turns design intent into machine-readable code, and a GPU-backed geometry engine runs through an API.</li>
+        <li>It plugs into existing stacks, connecting design, analysis, and manufacturing. Blue Origin is already feeding millions of CAD files into a fine-tuned Text-to-CAD model.</li>
+        <li>The analogy to Cursor is direct: rebuild the workflow around the model instead of bolting AI onto the old stack.</li>
+      </ul>
+    </div>
+    <div class="side">
+      <img class="sleeve" src="thumbs/zoo-a-justified-and-validated.webp" alt="Zoo sleeve">
+      <div class="side-note">You don't have to replace the incumbent to win. That's how you take on a fifty-year-old category without a fifty-year fight.</div>
+      <div class="ask">What entrenched market would you build a layer underneath?</div>
+    </div>
+  </div>
+  <div class="lesson">This requires connecting the lifecycle, not just shipping a feature.</div>
+  <div class="foot"><div>PMF Is Gonna Rock Ya!</div><div class="foot-right"><span class="foot-url">thyresson.io/blog/post-pmf-is-gonna-rock-you</span><img class="foot-qr" src="qr/post-pmf.png" alt="QR code to the post"><span class="foot-n">06</span></div></div>
+</section>
+
+<!-- 07 It's Grim Pre-Fit / Burn the Runway -->
+<section class="slide">
+  <div class="hd"><div class="n">07 / 09</div><div class="tag">It's Grim Pre-Fit / Burn the Runway</div></div>
+  <h1>Five companies. Five lessons.</h1>
+  <div class="table-wrap">
+    <div>
+      <div class="t-head"><div></div><div>Company</div><div>PMF lesson</div><div>What it requires</div></div>
+      <div class="t-row">
+        <img class="sleeve" src="thumbs/cursor-a-doctorin-the-product.webp" alt="">
+        <div class="co-cell">Cursor</div><div>Change the product</div><div class="req">Question assumptions</div>
+      </div>
+      <div class="t-row">
+        <img class="sleeve" src="thumbs/fal-b-last-train-to-model-central.webp" alt="">
+        <div class="co-cell">fal</div><div>Change the market</div><div class="req">Recognize opportunities</div>
+      </div>
+      <div class="t-row">
+        <img class="sleeve" src="thumbs/turso-b-what-time-is-fit.webp" alt="">
+        <div class="co-cell">Turso</div><div>The market catches up</div><div class="req">Have a point of view</div>
+      </div>
+      <div class="t-row">
+        <img class="sleeve" src="thumbs/workbrew-b-3am-eternal.webp" alt="">
+        <div class="co-cell">Workbrew</div><div>Find the buyer</div><div class="req">Understand people</div>
+      </div>
+      <div class="t-row">
+        <img class="sleeve" src="thumbs/zoo-a-justified-and-validated.webp" alt="">
+        <div class="co-cell">Zoo</div><div>Become the layer</div><div class="req">Connect the lifecycle</div>
+      </div>
+    </div>
+    <div class="side">
+      <div class="label">No single formula</div>
+      <ul class="tight">
+        <li>Curiosity, creativity, taste, critical thinking, understanding people, changing your mind.</li>
+        <li>Not exclusive to liberal arts grads. Exactly what a liberal arts education builds.</li>
+        <li>No permission required. No invention required.</li>
+      </ul>
+      <div class="side-note">The KLF wrote the manual, quit the music business in 1992, and in 1994 burned a million pounds on a Scottish island. Literally.</div>
+    </div>
+  </div>
+  <div class="lesson">Fit isn't a finish line. You find it, lose it, re-earn it &mdash; and if you're lucky, build something that outlasts you.</div>
+  <div class="foot"><div>PMF Is Gonna Rock Ya!</div><div class="foot-right"><span class="foot-url">thyresson.io/blog/post-pmf-is-gonna-rock-you</span><img class="foot-qr" src="qr/post-pmf.png" alt="QR code to the post"><span class="foot-n">07</span></div></div>
+</section>
+
+<!-- 08 Close -->
+<section class="slide close">
+  <div class="hd"><div class="n">08 / 09</div><div class="tag">Close</div></div>
+  <div class="close-grid">
+    <div>
+      <div class="close-line">You don't have to invent the instruments to change the music.</div>
+      <div class="close-sub">You need an idea, the imagination to do something with it, and enough curiosity to find out whether anyone else cares.</div>
+      <div class="lesson">And it is the team that matters &mdash; working toward PMF.</div>
+      <div class="qa">
+        <ul>
+          <li>How do you know it's real fit, not early enthusiasm?</li>
+          <li>Pivot the product or the market? Cursor vs. fal.</li>
+        </ul>
+        <ul>
+          <li>What if the buyer and the user are far apart?</li>
+          <li>Is being early just another word for wrong?</li>
+        </ul>
+      </div>
+    </div>
+    <div class="side">
+      <img class="sleeve" src="thumbs/jura-b-its-grim-pre-fit.webp" alt="It's Grim Pre-Fit sleeve">
+      <div class="ref">
+        <div class="kicker">Other session</div>
+        <div class="ref-title">Smells Like Team Spirit</div>
+        <div class="ref-url">thyresson.io/blog/<br>post-smells-like-team-spirit</div>
+        <img class="ref-qr" src="qr/post-team.png" alt="QR code to the Team Spirit post">
+      </div>
+    </div>
+  </div>
+  <div class="foot"><div>David Thyresson &middot; PWV &middot; pwv.com</div><div class="foot-right"><span class="foot-url">thyresson.io/blog/post-pmf-is-gonna-rock-you</span><img class="foot-qr" src="qr/post-pmf.png" alt="QR code to the post"><span class="foot-n">08</span></div></div>
+</section>
+
+
+<!-- 09 Q&A / Connect -->
+<section class="slide">
+  <div class="hd"><div class="n">09 / 09</div><div class="tag">Q&amp;A &middot; Let's connect</div></div>
+  <h1>Questions? Let's connect.</h1>
+  <div class="lead">Scan any code while this slide is up, or catch me after the session.</div>
+  <div class="connect-grid">
+    <div class="connect-item">
+      <img class="qr" src="qr/post-pmf.png" alt="QR code to the PMF post">
+      <div>
+        <div class="kicker">The full post &middot; this session</div>
+        <div class="title">PMF Is Gonna Rock Ya!</div>
+        <div class="url">thyresson.io/blog/post-pmf-is-gonna-rock-you</div>
+        <div class="desc">Cursor, fal, Turso, Workbrew, Zoo, and the questions worth asking before you build.</div>
+      </div>
+    </div>
+    <div class="connect-item">
+      <img class="qr" src="qr/post-team.png" alt="QR code to the Team Spirit post">
+      <div>
+        <div class="kicker">The full post &middot; other session</div>
+        <div class="title">Smells Like Team Spirit</div>
+        <div class="url">thyresson.io/blog/post-smells-like-team-spirit</div>
+        <div class="desc">Startups as a band: solo, duo, trio, quartet, and why success changes the pressure.</div>
+      </div>
+    </div>
+    <div class="connect-item">
+      <img class="qr" src="qr/linkedin.png" alt="QR code to LinkedIn">
+      <div>
+        <div class="kicker">LinkedIn</div>
+        <div class="title">David Thyresson</div>
+        <div class="url">linkedin.com/in/dthyresson</div>
+        <div class="desc">Pitches, intros, or a note about what you're building. I read everything.</div>
+      </div>
+    </div>
+    <div class="connect-item">
+      <img class="qr" src="qr/agentcribs.png" alt="QR code to AgentCribs">
+      <div>
+        <div class="kicker">A PWV community project</div>
+        <div class="title">AgentCribs: a curated community for agentic software builders</div>
+        <div class="url">agentcribs.pwv.com</div>
+        <div class="desc">For technical founders, senior developers, and hands-on builders working with AI agents, developer tools, and command-line workflows.</div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><div>Thanks &middot; Northeast Entrepreneurship Summit</div><div class="foot-right"><span class="foot-url">thyresson.io/blog/post-pmf-is-gonna-rock-you</span><img class="foot-qr" src="qr/post-pmf.png" alt="QR code to the post"><span class="foot-n">09</span></div></div>
+</section>
+
+</body>
+</html>

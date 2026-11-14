@@ -24,6 +24,40 @@ See also the [Startup as a Band artwork](../smells-like-team-spirit/).
   node artwork/pmf-is-gonna-rock-you/build-review.mjs
   ```
 
+## Speaker deck
+
+| File | Contents |
+| --- | --- |
+| `pmf-deck.html` | v1: print-ready 16:9 deck, one page per section of the post. Text only, no artwork, no colour. |
+| `pmf-deck.pdf` | v1 render, 8 pages, 13.333 × 7.5 in, black and white for printing. |
+| `pmf-deck-v2.html` | v2: same eight pages and copy, with the sleeve art folded in (full-bleed hero, section sleeves, five-lesson table stamps). |
+| `pmf-deck-v2.pdf` | v2 render, 8 pages, 13.333 × 7.5 in. Type and rules are pure black and white; only the artwork is in colour. |
+| `pmf-deck-v3.html` | v3: v2 plus the post URL and QR in every footer, a cover and bio QR, and a ninth Q&A / connect page linking both posts, LinkedIn, and AgentCribs. |
+| `pmf-deck-v3.pdf` | v3 render, 9 pages, 13.333 × 7.5 in. |
+| `hero-deck.jpg` | 2400 px cover crop used by the v2 and v3 decks. |
+| `qr/` | QR PNGs (black on white, 3-module quiet zone) for `post-pmf`, `post-team`, `linkedin`, `agentcribs`. Decoded and verified against their URLs. |
+
+QR sizing is set for projection: the post URL is a 39-module code, so the deck uses 1.5 in on the cover, 1.3 in on the bio slide, and 1.9 in on the Q&A page (roughly 10–14% of slide width, 9–13 mm modules on a 12 ft screen). The 0.46 in footer codes are for printed handouts and close-up scanning, not for the back of the room.
+
+Both decks run: cover, who I am, The Manual, Cursor/fal, Turso/Workbrew, Zoo, the five lessons, close + questions. v3 adds the Q&A / connect page. Tap through them as speaking prompts.
+
+Regenerate the QR codes with:
+
+```sh
+qrencode -o qr/post-pmf.png -s 12 -m 3 -l M "https://thyresson.io/blog/post-pmf-is-gonna-rock-you/"
+```
+
+```sh
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
+  --headless=new \
+  --disable-gpu \
+  --no-pdf-header-footer \
+  --allow-file-access-from-files \
+  --virtual-time-budget=6000 \
+  --print-to-pdf="artwork/pmf-is-gonna-rock-you/pmf-deck-v2.pdf" \
+  "file:///Users/dthyresson/projects/dthyresson/thyresson-io/artwork/pmf-is-gonna-rock-you/pmf-deck-v2.html"
+```
+
 ## Source references
 
 | Scan | Release | Link |
