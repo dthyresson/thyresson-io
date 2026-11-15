@@ -57,7 +57,7 @@ const dialogId = `${id}-lightbox`;
       <img
         id={`${dialogId}-image`}
         alt=""
-        class="max-h-[85vh] max-w-full object-contain shadow-2xl"
+        class="max-h-[80vh] max-w-full cursor-pointer touch-none select-none object-contain shadow-2xl"
       />
       <div
         class="flex flex-wrap items-center justify-center gap-3 text-sm text-white/80"
@@ -89,6 +89,7 @@ const dialogId = `${id}-lightbox`;
           Close
         </button>
       </div>
+      <p class="text-xs text-white/40">Swipe or tap the image to navigate.</p>
     </div>
   </dialog>
 </div>
@@ -135,6 +136,38 @@ const dialogId = `${id}-lightbox`;
 
     prevButton.addEventListener('click', () => show(current - 1));
     nextButton.addEventListener('click', () => show(current + 1));
+
+    let lastSwipeAt = 0;
+    let touchStartX = 0;
+    let touchStartY = 0;
+
+    image.addEventListener('click', (event) => {
+      if (Date.now() - lastSwipeAt < 350) return;
+      const rect = image.getBoundingClientRect();
+      const x = event.clientX - rect.left;
+      show(x < rect.width / 2 ? current - 1 : current + 1);
+    });
+
+    image.addEventListener(
+      'touchstart',
+      (event) => {
+        const touch = event.changedTouches[0];
+        touchStartX = touch.clientX;
+        touchStartY = touch.clientY;
+      },
+      { passive: true }
+    );
+
+    image.addEventListener('touchend', (event) => {
+      const touch = event.changedTouches[0];
+      const deltaX = touch.clientX - touchStartX;
+      const deltaY = touch.clientY - touchStartY;
+      if (Math.abs(deltaX) > 50 && Math.abs(deltaX) > Math.abs(deltaY)) {
+        event.preventDefault();
+        lastSwipeAt = Date.now();
+        show(deltaX > 0 ? current - 1 : current + 1);
+      }
+    });
 
     closeButton.addEventListener('click', () => dialog.close());
 
