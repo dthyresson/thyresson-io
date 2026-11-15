@@ -1,0 +1,38 @@
+---
+import ImageGallery from './ImageGallery.astro';
+import deck01 from '../images/post-pmf-is-gonna-rock-you/deck/slide-01.png';
+import deck02 from '../images/post-pmf-is-gonna-rock-you/deck/slide-02.png';
+import deck03 from '../images/post-pmf-is-gonna-rock-you/deck/slide-03.png';
+import deck04 from '../images/post-pmf-is-gonna-rock-you/deck/slide-04.png';
+import deck05 from '../images/post-pmf-is-gonna-rock-you/deck/slide-05.png';
+import deck06 from '../images/post-pmf-is-gonna-rock-you/deck/slide-06.png';
+import deck07 from '../images/post-pmf-is-gonna-rock-you/deck/slide-07.png';
+import deck08 from '../images/post-pmf-is-gonna-rock-you/deck/slide-08.png';
+import deck09 from '../images/post-pmf-is-gonna-rock-you/deck/slide-09.png';
+
+const slides = [
+  {
+    src: deck01,
+    alt: 'PMF Is Gonna Rock Ya! cover slide',
+    caption: '01 · Cover',
+  },
+  { src: deck02, alt: 'Who I am slide', caption: '02 · Who I am' },
+  { src: deck03, alt: 'The Manual slide', caption: '03 · The Manual' },
+  { src: deck04, alt: 'Cursor and fal slide', caption: '04 · Cursor + fal' },
+  {
+    src: deck05,
+    alt: 'Turso and Workbrew slide',
+    caption: '05 · Turso + Workbrew',
+  },
+  { src: deck06, alt: 'Zoo slide', caption: '06 · Zoo' },
+  {
+    src: deck07,
+    alt: 'Five companies, five lessons slide',
+    caption: '07 · Five lessons',
+  },
+  { src: deck08, alt: 'Closing slide', caption: '08 · Close' },
+  { src: deck09, alt: 'Q&A and connect slide', caption: '09 · Q&A' },
+];
+---
+
+<ImageGallery slides={slides} id="pmf-deck" />

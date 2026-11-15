@@ -1,0 +1,105 @@
+---
+import { Image } from '@unpic/astro';
+import type { ImageMetadata } from 'astro';
+
+interface Slide {
+  src: ImageMetadata | string;
+  alt: string;
+  caption?: string;
+}
+
+interface Props {
+  slides: Slide[];
+  id?: string;
+}
+
+const { slides, id = 'image-gallery' } = Astro.props;
+const dialogId = `${id}-lightbox`;
+---
+
+<div id={id} class="not-prose my-8">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    {
+      slides.map((slide) => (
+        <figure class="m-0">
+          <button
+            type="button"
+            class="group block w-full cursor-zoom-in border-0 bg-transparent p-0"
+            data-full={
+              typeof slide.src === 'string' ? slide.src : slide.src.src
+            }
+            data-alt={slide.alt}
+            data-caption={slide.caption ?? slide.alt}
+            aria-label={`Open ${slide.caption ?? slide.alt} larger`}
+          >
+            <Image
+              src={slide.src}
+              alt={slide.alt}
+              width={960}
+              height={540}
+              class="w-full h-auto shadow-lg transition-opacity group-hover:opacity-90"
+            />
+          </button>
+          <figcaption class="mt-2 text-sm opacity-70">
+            {slide.caption ?? slide.alt}
+          </figcaption>
+        </figure>
+      ))
+    }
+  </div>
+
+  <dialog
+    id={dialogId}
+    aria-label="Image preview"
+    class="m-0 h-full w-full max-h-none max-w-none border-0 bg-black/95 p-4 text-white backdrop:bg-black/90"
+  >
+    <div class="flex h-full w-full flex-col items-center justify-center gap-3">
+      <img
+        id={`${dialogId}-image`}
+        alt=""
+        class="max-h-[85vh] max-w-full object-contain shadow-2xl"
+      />
+      <div class="flex items-center gap-4 text-sm text-white/80">
+        <span id={`${dialogId}-caption`}></span>
+        <button
+          id={`${dialogId}-close`}
+          type="button"
+          class="rounded border border-white/30 px-3 py-1 hover:bg-white/10"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </dialog>
+</div>
+
+<script define:vars={{ galleryId: id, dialogId }}>
+  const gallery = document.getElementById(galleryId);
+  const dialog = document.getElementById(dialogId);
+  const image = document.getElementById(`${dialogId}-image`);
+  const caption = document.getElementById(`${dialogId}-caption`);
+  const closeButton = document.getElementById(`${dialogId}-close`);
+
+  if (gallery && dialog && image && caption && closeButton) {
+    gallery.querySelectorAll('[data-full]').forEach((button) => {
+      button.addEventListener('click', () => {
+        image.src = button.dataset.full || '';
+        image.alt = button.dataset.alt || '';
+        caption.textContent = button.dataset.caption || '';
+        dialog.showModal();
+      });
+    });
+
+    closeButton.addEventListener('click', () => dialog.close());
+
+    dialog.addEventListener('click', (event) => {
+      if (event.target === dialog) {
+        dialog.close();
+      }
+    });
+
+    dialog.addEventListener('close', () => {
+      image.src = '';
+    });
+  }
+</script>
