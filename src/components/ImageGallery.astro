@@ -59,8 +59,28 @@ const dialogId = `${id}-lightbox`;
         alt=""
         class="max-h-[85vh] max-w-full object-contain shadow-2xl"
       />
-      <div class="flex items-center gap-4 text-sm text-white/80">
+      <div
+        class="flex flex-wrap items-center justify-center gap-3 text-sm text-white/80"
+      >
+        <button
+          id={`${dialogId}-prev`}
+          type="button"
+          class="rounded border border-white/30 px-3 py-1 hover:bg-white/10"
+          aria-label="Previous slide"
+        >
+          ←
+        </button>
         <span id={`${dialogId}-caption`}></span>
+        <span id={`${dialogId}-counter`} class="font-mono text-xs text-white/50"
+        ></span>
+        <button
+          id={`${dialogId}-next`}
+          type="button"
+          class="rounded border border-white/30 px-3 py-1 hover:bg-white/10"
+          aria-label="Next slide"
+        >
+          →
+        </button>
         <button
           id={`${dialogId}-close`}
           type="button"
@@ -78,19 +98,56 @@ const dialogId = `${id}-lightbox`;
   const dialog = document.getElementById(dialogId);
   const image = document.getElementById(`${dialogId}-image`);
   const caption = document.getElementById(`${dialogId}-caption`);
+  const counter = document.getElementById(`${dialogId}-counter`);
+  const prevButton = document.getElementById(`${dialogId}-prev`);
+  const nextButton = document.getElementById(`${dialogId}-next`);
   const closeButton = document.getElementById(`${dialogId}-close`);
 
-  if (gallery && dialog && image && caption && closeButton) {
-    gallery.querySelectorAll('[data-full]').forEach((button) => {
+  if (
+    gallery &&
+    dialog &&
+    image &&
+    caption &&
+    counter &&
+    prevButton &&
+    nextButton &&
+    closeButton
+  ) {
+    const buttons = Array.from(gallery.querySelectorAll('[data-full]'));
+    let current = 0;
+
+    const show = (index) => {
+      if (!buttons.length) return;
+      current = (index + buttons.length) % buttons.length;
+      const button = buttons[current];
+      image.src = button.dataset.full || '';
+      image.alt = button.dataset.alt || '';
+      caption.textContent = button.dataset.caption || '';
+      counter.textContent = `${current + 1} / ${buttons.length}`;
+    };
+
+    buttons.forEach((button, index) => {
       button.addEventListener('click', () => {
-        image.src = button.dataset.full || '';
-        image.alt = button.dataset.alt || '';
-        caption.textContent = button.dataset.caption || '';
+        show(index);
         dialog.showModal();
       });
     });
 
+    prevButton.addEventListener('click', () => show(current - 1));
+    nextButton.addEventListener('click', () => show(current + 1));
+
     closeButton.addEventListener('click', () => dialog.close());
+
+    dialog.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowLeft') {
+        event.preventDefault();
+        show(current - 1);
+      }
+      if (event.key === 'ArrowRight') {
+        event.preventDefault();
+        show(current + 1);
+      }
+    });
 
     dialog.addEventListener('click', (event) => {
       if (event.target === dialog) {
@@ -100,6 +157,7 @@ const dialogId = `${id}-lightbox`;
 
     dialog.addEventListener('close', () => {
       image.src = '';
+      counter.textContent = '';
     });
   }
 </script>
