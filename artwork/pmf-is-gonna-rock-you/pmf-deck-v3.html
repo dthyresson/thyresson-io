@@ -422,49 +422,53 @@
     color: #333333;
   }
 
-  /* Table */
-  .table-wrap {
-    margin-top: 14pt;
-    flex: 1 1 auto;
-    min-height: 0;
-  }
-
-  .t-head,
-  .t-row {
+  /* Five-up shelf */
+  .shelf {
     display: grid;
-    grid-template-columns: 0.56in 0.85fr 1.05fr 1.1fr;
-    align-items: center;
-    column-gap: 9pt;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 0.28in;
+    margin: auto 0;
+    flex: 0 0 auto;
   }
 
-  .t-head {
-    padding-bottom: 5pt;
-    border-bottom: 1.5pt solid #000000;
-    font-size: 8pt;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
+  .shelf .sleeve {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 0.75pt solid #000000;
+  }
+
+  .shelf .name {
+    margin-top: 12pt;
+    font-size: 16pt;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+
+  .shelf .num {
+    font-family: "SF Mono", Menlo, monospace;
+    font-size: 8.5pt;
+    font-weight: 400;
     color: #555555;
+    margin-right: 7pt;
+    vertical-align: 2pt;
   }
 
-  .t-row {
-    padding: 16pt 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    font-size: 14pt;
+  .shelf .move {
+    margin-top: 6pt;
+    font-size: 12.5pt;
+    font-weight: 600;
     line-height: 1.25;
   }
 
-  .t-row .sleeve {
-    width: 0.46in;
-    border-width: 0.5pt;
+  .shelf-slide .foot {
+    margin-top: 0;
   }
 
-  .t-row .co-cell {
-    font-weight: 800;
-    font-size: 15pt;
-  }
-
-  .t-row .req {
+  .shelf .req {
+    margin-top: 5pt;
+    font-size: 11.5pt;
+    line-height: 1.25;
     color: #333333;
   }
 
@@ -909,37 +913,44 @@
       <div class="ask">What entrenched market would you build a layer underneath?</div>
     </div>
   </div>
-  <div class="lesson">This requires connecting the lifecycle, not just shipping a feature.</div>
+  <div class="lesson">This requires expanding the market, not just competing inside it.</div>
   <div class="foot"><div class="foot-left"><img class="foot-logo" src="../logos/pwv-logo-black-800.svg" alt="PWV"><div>PMF Is Gonna Rock Ya!</div></div><div class="foot-right"><span class="foot-url">thyresson.io/blog/post-pmf-is-gonna-rock-you</span><img class="foot-qr" src="qr/post-pmf.png" alt="QR code to the post"><span class="foot-n">06</span></div></div>
 </section>
 
 <!-- 07 It's Grim Pre-Fit / Burn the Runway -->
-<section class="slide">
+<section class="slide shelf-slide">
   <div class="hd"><div class="n">07 / 09</div><div class="tag">It's Grim Pre-Fit / Burn the Runway</div></div>
   <h1>Five companies. Five lessons.</h1>
-  <div class="table-wrap">
-    <div>
-      <div class="t-head"><div></div><div>Company</div><div>PMF lesson</div><div>What it requires</div></div>
-      <div class="t-row">
-        <img class="sleeve" src="thumbs/cursor-a-doctorin-the-product.webp" alt="">
-        <div class="co-cell">Cursor</div><div>Change the product</div><div class="req">Question assumptions</div>
-      </div>
-      <div class="t-row">
-        <img class="sleeve" src="thumbs/fal-b-last-train-to-model-central.webp" alt="">
-        <div class="co-cell">fal</div><div>Change the market</div><div class="req">Recognize opportunities</div>
-      </div>
-      <div class="t-row">
-        <img class="sleeve" src="thumbs/turso-b-what-time-is-fit.webp" alt="">
-        <div class="co-cell">Turso</div><div>The market catches up</div><div class="req">Have a point of view</div>
-      </div>
-      <div class="t-row">
-        <img class="sleeve" src="thumbs/workbrew-b-3am-eternal.webp" alt="">
-        <div class="co-cell">Workbrew</div><div>Find the buyer</div><div class="req">Understand people</div>
-      </div>
-      <div class="t-row">
-        <img class="sleeve" src="thumbs/zoo-a-justified-and-validated.webp" alt="">
-        <div class="co-cell">Zoo</div><div>Become the layer</div><div class="req">Connect the lifecycle</div>
-      </div>
+  <div class="shelf">
+    <div class="item">
+      <img class="sleeve" src="thumbs/cursor-a-doctorin-the-product.webp" alt="Cursor sleeve">
+      <div class="name"><span class="num">01</span>Cursor</div>
+      <div class="move">Change the product</div>
+      <div class="req">Question assumptions</div>
+    </div>
+    <div class="item">
+      <img class="sleeve" src="thumbs/fal-b-last-train-to-model-central.webp" alt="fal sleeve">
+      <div class="name"><span class="num">02</span>fal</div>
+      <div class="move">Change the market</div>
+      <div class="req">Recognize opportunities</div>
+    </div>
+    <div class="item">
+      <img class="sleeve" src="thumbs/turso-b-what-time-is-fit.webp" alt="Turso sleeve">
+      <div class="name"><span class="num">03</span>Turso</div>
+      <div class="move">The market catches up</div>
+      <div class="req">Have a point of view</div>
+    </div>
+    <div class="item">
+      <img class="sleeve" src="thumbs/workbrew-b-3am-eternal.webp" alt="Workbrew sleeve">
+      <div class="name"><span class="num">04</span>Workbrew</div>
+      <div class="move">Find the buyer</div>
+      <div class="req">Understand people</div>
+    </div>
+    <div class="item">
+      <img class="sleeve" src="thumbs/zoo-a-justified-and-validated.webp" alt="Zoo sleeve">
+      <div class="name"><span class="num">05</span>Zoo</div>
+      <div class="move">Become the layer</div>
+      <div class="req">Expand the market, not just compete inside it</div>
     </div>
   </div>
   <div class="foot"><div class="foot-left"><img class="foot-logo" src="../logos/pwv-logo-black-800.svg" alt="PWV"><div>PMF Is Gonna Rock Ya!</div></div><div class="foot-right"><span class="foot-url">thyresson.io/blog/post-pmf-is-gonna-rock-you</span><img class="foot-qr" src="qr/post-pmf.png" alt="QR code to the post"><span class="foot-n">07</span></div></div>
